@@ -20,8 +20,8 @@ export default function Example() {
     <Disclosure as="nav" className="bg-white h-30 max-md:h-50 relative max-md:fixed max-md:w-full z-50">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative h-16 justify-between">
-          <h1 className='text-5xl font-Exo-2 pt-5'>MHBlog</h1>
-          <h3 className='text-xl font-edu-vic-wa-nt-beginner pt-2'>Essays and itriques from many types of media</h3>
+          <h1 className='text-5xl font-Exo-2 pt-5 text-black'>MHBlog</h1>
+          <h3 className='text-xl font-edu-vic-wa-nt-beginner pt-2 text-black'>Essays and itriques from many types of media</h3>
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
             <DisclosureButton className="group relative inline-flex items-end left-130 min-md:left-105 max-sm:left-55 pt-10 justify-center rounded-md p-2 text-black hover:bg-white hover:text-blue-500 focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
