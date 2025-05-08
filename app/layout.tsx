@@ -24,6 +24,7 @@ export const metadata: Metadata = {
   description: "Blog, essays and itriques for many topics from political views to racing",
   authors: [{ name: "Maxim harvančík"}],
   manifest: "manifest.json",
+  icons: "favicon.ico"
 };
 
 export const viewport: Viewport = {
