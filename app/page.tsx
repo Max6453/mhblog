@@ -24,7 +24,7 @@ export default function Example() {
           <h3 className='text-xl font-edu-vic-wa-nt-beginner pt-2'>Essays and itriques from many types of media</h3>
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
-            <DisclosureButton className="group relative inline-flex items-end left-130 max-md:left-55 pt-10 justify-center rounded-md p-2 text-black hover:bg-white hover:text-blue-500 focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
+            <DisclosureButton className="group relative inline-flex items-end left-130 min-md:left-105 max-sm:left-55 pt-10 justify-center rounded-md p-2 text-black hover:bg-white hover:text-blue-500 focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
               <Bars3Icon aria-hidden="true" className="block size-10 group-data-open:hidden transition-all duration-300" />
@@ -84,7 +84,10 @@ export default function Example() {
     </div>
 
     <div className='bg-white top-70 h-screen relative'>
-      <h1>About</h1>
+      <h1 className='text-5xl font-Exo-2 max-md:text-center text-start md:pl-5 md:pt-10'>About</h1>
+      <p>
+        My name is Max. 
+      </p>
     </div>
 </div>
   )
