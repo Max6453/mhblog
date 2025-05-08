@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Viewport } from "next";
 import { Edu_VIC_WA_NT_Beginner, Exo_2, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,6 +46,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${Edu.variable} ${Exo.variable} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
