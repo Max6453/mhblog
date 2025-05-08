@@ -1,0 +1,15 @@
+{
+    "name": "MHBlog",
+    "autor": "Maxim harvančík",
+    "Describtion":"MHBlog is a place where you can see essays and opinions on many topics from racing to politics",
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "96x96",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#0088ff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
