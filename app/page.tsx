@@ -14,7 +14,7 @@ function classNames(...classes: string[]) {
 }
 
 
-export default function Example() {
+export default function Main() {
   return (
   <div>  
     <Disclosure as="nav" className="bg-white h-40 max-md:h-40 relative max-md:fixed max-md:w-full z-50">
@@ -27,7 +27,7 @@ export default function Example() {
           </a>
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
-            <DisclosureButton className="group relative inline-flex items-end left-150 max-md:left-165 sm:left-100 max-sm:left-55 pt-10 justify-center rounded-md p-2 text-black hover:bg-white hover:text-blue-500 focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
+            <DisclosureButton className="group relative inline-flex items-end left-150 max-md:left-165 sm:left-150 max-sm:left-93 pt-10 justify-center rounded-md p-2 text-black hover:bg-white hover:text-blue-500 focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
               <Bars3Icon aria-hidden="true" className="block size-10 group-data-open:hidden transition-all duration-300" />
@@ -77,7 +77,7 @@ export default function Example() {
       </DisclosurePanel>
     </Disclosure>
 
-    <div className="relative pt-20 max-md:top-50 max-sm:pl-3 max-md:pl-8 grid lg:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2 -z-10">
+    <div className="relative pt-20 max-md:top-50 max-sm:pl-20 max-md:pl-8 grid lg:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2 -z-10">
     <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65"></div>
     <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65"></div>
     <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65"></div>
