@@ -23,11 +23,11 @@ export default function Example() {
           <h1 className='text-5xl font-Exo-2 text-black'>MHBlog</h1>
           <h3 className='text-xl font-edu-vic-wa-nt-beginner pt-2 text-black'>Essays and itriques from many types of media</h3>
           <a href='/'>
-          <img src="/Image.png" className='bottom-24 left-125 items-center relative sm:hidden md:hidden lg:block'/>
+          <img src="/Image.png" className='bottom-24 left-125 items-center relative sm:hidden md:hidden max-md:hidden lg:block'/>
           </a>
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
-            <DisclosureButton className="group relative inline-flex items-end left-150 max-md:left-165 sm:left-100 max-sm:left-55 pt-10 justify-center rounded-md p-2 text-black hover:bg-white hover:text-blue-500 focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
+            <DisclosureButton className="group relative inline-flex items-end md:left-0 sm:left-10 max-sm:left-90 pt-10 justify-center rounded-md p-2 text-black hover:bg-white hover:text-blue-500 focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
               <Bars3Icon aria-hidden="true" className="block size-10 group-data-open:hidden transition-all duration-300" />
@@ -37,7 +37,7 @@ export default function Example() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
-            <div className="hidden sm:ml-6 sm:block xl:left-200 sm:left-160 max-md:hidden text-xl relative max">
+            <div className="hidden sm:ml-6 sm:block xl:left-200 max-sm:hidden md:left-100 lg:left-110 max-md:hidden text-xl relative max">
               <div className="flex space-x-4 transition-all duration-300">
                 {navigation.map((item) => (
                   <a
@@ -77,7 +77,7 @@ export default function Example() {
       </DisclosurePanel>
     </Disclosure>
 
-    <div className="relative pt-20 max-md:top-50 max-sm:pl-3 max-md:pl-8 grid lg:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2 -z-10">
+    <div className="relative pt-20 max-md:top-50 max-sm:pl-20 max-md:pl-8 md:pl-8 grid lg:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2 -z-10">
     <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65"></div>
     <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65"></div>
     <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65"></div>
@@ -87,7 +87,7 @@ export default function Example() {
     </div>
 
     <div className='bg-white max-md:top-70 h-screen relative' id='About'>
-      <h1 className='text-5xl text-black font-Exo-2 max-md:text-center text-start md:pl-10 md:pt-10'>About</h1>
+      <h1 className='md:text-3xl lg:text-5xl text-black font-Exo-2 max-md:text-center text-start md:pl-10 md:pt-10'>About</h1>
       <p className='font-raleway font-medium pt-5 lg:text-2xl lg:w-300 lg:pl-10'>
         Hey everyone.<br/>
         My name is Max and I'm 17 years old. I'm from Žilina, Slovakia.
@@ -113,7 +113,7 @@ export default function Example() {
           I'm must say that I'm routine oriented.
           I have perfect time management and i like to work as a team.
       </p>
-      <p className='font-raleway font-medium pt-5 lg:text-2xl lg:w-300 lg:pl-10 bg-white'>
+      <p className='font-raleway font-medium pt-5 lg:text-2xl lg:w-300 xl:w-full lg:pl-10 bg-white'>
         You can see more things about me at my portfolio which will be publish in near future.
         Until then, enjoy my blog.
       </p>
