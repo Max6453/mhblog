@@ -27,7 +27,7 @@ export default function Main() {
           </a>
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
-            <DisclosureButton className="group relative inline-flex items-end left-150 max-md:left-165 sm:left-150 max-sm:left-93 pt-10 justify-center rounded-md p-2 text-black hover:bg-white hover:text-blue-500 focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
+            <DisclosureButton className="group relative inline-flex items-end max-md:left-165 sm:left-150 max-sm:left-60 pt-10 justify-center rounded-md p-2 text-black hover:bg-white hover:text-blue-500 focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
               <Bars3Icon aria-hidden="true" className="block size-10 group-data-open:hidden transition-all duration-300" />
@@ -77,7 +77,7 @@ export default function Main() {
       </DisclosurePanel>
     </Disclosure>
 
-    <div className="relative pt-20 max-md:top-50 max-sm:pl-20 max-md:pl-8 grid lg:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2 -z-10">
+    <div className="relative pt-20 max-md:top-50 max-sm:pl-6 max-md:pl-8 grid lg:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2 -z-10">
     <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65"></div>
     <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65"></div>
     <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65"></div>
@@ -88,7 +88,7 @@ export default function Main() {
 
     <div className='bg-white max-md:top-70 h-screen relative' id='About'>
       <h1 className='md:text-3xl lg:text-5xl text-black font-Exo-2 max-md:text-center text-start md:pl-10 md:pt-10'>About</h1>
-      <p className='font-raleway font-medium pt-5 lg:text-2xl lg:w-300 lg:pl-10'>
+      <p className='font-raleway font-medium pt-5 lg:text-2xl lg:w-300 lg:pl-10 text-black'>
         Hey everyone.<br/>
         My name is Max and I'm 17 years old. I'm from Žilina, Slovakia.
         My biggest passion is programming and motorsport. Those two things (and tech) will be the most popular topic on my website.<br/>
@@ -100,20 +100,20 @@ export default function Main() {
         My proudest project is <a className='font-black hover:text-blue-500' href='https://pure-rxcing.vercel.app'>pure rxcing website</a> (its not official website PLEASE DO NOT TAKE IT SERIOUSLY).
         
       </p>
-      <p className='font-raleway font-medium pt-5 lg:text-2xl lg:w-300 lg:pl-10 bg-white'>
+      <p className='font-raleway font-medium pt-5 lg:text-2xl lg:w-300 lg:pl-10 bg-white text-black'>
         I'm proficient in HTML, CSS.<br/>
         I'm advanced in Javascript and it's framework - React.<br/>
         I know basics of SQL. I can work in mySQL, postgreSQL, mongoDB.<br/>
         For design i use figma.<br/>
         And also basics of python i control.<br/>
       </p>
-      <p className='font-raleway font-medium pt-5 lg:text-2xl lg:w-300 lg:pl-10 bg-white'>
+      <p className='font-raleway font-medium pt-5 lg:text-2xl lg:w-300 lg:pl-10 bg-white text-black'>
           Whole section about me was intented to be written as I talking to you.
           But I can assure you when i comes to work, I'm really profesional.
           I'm must say that I'm routine oriented.
           I have perfect time management and i like to work as a team.
       </p>
-      <p className='font-raleway font-medium pt-5 lg:text-2xl lg:w-300 xl:w-full lg:pl-10 bg-white'>
+      <p className='font-raleway font-medium pt-5 lg:text-2xl lg:w-300 xl:w-full lg:pl-10 bg-white text-black'>
         You can see more things about me at my portfolio which will be publish in near future.
         Until then, enjoy my blog.
       </p>
