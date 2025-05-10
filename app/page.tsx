@@ -1,6 +1,19 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import * as React from "react"
+ 
+import { cn } from "@/lib/utils"
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu"
+import Image from 'next/image'
 
 const navigation = [
   { name: 'About', href: '#About', current: true },
@@ -8,6 +21,71 @@ const navigation = [
   { name: 'Categories', href: '#', current: false },
   { name: 'Contact', href: '#Contact', current: false },
 ]
+
+const components: { title: string; href: string; description: string }[] = [
+  {
+    title: "Formula 1",
+    href: "/Formula-1",
+    description:
+      "A pinnacle of motorsport",
+  },
+  {
+    title: "WEC",
+    href: "/WEC",
+    description:
+      "World Endurance Championship. The most competetive field in history of WEC is live right now. Don't miss it.",
+  },
+  {
+    title: "Motorsport",
+    href: "/Motorsport",
+    description:
+      "the hub of motorsport. Wheter to know more about upcomming regulations in F1 or how recent races in WEC ended, here you will know it sooner than anyone",
+  },
+  {
+    title: "Tech",
+    href: "/Tech",
+    description: "From electronics to automotive. Choice is yours",
+  },
+  {
+    title: "Around the world",
+    href: "/Around-the-world",
+    description:
+      "Other topics and essays you can see",
+  },
+  {
+    title: "Tutorials and tips",
+    href: "/Tutorials-and-tips",
+    description:
+      "Even i can teach so head to the docs section and get to know about web development",
+  },
+]
+
+const ListItem = React.forwardRef<
+  React.ElementRef<"a">,
+  React.ComponentPropsWithoutRef<"a">
+>(({ className, title, children, ...props }, ref) => {
+  return (
+    <li>
+      <NavigationMenuLink asChild>
+        <a
+          ref={ref}
+          className={cn(
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            className
+          )}
+          {...props}
+        >
+          <div className="text-sm font-medium leading-none">{title}</div>
+          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+            {children}
+          </p>
+        </a>
+      </NavigationMenuLink>
+    </li>
+  )
+})
+ListItem.displayName = "ListItem"
+
 
 
 function classNames(...classes: string[]) {
@@ -24,7 +102,7 @@ export default function Main() {
           <h1 className='text-5xl font-Exo-2 text-black'>MHBlog</h1>
           <h3 className='text-xl font-edu-vic-wa-nt-beginner pt-2 text-black'>Essays and itriques from many types of media</h3>
           <a href='' className='w-30 h-30 absolute'>
-          <img src="/Image.png" className='bottom-24 left-125 items-center relative sm:hidden md:hidden max-md:hidden lg:block'/>
+          <img src="/Image.png" className='bottom-24 left-125 items-center relative sm:hidden md:hidden max-md:hidden lg:block hover:scale-90 duration-400'/>
           </a>
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
@@ -38,53 +116,100 @@ export default function Main() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
-            <div className="hidden sm:ml-6 sm:block xl:left-200 max-sm:hidden md:left-100 lg:left-110 max-md:hidden text-xl relative max">
-              <div className="flex space-x-4 transition-all duration-300">
-                {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    aria-current={item.current ? 'page' : undefined}
-                    className={classNames(
-                      item.current ? 'bg-gray-300 text-black hover:text-blue-500' : 'text-black hover:bg-white hover:text-blue-500',
-                      'rounded-md px-3 py-2 text-xl font-medium',
-                    )}
-                  >
-                    {item.name}
-                  </a>
-                ))}
-              </div>
+            <div className="hidden sm:ml-6 sm:block xl:left-180 max-sm:hidden md:left-100 lg:left-90 max-md:hidden text-xl relative max">
+      <NavigationMenu className='left-21'>
+       <NavigationMenuList>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>Blog</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+              <ListItem href="/docs" title="About">
+                Get to know about the author.
+              </ListItem>
+              <ListItem href="/docs/installation" title="Newsletter">
+                hear more stories from me via email.
+              </ListItem>
+              <ListItem href="/docs/primitives/typography" title="Latest">
+                Latest essays, stories, intriques and more.
+              </ListItem>
+              <ListItem href="#Contact" title="Contact">
+                You can contact me here via multiple choices
+              </ListItem>
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>Categories</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[500px] ">
+              {components.map((component) => (
+                <ListItem
+                  key={component.title}
+                  title={component.title}
+                  href={component.href}
+                >
+                  {component.description}
+                </ListItem>
+              ))}
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+      </NavigationMenuList>
+    </NavigationMenu>
             </div>
           </div>
         </div>
       </div>
-      <DisclosurePanel className="sm:hidden transition-all duration-300 -z-50 border-t">
-        <div className="space-y-1 px-2 pb-5 bg-white pt-25 transition-all duration-300 border-b border-black shadow-2xl">
-          {navigation.map((item) => (
-            <DisclosureButton
-              key={item.name}
-              as="a"
-              href={item.href}
-              aria-current={item.current ? 'page' : undefined}
-              className={classNames(
-                item.current ? 'bg-gray-300 text-black hover:text-blue-500' : 'text-black hover:bg-white hover:text-blue-500',
-                'block rounded-md px-3 py-2 text-base font-medium transition-all duration-300',
-              )}
-            >
-              {item.name}
-            </DisclosureButton>
-          ))}
-        </div>
+      <DisclosurePanel className="sm:hidden transition-all duration-300 -z-50 border-t top-14 relative left-0 items-start gap-0">
+  <NavigationMenu className='pt-10 bg-white grid grid-cols-2 -z-0 pb-3 pl-30 relative items-start gap-0'>
+      <NavigationMenuList>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>Blog</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+              <ListItem href="/docs" title="Introduction">
+                Re-usable components built using Radix UI and Tailwind CSS.
+              </ListItem>
+              <ListItem href="/docs/installation" title="Installation">
+                How to install dependencies and structure your app.
+              </ListItem>
+              <ListItem href="/docs/primitives/typography" title="Typography">
+                Styles for headings, paragraphs, lists...etc
+              </ListItem>
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[500px] ">
+              {components.map((component) => (
+                <ListItem
+                  key={component.title}
+                  title={component.title}
+                  href={component.href}
+                >
+                  {component.description}
+                </ListItem>
+              ))}
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+      </NavigationMenuList>
+    </NavigationMenu>
       </DisclosurePanel>
     </Disclosure>
+
+
       <h1 className='lg:text-7xl max-md:text-5xl text-black relative max-md:top-40 lg:pt-10 pl-10 font-Exo-2'>latest</h1>
-    <div className="relative top-20 max-md:top-50 max-sm:pl-9 max-md:pl-8 grid lg:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2 -z-10">
-    <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition-all">
-      <a href='#'>
-        <img src='/Image.png' className='hover:scale-120 transition-all'/>
-      </a>
+    <div className="relative top-20 max-md:top-50 max-sm:pl-11.5 max-md:pl-11.5 grid lg:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2 -z-10 transition-all hover:scale-120 duration-500">
+
+    <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-120 transition duration-300">
+      <img src='/assets/Miami.avif' className='object-cover w-full h-full z-50 rounded-4xl hover:scale-120 transition duration-500'></img>
     </div>
-    <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65"></div>
+    <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65">
+
+    </div>
     <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65"></div>
     <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65"></div>
     <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65"></div>
@@ -128,9 +253,9 @@ export default function Main() {
     </div>
 
        <footer
-       className="footer top-24 border-b text-center border-white grid gap-250 grid-cols-3 grid-rows-1 relative sm:footer-horizontal pt-10 bg-black text-blue-500 border-t font-edu-vic-wa-nt-beginner p-10 text-2xl"
+       className="footer top-24 max-md:top-50 border-b text-center border-white grid lg:gap-250 max-md:gap-40 grid-cols-3 grid-rows-1 relative sm:footer-horizontal pt-10 bg-black text-blue-500 border-t font-edu-vic-wa-nt-beginner p-10 text-2xl"
        id='Contact'>
-          <div className='grid pl-50'>
+          <div className='grid pl-50 max-md:pl-0'>
             <a href='#'>Motorsport</a>
             <a href='#'>Tech</a>
             <a href='#'>Gaming</a>
@@ -145,7 +270,7 @@ export default function Main() {
             <a href='#'></a>
           </div>
       </footer>
-          <div className="relative isolate overflow-hidden bg-black py-16 sm:py-24 lg:py-32 top-20">
+          <div className="relative isolate overflow-hidden bg-black py-16 sm:py-24 lg:py-32 top-20 max-md:top-40">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
                 <div className="max-w-xl lg:max-w-lg">
@@ -197,7 +322,7 @@ export default function Main() {
               </div>
             </div>
         </div>
-    <aside className="bg-black/90 pl-124 top-20 relative max-md:pl-0 max-md:text-lg max-md:text-center">
+    <aside className="bg-black/90 pl-124 top-20 max-md:top-40 relative max-md:pl-0 max-md:text-lg max-md:text-center">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
       </aside>
 </div>
