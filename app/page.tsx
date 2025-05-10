@@ -180,7 +180,7 @@ export default function Main() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Categories</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[500px] ">
               {components.map((component) => (
@@ -199,23 +199,64 @@ export default function Main() {
     </NavigationMenu>
       </DisclosurePanel>
     </Disclosure>
+    {/* END NAVBAR */}
 
+{/* LATEST */}
 
       <h1 className='lg:text-7xl max-md:text-5xl text-black relative max-md:top-40 lg:pt-10 pl-10 font-Exo-2'>latest</h1>
-    <div className="relative top-20 max-md:top-50 max-sm:pl-11.5 max-md:pl-11.5 grid lg:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2 -z-10 transition-all hover:scale-120 duration-500">
-
-    <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-120 transition duration-300">
-      <img src='/assets/Miami.avif' className='object-cover w-full h-full z-50 rounded-4xl hover:scale-120 transition duration-500'></img>
+    <div className="relative top-20 max-md:top-50 max-sm:pl-11.5 max-md:pl-11.5 grid lg:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
+    <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
+      <img src='/assets/Miami.avif' className='object-cover w-full h-full z-50 rounded-4xl'></img>
+      <span className='relative bottom-66 text-xl pl-10 text-white font-bold font-Exo-2'>Miami Grand Prix Debriefing</span>
+      <a href='/Formula-1/Miami-Grand-Prix'>
+      <button className='bg-white border border-blue-500 relative bottom-20 max-md:-left-4.5 left-30 text-black font-Exo-2 rounded-full w-25 h-10 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        See more</button>
+      </a>
     </div>
-    <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65">
-
+    <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
+        <img src='/assets/WEC-SPA.jpg' className='object-cover w-full h-full z-50 rounded-4xl'></img>
+      <span className='relative bottom-66 text-xl pl-10 text-white font-bold font-Exo-2'>WEC - 6 hours of Spa</span>
+      <a href='#'>
+      <button className='bg-white border border-blue-500 relative bottom-14 max-md:bottom-20 max-md:left-20 right-25 text-black font-Exo-2 rounded-full w-25 h-10 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        See more</button>
+      </a>
     </div>
-    <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65"></div>
-    <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65"></div>
-    <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65"></div>
-    <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65"></div>
+    <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
+         <img src='/assets/iPhone-17.jpg' className='object-cover w-full h-full z-50 rounded-4xl'></img>
+      <span className='relative bottom-66 text-xl left-5 text-white font-bold font-Exo-2 max-md:-m-3 max-md:bottom-63'>iPhone 17 - Everything you need to know</span>
+      <a href='#'>
+      <button className='bg-white border border-blue-500 relative bottom-20 max-md:-left-9 left-25 text-black font-Exo-2 rounded-full w-25 h-10 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        See more</button>
+      </a>
     </div>
+    <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
+         <img src='/assets/pope.jpg' className='object-cover w-full h-full z-50 rounded-4xl'></img>
+      <span className='relative bottom-66 text-xl left-5 text-white font-bold font-Exo-2 text-start'>New pope selected!</span>
+      <a href='#'>
+      <button className='bg-white border border-blue-500 relative bottom-20 max-md:left-20 right-15 text-black font-Exo-2 rounded-full w-25 h-10 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        See more</button>
+      </a>
+    </div>
+    <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
+               <img src='/assets/css.png' className='object-cover w-full h-full z-50 rounded-4xl'></img>
+      <span className='relative bottom-66 text-xl left-5 text-white font-bold font-Exo-2 text-start'>CSS for beginners</span>
+      <a href='#'>
+      <button className='bg-white border border-blue-500 relative bottom-20 max-md:left-20 right-8 text-black font-Exo-2 rounded-full w-25 h-10 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        See more</button>
+      </a>
+    </div>
+    <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
+               <img src='/assets/html.jpg' className='object-cover w-full h-full z-50 rounded-4xl'></img>
+      <span className='relative bottom-66 text-xl left-5 text-white font-bold font-Exo-2 text-start'>HTML for beginners</span>
+      <a href='/Tutorials-and-tips/HTML-for-beginners'>
+      <button className='bg-white border border-blue-500 relative bottom-20 max-md:left-20 right-13 text-black font-Exo-2 rounded-full w-25 h-10 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        See more</button>
+      </a>
+    </div>
+    </div>
+    {/* END LATEST */}
 
+    {/* ABOUT */}
     <div className='bg-white max-md:top-70 h-screen relative min-w-full' id='About'>
       <h1 className='max-md:text-5xl lg:text-5xl text-black font-Exo-2 max-md:text-center text-start md:pl-10 md:pt-10'>About</h1>
       <p className='font-raleway font-medium pt-5 pl-2 lg:text-2xl lg:w-300 lg:pl-10 text-black'>
@@ -251,22 +292,28 @@ export default function Main() {
         Until then, enjoy my blog.
       </p>
     </div>
+      {/* END ABOUT */}
 
+      {/* FOOTER */}
        <footer
        className="footer top-24 max-md:top-50 border-b text-center border-white grid lg:gap-250 max-md:gap-40 grid-cols-3 grid-rows-1 relative sm:footer-horizontal pt-10 bg-black text-blue-500 border-t font-edu-vic-wa-nt-beginner p-10 text-2xl"
        id='Contact'>
           <div className='grid pl-50 max-md:pl-0'>
-            <a href='#'>Motorsport</a>
-            <a href='#'>Tech</a>
-            <a href='#'>Gaming</a>
-            <a href='#'>Articles</a>
-            <a href='#'>Categories</a>
+            <h5>Content</h5>
+            <hr></hr>
+            <a href='#' className='hover:text-white transition duration-300'>Motorsport</a>
+            <a href='#' className='hover:text-white transition duration-300'>Tech</a>
+            <a href='#' className='hover:text-white transition duration-300'>Gaming</a>
+            <a href='#' className='hover:text-white transition duration-300'>Articles</a>
+            <a href='#' className='hover:text-white transition duration-300'>Categories</a>
           </div>
           <div className='grid'>
-            <a href='mailto:maximharvancik@gmail.com'>My mail</a>
-            <a href='https://www.instagram.com/harvancik_maxim/'>instagram</a>
-            <a href='https://x.com/HarvancikMaxim'>twitter (X)</a>
-            <a href='https://www.linkedin.com/in/maxim-harvancik-b1512a294/'>LinkedIn</a>
+            <h5>Contact</h5>
+            <hr></hr>
+            <a href='mailto:maximharvancik@gmail.com' className='hover:text-white transition duration-300'>My mail</a>
+            <a href='https://www.instagram.com/harvancik_maxim/' className='hover:text-white transition duration-300'>instagram</a>
+            <a href='https://x.com/HarvancikMaxim' className='hover:text-white transition duration-300'>twitter (X)</a>
+            <a href='https://www.linkedin.com/in/maxim-harvancik-b1512a294/' className='hover:text-white transition duration-300'>LinkedIn</a>
             <a href='#'></a>
           </div>
       </footer>
