@@ -9,15 +9,15 @@ export default function MiamiGP() {
           <ScrollProgress />
             <header>
             <div className="relative inset-0">
-            <h1 className="absolute text-6xl top-52 left-120 z-10 font-josefin-sans max-md:left-7 max-md:top-70 max-md:text-4xl text-white text-center font-bold">
+            <h1 className="absolute text-6xl top-82 left-80 z-10 font-josefin-sans max-md:left-12 max-md:top-20 max-md:text-3xl text-blue-500 text-center font-bold">
                 HTML for beginners
             </h1>
-            <h5 className="absolute text-6xl top-95 left-60 z-10 font-sans max-md:left-7 max-md:top-70 max-md:text-4xl text-white font-bold">
+            <h5 className="absolute text-6xl top-100 left-20 z-10 font-sans max-md:left-0 max-md:pl-5 max-md:top-50 text-center max-md:text-xl text-blue-500 font-bold">
                 from fundamentals to advanced
             </h5>
             <img
                 src="/assets/html.jpg"
-                className="min-w-full transition-transform duration-300"
+                className="min-w-full transition-transform duration-300 object-cover max-md:size-96"
                 alt="Miami Grand Prix"
             />
             </div>
@@ -25,17 +25,17 @@ export default function MiamiGP() {
             <div className="bg-white h-screen">
                 <span className="text-2xl text-black">Reading time: <span className="text-blue-500">1.55 minutes</span></span>
                 <div className="text-2xl text-center justify-center text-black pt-15 bg-white">
-                <p className="text-start text-2xl pl-80 font-josefin-sans pt-20 w-300">
+                <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300">
                     "I'm looking forward to strong result here in Miami.
                     Personally i love the track, it gives good vibes both the track and the city and miami really have a good flow with fast corners in 1st sector, slow in 2nd sector and two straights in 3th sector.
                     Our car should suit the track so i have high hopes for the race"
                 </p>
-                <p className="text-start text-2xl pl-80 font-josefin-sans pt-20 w-300">
+                <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300">
                     Pirelli nominated for this race C3, C4 and C5 tyres which are much softer than used last year.
                     It still looks like a one-stop. A different one-stop - a slightly trickier one-stop, but still a one-stop.
                     Of course, we won’t know for certain until we run on the track, but the pre-event models still suggest the one-stop race with the Medium and Hard compounds is the quickest.
                 </p>
-                <p className="text-start text-2xl pl-80 font-josefin-sans pt-20 w-300"> 
+                <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300"> 
                     We can say that Miami this season will be really unpredictable with chances of rain on saturday and sunday.
                     Also the softer compound isn't really helping in this situation.
                     Every team will have hard weekend but you fans, you will be pleased with many actions both on and off track.

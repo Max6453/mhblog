@@ -1,3 +1,5 @@
+'use client'
+import { useState, useEffect } from 'react'
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -13,7 +15,6 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-import Image from 'next/image'
 
 const navigation = [
   { name: 'About', href: '#About', current: true },
@@ -94,6 +95,7 @@ function classNames(...classes: string[]) {
 
 
 export default function Main() {
+
   return (
   <div>  
     <Disclosure as="nav" className="bg-white h-40 max-md:h-30 relative max-md:fixed max-md:w-full z-50">
@@ -230,14 +232,6 @@ export default function Main() {
       </a>
     </div>
     <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
-         <img src='/assets/pope.jpg' className='object-cover w-full h-full z-50 rounded-4xl'></img>
-      <span className='relative bottom-66 text-xl left-5 text-white font-bold font-Exo-2 text-start'>New pope selected!</span>
-      <a href='#'>
-      <button className='bg-white border border-blue-500 relative bottom-20 max-md:left-20 right-15 text-black font-Exo-2 rounded-full w-25 h-10 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
-        See more</button>
-      </a>
-    </div>
-    <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
                <img src='/assets/css.png' className='object-cover w-full h-full z-50 rounded-4xl'></img>
       <span className='relative bottom-66 text-xl left-5 text-white font-bold font-Exo-2 text-start'>CSS for beginners</span>
       <a href='#'>
@@ -257,7 +251,7 @@ export default function Main() {
     {/* END LATEST */}
 
     {/* ABOUT */}
-    <div className='bg-white max-md:top-70 h-screen relative min-w-full' id='About'>
+    <div className='bg-white max-md:top-70 h-screen relative min-w-full bottom-10' id='About'>
       <h1 className='max-md:text-5xl lg:text-5xl text-black font-Exo-2 max-md:text-center text-start md:pl-10 md:pt-10'>About</h1>
       <p className='font-raleway font-medium pt-5 pl-2 lg:text-2xl lg:w-300 lg:pl-10 text-black'>
         Hey everyone.<br/>
@@ -287,7 +281,7 @@ export default function Main() {
           I'm must say that I'm routine oriented.
           I have perfect time management and i like to work as a team.
       </p>
-      <p className='font-raleway font-medium pt-5 lg:text-2xl lg:w-300 xl:w-full lg:pl-10 bg-white text-black'>
+      <p className='font-raleway font-medium pt-5 lg:text-2xl lg:w-300 xl:w-full lg:pl-10 pb-10 bg-white text-black'>
         You can see more things about me at my portfolio which will be publish in near future.
         Until then, enjoy my blog.
       </p>
@@ -296,7 +290,7 @@ export default function Main() {
 
       {/* FOOTER */}
        <footer
-       className="footer top-24 max-md:top-50 border-b text-center border-white grid lg:gap-250 max-md:gap-40 grid-cols-3 grid-rows-1 relative sm:footer-horizontal pt-10 bg-black text-blue-500 border-t font-edu-vic-wa-nt-beginner p-10 text-2xl"
+       className="footer top-24 max-md:top-50 border-b text-center border-white grid lg:gap-250 max-md:gap-40 grid-cols-3 grid-rows-1 relative sm:footer-horizontal pt-10 bg-blue-500 text-black border-t font-edu-vic-wa-nt-beginner p-10 text-2xl"
        id='Contact'>
           <div className='grid pl-50 max-md:pl-0'>
             <h5>Content</h5>
@@ -317,7 +311,7 @@ export default function Main() {
             <a href='#'></a>
           </div>
       </footer>
-          <div className="relative isolate overflow-hidden bg-black py-16 sm:py-24 lg:py-32 top-20 max-md:top-40">
+          <div className="relative isolate overflow-hidden bg-blue-500 py-16 sm:py-24 lg:py-32 top-20 max-md:top-40">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
                 <div className="max-w-xl lg:max-w-lg">
@@ -336,11 +330,11 @@ export default function Main() {
                       required
                       placeholder="Enter your email"
                       autoComplete="email"
-                      className="min-w-0 flex-auto rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6"
+                      className="min-w-0 flex-auto rounded-md bg-blue-700 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-cyan-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6"
                     />
                     <button
                       type="submit"
-                      className="flex-none rounded-md bg-blue-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-cyan-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                      className="flex-none rounded-md bg-blue-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-cyan-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 border-white border-2 transition duration-300"
                     >
                       Subscribe
                     </button>
@@ -352,7 +346,7 @@ export default function Main() {
                       <CalendarDaysIcon aria-hidden="true" className="size-6 text-white" />
                     </div>
                     <dt className="mt-4 text-base font-semibold text-white">Weekly articles</dt>
-                    <dd className="mt-2 text-base/7 text-gray-400">
+                    <dd className="mt-2 text-base/7 text-white">
                       I'm pulbishing every week multiple articles about many topics. Be first to see them out.
                     </dd>
                   </div>
@@ -361,7 +355,7 @@ export default function Main() {
                       <HandRaisedIcon aria-hidden="true" className="size-6 text-white" />
                     </div>
                     <dt className="mt-4 text-base font-semibold text-white">No spam</dt>
-                    <dd className="mt-2 text-base/7 text-gray-400">
+                    <dd className="mt-2 text-base/7 text-white">
                       If you subscribed to our newsletter and later changed your mind, don't worry you can unsubscribed any time.
                     </dd>
                   </div>
@@ -369,7 +363,7 @@ export default function Main() {
               </div>
             </div>
         </div>
-    <aside className="bg-black/90 pl-124 top-20 max-md:top-40 relative max-md:pl-0 max-md:text-lg max-md:text-center">
+    <aside className="bg-white/10 pl-124 top-20 max-md:top-40 relative max-md:pl-0 max-md:text-lg max-md:text-center">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
       </aside>
 </div>
