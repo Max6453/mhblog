@@ -9,48 +9,56 @@ export default function MiamiGP() {
           <ScrollProgress />
             <header>
             <div className="relative inset-0">
-            <h1 className="absolute text-6xl top-82 left-80 z-10 font-josefin-sans max-md:left-7 max-md:top-20 max-md:text-3xl text-blue-500 text-center font-bold">
-                Miami Grand Prix - debriefing
+            <h1 className="absolute text-6xl top-82 left-50 z-10 font-josefin-sans max-md:left-7 max-md:top-20 max-md:text-3xl text-blue-500 text-center font-bold">
+                Emilia-Romagna Grand Prix - debriefing
             </h1>
             <h5 className="absolute text-6xl top-100 left-20 z-10 font-sans max-md:left-0 max-md:top-50 text-center max-md:text-xl text-blue-500 font-bold">
-                Everything that happened in Miami Grand Prix
+                hear everything in eventfull Italian Grand Prix
             </h5>
             <img
-                src="/assets/Miami.avif"
+                src="/assets/Emilia-romagna.webp"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96"
                 alt="Miami Grand Prix"
             />
             </div>
             </header>
-            <div className="bg-white h-screen">
+            <div className="bg-white h-screen pb-10">
                 <span className="text-2xl text-black">Reading time: <span className="text-blue-500">1.55 minutes</span></span>
                 <div className="text-2xl text-center justify-center text-black bg-white">
                 <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300">
-                    We're once again back in magical city of Miami.
-                    This grand prix was until 20th lap really eventfull but quickly lost all action
+                    Emilia-Romagna once again did not dissapoint.
+                    We will talk now about everything that happened in the Emilia-Romagna Grand Prix.
                 </p>
                 <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300">
-                   We started in Miami at 15:00 local time and it was really eventfull lap 1.
-                   MV1 was on pole with LN4 behind him with AKA12 and OP81.
-                   MV1 pushed LN4 of th track causing LN4 to lose handfull of places.
-                   At the end of the lap 1 LN4 was P6. Meanwhile MV1 was trying to gain time on OP81 but the supremacy of Mcl39 is bigger than RB21.
-                   OP81 made his successfull overtake in T1 when he provoked MV1 to lock-up his tyres and made easy pass to first place.
-                   Lando, by the time he successfully overtake cars to be P3.
-                   After the 18th lap, Lando finally made a successfull overtake after many unsuccessfull overtakes.
-                   Now it was only Mclarens to fight with each other.
+                    From the beggining of the weekend, Max Verstappen and his red bull showed signs of speed and possible threat to dominant Mcl39 of Lando Norris and Oscar Piastri.
+                    Right after the start, MV1 saw the oportunity to overtake in T1 because OP81 choose more conservative approach to T1 and MV1 took advantage of it.
+                    MV1 overtook the OP81 and from then on, MV1 shows excellent pace and he was practically unstopable.
+                    Mclaren from the first time this season were slower on average than red bull of MV1.
+                    Soon after, LN4 made great overtake into villenueve chicane (T4) and grabbed the P3.
+                </p>
+                <img src='/assets/Race_Pace.png'
+                className="w-320 h-150 items-center justify-center pt-5 pl-20 left-10 relative max-md:w-200 max-md:left-0 max-md:pl-0 object-cover max-md:h-100"/>
+                <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300"> 
+                    Around the 30th lap, The engine of Esteban Ocon couldn't handled it and blow up causing the virtual safety car (VSC).
+                    The drivers whose pitted sooner such as Charles Leclerc on Oscar Piastri were in serious disadvanatge. Cars which stayed longer on medium had opportunity to pit and change the tires.
+                    So MV1 stayed in P1 and LN4 P2.
+                    In the last 20th laps, the car of Andrea Kimi Antonelli couldn't handled it either and AKA12 DNF causing another this time safety car.
+                    MV1, LN4, LH44 took this advantage and pitted for newer tires. However CL16 and OP81 were once again disadvantaged.
                 </p>
                 <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300"> 
-                  The race begun to get really boring.
-                  And we finally finished the race with OP81 taking the chequered flag and LN4 behind him.
-                  The gap to 3th Verstappen was over 30 seconds.
-                  This year Miami was more entertaining than last one but still it missed some action.
-                  However, I'm still looking forward to next year Miami grand Prix.
+                    The first driver to finish was none other than Max Verstappen.
+                    Second was Lando Norris.
+                    Closing the podium on 3th was Oscar Piastri.
+                </p>
+                <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300 pb-10">
+                   This Years Imola was one to watch with planty of action on the track and also with amazing atmosphere whole weekend.
+                   If this was the last Imola for a long time, then it was a beautifull way to say goodbye to Formula 1.
                 </p>
                 </div>
             </div>
 
              <footer
-       className="footer top-24 max-md:top-150 border-b text-center border-white grid lg:gap-250 max-md:gap-40 grid-cols-3 grid-rows-1 relative sm:footer-horizontal pt-10 bg-black text-blue-500 border-t font-edu-vic-wa-nt-beginner p-10 text-2xl"
+       className="footer relative top-338 max-md:top-640 border-b text-center border-white grid lg:gap-250 max-md:gap-40 grid-cols-3 grid-rows-1 sm:footer-horizontal pt-20 bg-black text-blue-500 border-t font-edu-vic-wa-nt-beginner p-10 text-2xl"
        id='Contact'>
           <div className='grid pl-50 max-md:pl-0'>
             <h5>Content</h5>
@@ -71,7 +79,7 @@ export default function MiamiGP() {
             <a href='#'></a>
           </div>
       </footer>
-          <div className="relative isolate overflow-hidden bg-black py-16 sm:py-24 lg:py-32 top-20 max-md:top-140">
+          <div className="relative isolate overflow-hidden bg-black py-16 sm:py-24 lg:py-32 top-162 max-md:top-385 pt-20">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
                 <div className="max-w-xl lg:max-w-lg">
@@ -123,7 +131,7 @@ export default function MiamiGP() {
               </div>
             </div>
         </div>
-    <aside className="bg-black/90 pl-124 top-20 max-md:top-140 relative max-md:pl-0 max-md:text-lg max-md:text-center">
+    <aside className="bg-black/90 pl-124 top-228 max-md:top-461 relative max-md:pl-0 max-md:text-lg max-md:text-center">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
       </aside>
         </div>

@@ -1,18 +1,23 @@
   'use client'
   import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  AnimatedSpan,
+  Terminal,
+  TypingAnimation,
+} from "@/components/magicui/terminal";
 
 export default function MiamiGP() {
-
     return(
 <div className="bg-white relative">
           <ScrollProgress />
             <header>
             <div className="relative inset-0">
-            <h1 className="absolute text-6xl top-82 left-80 z-10 font-josefin-sans max-md:left-12 max-md:top-20 max-md:text-3xl text-blue-500 text-center font-bold">
+            <h1 className="absolute text-6xl top-82 left-110 z-10 font-josefin-sans max-md:left-12 max-md:top-20 max-md:text-3xl text-blue-500 text-center font-bold">
                 HTML for beginners
             </h1>
-            <h5 className="absolute text-6xl top-100 left-20 z-10 font-sans max-md:left-0 max-md:pl-5 max-md:top-50 text-center max-md:text-xl text-blue-500 font-bold">
+            <h5 className="absolute text-6xl top-100 left-70 z-10 font-sans max-md:left-0 max-md:pl-5 max-md:top-50 text-center max-md:text-xl text-blue-500 font-bold">
                 from fundamentals to advanced
             </h5>
             <img
@@ -26,25 +31,47 @@ export default function MiamiGP() {
                 <span className="text-2xl text-black">Reading time: <span className="text-blue-500">1.55 minutes</span></span>
                 <div className="text-2xl text-center justify-center text-black pt-15 bg-white">
                 <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300">
-                    "I'm looking forward to strong result here in Miami.
-                    Personally i love the track, it gives good vibes both the track and the city and miami really have a good flow with fast corners in 1st sector, slow in 2nd sector and two straights in 3th sector.
-                    Our car should suit the track so i have high hopes for the race"
+                    hey everyone.
+                    My name is Max and here will be quick intro to HTML
                 </p>
+                <h3>What is HTML</h3>
                 <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300">
-                    Pirelli nominated for this race C3, C4 and C5 tyres which are much softer than used last year.
-                    It still looks like a one-stop. A different one-stop - a slightly trickier one-stop, but still a one-stop.
-                    Of course, we won’t know for certain until we run on the track, but the pre-event models still suggest the one-stop race with the Medium and Hard compounds is the quickest.
+                    HTML is Hypertext Markup Language which is primary used in web development.
+                    Whole structure of website is depended on this file.
+                    Over the years, HTML had many versions. Latest version of HTML is HTML5.
                 </p>
-                <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300"> 
-                    We can say that Miami this season will be really unpredictable with chances of rain on saturday and sunday.
-                    Also the softer compound isn't really helping in this situation.
-                    Every team will have hard weekend but you fans, you will be pleased with many actions both on and off track.
+                <h3>HTML samples</h3>
+                <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300">
+                  HTML is best language (many developers are disaggring with a statement that HTML is programming language) to start as student or self-made developer like me :).
+                  It's best to start because of it's simplicity and understanding. 
                 </p>
+              <div className="mockup-code w-200 top-15 rounded-4xl h-190 bg-gray-400 text-start pt-7 pl-5 left-75 relative">
+                <pre><code className="text-wrap">
+                  //every documnt starts with !DOCTYPE html<br/>
+                  !DOCTYPE html<br/>
+                  //You can choose what language your document would be - en, sk, au, etc. <br/>
+                  html lang="en"<br/>
+                  //metadata are going to head of your html document<br/>
+                head<br/>
+                //Decoding of the HTML file(UTF-8 is the best i guess. Never tried anything else.)<br/>
+                  meta charset="UTF-8"<br/>
+                  //This metadata are telling the browser how the HTML file will have viewport so how it would be seen on pc, mobile, tablet etc.<br/>
+                  meta name="viewport" content="width=device-width, initial-scale=1.0"<br/>
+                  //Name of your document<br/>
+                  Document<br/>
+                /head<br/>
+                //Start of main content of your page is in body tag<br/>
+                body<br/>
+                  <br/>
+                /body<br/>
+                /html<br/>
+                </code></pre>
+              </div>
                 </div>
             </div>
 
              <footer
-       className="footer top-24 max-md:top-50 border-b text-center border-white grid lg:gap-250 max-md:gap-40 grid-cols-3 grid-rows-1 relative sm:footer-horizontal pt-10 bg-black text-blue-500 border-t font-edu-vic-wa-nt-beginner p-10 text-2xl"
+       className="footer top-200 max-md:top-50 border-b text-center border-white grid lg:gap-250 max-md:gap-40 grid-cols-3 grid-rows-1 relative sm:footer-horizontal pt-10 bg-black text-blue-500 border-t font-edu-vic-wa-nt-beginner p-10 text-2xl"
        id='Contact'>
           <div className='grid pl-50 max-md:pl-0'>
             <h5>Content</h5>
@@ -65,7 +92,7 @@ export default function MiamiGP() {
             <a href='#'></a>
           </div>
       </footer>
-          <div className="relative isolate overflow-hidden bg-black py-16 sm:py-24 lg:py-32 top-20 max-md:top-40">
+          <div className="relative isolate overflow-hidden bg-black py-16 sm:py-24 lg:py-32 top-100 max-md:top-40">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
                 <div className="max-w-xl lg:max-w-lg">
