@@ -32,15 +32,15 @@ export default function MiamiGP() {
                 <div className="text-2xl text-center justify-center text-black pt-15 bg-white">
                 <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300">
                     hey everyone.
-                    My name is Max and here will be quick intro to HTML
+                    My name is Max and here will be quick intro to HTML.
                 </p>
-                <h3>What is HTML</h3>
-                <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300">
+                <h3 className="font-bold pt-5">What is HTML</h3>
+                <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-5 w-300">
                     HTML is Hypertext Markup Language which is primary used in web development.
                     Whole structure of website is depended on this file.
                     Over the years, HTML had many versions. Latest version of HTML is HTML5.
                 </p>
-                <h3>HTML samples</h3>
+                <h3 className="font-bold pt-5">HTML samples</h3>
                 <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300">
                   HTML is best language (many developers are disaggring with a statement that HTML is programming language) to start as student or self-made developer like me :).
                   It's best to start because of it's simplicity and understanding. 

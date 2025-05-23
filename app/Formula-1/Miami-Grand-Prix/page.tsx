@@ -23,7 +23,7 @@ export default function MiamiGP() {
             </div>
             </header>
             <div className="bg-white h-screen">
-                <span className="text-2xl text-black">Reading time: <span className="text-blue-500">1.55 minutes</span></span>
+                <span className="text-2xl text-black">Reading time: <span className="text-blue-500">1.10 minutes</span></span>
                 <div className="text-2xl text-center justify-center text-black bg-white">
                 <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300">
                     We're once again back in magical city of Miami.

@@ -15,6 +15,22 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
+import {
+  Menubar,
+  MenubarCheckboxItem,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarRadioGroup,
+  MenubarRadioItem,
+  MenubarSeparator,
+  MenubarShortcut,
+  MenubarSub,
+  MenubarSubContent,
+  MenubarSubTrigger,
+  MenubarTrigger,
+} from "@/components/ui/menubar"
+
 
 const navigation = [
   { name: 'About', href: '#About', current: true },
@@ -119,86 +135,175 @@ export default function Main() {
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
             <div className="hidden sm:ml-6 sm:block xl:left-180 max-sm:hidden md:left-100 lg:left-90 max-md:hidden text-xl relative max">
-      <NavigationMenu className='left-21'>
-       <NavigationMenuList>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Blog</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <ListItem href="/docs" title="About">
-                Get to know about the author.
-              </ListItem>
-              <ListItem href="/docs/installation" title="Newsletter">
-                hear more stories from me via email.
-              </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Latest">
-                Latest essays, stories, intriques and more.
-              </ListItem>
-              <ListItem href="#Contact" title="Contact">
-                You can contact me here via multiple choices
-              </ListItem>
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Categories</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[500px] ">
-              {components.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  {component.description}
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-      </NavigationMenuList>
-    </NavigationMenu>
+     <Menubar className='m-2 p-7 px-5 bottom-2 relative'>
+      <MenubarMenu>
+        <MenubarTrigger>Motorsport</MenubarTrigger>
+        <MenubarContent>
+          <MenubarItem>
+            Formula 1 
+          </MenubarItem>
+          <MenubarItem>
+            WEC
+          </MenubarItem>
+          <MenubarSeparator />
+          <MenubarItem>
+            Motorsport hub
+          </MenubarItem>
+        </MenubarContent>
+      </MenubarMenu>
+      <MenubarMenu>
+        <MenubarTrigger>tech</MenubarTrigger>
+        <MenubarContent>
+          <MenubarItem>
+            Iphone
+          </MenubarItem>
+          <MenubarItem>
+            Andorid
+          </MenubarItem>
+          <MenubarSeparator />
+          <MenubarSub>
+            <MenubarSubTrigger>PC</MenubarSubTrigger>
+            <MenubarSubContent>
+              <MenubarItem>OS</MenubarItem>
+              <MenubarSeparator />
+              <MenubarItem>Windows</MenubarItem>
+              <MenubarItem>Linux</MenubarItem>
+              <MenubarItem>MacOS</MenubarItem>
+            </MenubarSubContent>
+          </MenubarSub>
+          <MenubarSeparator />
+          <MenubarItem>Automotive hub</MenubarItem>
+          <MenubarItem>Phones hub</MenubarItem>
+          <MenubarItem>systems hub</MenubarItem>
+        </MenubarContent>
+      </MenubarMenu>
+      <MenubarMenu>
+        <MenubarTrigger>Tutorials</MenubarTrigger>
+        <MenubarContent>
+          <MenubarItem>
+            HTML</MenubarItem>
+          <MenubarItem>
+            CSS</MenubarItem>
+          <MenubarItem>
+            JavaScript
+          </MenubarItem>
+          <MenubarSeparator />
+          <MenubarItem>
+            Cybersecurity
+          </MenubarItem>
+          <MenubarSeparator />
+          <MenubarItem>
+            UI Design
+          </MenubarItem>
+        </MenubarContent>
+      </MenubarMenu>
+      <MenubarMenu>
+        <MenubarTrigger>Around the world</MenubarTrigger>
+        <MenubarContent>
+          <MenubarItem>
+            Games
+          </MenubarItem>
+          <MenubarItem>
+            Movies
+            </MenubarItem>
+            <MenubarItem>
+              Politics
+            </MenubarItem>
+        </MenubarContent>
+      </MenubarMenu>
+    </Menubar>
             </div>
           </div>
         </div>
       </div>
       <DisclosurePanel className="sm:hidden transition-all duration-300 -z-50 border-t top-14 relative left-0 items-start gap-0">
-  <NavigationMenu className='pt-10 bg-white grid grid-cols-2 -z-0 pb-3 pl-30 relative items-start gap-0'>
-      <NavigationMenuList>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Blog</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <ListItem href="/docs" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
-              </ListItem>
-              <ListItem href="/docs/installation" title="Installation">
-                How to install dependencies and structure your app.
-              </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
-                Styles for headings, paragraphs, lists...etc
-              </ListItem>
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Categories</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[500px] ">
-              {components.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  {component.description}
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-      </NavigationMenuList>
-    </NavigationMenu>
+<Menubar className='m-2 p-7 px-5 bottom-2 right-8 relative bg-white'>
+      <MenubarMenu>
+        <MenubarTrigger>Motorsport</MenubarTrigger>
+        <MenubarContent>
+          <MenubarItem>
+            New Tab <MenubarShortcut>⌘T</MenubarShortcut>
+          </MenubarItem>
+          <MenubarItem>
+            New Window <MenubarShortcut>⌘N</MenubarShortcut>
+          </MenubarItem>
+          <MenubarItem disabled>New Incognito Window</MenubarItem>
+          <MenubarSeparator />
+          <MenubarSub>
+            <MenubarSubTrigger>Share</MenubarSubTrigger>
+            <MenubarSubContent>
+              <MenubarItem>Email link</MenubarItem>
+              <MenubarItem>Messages</MenubarItem>
+              <MenubarItem>Notes</MenubarItem>
+            </MenubarSubContent>
+          </MenubarSub>
+          <MenubarSeparator />
+          <MenubarItem>
+            Print... <MenubarShortcut>⌘P</MenubarShortcut>
+          </MenubarItem>
+        </MenubarContent>
+      </MenubarMenu>
+      <MenubarMenu>
+        <MenubarTrigger>tech</MenubarTrigger>
+        <MenubarContent>
+          <MenubarItem>
+            Undo <MenubarShortcut>⌘Z</MenubarShortcut>
+          </MenubarItem>
+          <MenubarItem>
+            Redo <MenubarShortcut>⇧⌘Z</MenubarShortcut>
+          </MenubarItem>
+          <MenubarSeparator />
+          <MenubarSub>
+            <MenubarSubTrigger>Find</MenubarSubTrigger>
+            <MenubarSubContent>
+              <MenubarItem>Search the web</MenubarItem>
+              <MenubarSeparator />
+              <MenubarItem>Find...</MenubarItem>
+              <MenubarItem>Find Next</MenubarItem>
+              <MenubarItem>Find Previous</MenubarItem>
+            </MenubarSubContent>
+          </MenubarSub>
+          <MenubarSeparator />
+          <MenubarItem>Cut</MenubarItem>
+          <MenubarItem>Copy</MenubarItem>
+          <MenubarItem>Paste</MenubarItem>
+        </MenubarContent>
+      </MenubarMenu>
+      <MenubarMenu>
+        <MenubarTrigger>Tutorials</MenubarTrigger>
+        <MenubarContent>
+          <MenubarCheckboxItem>Always Show Bookmarks Bar</MenubarCheckboxItem>
+          <MenubarCheckboxItem checked>
+            Always Show Full URLs
+          </MenubarCheckboxItem>
+          <MenubarSeparator />
+          <MenubarItem inset>
+            Reload <MenubarShortcut>⌘R</MenubarShortcut>
+          </MenubarItem>
+          <MenubarItem disabled inset>
+            Force Reload <MenubarShortcut>⇧⌘R</MenubarShortcut>
+          </MenubarItem>
+          <MenubarSeparator />
+          <MenubarItem inset>Toggle Fullscreen</MenubarItem>
+          <MenubarSeparator />
+          <MenubarItem inset>Hide Sidebar</MenubarItem>
+        </MenubarContent>
+      </MenubarMenu>
+      <MenubarMenu>
+        <MenubarTrigger>Around the world</MenubarTrigger>
+        <MenubarContent>
+          <MenubarRadioGroup value="benoit">
+            <MenubarRadioItem value="andy">Andy</MenubarRadioItem>
+            <MenubarRadioItem value="benoit">Benoit</MenubarRadioItem>
+            <MenubarRadioItem value="Luis">Luis</MenubarRadioItem>
+          </MenubarRadioGroup>
+          <MenubarSeparator />
+          <MenubarItem inset>Edit...</MenubarItem>
+          <MenubarSeparator />
+          <MenubarItem inset>Add Profile...</MenubarItem>
+        </MenubarContent>
+      </MenubarMenu>
+    </Menubar>
       </DisclosurePanel>
     </Disclosure>
     {/* END NAVBAR */}
@@ -211,7 +316,7 @@ export default function Main() {
         <img src='/assets/Emilia-romagna.webp' className='object-cover w-full h-full z-50 rounded-4xl'></img>
         <span className='relative bottom-66 text-xl pl-1 text-white font-bold font-Exo-2'>Emilia-Romagna Grand Prix Debriefing</span>
         <a href='/Formula-1/Emilia-Romagna-Grand-Prix'>
-        <button className='bg-white border border-blue-500 relative bottom-20 max-md:-left-4.5 left-27 text-black font-Exo-2 rounded-full w-25 h-10 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='bg-white border border-blue-500 relative bottom-20 max-md:-left-4.5 left-5 text-black font-Exo-2 rounded-full w-25 h-10 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
           See more</button>
         </a>
       </div>
@@ -235,7 +340,7 @@ export default function Main() {
          <img src='/assets/iPhone-17.jpg' className='object-cover w-full h-full z-50 rounded-4xl'></img>
       <span className='relative bottom-66 text-xl left-5 text-white font-bold font-Exo-2 max-md:-m-3 max-md:bottom-63'>iPhone 17 - Everything you need to know</span>
       <a href='#'>
-      <button className='bg-white border border-blue-500 relative bottom-20 max-md:-left-9 left-25 text-black font-Exo-2 rounded-full w-25 h-10 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+      <button className='bg-white border border-blue-500 relative bottom-20 max-md:-left-9 left-15 text-black font-Exo-2 rounded-full w-25 h-10 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
         See more</button>
       </a>
     </div>
@@ -243,7 +348,7 @@ export default function Main() {
                <img src='/assets/css.png' className='object-cover w-full h-full z-50 rounded-4xl'></img>
       <span className='relative bottom-66 text-xl left-5 text-white font-bold font-Exo-2 text-start'>CSS for beginners</span>
       <a href='#'>
-      <button className='bg-white border border-blue-500 relative bottom-20 max-md:left-20 right-8 text-black font-Exo-2 rounded-full w-25 h-10 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+      <button className='bg-white border border-blue-500 relative bottom-14 max-md:left-20 right-8 text-black font-Exo-2 rounded-full w-25 h-10 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
         See more</button>
       </a>
     </div>
@@ -251,7 +356,7 @@ export default function Main() {
                <img src='/assets/html.jpg' className='object-cover w-full h-full z-50 rounded-4xl'></img>
       <span className='relative bottom-66 text-xl left-5 text-white font-bold font-Exo-2 text-start'>HTML for beginners</span>
       <a href='/Tutorials-and-tips/HTML-for-beginners'>
-      <button className='bg-white border border-blue-500 relative bottom-20 max-md:left-20 right-13 text-black font-Exo-2 rounded-full w-25 h-10 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+      <button className='bg-white border border-blue-500 relative bottom-14 max-md:left-20 right-13 text-black font-Exo-2 rounded-full w-25 h-10 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
         See more</button>
       </a>
     </div>
