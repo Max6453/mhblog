@@ -30,6 +30,15 @@ import {
   MenubarSubTrigger,
   MenubarTrigger,
 } from "@/components/ui/menubar"
+import {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from "@/components/ui/pagination"
 
 
 const navigation = [
@@ -114,12 +123,12 @@ export default function Main() {
 
   return (
   <div>  
-    <Disclosure as="nav" className="bg-white h-40 max-md:h-30 relative max-md:fixed max-md:w-full z-50">
+    <Disclosure as="nav" className="bg-white h-40 max-md:h-35 relative max-md:fixed max-md:w-full z-50">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative h-16 justify-between pt-6">
           <h1 className='text-5xl font-Exo-2 text-black'>MHBlog</h1>
           <h3 className='text-xl font-edu-vic-wa-nt-beginner pt-2 text-black'>Essays and itriques from many types of media</h3>
-          <a href='' className='w-30 h-30 absolute'>
+          <a href='' className='w-30 h-30 absolute max-md:hidden'>
           <img src="/Image.png" className='bottom-24 left-125 items-center relative sm:hidden md:hidden max-md:hidden lg:block hover:scale-90 duration-400'/>
           </a>
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -216,30 +225,20 @@ export default function Main() {
           </div>
         </div>
       </div>
-      <DisclosurePanel className="sm:hidden transition-all duration-300 -z-50 border-t top-14 relative left-0 items-start gap-0">
-<Menubar className='m-2 p-7 px-5 bottom-2 right-8 relative bg-white'>
+      <DisclosurePanel className="sm:hidden transition-all duration-300 -z-50 border-t top-19 w-100 relative left-0 items-start gap-0">
+<Menubar className='m-2 p-7 px-5 bottom-2 right-8 relative bg-white w-full'>
       <MenubarMenu>
         <MenubarTrigger>Motorsport</MenubarTrigger>
         <MenubarContent>
           <MenubarItem>
-            New Tab <MenubarShortcut>⌘T</MenubarShortcut>
+            Formula 1 
           </MenubarItem>
           <MenubarItem>
-            New Window <MenubarShortcut>⌘N</MenubarShortcut>
+            WEC
           </MenubarItem>
-          <MenubarItem disabled>New Incognito Window</MenubarItem>
-          <MenubarSeparator />
-          <MenubarSub>
-            <MenubarSubTrigger>Share</MenubarSubTrigger>
-            <MenubarSubContent>
-              <MenubarItem>Email link</MenubarItem>
-              <MenubarItem>Messages</MenubarItem>
-              <MenubarItem>Notes</MenubarItem>
-            </MenubarSubContent>
-          </MenubarSub>
           <MenubarSeparator />
           <MenubarItem>
-            Print... <MenubarShortcut>⌘P</MenubarShortcut>
+            Motorsport hub
           </MenubarItem>
         </MenubarContent>
       </MenubarMenu>
@@ -247,60 +246,60 @@ export default function Main() {
         <MenubarTrigger>tech</MenubarTrigger>
         <MenubarContent>
           <MenubarItem>
-            Undo <MenubarShortcut>⌘Z</MenubarShortcut>
+            Iphone
           </MenubarItem>
           <MenubarItem>
-            Redo <MenubarShortcut>⇧⌘Z</MenubarShortcut>
+            Andorid
           </MenubarItem>
           <MenubarSeparator />
           <MenubarSub>
-            <MenubarSubTrigger>Find</MenubarSubTrigger>
+            <MenubarSubTrigger>PC</MenubarSubTrigger>
             <MenubarSubContent>
-              <MenubarItem>Search the web</MenubarItem>
+              <MenubarItem>OS</MenubarItem>
               <MenubarSeparator />
-              <MenubarItem>Find...</MenubarItem>
-              <MenubarItem>Find Next</MenubarItem>
-              <MenubarItem>Find Previous</MenubarItem>
+              <MenubarItem>Windows</MenubarItem>
+              <MenubarItem>Linux</MenubarItem>
+              <MenubarItem>MacOS</MenubarItem>
             </MenubarSubContent>
           </MenubarSub>
           <MenubarSeparator />
-          <MenubarItem>Cut</MenubarItem>
-          <MenubarItem>Copy</MenubarItem>
-          <MenubarItem>Paste</MenubarItem>
+          <MenubarItem>Automotive hub</MenubarItem>
+          <MenubarItem>Phones hub</MenubarItem>
+          <MenubarItem>systems hub</MenubarItem>
         </MenubarContent>
       </MenubarMenu>
       <MenubarMenu>
         <MenubarTrigger>Tutorials</MenubarTrigger>
         <MenubarContent>
-          <MenubarCheckboxItem>Always Show Bookmarks Bar</MenubarCheckboxItem>
-          <MenubarCheckboxItem checked>
-            Always Show Full URLs
-          </MenubarCheckboxItem>
-          <MenubarSeparator />
-          <MenubarItem inset>
-            Reload <MenubarShortcut>⌘R</MenubarShortcut>
-          </MenubarItem>
-          <MenubarItem disabled inset>
-            Force Reload <MenubarShortcut>⇧⌘R</MenubarShortcut>
+          <MenubarItem>
+            HTML</MenubarItem>
+          <MenubarItem>
+            CSS</MenubarItem>
+          <MenubarItem>
+            JavaScript
           </MenubarItem>
           <MenubarSeparator />
-          <MenubarItem inset>Toggle Fullscreen</MenubarItem>
+          <MenubarItem>
+            Cybersecurity
+          </MenubarItem>
           <MenubarSeparator />
-          <MenubarItem inset>Hide Sidebar</MenubarItem>
+          <MenubarItem>
+            UI Design
+          </MenubarItem>
         </MenubarContent>
       </MenubarMenu>
       <MenubarMenu>
         <MenubarTrigger>Around the world</MenubarTrigger>
         <MenubarContent>
-          <MenubarRadioGroup value="benoit">
-            <MenubarRadioItem value="andy">Andy</MenubarRadioItem>
-            <MenubarRadioItem value="benoit">Benoit</MenubarRadioItem>
-            <MenubarRadioItem value="Luis">Luis</MenubarRadioItem>
-          </MenubarRadioGroup>
-          <MenubarSeparator />
-          <MenubarItem inset>Edit...</MenubarItem>
-          <MenubarSeparator />
-          <MenubarItem inset>Add Profile...</MenubarItem>
+          <MenubarItem>
+            Games
+          </MenubarItem>
+          <MenubarItem>
+            Movies
+            </MenubarItem>
+            <MenubarItem>
+              Politics
+            </MenubarItem>
         </MenubarContent>
       </MenubarMenu>
     </Menubar>
@@ -312,6 +311,14 @@ export default function Main() {
 
       <h1 className='lg:text-7xl max-md:text-5xl text-black relative max-md:top-40 lg:pt-10 pl-10 font-Exo-2'>latest</h1>
     <div className="relative top-20 max-md:top-50 max-sm:pl-11.5 max-md:pl-11.5 grid lg:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
+      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
+        <img src='/assets/monaco.jpg' className='object-cover w-full h-full z-50 rounded-4xl'></img>
+        <span className='relative bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Monaco Grand Prix Debriefing</span>
+        <a href='/Formula-1/Monaco-Grand-Prix'>
+        <button className='bg-white border border-blue-500 relative bottom-20 max-md:-left-4.5 left-28 text-black font-Exo-2 rounded-full w-25 h-10 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+          See more</button>
+        </a>
+      </div>
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
         <img src='/assets/Emilia-romagna.webp' className='object-cover w-full h-full z-50 rounded-4xl'></img>
         <span className='relative bottom-66 text-xl pl-1 text-white font-bold font-Exo-2'>Emilia-Romagna Grand Prix Debriefing</span>
@@ -333,14 +340,6 @@ export default function Main() {
       <span className='relative bottom-66 text-xl pl-10 text-white font-bold font-Exo-2'>WEC - 6 hours of Spa</span>
       <a href='#'>
       <button className='bg-white border border-blue-500 relative bottom-14 max-md:bottom-20 max-md:left-20 right-25 text-black font-Exo-2 rounded-full w-25 h-10 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
-        See more</button>
-      </a>
-    </div>
-    <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
-         <img src='/assets/iPhone-17.jpg' className='object-cover w-full h-full z-50 rounded-4xl'></img>
-      <span className='relative bottom-66 text-xl left-5 text-white font-bold font-Exo-2 max-md:-m-3 max-md:bottom-63'>iPhone 17 - Everything you need to know</span>
-      <a href='#'>
-      <button className='bg-white border border-blue-500 relative bottom-20 max-md:-left-9 left-15 text-black font-Exo-2 rounded-full w-25 h-10 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
         See more</button>
       </a>
     </div>

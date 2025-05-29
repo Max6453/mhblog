@@ -36,7 +36,7 @@ export default function MiamiGP() {
                     Mclaren from the first time this season were slower on average than red bull of MV1.
                     Soon after, LN4 made great overtake into villenueve chicane (T4) and grabbed the P3.
                 </p>
-                <img src='/assets/Race_Pace.png'
+                <img src='/assets/Race_Pace-Imola.png'
                 className="w-320 h-150 items-center justify-center pt-5 pl-20 left-10 relative max-md:w-200 max-md:left-0 max-md:pl-0 object-cover max-md:h-100"/>
                 <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300"> 
                     Around the 30th lap, The engine of Esteban Ocon couldn't handled it and blow up causing the virtual safety car (VSC).
@@ -58,7 +58,7 @@ export default function MiamiGP() {
             </div>
 
              <footer
-       className="footer relative top-338 max-md:top-640 border-b text-center border-white grid lg:gap-250 max-md:gap-40 grid-cols-3 grid-rows-1 sm:footer-horizontal pt-20 bg-black text-blue-500 border-t font-edu-vic-wa-nt-beginner p-10 text-2xl"
+       className="footer relative top-338 max-md:top-650 border-b text-center border-white grid lg:gap-250 max-md:gap-40 grid-cols-3 grid-rows-1 sm:footer-horizontal pt-20 bg-black text-blue-500 border-t font-edu-vic-wa-nt-beginner p-10 text-2xl"
        id='Contact'>
           <div className='grid pl-50 max-md:pl-0'>
             <h5>Content</h5>
@@ -79,7 +79,7 @@ export default function MiamiGP() {
             <a href='#'></a>
           </div>
       </footer>
-          <div className="relative isolate overflow-hidden bg-black py-16 sm:py-24 lg:py-32 top-162 max-md:top-385 pt-20">
+          <div className="relative isolate overflow-hidden bg-black py-16 sm:py-24 lg:py-32 top-162 max-md:top-380 pt-20">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
                 <div className="max-w-xl lg:max-w-lg">
@@ -131,7 +131,7 @@ export default function MiamiGP() {
               </div>
             </div>
         </div>
-    <aside className="bg-black/90 pl-124 top-228 max-md:top-461 relative max-md:pl-0 max-md:text-lg max-md:text-center">
+    <aside className="bg-black/90 pl-124 top-228 max-md:top-447 relative max-md:pl-0 max-md:text-lg max-md:text-center">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
       </aside>
         </div>
