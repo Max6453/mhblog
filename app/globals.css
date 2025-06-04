@@ -127,3 +127,42 @@ html{
     @apply bg-background text-foreground;
   }
 }
+
+/*
+LOADER CSS
+*/
+ .loader {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: #ffffff; /* Background color of the loader */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      opacity: 1; /* Start fully transparent */
+      transition: opacity 2s ease-in-out; /* Smooth transition for fade-in and fade-out */
+    }
+    
+    /* Fully visible state for the loader */
+    .loader.visible {
+      opacity: 1; /* Fully visible */
+    }
+    
+    /* Hidden state for fade-out effect */
+    .loader.hidden {
+      opacity: 0; /* Fully transparent */
+      pointer-events: none; /* Ensure it's not interactive */
+    }
+    
+    /* Logo animation (optional spinning) */
+    .loader-logo {
+      width: full; /* Adjust the size */
+      /*animation: spin 2s linear infinite; /* Example animation */
+    }
+    /* Main content (initially hidden) */
+    .content {
+      display: none;
+    }
