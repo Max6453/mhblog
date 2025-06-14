@@ -5,8 +5,10 @@ import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 import * as React from "react"
- 
+import { Dialog, DialogPanel } from '@headlessui/react'
+import { AnimatePresence, motion } from "framer-motion"
 import { cn } from "@/lib/utils"
+import Banner from "@/components/ui/Banner";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -16,95 +18,12 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-import {
-  Menubar,
-  MenubarCheckboxItem,
-  MenubarContent,
-  MenubarItem,
-  MenubarMenu,
-  MenubarRadioGroup,
-  MenubarRadioItem,
-  MenubarSeparator,
-  MenubarShortcut,
-  MenubarSub,
-  MenubarSubContent,
-  MenubarSubTrigger,
-  MenubarTrigger,
-} from "@/components/ui/menubar"
-import {
-  Pagination,
-  PaginationContent,
-  PaginationEllipsis,
-  PaginationItem,
-  PaginationLink,
-  PaginationNext,
-  PaginationPrevious,
-} from "@/components/ui/pagination"
-
 
 const navigation = [
   { name: 'About', href: '#About', current: true },
   { name: 'Latest', href: '#', current: false },
   { name: 'Categories', href: '#', current: false },
   { name: 'Contact', href: '#Contact', current: false },
-]
-
-const components: { title: string; href: string; description: string }[] = [
-  {
-    title: "Formula 1",
-    href: "/Formula-1",
-    description:
-      "A pinnacle of motorsport",
-  },
-  {
-    title: "WEC",
-    href: "/WEC",
-    description:
-      "World Endurance Championship. The most competetive field in history of WEC is live right now. Don't miss it.",
-  },
-  {
-    title: "Motorsport",
-    href: "/Motorsport",
-    description:
-      "the hub of motorsport. Wheter to know more about upcomming regulations in F1 or how recent races in WEC ended, here you will know it sooner than anyone",
-  },
-  {
-    title: "Tech",
-    href: "/Tech",
-    description: "From electronics to automotive. Choice is yours",
-  },
-  {
-    title: "Around the world",
-    href: "/Around-the-world",
-    description:
-      "Other topics and essays you can see",
-  },
-  {
-    title: "Tutorials and tips",
-    href: "/Tutorials-and-tips",
-    description:
-      "Even i can teach so head to the docs section and get to know about web development",
-  },
-]
-const posts = [
-  {
-    id: 1,
-    title: 'Boost your conversion rate',
-    href: '#',
-    description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
-    category: { title: 'Marketing', href: '#' },
-    author: {
-      name: 'Michael Foster',
-      role: 'Co-Founder / CTO',
-      href: '#',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
-  },
-  // More posts...
 ]
 
 const ListItem = React.forwardRef<
@@ -139,193 +58,85 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 export default function Main() {
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
-  <div> 
-    <Disclosure as="nav" className="bg-white h-40 max-md:h-35 relative max-md:fixed max-md:w-full z-50">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div className="relative h-16 justify-between pt-6">
-          <h1 className='text-5xl font-Exo-2 text-black'>MHBlog</h1>
-          <h3 className='text-xl font-edu-vic-wa-nt-beginner pt-2 text-black'>Essays and itriques from many types of media</h3>
-          <a href='' className='w-30 h-30 absolute max-md:hidden'>
-          <img src="/Image.png" className='bottom-24 left-125 items-center relative sm:hidden md:hidden max-md:hidden lg:block hover:scale-90 duration-400'/>
-          </a>
-          <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            {/* Mobile menu button*/}
-            <DisclosureButton className="group relative inline-flex items-end max-md:left-165 sm:left-150 max-sm:left-70 pt-10 justify-center rounded-md p-2 text-black hover:bg-white hover:text-blue-500 focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
-              <span className="absolute -inset-0.5" />
+  <div>
+    <Banner text="LATEST EVENTS: 24 Hours of Le Man's - WEC; Formula 1 Canadian Grand Prix - Qualifying at 10pm CET; NHL Edmonton Oilers vs Florida Panthers at 2am CET"
+    speed={25} /> 
+<header className="relative inset-x-0 top-0 z-50">
+         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8 h-30 bg-white">
+          <div className='text-5xl text-black font-edu-vic-wa-nt-beginner'>
+            <h1 className='font-bold font-raleway'>MHBlog</h1>
+            <h3 className='text-3xl'>Latest news and intriques across many topics</h3>
+          </div>
+          <img src='/Image.png'
+          className='h-30 w-auto hover:scale-110 transition-all duration-300 left-163 absolute'/>
+          <div className="absolute right-5 pt-10 pr-5">
+            <button
+              type="button"
+              onClick={() => setMobileMenuOpen(true)}
+              className="pb-10 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 z-50 hover:text-blue-500 animation duration-300 transform transition-all"
+            >
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon aria-hidden="true" className="block size-10 group-data-open:hidden transition-all duration-300" />
-              <XMarkIcon aria-hidden="true" className="hidden size-10 group-data-open:block transition-all duration-300" />
-            </DisclosureButton>
+              <Bars3Icon aria-hidden="true" className="size-10" />
+            </button>
           </div>
-          </div>
-          <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex shrink-0 items-center">
-            <div className="hidden sm:ml-6 sm:block xl:left-180 max-sm:hidden md:left-100 lg:left-90 max-md:hidden text-xl relative max">
-     <Menubar className='m-2 p-7 px-5 bottom-2 relative'>
-      <MenubarMenu>
-        <MenubarTrigger>Motorsport</MenubarTrigger>
-        <MenubarContent>
-          <MenubarItem>
-            Formula 1 
-          </MenubarItem>
-          <MenubarItem>
-            WEC
-          </MenubarItem>
-          <MenubarSeparator />
-          <MenubarItem>
-            Motorsport hub
-          </MenubarItem>
-        </MenubarContent>
-      </MenubarMenu>
-      <MenubarMenu>
-        <MenubarTrigger>tech</MenubarTrigger>
-        <MenubarContent>
-          <MenubarItem>
-            Iphone
-          </MenubarItem>
-          <MenubarItem>
-            Andorid
-          </MenubarItem>
-          <MenubarSeparator />
-          <MenubarSub>
-            <MenubarSubTrigger>PC</MenubarSubTrigger>
-            <MenubarSubContent>
-              <MenubarItem>OS</MenubarItem>
-              <MenubarSeparator />
-              <MenubarItem>Windows</MenubarItem>
-              <MenubarItem>Linux</MenubarItem>
-              <MenubarItem>MacOS</MenubarItem>
-            </MenubarSubContent>
-          </MenubarSub>
-          <MenubarSeparator />
-          <MenubarItem>Automotive hub</MenubarItem>
-          <MenubarItem>Phones hub</MenubarItem>
-          <MenubarItem>systems hub</MenubarItem>
-        </MenubarContent>
-      </MenubarMenu>
-      <MenubarMenu>
-        <MenubarTrigger>Tutorials</MenubarTrigger>
-        <MenubarContent>
-          <MenubarItem>
-            HTML</MenubarItem>
-          <MenubarItem>
-            CSS</MenubarItem>
-          <MenubarItem>
-            JavaScript
-          </MenubarItem>
-          <MenubarSeparator />
-          <MenubarItem>
-            Cybersecurity
-          </MenubarItem>
-          <MenubarSeparator />
-          <MenubarItem>
-            UI Design
-          </MenubarItem>
-        </MenubarContent>
-      </MenubarMenu>
-      <MenubarMenu>
-        <MenubarTrigger>Around the world</MenubarTrigger>
-        <MenubarContent>
-          <MenubarItem>
-            Games
-          </MenubarItem>
-          <MenubarItem>
-            Movies
-            </MenubarItem>
-            <MenubarItem>
-              Politics
-            </MenubarItem>
-        </MenubarContent>
-      </MenubarMenu>
-    </Menubar>
-            </div>
+        </nav>
+       <AnimatePresence>
+        {mobileMenuOpen && (
+        <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="block static">
+        <div className="fixed inset-0 z-50 bg-black/20" />
+        <motion.div
+          initial={{ x: '0', opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          exit={{ x: '0', opacity: 0 }}
+          transition={{ type:"spring", stiffness: 300, damping: 30, duration: 0.6 }}
+          className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto opacity-10 text-center text-white bg-black/50 px-6 py-6 sm:max-w-full sm:ring-1 sm:ring-gray-900/10"
+        >
+    <DialogPanel>
+      <div className="flex items-center justify-between">
+        <a href="#" className="-m-1.5 p-1.5">
+          <span className="sr-only">Your Company</span>
+          <img
+            alt=""
+            src="./Image.png"
+            className="h-20 w-auto"
+          />
+        </a>
+        <button
+          type="button"
+          onClick={() => setMobileMenuOpen(false)}
+          className=" rounded-md pr-4 pb-12 text-blue-500 hover:text-red-500 transition-all duration-300"
+        >
+          <span className="sr-only">Close menu</span>
+          <XMarkIcon aria-hidden="true" className="size-10" />
+        </button>
+      </div>
+      <div className="mt-6 flow-root">
+        <div className="-my-6 divide-y divide-gray-500/10">
+          <div className="space-y-2 py-6">
+            {navigation.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="-mx-3 block rounded-lg px-3 py-2 font-semibold text-white opacity-90 text-6xl m-8 hover:text-blue-500 transition-all duration-250"
+              >
+                {item.name}
+              </a>
+            ))}
           </div>
         </div>
       </div>
-      <DisclosurePanel className="sm:hidden transition-all duration-300 -z-50 border-t top-19 w-100 relative left-0 items-start gap-0">
-<Menubar className='m-2 p-7 px-5 bottom-2 right-8 relative bg-white w-full'>
-      <MenubarMenu>
-        <MenubarTrigger>Motorsport</MenubarTrigger>
-        <MenubarContent>
-          <MenubarItem>
-            Formula 1 
-          </MenubarItem>
-          <MenubarItem>
-            WEC
-          </MenubarItem>
-          <MenubarSeparator />
-          <MenubarItem>
-            Motorsport hub
-          </MenubarItem>
-        </MenubarContent>
-      </MenubarMenu>
-      <MenubarMenu>
-        <MenubarTrigger>tech</MenubarTrigger>
-        <MenubarContent>
-          <MenubarItem>
-            Iphone
-          </MenubarItem>
-          <MenubarItem>
-            Andorid
-          </MenubarItem>
-          <MenubarSeparator />
-          <MenubarSub>
-            <MenubarSubTrigger>PC</MenubarSubTrigger>
-            <MenubarSubContent>
-              <MenubarItem>OS</MenubarItem>
-              <MenubarSeparator />
-              <MenubarItem>Windows</MenubarItem>
-              <MenubarItem>Linux</MenubarItem>
-              <MenubarItem>MacOS</MenubarItem>
-            </MenubarSubContent>
-          </MenubarSub>
-          <MenubarSeparator />
-          <MenubarItem>Automotive hub</MenubarItem>
-          <MenubarItem>Phones hub</MenubarItem>
-          <MenubarItem>systems hub</MenubarItem>
-        </MenubarContent>
-      </MenubarMenu>
-      <MenubarMenu>
-        <MenubarTrigger>Tutorials</MenubarTrigger>
-        <MenubarContent>
-          <MenubarItem>
-            HTML</MenubarItem>
-          <MenubarItem>
-            CSS</MenubarItem>
-          <MenubarItem>
-            JavaScript
-          </MenubarItem>
-          <MenubarSeparator />
-          <MenubarItem>
-            Cybersecurity
-          </MenubarItem>
-          <MenubarSeparator />
-          <MenubarItem>
-            UI Design
-          </MenubarItem>
-        </MenubarContent>
-      </MenubarMenu>
-      <MenubarMenu>
-        <MenubarTrigger>Around the world</MenubarTrigger>
-        <MenubarContent>
-          <MenubarItem>
-            Games
-          </MenubarItem>
-          <MenubarItem>
-            Movies
-            </MenubarItem>
-            <MenubarItem>
-              Politics
-            </MenubarItem>
-        </MenubarContent>
-      </MenubarMenu>
-    </Menubar>
-      </DisclosurePanel>
-    </Disclosure>
+      </DialogPanel>
+    </motion.div>
+  </Dialog>
+        )}
+</AnimatePresence>
+</header>
     {/* END NAVBAR */}
 
 {/* LATEST */}
+<div className='relative h-dvh'>
       <h1 className='lg:text-7xl max-md:text-5xl text-black relative max-md:top-40 lg:pt-10 pl-10 font-Exo-2'>latest</h1>
     <div className="relative top-20 max-md:top-50 max-sm:pl-11.5 max-md:pl-11.5 grid lg:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
@@ -385,10 +196,11 @@ export default function Main() {
       </a>
     </div>
     </div>
+  </div>
     {/* END LATEST */}
 
-    {/* ABOUT */}
-    <div className='bg-white max-md:top-70 h-screen relative min-w-full bottom-10' id='About'>
+    {/* ABOUT 
+    <div className='bg-white h-screen relative min-w-full' id='About'>
       <h1 className='max-md:text-5xl lg:text-5xl text-black font-Exo-2 max-md:text-center text-start md:pl-10 md:pt-10'>About</h1>
       <p className='font-raleway font-medium pt-5 pl-2 lg:text-2xl lg:w-300 lg:pl-10 text-black'>
         Hey everyone.<br/>
@@ -423,32 +235,13 @@ export default function Main() {
         Until then, enjoy my blog.
       </p>
     </div>
-      {/* END ABOUT */}
+       END ABOUT */}
 
       {/* FOOTER */}
        <footer
-       className="footer top-24 max-md:top-50 border-b text-center border-white grid lg:gap-250 max-md:gap-40 grid-cols-3 grid-rows-1 relative sm:footer-horizontal pt-10 bg-blue-500 text-black border-t font-edu-vic-wa-nt-beginner p-10 text-2xl"
+       className="relative top-100 h-1/2 w-full max-md:top-50 border-b text-center border-white sm:footer-horizontal pt-10 bg-blue-500 text-black border-t font-edu-vic-wa-nt-beginner p-10 text-2xl"
        id='Contact'>
-          <div className='grid pl-50 max-md:pl-0'>
-            <h5>Content</h5>
-            <hr></hr>
-            <a href='#' className='hover:text-white transition duration-300'>Motorsport</a>
-            <a href='#' className='hover:text-white transition duration-300'>Tech</a>
-            <a href='#' className='hover:text-white transition duration-300'>Gaming</a>
-            <a href='#' className='hover:text-white transition duration-300'>Articles</a>
-            <a href='#' className='hover:text-white transition duration-300'>Categories</a>
-          </div>
-          <div className='grid'>
-            <h5>Contact</h5>
-            <hr></hr>
-            <a href='mailto:maximharvancik@gmail.com' className='hover:text-white transition duration-300'>My mail</a>
-            <a href='https://www.instagram.com/harvancik_maxim/' className='hover:text-white transition duration-300'>instagram</a>
-            <a href='https://x.com/HarvancikMaxim' className='hover:text-white transition duration-300'>twitter (X)</a>
-            <a href='https://www.linkedin.com/in/maxim-harvancik-b1512a294/' className='hover:text-white transition duration-300'>LinkedIn</a>
-            <a href='#'></a>
-          </div>
-      </footer>
-          <div className="relative isolate overflow-hidden bg-blue-500 py-16 sm:py-24 lg:py-32 top-20 max-md:top-40">
+          <div className="relative isolate overflow-hidden py-16 sm:py-24 lg:py-32 max-md:top-40">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
                 <div className="max-w-xl lg:max-w-lg">
@@ -477,7 +270,7 @@ export default function Main() {
                     </button>
                   </div>
                 </div>
-                <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
+                <dl className="grid relative grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
                   <div className="flex flex-col items-start">
                     <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
                       <CalendarDaysIcon aria-hidden="true" className="size-6 text-white" />
@@ -500,7 +293,8 @@ export default function Main() {
               </div>
             </div>
         </div>
-    <aside className="bg-white/10 pl-124 top-20 max-md:top-40 relative max-md:pl-0 max-md:text-lg max-md:text-center">
+      </footer>
+    <aside className="relative bg-white/10 pl-130 top-94 max-md:top-40 max-md:pl-0 max-md:text-lg max-md:text-center">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
       </aside>
 </div>
