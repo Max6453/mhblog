@@ -62,7 +62,7 @@ export default function Main() {
   return (
   <div>
     <Banner text="LATEST EVENTS: 24 Hours of Le Man's - WEC; Formula 1 Canadian Grand Prix - Qualifying at 10pm CET; NHL Edmonton Oilers vs Florida Panthers at 2am CET"
-    speed={25} /> 
+    speed={25}/> 
 <header className="relative inset-x-0 top-0 z-50">
          <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8 h-30 bg-white">
           <div className='text-5xl text-black font-edu-vic-wa-nt-beginner'>
@@ -70,8 +70,8 @@ export default function Main() {
             <h3 className='text-3xl'>Latest news and intriques across many topics</h3>
           </div>
           <img src='/Image.png'
-          className='h-30 w-auto hover:scale-110 transition-all duration-300 left-163 absolute'/>
-          <div className="absolute right-5 pt-10 pr-5">
+          className='h-30 w-auto hover:scale-110 right-163 transition-all duration-300 relative max-md:hidden lg:block'/>
+          <div className="absolute right-5 pt-10 pr-5 max-md:pr-0 max-md:right-0 max-md:pt-25">
             <button
               type="button"
               onClick={() => setMobileMenuOpen(true)}
@@ -239,9 +239,9 @@ export default function Main() {
 
       {/* FOOTER */}
        <footer
-       className="relative top-100 h-1/2 w-full max-md:top-50 border-b text-center border-white sm:footer-horizontal pt-10 bg-blue-500 text-black border-t font-edu-vic-wa-nt-beginner p-10 text-2xl"
+       className="relative top-100 h-full w-full max-md:top-420 border-b text-center border-white sm:footer-horizontal pt-10 bg-blue-500 text-black border-t font-edu-vic-wa-nt-beginner p-10 text-2xl"
        id='Contact'>
-          <div className="relative isolate overflow-hidden py-16 sm:py-24 lg:py-32 max-md:top-40">
+          <div className="relative isolate overflow-hidden py-16 sm:py-24 lg:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
                 <div className="max-w-xl lg:max-w-lg">
@@ -294,7 +294,7 @@ export default function Main() {
             </div>
         </div>
       </footer>
-    <aside className="relative bg-white/10 pl-130 top-94 max-md:top-40 max-md:pl-0 max-md:text-lg max-md:text-center">
+    <aside className="relative bg-white/10 pl-130 top-94 max-md:top-406 max-md:pl-0 max-md:text-lg max-md:text-center">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
       </aside>
 </div>
