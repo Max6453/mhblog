@@ -9,60 +9,63 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { AnimatePresence, motion } from "framer-motion"
 import { cn } from "@/lib/utils"
 import Banner from "@/components/ui/Banner";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
+import { LineWobble } from 'ldrs/react'
+import 'ldrs/react/LineWobble.css'
 
 const navigation = [
-  { name: 'About', href: '#About', current: true },
-  { name: 'Latest', href: '#', current: false },
+  { name: 'Portfolio', href: '#About', current: true },
+  { name: 'Latest', href: '#latest', current: false },
   { name: 'Categories', href: '#', current: false },
   { name: 'Contact', href: '#Contact', current: false },
 ]
 
-const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
-  return (
-    <li>
-      <NavigationMenuLink asChild>
-        <a
-          ref={ref}
-          className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className
-          )}
-          {...props}
-        >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </p>
-        </a>
-      </NavigationMenuLink>
-    </li>
-  )
-})
-ListItem.displayName = "ListItem"
+const LoadingScreen: React.FC = () => (
+  <div
+    style={{
+      position: "fixed",
+      top: 0,
+      left: 0,
+      width: "100vw",
+      height: "100vh",
+      background: "rgba(0,0,0,0.0)",
+      color: "#fff",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      fontSize: "2rem",
+      zIndex: 9999,
+      transition: "all",
+      animation:"ease-in-out",
+      animationDuration:"300ms"
+    }}
+  >
+   <LineWobble
+  size="80"
+  stroke="5"
+  bgOpacity="0.1"
+  speed="1.75"
+  color="blue " 
+/>
+  </div>
+);
 
 
-
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ')
-}
 export default function Main() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false) 
+      const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading (e.g., fetching data)
+    const timer = setTimeout(() => setLoading(false), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) return <LoadingScreen />;
+
   return (
   <div>
-    <Banner text="LATEST EVENTS: 24 Hours of Le Man's - WEC; Formula 1 Canadian Grand Prix - Qualifying at 10pm CET; NHL Edmonton Oilers vs Florida Panthers at 2am CET"
-    speed={25}/> 
+    {/*<Banner text="LATEST EVENTS: 24 Hours of Le Man's - WEC; Formula 1 Canadian Grand Prix - Qualifying at 10pm CET; NHL Edmonton Oilers vs Florida Panthers at 2am CET"
+    speed={25}/> */}
 <header className="relative inset-x-0 top-0 z-50">
          <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8 h-30 bg-white">
           <div className='text-5xl text-black font-edu-vic-wa-nt-beginner'>
@@ -136,7 +139,7 @@ export default function Main() {
     {/* END NAVBAR */}
 
 {/* LATEST */}
-<div className='relative h-dvh'>
+<div className='relative h-dvh' id='Latest'>
       <h1 className='lg:text-7xl max-md:text-5xl text-black relative max-md:top-40 lg:pt-10 pl-10 font-Exo-2'>latest</h1>
     <div className="relative top-20 max-md:top-50 max-sm:pl-11.5 max-md:pl-11.5 grid lg:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
