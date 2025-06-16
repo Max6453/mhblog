@@ -143,58 +143,74 @@ export default function Main() {
       <h1 className='lg:text-7xl max-md:text-5xl text-black relative max-md:top-40 lg:pt-10 pl-10 font-Exo-2'>latest</h1>
     <div className="relative top-20 max-md:top-50 max-sm:pl-11.5 max-md:pl-11.5 grid lg:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
+        <img src='/assets/Canada.webp' className='object-cover w-full h-full z-50 rounded-4xl'/>
+        <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Canadian Grand Prix Debriefing</h3>
+        <a href='/Formula-1/Canadian-Grand-Prix'>
+        <button className='relative bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+          See more</button>
+        </a>
+      </div>
+                  <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
+        <img src='/assets/Le-Mans.jpg' className='object-cover w-full h-full z-50 rounded-4xl'/>
+        <h3 className='relative text-xl  bottom-66 pl-8 text-white font-bold font-Exo-2'>24 Hours of Le Man's</h3>
+        <a href='/Motorsport/WEC/Le-Mans'>
+        <button className='relative bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+          See more</button>
+        </a>
+      </div>
+      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
         <img src='/assets/Spain.jpg' className='object-cover w-full h-full z-50 rounded-4xl'></img>
-        <span className='relative bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Spanish Grand Prix Debriefing</span>
+        <h3 className='relative bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Spanish Grand Prix Debriefing</h3>
         <a href='/Formula-1/Spanish-Grand-Prix'>
-        <button className='bg-white border border-blue-500 relative bottom-20 max-md:-left-4.5 left-28 text-black font-Exo-2 rounded-full w-25 h-10 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='relative bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
           See more</button>
         </a>
       </div>
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
         <img src='/assets/monaco.jpg' className='object-cover w-full h-full z-50 rounded-4xl'></img>
-        <span className='relative bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Monaco Grand Prix Debriefing</span>
+        <h3 className='relative bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Monaco Grand Prix Debriefing</h3>
         <a href='/Formula-1/Monaco-Grand-Prix'>
-        <button className='bg-white border border-blue-500 relative bottom-20 max-md:-left-4.5 left-28 text-black font-Exo-2 rounded-full w-25 h-10 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='relative bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
           See more</button>
         </a>
       </div>
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
         <img src='/assets/Emilia-romagna.webp' className='object-cover w-full h-full z-50 rounded-4xl'></img>
-        <span className='relative bottom-66 text-xl pl-1 text-white font-bold font-Exo-2'>Emilia-Romagna Grand Prix Debriefing</span>
+        <h3 className='relative bottom-66 text-xl pl-1 text-white font-bold font-Exo-2'>Emilia-Romagna Grand Prix Debriefing</h3>
         <a href='/Formula-1/Emilia-Romagna-Grand-Prix'>
-        <button className='bg-white border border-blue-500 relative bottom-20 max-md:-left-4.5 left-5 text-black font-Exo-2 rounded-full w-25 h-10 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='relative bottom-28 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
           See more</button>
         </a>
       </div>
     <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
       <img src='/assets/Miami.avif' className='object-cover w-full h-full z-50 rounded-4xl'></img>
-      <span className='relative bottom-66 text-xl pl-10 text-white font-bold font-Exo-2'>Miami Grand Prix Debriefing</span>
+      <h3 className='relative bottom-66 text-xl pl-10 text-white font-bold font-Exo-2'>Miami Grand Prix Debriefing</h3>
       <a href='/Formula-1/Miami-Grand-Prix'>
-      <button className='bg-white border border-blue-500 relative bottom-20 max-md:-left-4.5 left-30 text-black font-Exo-2 rounded-full w-25 h-10 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='relative bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
         See more</button>
       </a>
     </div>
     <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
         <img src='/assets/WEC-SPA.jpg' className='object-cover w-full h-full z-50 rounded-4xl'></img>
-      <span className='relative bottom-66 text-xl pl-10 text-white font-bold font-Exo-2'>WEC - 6 hours of Spa</span>
+      <h3 className='relative bottom-66 text-xl pl-10 text-white font-bold font-Exo-2'>WEC - 6 hours of Spa</h3>
       <a href='#'>
-      <button className='bg-white border border-blue-500 relative bottom-14 max-md:bottom-20 max-md:left-20 right-25 text-black font-Exo-2 rounded-full w-25 h-10 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='relative bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
         See more</button>
       </a>
     </div>
-    <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
+    <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500 hidden">
                <img src='/assets/css.png' className='object-cover w-full h-full z-50 rounded-4xl'></img>
-      <span className='relative bottom-66 text-xl left-5 text-white font-bold font-Exo-2 text-start'>CSS for beginners</span>
+      <h3 className='relative bottom-66 text-xl left-5 text-white font-bold font-Exo-2 text-start'>CSS for beginners</h3>
       <a href='#'>
-      <button className='bg-white border border-blue-500 relative bottom-14 max-md:left-20 right-8 text-black font-Exo-2 rounded-full w-25 h-10 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='relative bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
         See more</button>
       </a>
     </div>
-    <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
+    <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500 hidden">
                <img src='/assets/html.jpg' className='object-cover w-full h-full z-50 rounded-4xl'></img>
-      <span className='relative bottom-66 text-xl left-5 text-white font-bold font-Exo-2 text-start'>HTML for beginners</span>
+      <h3 className='relative bottom-66 text-xl left-5 text-white font-bold font-Exo-2 text-start'>HTML for beginners</h3>
       <a href='/Tutorials-and-tips/HTML-for-beginners'>
-      <button className='bg-white border border-blue-500 relative bottom-14 max-md:left-20 right-13 text-black font-Exo-2 rounded-full w-25 h-10 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='relative bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
         See more</button>
       </a>
     </div>
