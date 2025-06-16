@@ -56,7 +56,7 @@ export default function Main() {
 
   useEffect(() => {
     // Simulate loading (e.g., fetching data)
-    const timer = setTimeout(() => setLoading(false), 2000);
+    const timer = setTimeout(() => setLoading(false), 1500);
     return () => clearTimeout(timer);
   }, []);
 
