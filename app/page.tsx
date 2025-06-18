@@ -11,12 +11,13 @@ import { cn } from "@/lib/utils"
 import Banner from "@/components/ui/Banner";
 import { LineWobble } from 'ldrs/react'
 import 'ldrs/react/LineWobble.css'
+import { supabase } from '@/supabaseClient'
 
 const navigation = [
-  { name: 'Portfolio', href: '#About', current: true },
   { name: 'Latest', href: '#latest', current: false },
-  { name: 'Categories', href: '#', current: false },
+  { name: 'Categories', href: '/Categories', current: false },
   { name: 'Contact', href: '#Contact', current: false },
+  { name: 'Portfolio', href: '#About', current: true },
 ]
 
 const LoadingScreen: React.FC = () => (
@@ -62,6 +63,7 @@ export default function Main() {
 
   if (loading) return <LoadingScreen />;
 
+
   return (
   <div>
     {/*<Banner text="LATEST EVENTS: 24 Hours of Le Man's - WEC; Formula 1 Canadian Grand Prix - Qualifying at 10pm CET; NHL Edmonton Oilers vs Florida Panthers at 2am CET"
@@ -70,10 +72,10 @@ export default function Main() {
          <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8 h-30 bg-white">
           <div className='text-5xl text-black font-edu-vic-wa-nt-beginner'>
             <h1 className='font-bold font-raleway'>MHBlog</h1>
-            <h3 className='text-3xl'>Latest news and intriques across many topics</h3>
+            <h3 className='text-3xl max-sm:text-2xl max-sm:w-60'>Latest news and intriques across many topics</h3>
           </div>
           <img src='/Image.png'
-          className='h-30 w-auto hover:scale-110 right-163 transition-all duration-300 relative max-md:hidden lg:block'/>
+          className='h-30 w-auto hover:scale-110 right-175 transition-all duration-300 absolute sm:hidden md:hidden lg:hidden xl:block'/>
           <div className="absolute right-5 pt-10 pr-5 max-md:pr-0 max-md:right-0 max-md:pt-25">
             <button
               type="button"
@@ -140,21 +142,21 @@ export default function Main() {
 
 {/* LATEST */}
 <div className='relative h-dvh' id='Latest'>
-      <h1 className='lg:text-7xl max-md:text-5xl text-black relative max-md:top-40 lg:pt-10 pl-10 font-Exo-2'>latest</h1>
-    <div className="relative top-20 max-md:top-50 max-sm:pl-11.5 max-md:pl-11.5 grid lg:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
+      <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-black relative  max-md:top-10 lg:pt-10 pl-10 font-Exo-2'>latest</h1>
+    <div className="relative top-20 max-sm:pl-11.5 lg:pl-12 max-md:pl-11.5 md:pl-0 grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
         <img src='/assets/Canada.webp' className='object-cover w-full h-full z-50 rounded-4xl'/>
         <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Canadian Grand Prix Debriefing</h3>
         <a href='/Formula-1/Canadian-Grand-Prix'>
-        <button className='relative bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
           See more</button>
         </a>
       </div>
-                  <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
+      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
         <img src='/assets/Le-Mans.jpg' className='object-cover w-full h-full z-50 rounded-4xl'/>
         <h3 className='relative text-xl  bottom-66 pl-8 text-white font-bold font-Exo-2'>24 Hours of Le Man's</h3>
         <a href='/Motorsport/WEC/Le-Mans'>
-        <button className='relative bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='relative lg:bottom-20 max-md:bottom-20 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
           See more</button>
         </a>
       </div>
@@ -162,7 +164,7 @@ export default function Main() {
         <img src='/assets/Spain.jpg' className='object-cover w-full h-full z-50 rounded-4xl'></img>
         <h3 className='relative bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Spanish Grand Prix Debriefing</h3>
         <a href='/Formula-1/Spanish-Grand-Prix'>
-        <button className='relative bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
           See more</button>
         </a>
       </div>
@@ -170,7 +172,7 @@ export default function Main() {
         <img src='/assets/monaco.jpg' className='object-cover w-full h-full z-50 rounded-4xl'></img>
         <h3 className='relative bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Monaco Grand Prix Debriefing</h3>
         <a href='/Formula-1/Monaco-Grand-Prix'>
-        <button className='relative bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
           See more</button>
         </a>
       </div>
@@ -178,7 +180,7 @@ export default function Main() {
         <img src='/assets/Emilia-romagna.webp' className='object-cover w-full h-full z-50 rounded-4xl'></img>
         <h3 className='relative bottom-66 text-xl pl-1 text-white font-bold font-Exo-2'>Emilia-Romagna Grand Prix Debriefing</h3>
         <a href='/Formula-1/Emilia-Romagna-Grand-Prix'>
-        <button className='relative bottom-28 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='relative lg:bottom-27 max-md:bottom-27 md:bottom-25 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
           See more</button>
         </a>
       </div>
@@ -186,7 +188,7 @@ export default function Main() {
       <img src='/assets/Miami.avif' className='object-cover w-full h-full z-50 rounded-4xl'></img>
       <h3 className='relative bottom-66 text-xl pl-10 text-white font-bold font-Exo-2'>Miami Grand Prix Debriefing</h3>
       <a href='/Formula-1/Miami-Grand-Prix'>
-        <button className='relative bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
         See more</button>
       </a>
     </div>
@@ -194,7 +196,7 @@ export default function Main() {
         <img src='/assets/WEC-SPA.jpg' className='object-cover w-full h-full z-50 rounded-4xl'></img>
       <h3 className='relative bottom-66 text-xl pl-10 text-white font-bold font-Exo-2'>WEC - 6 hours of Spa</h3>
       <a href='#'>
-        <button className='relative bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='relative lg:bottom-20 max-md:bottom-20 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
         See more</button>
       </a>
     </div>
@@ -202,7 +204,7 @@ export default function Main() {
                <img src='/assets/css.png' className='object-cover w-full h-full z-50 rounded-4xl'></img>
       <h3 className='relative bottom-66 text-xl left-5 text-white font-bold font-Exo-2 text-start'>CSS for beginners</h3>
       <a href='#'>
-        <button className='relative bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='relative lg:bottom-20 max-md:bottom-25 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
         See more</button>
       </a>
     </div>
@@ -210,7 +212,7 @@ export default function Main() {
                <img src='/assets/html.jpg' className='object-cover w-full h-full z-50 rounded-4xl'></img>
       <h3 className='relative bottom-66 text-xl left-5 text-white font-bold font-Exo-2 text-start'>HTML for beginners</h3>
       <a href='/Tutorials-and-tips/HTML-for-beginners'>
-        <button className='relative bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='relative lg:bottom-20 max-md:bottom-20 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
         See more</button>
       </a>
     </div>
@@ -258,7 +260,7 @@ export default function Main() {
 
       {/* FOOTER */}
        <footer
-       className="relative top-100 h-full w-full max-md:top-420 border-b text-center border-white sm:footer-horizontal pt-10 bg-blue-500 text-black border-t font-edu-vic-wa-nt-beginner p-10 text-2xl"
+       className="relative lg:top-140 md:top-200 max-md:top-210 max-sm:top-430 h-full w-full border-b text-center border-white sm:footer-horizontal pt-10 bg-blue-500 text-black border-t font-edu-vic-wa-nt-beginner p-10 text-2xl"
        id='Contact'>
           <div className="relative isolate overflow-hidden py-16 sm:py-24 lg:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -284,6 +286,7 @@ export default function Main() {
                     <button
                       type="submit"
                       className="flex-none rounded-md bg-blue-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-cyan-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 border-white border-2 transition duration-300"
+                      id='submitBtn'
                     >
                       Subscribe
                     </button>
@@ -313,7 +316,7 @@ export default function Main() {
             </div>
         </div>
       </footer>
-    <aside className="relative bg-white/10 pl-130 top-94 max-md:top-406 max-md:pl-0 max-md:text-lg max-md:text-center">
+    <aside className="relative bg-white/10 text-center items-baseline lg:top-140 md:top-200 max-md:top-210 max-sm:top-430 max-md:text-lg max-md:text-center">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
       </aside>
 </div>

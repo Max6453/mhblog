@@ -29,7 +29,7 @@ const raleway = Raleway({
 
 export const metadata: Metadata = {
   title: "MHBlog",
-  description: "Blog, essays and itriques for many topics from political views to racing",
+  description: "Blog ",
   authors: [{ name: "Maxim harvančík"}],
   manifest: "manifest.json",
   icons: "favicon.ico"
