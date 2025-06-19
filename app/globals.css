@@ -52,7 +52,7 @@ html{
 
 :root {
   --radius: 0.625rem;
-  --background: rgb(0, 166, 255);
+  --background: rgb(0, 0, 0);
   --foreground: rgb(255, 255, 255);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -165,4 +165,18 @@ LOADER CSS
     /* Main content (initially hidden) */
     .content {
       display: none;
+    }
+
+    ::-webkit-scrollbar{
+      background: rgb(255, 255, 255);
+      box-shadow: 10px 10px;
+      width: 10px;
+    }
+    ::-webkit-scrollbar-thumb{
+      background: #505050;
+      border-radius: 20px;
+      width: 15px;
+    }
+    ::-webkit-scrollbar-corner{
+      border-radius: 15px;
     }

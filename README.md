@@ -1,3 +1,3 @@
-MHBlog
+##About 
 
-Main codebase for MHBlog website
+MHBlog is a blog where i will write articles about many topics from motorsport, latest technologies to even politics.

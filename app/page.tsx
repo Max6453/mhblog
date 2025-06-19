@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
-import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
+import { Bars2Icon, CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 import * as React from "react"
@@ -12,6 +12,7 @@ import Banner from "@/components/ui/Banner";
 import { LineWobble } from 'ldrs/react'
 import 'ldrs/react/LineWobble.css'
 import { supabase } from '@/supabaseClient'
+import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 
 const navigation = [
   { name: 'Latest', href: '#latest', current: false },
@@ -45,7 +46,7 @@ const LoadingScreen: React.FC = () => (
   stroke="5"
   bgOpacity="0.1"
   speed="1.75"
-  color="blue " 
+  color="white" 
 />
   </div>
 );
@@ -69,21 +70,23 @@ export default function Main() {
     {/*<Banner text="LATEST EVENTS: 24 Hours of Le Man's - WEC; Formula 1 Canadian Grand Prix - Qualifying at 10pm CET; NHL Edmonton Oilers vs Florida Panthers at 2am CET"
     speed={25}/> */}
 <header className="relative inset-x-0 top-0 z-50">
-         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8 h-30 bg-white">
-          <div className='text-5xl text-black font-edu-vic-wa-nt-beginner'>
+         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8 h-30 bg-gray-200 shadow-2xl shadow-white">
+          <div className='text-5xl text-neutral-950 font-edu-vic-wa-nt-beginner'>
             <h1 className='font-bold font-raleway'>MHBlog</h1>
             <h3 className='text-3xl max-sm:text-2xl max-sm:w-60'>Latest news and intriques across many topics</h3>
           </div>
-          <img src='/Image.png'
+          <img src='/mobileIcon-navbar.png'
           className='h-30 w-auto hover:scale-110 right-175 transition-all duration-300 absolute sm:hidden md:hidden lg:hidden xl:block'/>
           <div className="absolute right-5 pt-10 pr-5 max-md:pr-0 max-md:right-0 max-md:pt-25">
             <button
+            id='openBtn'
               type="button"
               onClick={() => setMobileMenuOpen(true)}
-              className="pb-10 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 z-50 hover:text-blue-500 animation duration-300 transform transition-all"
+              className="pb-10 icon-default inline-flex items-center justify-center rounded-md p-2.5 text-neutral-950 z-50 animation duration-300 transform transition-all"
             >
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon aria-hidden="true" className="size-10" />
+              <Bars3Icon aria-hidden="true" className="size-10 block hover:-scale-y-110 animation duration-300 transition-all transform" />
+
             </button>
           </div>
         </nav>
@@ -104,17 +107,17 @@ export default function Main() {
           <span className="sr-only">Your Company</span>
           <img
             alt=""
-            src="./Image.png"
+            src="./mobileIcon-black.png"
             className="h-20 w-auto"
           />
         </a>
         <button
           type="button"
           onClick={() => setMobileMenuOpen(false)}
-          className=" rounded-md pr-4 pb-12 text-blue-500 hover:text-red-500 transition-all duration-300"
+          className=" rounded-md pr-4 pb-12 text-white hover:text-neutral-950 transition-all duration-300"
         >
           <span className="sr-only">Close menu</span>
-          <XMarkIcon aria-hidden="true" className="size-10" />
+          <XMarkIcon aria-hidden="true" className="size-10 hover:rotate-180 duration-300" />
         </button>
       </div>
       <div className="mt-6 flow-root">
@@ -124,7 +127,7 @@ export default function Main() {
               <a
                 key={item.name}
                 href={item.href}
-                className="-mx-3 block rounded-lg px-3 py-2 font-semibold text-white opacity-90 text-6xl m-8 hover:text-blue-500 transition-all duration-250"
+                className="-mx-3 block rounded-lg px-3 py-2 font-semibold text-white opacity-90 text-6xl m-8 hover:text-neutral-700 transition-all duration-250"
               >
                 {item.name}
               </a>
@@ -142,13 +145,14 @@ export default function Main() {
 
 {/* LATEST */}
 <div className='relative h-dvh' id='Latest'>
-      <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-black relative  max-md:top-10 lg:pt-10 pl-10 font-Exo-2'>latest</h1>
+  <div className="absolute top-0 z-[-2] h-330 w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+      <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white relative  max-md:top-10 lg:pt-10 pl-10 font-Exo-2'>latest</h1>
     <div className="relative top-20 max-sm:pl-11.5 lg:pl-12 max-md:pl-11.5 md:pl-0 grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
         <img src='/assets/Canada.webp' className='object-cover w-full h-full z-50 rounded-4xl'/>
         <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Canadian Grand Prix Debriefing</h3>
         <a href='/Formula-1/Canadian-Grand-Prix'>
-        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
           See more</button>
         </a>
       </div>
@@ -156,7 +160,7 @@ export default function Main() {
         <img src='/assets/Le-Mans.jpg' className='object-cover w-full h-full z-50 rounded-4xl'/>
         <h3 className='relative text-xl  bottom-66 pl-8 text-white font-bold font-Exo-2'>24 Hours of Le Man's</h3>
         <a href='/Motorsport/WEC/Le-Mans'>
-        <button className='relative lg:bottom-20 max-md:bottom-20 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='relative lg:bottom-20 max-md:bottom-20 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
           See more</button>
         </a>
       </div>
@@ -164,7 +168,7 @@ export default function Main() {
         <img src='/assets/Spain.jpg' className='object-cover w-full h-full z-50 rounded-4xl'></img>
         <h3 className='relative bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Spanish Grand Prix Debriefing</h3>
         <a href='/Formula-1/Spanish-Grand-Prix'>
-        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
           See more</button>
         </a>
       </div>
@@ -172,7 +176,7 @@ export default function Main() {
         <img src='/assets/monaco.jpg' className='object-cover w-full h-full z-50 rounded-4xl'></img>
         <h3 className='relative bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Monaco Grand Prix Debriefing</h3>
         <a href='/Formula-1/Monaco-Grand-Prix'>
-        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
           See more</button>
         </a>
       </div>
@@ -180,7 +184,7 @@ export default function Main() {
         <img src='/assets/Emilia-romagna.webp' className='object-cover w-full h-full z-50 rounded-4xl'></img>
         <h3 className='relative bottom-66 text-xl pl-1 text-white font-bold font-Exo-2'>Emilia-Romagna Grand Prix Debriefing</h3>
         <a href='/Formula-1/Emilia-Romagna-Grand-Prix'>
-        <button className='relative lg:bottom-27 max-md:bottom-27 md:bottom-25 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='relative lg:bottom-27 max-md:bottom-27 md:bottom-25 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
           See more</button>
         </a>
       </div>
@@ -188,7 +192,7 @@ export default function Main() {
       <img src='/assets/Miami.avif' className='object-cover w-full h-full z-50 rounded-4xl'></img>
       <h3 className='relative bottom-66 text-xl pl-10 text-white font-bold font-Exo-2'>Miami Grand Prix Debriefing</h3>
       <a href='/Formula-1/Miami-Grand-Prix'>
-        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
         See more</button>
       </a>
     </div>
@@ -196,7 +200,7 @@ export default function Main() {
         <img src='/assets/WEC-SPA.jpg' className='object-cover w-full h-full z-50 rounded-4xl'></img>
       <h3 className='relative bottom-66 text-xl pl-10 text-white font-bold font-Exo-2'>WEC - 6 hours of Spa</h3>
       <a href='#'>
-        <button className='relative lg:bottom-20 max-md:bottom-20 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='relative lg:bottom-20 max-md:bottom-20 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
         See more</button>
       </a>
     </div>
@@ -204,7 +208,7 @@ export default function Main() {
                <img src='/assets/css.png' className='object-cover w-full h-full z-50 rounded-4xl'></img>
       <h3 className='relative bottom-66 text-xl left-5 text-white font-bold font-Exo-2 text-start'>CSS for beginners</h3>
       <a href='#'>
-        <button className='relative lg:bottom-20 max-md:bottom-25 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='relative lg:bottom-20 max-md:bottom-25 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
         See more</button>
       </a>
     </div>
@@ -212,12 +216,12 @@ export default function Main() {
                <img src='/assets/html.jpg' className='object-cover w-full h-full z-50 rounded-4xl'></img>
       <h3 className='relative bottom-66 text-xl left-5 text-white font-bold font-Exo-2 text-start'>HTML for beginners</h3>
       <a href='/Tutorials-and-tips/HTML-for-beginners'>
-        <button className='relative lg:bottom-20 max-md:bottom-20 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition duration-300'>
+        <button className='relative lg:bottom-20 max-md:bottom-20 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
         See more</button>
       </a>
     </div>
     </div>
-  </div>
+   </div>
     {/* END LATEST */}
 
     {/* ABOUT 
@@ -260,7 +264,7 @@ export default function Main() {
 
       {/* FOOTER */}
        <footer
-       className="relative lg:top-140 md:top-200 max-md:top-210 max-sm:top-430 h-full w-full border-b text-center border-white sm:footer-horizontal pt-10 bg-blue-500 text-black border-t font-edu-vic-wa-nt-beginner p-10 text-2xl"
+       className="relative lg:top-100 md:top-200 max-md:top-210 max-sm:top-430 h-full w-full text-center sm:footer-horizontal pt-10 bg-gradient-to-b from-neutral-950 via-neutral-950 to-gray-900 text-black font-edu-vic-wa-nt-beginner p-10 text-2xl"
        id='Contact'>
           <div className="relative isolate overflow-hidden py-16 sm:py-24 lg:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -281,11 +285,11 @@ export default function Main() {
                       required
                       placeholder="Enter your email"
                       autoComplete="email"
-                      className="min-w-0 flex-auto rounded-md bg-blue-700 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-cyan-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6"
+                      className="min-w-0 flex-auto rounded-md bg-transparent px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-white focus:outline-2 border-2 focus:-outline-offset-2 focus:outline-white sm:text-sm/6"
                     />
                     <button
                       type="submit"
-                      className="flex-none rounded-md bg-blue-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-cyan-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 border-white border-2 transition duration-300"
+                      className="flex-none rounded-md bg-transparent px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-white hover:text-black focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-300 border-2 border-white transition duration-300"
                       id='submitBtn'
                     >
                       Subscribe
@@ -312,12 +316,28 @@ export default function Main() {
                     </dd>
                   </div>
                 </dl>
+                                <div className='relative left-65'>
+                  <h3 className='text-white'>Follow me on my journey</h3>
+                  <ul className='flex gap-7 relative pt-10 left-60'>
+                  <li>
+                  <a href='https://www.instagram.com/harvancik_maxim/'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className='size-10'>
+                  <path fill="#ffffff" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                  </svg></a></li>
+                  <li>
+                    <a href='https://www.linkedin.com/in/maxim-harvancik-b1512a294/'>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className='size-10'>
+                      <path fill="#ffffff" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                      </svg></a></li>
+                  <li><a href='#'></a></li>
+                  </ul>
+                </div>
               </div>
             </div>
         </div>
       </footer>
-    <aside className="relative bg-white/10 text-center items-baseline lg:top-140 md:top-200 max-md:top-210 max-sm:top-430 max-md:text-lg max-md:text-center">
+    <aside className="relative bg-gray-900 text-center items-baseline pr-20 lg:top-100 md:top-200 max-md:top-210 max-sm:top-430 max-md:text-lg max-md:text-center">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
+        <span>Web version: 1.5.3</span>
       </aside>
 </div>
   )

@@ -9,10 +9,10 @@ export default function MiamiGP() {
           <ScrollProgress />
             <header>
             <div className="relative inset-0">
-            <h1 className="absolute text-6xl top-82 left-50 z-10 font-josefin-sans max-md:left-7 max-md:top-20 max-md:text-3xl text-blue-500 text-center font-bold">
+            <h1 className="absolute text-6xl top-82 left-50 z-10 font-josefin-sans max-md:left-7 items-baseline max-md:top-20 md:text-3xl sm:text-xl lg:text-6xl max-md:text-3xl text-blue-500 text-center font-bold">
                 Canadian Grand Prix - debriefing
             </h1>
-            <h5 className="absolute text-6xl top-100 left-20 z-10 font-sans max-md:left-0 max-md:top-50 text-center max-md:text-xl text-blue-500 font-bold">
+            <h5 className="absolute text-6xl top-100 left-20 z-10 font-sans max-md:left-0 max-md:top-50 md:text-3xl sm:text-xl lg:text-6xl text-center max-md:text-xl text-blue-500 font-bold">
                 hear everything in eventfull Canadian Grand Prix
             </h5>
             <img
@@ -24,30 +24,30 @@ export default function MiamiGP() {
             </header>
             <div className="bg-white h-screen pb-10">
                 <span className="text-2xl text-black">Reading time: <span className="text-blue-500">1.55 minutes</span></span>
-                <div className="text-2xl text-center justify-center text-black bg-white">
-                <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300">
+                <div className="text-2xl justify-center text-black bg-white lg:w-371 text-start">
+                <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15">
                     This year's canadian grand prix was underwhelming.
                 </p>
-                <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300">
+                <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15">
                     Mclaren's were for the firstv time this season struggling with the car.
                     However the mercedes capitalised on this opportunity. 
                     Red bull and max Verstappen were once again in a fight for the win.
                     Ferrari were incompetent. 
                 </p>
-                <img src='/assets/Race_Pace-Imola.png'
+                <img src='/assets/cars-group-photo.webp'
                 className="w-320 h-150 items-center justify-center pt-5 pl-20 left-10 relative max-md:w-200 max-md:left-0 max-md:pl-0 object-cover max-md:h-100"/>
-                <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300"> 
+                <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15"> 
                     Race start was OK. Antonelli overtook Oscar Piastri for the 3th place. 
                     Russell had an amazing start.
                     Ferrari...not so much.
                     Apart from Hamilton hitting a otter which cost him 0.5s/lap, nothing really happened
                 </p>
-                <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300"> 
+                <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15"> 
                     This year's grand prix was fight not on track but on pitwall. It was a strategic battle between the teams.
                     Mclaren firstly capitalised with Norris on reversed strategy. ferrari once again screwed up the strategy for the Leclerc.
                     From the start it was a long game.
                 </p>
-                <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300 pb-10">
+                <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 pb-10">
                    In 64th lap, Entertainment begun. Mclarens collided on finish line.
                    An beautifull duel ended with unfortunate DNF of Lando Norris who practically drove to back of Piastri's car causing him a front wing damage and sending him to the wall.
                    Everyone said it is not matter of if but when. There you have it. In the 10th race of the year.
@@ -56,7 +56,7 @@ export default function MiamiGP() {
             </div>
 
                     <footer
-                    className="relative lg:top-180 md:top-200 max-md:top-210 max-sm:top-430 h-full w-full border-b text-center border-white sm:footer-horizontal pt-10 bg-blue-500 text-black border-t font-edu-vic-wa-nt-beginner p-10 text-2xl"
+                    className="relative lg:top-180  min-md:top-160 max-md:top-300 max-sm:top-308 sm:top-300 h-full w-full border-b text-center border-white sm:footer-horizontal pt-10 bg-blue-500 text-black border-t font-edu-vic-wa-nt-beginner p-10 text-2xl"
                     id='Contact'>
                        <div className="relative isolate overflow-hidden py-16 sm:py-24 lg:py-32">
                          <div className="mx-auto max-w-7xl px-6 lg:px-8">

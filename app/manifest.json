@@ -4,12 +4,14 @@
     "description":"MHBlog is a place where you can see essays and opinions on many topics from racing to politics",
     "icons": [
         {
-            "src": "/mobileIcon.png",
+            "src": "/Image-Black.png",
             "sizes": "96x96",
             "type": "image/png"
         }
     ],
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "display": "standalone"
+    "display": "standalone",
+    "manifest version": "3"
+
 }
