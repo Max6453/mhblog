@@ -66,7 +66,7 @@ export default function Main() {
 
 
   return (
-  <div>
+  <div className='bg-neutral-950'>
     {/*<Banner text="LATEST EVENTS: 24 Hours of Le Man's - WEC; Formula 1 Canadian Grand Prix - Qualifying at 10pm CET; NHL Edmonton Oilers vs Florida Panthers at 2am CET"
     speed={25}/> */}
 <header className="relative inset-x-0 top-0 z-50">
@@ -145,7 +145,7 @@ export default function Main() {
 
 {/* LATEST */}
 <div className='relative h-dvh' id='Latest'>
-  <div className="absolute top-0 z-[-2] h-330 w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+  <div className="absolute top-0 z-[-2] h-370 w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
       <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white relative  max-md:top-10 lg:pt-10 pl-10 font-Exo-2'>latest</h1>
     <div className="relative top-20 max-sm:pl-11.5 lg:pl-12 max-md:pl-11.5 md:pl-0 grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
@@ -224,48 +224,52 @@ export default function Main() {
    </div>
     {/* END LATEST */}
 
-    {/* ABOUT 
-    <div className='bg-white h-screen relative min-w-full' id='About'>
-      <h1 className='max-md:text-5xl lg:text-5xl text-black font-Exo-2 max-md:text-center text-start md:pl-10 md:pt-10'>About</h1>
-      <p className='font-raleway font-medium pt-5 pl-2 lg:text-2xl lg:w-300 lg:pl-10 text-black'>
-        Hey everyone.<br/>
-        My name is Max and I'm 17 years old. I'm from Žilina, Slovakia.
-        This blog was created with a purpose to learn new skills and progress in my learning in web development.
-        Now in lower section you can get to know me and when i finally publish my portfolio, you can see more about me.<br>
-        </br>
-        My biggest passion is programming and motorsport. Those two things (and tech) will be the most popular topic on my website.<br/>
-        My journey with coding begun in 2022 when i needed a hobby. 
-        I wanted to go to the school which specialized in programming but i wasn't accepted. Those from Slovakia known.
-        So i started with simple websites and portfolios.
-        Soon after i started to learn python for brief moment because i could trough python and library called FastF1 gather data and make telemetries from it.
-        I'm still doing it but not as much as creating and deploying websites.<br/>
-        My proudest project is <a className='font-black hover:text-blue-500' href='https://pure-rxcing.vercel.app'>pure rxcing website</a> (its not official website PLEASE DO NOT TAKE IT SERIOUSLY).
-        
-      </p>
-      <p className='font-raleway font-medium pt-5 lg:text-2xl lg:w-300 lg:pl-10 bg-white text-black'>
-        I'm proficient in HTML, CSS.<br/>
-        I'm advanced in Javascript and it's framework - React and beginner in next.js.<br/>
-        I know basics of SQL. I can work in mySQL, postgreSQL, mongoDB.<br/>
-        For design i use figma.<br/>
-        And also basics of python i control.<br/>
-      </p>
-      <p className='font-raleway font-medium pt-5 lg:text-2xl lg:w-300 lg:pl-10 xl:w-full bg-white text-black'>
-          Whole section about me was intented to be written as I talking to you.
-          But I can assure you when i comes to work, I'm really profesional.
-          I'm must say that I'm routine oriented.
-          I have perfect time management and i like to work as a team.
-      </p>
-      <p className='font-raleway font-medium pt-5 lg:text-2xl lg:w-300 xl:w-full lg:pl-10 pb-10 bg-white text-black'>
-        You can see more things about me at my portfolio which will be publish in near future.
-        Until then, enjoy my blog.
-      </p>
+    {/* EVENTS */}
+    <div className='relative h-screen bg-neutral-950 lg:top-140 md:top-200 max-md:top-200 max-sm:top-420 grid grid-cols-2 max-md:grid-cols-1 max-sm:grid-cols-1 z-10'>
+      <div className='grid relative lg:grid-cols-1 lg:grid-rows-2 md:grid-cols-1 md:grid-rows-1 sm:grid-cols-1 sm:grid-rows-1 text-white pt-10 '>
+      <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white font-Exo-2 pl-5'>Upcoming events</h1>
+        <div className=' h-30 m-2 rounded-br-2xl transition-opacity duration-150 pl-5'>
+          <h3 className='text-4xl pt-10 max-sm:text-2xl'>24 Hours of Nurburgring - IGTC</h3>
+        </div>
+        <div className='h-30 m-2 rounded-br-2xl pl-5'>
+          <h3 className='text-4xl pt-10 max-sm:text-2xl'>Formula 1 Austrian Grand Prix</h3>
+        </div>
+        <div className='h-30 m-2 rounded-br-2xl pl-5'>
+          <h3 className='text-4xl pt-7 max-sm:text-2xl'>AWS Dev Hour: Learn Generative AI from Scratch!</h3>
+          </div>
+        <div className='h-30 m-2 rounded-br-2xl pl-5'>
+          <h3 className='text-4xl pt-10 max-sm:text-2xl'>
+            Google Cloud Summit Süd 2025 in München
+          </h3>
+        </div>
+      </div>
+      <div className='grid relative w-2/3 max-sm:w-full max-sm:left-0 bg-neutral-950 lg:left-50 md:left-20 lg:grid-cols-1 lg:grid-rows-1 md:grid-cols-1 md:grid-rows-1 sm:grid-cols-1 sm:grid-rows-1 text-white pt-10'>
+        <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white font-Exo-2 '>Most Popular</h1>
+      <a href='/Motorsport/WEC/Le-Mans'>
+        <div className='h-30 m-2 rounded-bl-2xl pr-5'>
+          <h3 className='text-4xl pt-10 max-md:text-3xl link link-underline link-underline-black'>24 Hours of Le Man's</h3>
+        </div>
+        </a>
+        <a href='/Formula-1/Canadian-Grand-Prix'>
+        <div className='h-30 m-2 rounded-bl-2xl pr-5'>
+          <h3 className='text-4xl pt-5 max-sm:text-3xl link link-underline link-underline-black'>Canadian Grand Prix - Debriefing</h3>
+        </div>
+        </a>
+        <a href='/Formula-1/Monaco-Grand-Prix'>
+        <div className='h-30 m-2 rounded-bl-2xl pr-5'>
+          <h3 className='text-4xl pt-5 max-sm:text-3xl link link-underline link-underline-black'>Monaco Grand Prix - debriefing</h3>
+          </div>
+          </a>
+          <a href='/Formula-1/Spanish-Grand-Prix'>
+        <div className='h-30 m-2 rounded-bl-2xl pr-5'>
+          <h3 className='text-4xl pt-5 max-sm:text-3xl link link-underline link-underline-black'>Spanish Grand Prix - Debriefing</h3>
+        </div>
+        </a>
+      </div>
     </div>
-       END ABOUT */}
-
       {/* FOOTER */}
        <footer
-       className="relative lg:top-100 md:top-200 max-md:top-210 max-sm:top-430 h-full w-full text-center sm:footer-horizontal pt-10 bg-gradient-to-b from-neutral-950 via-neutral-950 to-gray-900 text-black font-edu-vic-wa-nt-beginner p-10 text-2xl"
-       id='Contact'>
+       className="relative lg:top-140 md:top-250 max-md:top-230 max-sm:top-560  h-full w-full text-center sm:footer-horizontal pt-10 bg-gradient-to-b from-neutral-950 via-neutral-950 to-gray-900 text-black font-edu-vic-wa-nt-beginner p-10 text-2xl">
           <div className="relative isolate overflow-hidden py-16 sm:py-24 lg:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
@@ -316,11 +320,11 @@ export default function Main() {
                     </dd>
                   </div>
                 </dl>
-                                <div className='relative left-65'>
+                <div className='relative'>
                   <h3 className='text-white'>Follow me on my journey</h3>
-                  <ul className='flex gap-7 relative pt-10 left-60'>
+                  <ul className='flex gap-7 relative pt-10 justify-center'>
                   <li>
-                  <a href='https://www.instagram.com/harvancik_maxim/'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className='size-10'>
+                  <a href='https://www.instagram.com/harvancik_maxim/'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className='size-10 hover:text-shadow-blue-400'>
                   <path fill="#ffffff" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
                   </svg></a></li>
                   <li>
@@ -335,9 +339,9 @@ export default function Main() {
             </div>
         </div>
       </footer>
-    <aside className="relative bg-gray-900 text-center items-baseline pr-20 lg:top-100 md:top-200 max-md:top-210 max-sm:top-430 max-md:text-lg max-md:text-center">
+    <aside className="relative bg-gray-900 text-center items-baseline pr-20 lg:top-140 md:top-250 max-md:top-210 max-sm:top-560 max-md:text-lg max-md:text-center max-sm:pl-18">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
-        <span>Web version: 1.5.3</span>
+        <span>Web version: 1.6</span>
       </aside>
 </div>
   )

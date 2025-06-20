@@ -131,52 +131,76 @@ html{
 /*
 LOADER CSS
 */
- .loader {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background-color: #ffffff; /* Background color of the loader */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-      opacity: 1; /* Start fully transparent */
-      transition: opacity 2s ease-in-out; /* Smooth transition for fade-in and fade-out */
-    }
-    
-    /* Fully visible state for the loader */
-    .loader.visible {
-      opacity: 1; /* Fully visible */
-    }
-    
-    /* Hidden state for fade-out effect */
-    .loader.hidden {
-      opacity: 0; /* Fully transparent */
-      pointer-events: none; /* Ensure it's not interactive */
-    }
-    
-    /* Logo animation (optional spinning) */
-    .loader-logo {
-      width: full; /* Adjust the size */
-      /*animation: spin 2s linear infinite; /* Example animation */
-    }
-    /* Main content (initially hidden) */
-    .content {
-      display: none;
-    }
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ffffff; /* Background color of the loader */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1; /* Start fully transparent */
+  transition: opacity 2s ease-in-out; /* Smooth transition for fade-in and fade-out */
+}
 
-    ::-webkit-scrollbar{
-      background: rgb(255, 255, 255);
-      box-shadow: 10px 10px;
-      width: 10px;
-    }
-    ::-webkit-scrollbar-thumb{
-      background: #505050;
-      border-radius: 20px;
-      width: 15px;
-    }
-    ::-webkit-scrollbar-corner{
-      border-radius: 15px;
-    }
+/* Fully visible state for the loader */
+.loader.visible {
+  opacity: 1; /* Fully visible */
+}
+
+/* Hidden state for fade-out effect */
+.loader.hidden {
+  opacity: 0; /* Fully transparent */
+  pointer-events: none; /* Ensure it's not interactive */
+}
+
+/* Logo animation (optional spinning) */
+.loader-logo {
+  width: full; /* Adjust the size */
+  /*animation: spin 2s linear infinite; /* Example animation */
+}
+/* Main content (initially hidden) */
+.content {
+  display: none;
+}
+
+/*
+SCROLLBAR 
+*/
+::-webkit-scrollbar{
+  background: rgb(255, 255, 255);
+  box-shadow: 10px 10px;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background: #505050;
+  border-radius: 20px;
+  width: 15px;
+}
+::-webkit-scrollbar-corner{
+  border-radius: 15px;
+}
+
+/*
+UNDERLINE EFFECT IN EVENTS
+*/
+.link-underline {
+border-bottom-width: 0;
+background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+background-size: 0 3px;
+background-position: 0 100%;
+background-repeat: no-repeat;
+transition: background-size .3s ease-in-out;
+}
+
+.link-underline-black {
+background-image: linear-gradient(transparent, transparent), linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255))
+}
+
+.link-underline:hover {
+background-size: 75% 3px;
+background-position: 0 100%
+}
