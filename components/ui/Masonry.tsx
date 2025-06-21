@@ -12,12 +12,17 @@ const useMedia = (
   values: number[],
   defaultValue: number
 ): number => {
-  const get = () =>
-    values[queries.findIndex((q) => matchMedia(q).matches)] ?? defaultValue;
+  const get = () => {
+    if (typeof window === "undefined" || typeof matchMedia === "undefined") {
+      return defaultValue;
+    }
+    return values[queries.findIndex((q) => matchMedia(q).matches)] ?? defaultValue;
+  };
 
   const [value, setValue] = useState<number>(get);
 
   useEffect(() => {
+    if (typeof window === "undefined" || typeof matchMedia === "undefined") return;
     const handler = () => setValue(get);
     queries.forEach((q) => matchMedia(q).addEventListener("change", handler));
     return () =>
