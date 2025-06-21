@@ -63,7 +63,6 @@ interface Item {
   id: string;
   img: string;
   url: string;
-  title: string,
   height: number;
 }
 

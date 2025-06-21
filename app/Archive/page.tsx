@@ -6,21 +6,18 @@ const items = [
       id: "1",
       img: "/assets/WEC-SPA.jpg",
       url: "/Motorsport/WEC/Spa",
-      title: "WEC - 6 Hours of Spa",
       height: 600,
     },
     {
       id: "2",
       img: "/assets/css.png",
       url: "/Tutorials-and-tips/",
-      title: "CSS for beginners",
       height: 500,
     },
     {
       id: "3",
       img: "/assets/html.jpg",
       url: "/Tutorials-and-tips/HTML-for-beginners",
-      title: "HTML for beginners",
       height: 500,
     },
     // ... more items
