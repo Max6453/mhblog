@@ -23,6 +23,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "gl-matrix": "^3.4.3",
+    "gsap": "^3.13.0",
     "ldrs": "^1.1.7",
     "lucide-react": "^0.509.0",
     "motion": "^12.10.5",
