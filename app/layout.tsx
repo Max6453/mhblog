@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   description: "Blog ",
   authors: [{ name: "Maxim harvančík"}],
   manifest: "manifest.json",
-  icons: "/favicon.ico"
+  icons: "favicon.ico"
 };
 
 export const viewport: Viewport = {
