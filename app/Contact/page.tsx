@@ -276,7 +276,7 @@ export default function Contact() {
                     required
                     placeholder='Write your feedback or improvements. This field is required'
                     rows={3}
-                    className="..."
+                    className="max-sm:left-2 lg:left-110 md:left-80 lg:w-150 lg:h-100 w-80 h-50 text-black border-2 rounded-xl border-black relative"
                     value={form.about}
                     onChange={handleChange}
                   />
@@ -286,7 +286,7 @@ export default function Contact() {
         </div>
         <div className="border-b border-gray-900/10 pb-12 text-center">
           <h2 className="text-xl pl-5 font-semibold text-gray-900">Optional information</h2>
-          <div className="mt-10 grid grid-cols-1 grid-rows-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+          <div className="mt-10 grid grid-cols-1 grid-rows-1 gap-x-6 gap-y-8 sm:grid-cols-2">
             <div className="sm:col-span-3">
               <label htmlFor="first-name" className="block text-sm/6 font-medium text-gray-900">
                 First name
@@ -296,8 +296,9 @@ export default function Contact() {
           id="first-name"
           name="firstName"
           type="text"
+          placeholder='first name'
           autoComplete="given-name"
-          className="..."
+          className="border-2 border-black rounded-md text-black h-10"
           value={form.firstName}
           onChange={handleChange}
         />
@@ -312,15 +313,16 @@ export default function Contact() {
           id="last-name"
           name="lastName"
           type="text"
+          placeholder='last name'
           autoComplete="family-name"
-          className="..."
+          className="border-2 border-black rounded-md h-10 text-black"
           value={form.lastName}
           onChange={handleChange}
         />
               </div>
             </div>
 
-            <div className="sm:col-span-4 max-sm:left-0 left-1/4 relative">
+            <div className="sm:col-span-4 max-sm:left-0 relative">
               <label htmlFor="email" className="block text-sm/6 font-medium text-gray-900">
                 Email address
               </label>
@@ -329,8 +331,9 @@ export default function Contact() {
           id="email"
           name="email"
           type="email"
+          placeholder='mhblog.enjoyer@gmail.com'
           autoComplete="email"
-          className="..."
+          className="border-2 border-black rounded-md text-black h-10"
           value={form.email}
           onChange={handleChange}
         />
@@ -351,8 +354,8 @@ export default function Contact() {
             {loading ? "Submitting..." : "Submit"}
           </button>
         </div>
-        {success && <p className="text-green-600 text-center">Thank you for your feedback!</p>}
-        {error && <p className="text-red-600 text-center">{error}</p>}
+        {success && <p className="text-green-600 text-xl text-center">Thank you for your feedback!</p>}
+        {error && <p className="text-red-600 text-xl text-center">{error}</p>}
       </form>
     </div>
   )

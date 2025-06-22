@@ -23,7 +23,8 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Dock, DockIcon } from "@/components/magicui/dock";
-import { icon } from '@fortawesome/fontawesome-svg-core'
+import { icon } from '@fortawesome/fontawesome-svg-core';
+import { supabase } from "@/lib/supabaseClient";
  
 export type IconProps = React.HTMLAttributes<SVGElement>;
  
@@ -137,6 +138,9 @@ const LoadingScreen: React.FC = () => (
 export default function Main() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false) 
       const [loading, setLoading] = useState(true);
+        const [newsletterEmail, setNewsletterEmail] = useState("");
+          const [newsletterSuccess, setNewsletterSuccess] = useState(false);
+            const [newsletterError, setNewsletterError] = useState<string | null>(null);
 
   useEffect(() => {
     // Simulate loading (e.g., fetching data)
@@ -145,6 +149,23 @@ export default function Main() {
   }, []);
 
   if (loading) return <LoadingScreen />;
+
+const handleNewsletterSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setNewsletterSuccess(false);
+  setNewsletterError(null);
+
+  const { error } = await supabase.from("newsletter").insert([
+    { email: newsletterEmail }
+  ]);
+
+  if (error) {
+    setNewsletterError("Failed to subscribe. Please try again.");
+  } else {
+    setNewsletterSuccess(true);
+    setNewsletterEmail("");
+  }
+};
 
   return (
   <div className='bg-neutral-950'>
@@ -387,7 +408,7 @@ export default function Main() {
                   <p className="mt-4 text-lg text-gray-300">
                     Be notify at every event which happened recent days in motorsport, tech, gaming and more.
                   </p>
-                  <div className="mt-6 flex max-w-md gap-x-4">
+                  <form onSubmit={handleNewsletterSubmit} className="mt-6 flex max-w-md gap-x-4">
                     <label htmlFor="email-address" className="sr-only">
                       Email address
                     </label>
@@ -399,6 +420,8 @@ export default function Main() {
                       placeholder="Enter your email"
                       autoComplete="email"
                       className="min-w-0 flex-auto rounded-md bg-transparent px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-white focus:outline-2 border-2 focus:-outline-offset-2 focus:outline-white sm:text-sm/6"
+                      value={newsletterEmail}
+                      onChange={e => setNewsletterEmail(e.target.value)}
                     />
                     <button
                       type="submit"
@@ -407,7 +430,13 @@ export default function Main() {
                     >
                       Subscribe
                     </button>
-                  </div>
+                     {newsletterSuccess && (
+                        <span className="text-green-400 ml-4 self-center">Subscribed!</span>
+                      )}
+                      {newsletterError && (
+                        <span className="text-red-400 ml-4 self-center">{newsletterError}</span>
+                      )}
+                  </form>
                 </div>
                 <dl className="grid relative grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
                   <div className="flex flex-col items-start">
