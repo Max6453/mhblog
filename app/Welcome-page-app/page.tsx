@@ -162,7 +162,7 @@ export default function WelcomePage() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="/"
+                href="/app"
                 className="rounded-md bg-neutral-950 px-3.5 py-2.5 text-sm font-edu-vic-wa-nt-beginner font-semibold text-white hover:text-black shadow-xs hover:bg-white duration-300 hover:border-black border"
               >
                 head to the main page

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Viewport } from "next";
-import { Edu_VIC_WA_NT_Beginner, Exo_2, Geist, Raleway } from "next/font/google";
+import { Edu_VIC_WA_NT_Beginner, Exo_2, Geist, Raleway, Roboto} from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
@@ -24,6 +24,10 @@ const Exo = Exo_2({
 
 const raleway = Raleway({
   variable: "--font-Raleway",
+  subsets: ["latin"],
+})
+const roboto = Roboto({
+  variable: "--font-Roboto",
   subsets: ["latin"],
 })
 

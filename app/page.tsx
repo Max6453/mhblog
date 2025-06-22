@@ -460,6 +460,8 @@ export default function Main() {
     <aside className="relative bg-gray-900 text-center items-baseline pr-20 lg:top-140 md:top-250 max-md:top-310 max-sm:top-560 max-md:text-lg max-md:text-center max-sm:pl-18">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
         <span>Web version: 1.8.6</span>
+        <br/>
+          <span><a href="/Welcome-page-app">Dev link</a></span> 
       </aside>
 </div>
   )
