@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils"
 import Banner from "@/components/ui/Banner";
 import { LineWobble } from 'ldrs/react'
 import 'ldrs/react/LineWobble.css'
-import { Home, Settings, Search } from "lucide-react";
+import { Home, Settings, Search, Target } from "lucide-react";
 import { CalendarIcon, HomeIcon, MailIcon, UserIcon, ArchiveIcon, InstagramIcon } from "lucide-react";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
@@ -75,7 +75,7 @@ const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/Archive", icon: ArchiveIcon, label: "Archive" },
-    { href: "/Contact", icon: UserIcon, Label: "Contact"},
+    { href: "/Contact", icon: UserIcon, Label: "Contact",},
     { href: "https://www.instagram.com/harvancik_maxim/", icon: InstagramIcon, label: "Instagram "},
   ],
   contact: {
@@ -140,7 +140,7 @@ export default function Main() {
 
   useEffect(() => {
     // Simulate loading (e.g., fetching data)
-    const timer = setTimeout(() => setLoading(false), 1500);
+    const timer = setTimeout(() => setLoading(false), 2000);
     return () => clearTimeout(timer);
   }, []);
 
