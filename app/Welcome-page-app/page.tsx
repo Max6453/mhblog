@@ -167,6 +167,7 @@ export default function WelcomePage() {
               >
                 head to the main page
               </a>
+              <span className='text-black opacity-50 absolute bottom-10'>Please if you have problems with loading, just refresh the page it should work. Enjoy</span>
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@ const navigation = [
   { name: 'Latest', href: '#latest', current: false },
   { name: 'Archive', href: '/Archive', current: false },
   { name: 'Contact', href: '/Contact', current: false },
-  { name: 'Portfolio', href: '#About', current: true },
+  { name: 'Portfolio', href: '/', current: true },
 ] 
 
 export default function MobileApp() {
