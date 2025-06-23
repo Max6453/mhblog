@@ -25,6 +25,7 @@ import {
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import { icon } from '@fortawesome/fontawesome-svg-core';
 import { supabase } from "@/lib/supabaseClient";
+import footer from '@/components/ui/footer'
  
 export type IconProps = React.HTMLAttributes<SVGElement>;
  
