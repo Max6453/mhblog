@@ -4,10 +4,10 @@ import { cn } from "@/lib/utils"
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { AnimatePresence, motion } from "framer-motion"
 import { Dialog, DialogPanel } from '@headlessui/react'
-
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, } from "@/components/ui/carousel";
 
 const navigation = [
-  { name: 'Latest', href: '#latest', current: false },
+  { name: 'Latest', href: '/app', current: false },
   { name: 'Archive', href: '/Archive', current: false },
   { name: 'Contact', href: '/Contact', current: false },
   { name: 'Portfolio', href: '/', current: true },
@@ -86,7 +86,7 @@ export default function MobileApp() {
                     </div>
                     <span>MHBlog</span>
                     <br/>
-                    <span className='opacity-50'>App version: 1.0.0</span><br/>
+                    <span className='opacity-50'>App version: 1.5.0</span><br/>
                   </div>
                   </DialogPanel>
                 </motion.div>
@@ -95,6 +95,34 @@ export default function MobileApp() {
             </AnimatePresence>
             </header>
             <div className="grid grid-cols-1 grid-rows-1 ">
+       <Carousel className="max-md:left-0 max-md:w-90 rounded-2xl">
+       <h4
+       className='font-Exo-2 text-xl text-center pt-2 top-150 text-black z-10 h-11 bg-gray-200 absolute w-full'>Pics of the week</h4>
+      <CarouselContent>
+     <CarouselItem className="left-36 cursor-grab active:cursor-grabbing">
+      <img src="/assets/grello-mobile.jpg" className='w-full h-full'></img>
+      <div className="bg-gray-500 opacity-80"></div>
+     </CarouselItem>
+     <CarouselItem className="text-center left-36 cursor-grab active:cursor-grabbing">
+      <img src="assets/24-Nurburgring-mobile.jpg" className="w-full h-160"></img>
+     </CarouselItem>
+     <CarouselItem className="text-center cursor-grab active:cursor-grabbing">
+      <img src="/assets/MBW-le-mans.jpg" className='h-160'></img>
+     </CarouselItem>
+     </CarouselContent>
+      <CarouselPrevious className="left-0 hidden"/>
+      <CarouselNext className="right-0 hidden" />
+    </Carousel>
+                <div className="relative w-full h-100">
+                    <img src="/assets/24-Nurburgring-mobile.jpg"/>
+                    <div className='text-start bg-gray-200 top-99 h-20 w-full z-10 absolute'>
+                    <h3 className='font-Exo-2 text-xl text-center text-black'>24 Hours of Nurburgring was wild</h3>
+                    <a href='/'>
+                        <button className='relative top-3 left-1/3 w-25 h-10 rounded-full text-black bg-white border shadow-4xl border-white hover:bg-white hover:border-white hover:text-white transition duration-300'>
+                        See more</button>
+                    </a>
+                    </div>
+                </div>
                 <div className="relative w-full h-100">
                     <img src="/assets/setup-app.jpg"/>
                     <div className='text-start bg-gray-200 top-99 h-20 w-full z-10 absolute'>

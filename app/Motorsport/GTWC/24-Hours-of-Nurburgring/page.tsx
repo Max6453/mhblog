@@ -11,8 +11,8 @@ import { LineWobble } from 'ldrs/react'
 import 'ldrs/react/LineWobble.css'
 
 const navigation = [
-  { name: 'Latest', href: '#latest', current: false },
-  { name: 'Topics', href: '/Categories', current: false },
+  { name: 'Home', href: '/', current: false },
+  { name: 'Archive', href: '/Archive', current: false },
   { name: 'Contact', href: '#Contact', current: false },
   { name: 'Portfolio', href: '#About', current: true },
 ] 
@@ -143,41 +143,52 @@ export default function MiamiGP() {
                 hear everything in eventfull 24 hours of Nurburgring
             </h5>
             <img
-                src="/assets/Canada.webp"
-                className="min-w-full transition-transform duration-300 object-cover max-md:size-96"
+                src="/assets/24-Nurburgring.jpg"
+                className="min-w-full transition-transform duration-300 object-cover max-sm:size-96 max-md:size-96 max-sm:hidden"
                 alt="Miami Grand Prix"
             />
+            <img src="/assets/24-Nurburgring-mobile.jpg"
+            className="hidden w-full max-sm:block"/>
             </div>
             </header>
             <div className="relative pb-10">
-                <div className="text-2xl justify-center text-white to-neutral-900 relative text-start">
+                <div className="text-2xl justify-center text-white to-neutral-900 md:left-0  relative text-start">
                 <span className="text-2xl text-white pl-2">Reading time: <span className="text-white">1.55 minutes</span></span>
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:w-90 lg:w-300 font-josefin-sans pt-15">
-                  This years Canadian Grand Prix was underwhelming
+                  24 Hours of Nurburgring never dissapoints.
                 </p>
+                <h4 className="text-start text-3xl lg:pl-80 font-Exo-2 pt-15">Race in  few words</h4>
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:w-90 lg:w-300 font-josefin-sans pt-15">
-                    Mclaren's were for the firstv time this season struggling with the car.
-                    However the mercedes capitalised on this opportunity. 
-                    Red bull and max Verstappen were once again in a fight for the win.
-                    Ferrari were incompetent. 
+                  The 53rd race in Nurburgring was one to remember.
+                  From absolute domination of Manthey racing along with kevin Estre and whole crew to dissapointing results for the same team.
+                  After 5 years of waiting, Rowe racing with BMW M4 GT3 won the 24 hours of Nurburgring after penalisation of Manthey racing with 140 seconds time penalty.
+                  From the start of the race drivers were pushing. Manthey Racing dominated whole race even in night when for a brief moment the time delta to 2nd place was over a minute.
+                  But BMW with Rowe racing didn't gave up. They pushed in early morning and caught up to Porsche.
+                  When those 2 teams were fighting, the gap to 3rd place was more approximately 2 minutes.
                 </p>
-                <img src='/assets/canada-duel.jpg'
-                className="w-full pt-20 pb-10"/>
-                <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-50 font-josefin-sans pt-15 lg:w-300"> 
-                    Race start was OK. Antonelli overtook Oscar Piastri for the 3th place. 
-                    Russell had an amazing start.
-                    Ferrari...not so much.
-                    Apart from Hamilton hitting a otter which cost him 0.5s/lap, nothing really happened
+                <img src='/assets/Grello.webp'
+                className="w-full pt-20 pb-10 max-sm:hidden "/>
+                <img src="/assets/grello-mobile.jpg"
+                className="w-full pt-20 pb-10 hidden max-sm:block"/>
+                <h4 className="text-start text-3xl lg:pl-80 font-Exo-2">Controversy</h4>
+                <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-50 font-raleway pt-15 lg:w-300"> 
+                  The most controversial penalty given in this race was in 3 hours and 18 seconds when Manthey racing with Rowe racing were stuck in traffic and losing time.
+                  Manthey wanted to overtook the Aston martin GT4 car which was under the blue flags. AM left a door open on the right side of the track.
+                  kevin Estre saw this opportunity and went for the gap. Unfortunately the AM closed the doors and the cars collided and after a hit from a barrier, AM was oveturned in middle of the track.
+                  The invesitgation took place and after an hour, Manthey Racing were given a 140 seconds time penalty for causing a collision which practically ended their race.
                 </p>
-                <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-20 font-josefin-sans pt-15 lg:w-300"> 
-                    This year's grand prix was fight not on track but on pitwall. It was a strategic battle between the teams.
-                    Mclaren firstly capitalised with Norris on reversed strategy. ferrari once again screwed up the strategy for the Leclerc.
-                    From the start it was a long game.
+                <h4 className="text-start text-3xl lg:pl-80 font-Exo-2 pt-15">My perspective</h4>
+                <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-20 font-raleway pt-15 lg:w-300"> 
+                  This incident was interesting and hard to judge. Kevin Estre saw an opportunity and went for the gap which you could see if you watch his onboard or livestream.
+                  Aston Martin left a door open and in matter of seconds, when they were side by side, he closed the door causing a collision.
+                  Big factor in this issue could be the blue flags. I know that blue flags works completely different than in F1 but still, if you see it you know there is faster car approaching.
+                  I also know that a slower car don't need to move from the racing line. Estre could've done it differently like wait a little bit more but he would lost a lot of time however it is Kevin Estre on Nurburgring.
+                  My opinion is that the penalisation was deserved but really harshed.
+                  But still Rowe drove much better and after all deserved to win the 24 hours of Nurburgring.
                 </p>
-                <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-20 font-josefin-sans pt-15 pb-10 lg:w-300 md:w-200 ">
-                   In 64th lap, Entertainment begun. Mclarens collided on finish line.
-                   An beautifull duel ended with unfortunate DNF of Lando Norris who practically drove to back of Piastri's car causing him a front wing damage and sending him to the wall.
-                   Everyone said it is not matter of if but when. There you have it. In the 10th race of the year.
+                <h4 className="text-start text-3xl lg:pl-80 font-Exo-2 pt-15">Classification</h4>
+                <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-20 font-raleway pt-15 pb-10 lg:w-300 md:w-200 ">
+                  Whole classification you can see <a className="underline" href="https://www.intercontinentalgtchallenge.com/images/results/144/24h_nbr_20_Race_Result_overall.pdf">here</a>
                 </p>
               </div>
             </div>
