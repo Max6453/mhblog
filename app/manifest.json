@@ -5,7 +5,7 @@
     "start_url": "/Welcome-page-app",
     "icons": [
         {
-            "src": "../public/mobileIcon-black.png",
+            "src": Favicon.ico",
             "sizes": "96x96",
             "type": "image/png"
         }
