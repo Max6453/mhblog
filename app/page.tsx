@@ -304,6 +304,14 @@ const handleNewsletterSubmit = async (e: React.FormEvent) => {
       <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white relative  max-md:top-10 lg:pt-10 pl-10 font-Exo-2'>latest</h1>
     <div className="relative top-20 max-sm:pl-11.5 lg:pl-12 max-md:pl-11.5 md:pl-0 grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
+        <img src='/assets/Austria.webp' className='object-cover w-full h-full z-50 rounded-4xl'/>
+        <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Austrian Grand Prix debriefing</h3>
+        <a href='/Formula-1/Austrian-Grand-Prix'>
+        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
+          See more</button>
+        </a>
+      </div>
+      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
         <img src='/assets/24-Nurburgring.jpg' className='object-cover w-full h-full z-50 rounded-4xl'/>
         <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>24 Hours of Nurburgring</h3>
         <a href='/Motorsport/GTWC/24-Hours-of-Nurburgring'>
@@ -343,72 +351,12 @@ const handleNewsletterSubmit = async (e: React.FormEvent) => {
           See more</button>
         </a>
       </div>
-      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
-        <img src='/assets/Emilia-romagna.webp' className='object-cover w-full h-full z-50 rounded-4xl'></img>
-        <h3 className='relative bottom-66 text-xl pl-1 text-white font-bold font-Exo-2'>Emilia-Romagna Grand Prix Debriefing</h3>
-        <a href='/Formula-1/Emilia-Romagna-Grand-Prix'>
-        <button className='relative lg:bottom-27 max-md:bottom-27 md:bottom-25 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-          See more</button>
-        </a>
-      </div>
-    <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 hover:scale-110 transition duration-500">
-      <img src='/assets/Miami.avif' className='object-cover w-full h-full z-50 rounded-4xl'></img>
-      <h3 className='relative bottom-66 text-xl pl-10 text-white font-bold font-Exo-2'>Miami Grand Prix Debriefing</h3>
-      <a href='/Formula-1/Miami-Grand-Prix'>
-        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-        See more</button>
-      </a>
-    </div>
     </div>
    </div>
     {/* END LATEST */}
-
-    {/* EVENTS */}
-    <div className='relative h-screen bg-neutral-950 lg:top-140 md:top-200 max-md:top-200 max-sm:top-420 grid grid-cols-2 max-md:grid-cols-1 max-sm:grid-cols-1 z-10'>
-      <div className='grid relative lg:grid-cols-1 lg:grid-rows-2 md:grid-cols-1 md:grid-rows-1 sm:grid-cols-1 sm:grid-rows-1 text-white pt-10 '>
-      <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white font-Exo-2 pl-5'>Upcoming events</h1>
-        <div className=' h-30 m-2 rounded-br-2xl transition-opacity duration-150 pl-5'>
-          <h3 className='text-4xl pt-10 max-sm:text-2xl'>24 Hours of Nurburgring - IGTC</h3>
-        </div>
-        <div className='h-30 m-2 rounded-br-2xl pl-5'>
-          <h3 className='text-4xl pt-10 max-sm:text-2xl'>Formula 1 Austrian Grand Prix</h3>
-        </div>
-        <div className='h-30 m-2 rounded-br-2xl pl-5'>
-          <h3 className='text-4xl pt-7 max-sm:text-2xl'>AWS Dev Hour: Learn Generative AI from Scratch!</h3>
-          </div>
-        <div className='h-30 m-2 rounded-br-2xl pl-5'>
-          <h3 className='text-4xl pt-10 max-sm:text-2xl'>
-            Google Cloud Summit Süd 2025 in München
-          </h3>
-        </div>
-      </div>
-      <div className='grid relative lg:w-2/3 max-md:w-full md:w-fit max-sm:w-full max-sm:left-0 bg-neutral-950 xl:left-50 lg:left-40 lg:grid-cols-1 lg:grid-rows-1 md:grid-cols-1 md:grid-rows-1 sm:grid-cols-1 sm:grid-rows-1 text-white pt-10'>
-        <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white font-Exo-2 max-md:pl-5'>Most Popular</h1>
-      <a href='/Motorsport/WEC/Le-Mans'>
-        <div className='h-30 m-2 rounded-bl-2xl pr-5 max-md:pl-5'>
-          <h3 className='text-4xl pt-10 max-sm:text-2xl link link-underline link-underline-black'>24 Hours of Le Man's</h3>
-        </div>
-        </a>
-        <a href='/Formula-1/Canadian-Grand-Prix'>
-        <div className='h-30 m-2 rounded-bl-2xl pr-5 max-md:pl-5'>
-          <h3 className='text-4xl pt-5 max-sm:text-2xl link link-underline link-underline-black'>Canadian Grand Prix Debriefing</h3>
-        </div>
-        </a>
-        <a href='/Formula-1/Monaco-Grand-Prix'>
-        <div className='h-30 m-2 rounded-bl-2xl pr-5 max-md:pl-5'>
-          <h3 className='text-4xl pt-5 max-sm:text-2xl link link-underline link-underline-black'>Monaco Grand Prix debriefing</h3>
-          </div>
-          </a>
-          <a href='/Formula-1/Spanish-Grand-Prix'>
-        <div className='h-30 m-2 rounded-bl-2xl pr-5 max-md:pl-5'>
-          <h3 className='text-4xl pt-5 max-sm:text-2xl link link-underline link-underline-black'>Spanish Grand Prix Debriefing</h3>
-        </div>
-        </a>
-      </div>
-    </div>
       {/* FOOTER */}
        <footer
-       className="relative lg:top-140 md:top-250 max-md:top-330 max-sm:top-560 h-full w-full text-center sm:footer-horizontal pt-10 bg-gradient-to-b from-neutral-950 via-neutral-950 to-gray-900 text-black font-edu-vic-wa-nt-beginner p-10 text-2xl">
+       className="relative lg:top-70 md:top-125 max-md:top-165 max-sm:top-280 h-full w-full text-center sm:footer-horizontal pt-10 bg-gradient-to-b from-neutral-950 via-neutral-950 to-gray-900 text-black font-edu-vic-wa-nt-beginner p-10 text-2xl">
           <div className="relative isolate overflow-hidden py-16 sm:py-24 lg:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
@@ -495,7 +443,7 @@ const handleNewsletterSubmit = async (e: React.FormEvent) => {
             </div>
         </div>
       </footer>
-    <aside className="relative bg-gray-900 text-center items-baseline pr-20 lg:top-140 md:top-250 max-md:top-310 max-sm:top-560 max-md:text-lg max-md:text-center max-sm:pl-18">
+    <aside className="relative bg-gray-900 text-center items-baseline pr-20 lg:top-70 md:top-125 max-md:top-165 max-sm:top-280 max-md:text-lg max-md:text-center max-sm:pl-18">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
         <span>Web version: 1.8.6</span>
         <br/>
