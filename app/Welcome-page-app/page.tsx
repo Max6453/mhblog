@@ -66,7 +66,7 @@ const Icons = {
  
 const DATA = {
   navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "/app", icon: HomeIcon, label: "Home" },
     { href: "/Archive", icon: ArchiveIcon, label: "Archive" },
     { href: "/Contact", icon: UserIcon, Label: "Contact"},
     { href: "https://www.instagram.com/harvancik_maxim/", icon: InstagramIcon, label: "Instagram "},

@@ -5,12 +5,12 @@
     "start_url": "/Welcome-page-app",
     "icons": [
         {
-            "src": "../public/mobileIcon-black.png",
+            "src": favicon.ico",
             "sizes": "96x96",
             "type": "image/png"
         }
     ],
-    "theme_color": "#0a0a0a",
+    "theme_color": ""#ffffff",
     "background_color": "#ffffff",
     "display": "standalone"
 
