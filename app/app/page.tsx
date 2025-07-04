@@ -113,6 +113,16 @@ export default function MobileApp() {
       <CarouselPrevious className="left-0 hidden"/>
       <CarouselNext className="right-0 hidden" />
     </Carousel>
+              <div className="relative w-full h-100">
+                  <img src="/assets/24-Nurburgring-mobile.jpg"/>
+                  <div className='text-start bg-gray-200 top-99 h-20 w-full z-10 absolute'>
+                  <h3 className='font-Exo-2 text-xl text-center text-black'>Friday report just released!</h3>
+                  <a href='/Formula-1/British-Grand-Prix/Friday-Report'>
+                      <button className='relative top-3 left-1/3 w-25 h-10 rounded-full text-black bg-white border shadow-4xl border-white hover:bg-white hover:border-white hover:text-white transition duration-300'>
+                      See more</button>
+                  </a>
+                  </div>
+              </div>
                 <div className="relative w-full h-100">
                     <img src="/assets/24-Nurburgring-mobile.jpg"/>
                     <div className='text-start bg-gray-200 top-99 h-20 w-full z-10 absolute'>
