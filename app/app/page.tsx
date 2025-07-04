@@ -114,7 +114,7 @@ export default function MobileApp() {
       <CarouselNext className="right-0 hidden" />
     </Carousel>
               <div className="relative w-full h-100">
-                  <img src="/assets/24-Nurburgring-mobile.jpg"/>
+                  <img src="/assets/McLaren-in-FP1-Silverstone-scaled.webp"/>
                   <div className='text-start bg-gray-200 top-99 h-20 w-full z-10 absolute'>
                   <h3 className='font-Exo-2 text-xl text-center text-black'>Friday report just released!</h3>
                   <a href='/Formula-1/British-Grand-Prix/Friday-Report'>
