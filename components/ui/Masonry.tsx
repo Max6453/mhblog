@@ -12,17 +12,12 @@ const useMedia = (
   values: number[],
   defaultValue: number
 ): number => {
-  const get = () => {
-    if (typeof window === "undefined" || typeof matchMedia === "undefined") {
-      return defaultValue;
-    }
-    return values[queries.findIndex((q) => matchMedia(q).matches)] ?? defaultValue;
-  };
+  const get = () =>
+    values[queries.findIndex((q) => matchMedia(q).matches)] ?? defaultValue;
 
   const [value, setValue] = useState<number>(get);
 
   useEffect(() => {
-    if (typeof window === "undefined" || typeof matchMedia === "undefined") return;
     const handler = () => setValue(get);
     queries.forEach((q) => matchMedia(q).addEventListener("change", handler));
     return () =>
@@ -146,15 +141,17 @@ const Masonry: React.FC<MasonryProps> = ({
   const grid = useMemo(() => {
     if (!width) return [];
     const colHeights = new Array(columns).fill(0);
-    const columnWidth = width / columns;
+    const gap = 16;
+    const totalGaps = (columns - 1) * gap;
+    const columnWidth = (width - totalGaps) / columns;
 
     return items.map((child) => {
       const col = colHeights.indexOf(Math.min(...colHeights));
-      const x = columnWidth * col;
+      const x = col * (columnWidth + gap);
       const height = child.height / 2;
       const y = colHeights[col];
 
-      colHeights[col] += height;
+      colHeights[col] += height + gap;
       return { ...child, x, y, w: columnWidth, h: height };
     });
   }, [columns, items, width]);
@@ -231,19 +228,19 @@ const Masonry: React.FC<MasonryProps> = ({
   };
 
   return (
-    <div ref={containerRef} className="relative w-full h-full">
+    <div ref={containerRef} className="relative h-full lg:w-280 md:w-full  lg:left-40 md:left-0 max-md:left-0">
       {grid.map((item) => (
         <div
           key={item.id}
           data-key={item.id}
-          className="absolute box-content p-2"
+          className="absolute box-content"
           style={{ willChange: "transform, width, height, opacity" }}
           onClick={() => window.open(item.url, "_blank", "noopener")}
           onMouseEnter={(e) => handleMouseEnter(item.id, e.currentTarget)}
           onMouseLeave={(e) => handleMouseLeave(item.id, e.currentTarget)}
         >
           <div
-            className="relative w-full h-full bg-cover bg-center rounded-[10px] shadow-[0px_10px_50px_-10px_rgba(0,0,0,0.2)] uppercase text-[10px] leading-[10px]"
+            className="relative w-full h-full overflow-hidden hover:scale-120 duration-300 bg-cover bg-center rounded-[10px] shadow-[0px_10px_50px_-10px_rgba(0,0,0,0.2)] uppercase text-[10px] leading-[10px]"
             style={{ backgroundImage: `url(${item.img})` }}
           >
             {colorShiftOnHover && (
