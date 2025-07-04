@@ -105,36 +105,6 @@ const navigation = [
   { name: 'Portfolio', href: '#About', current: true },
 ] 
 
-const LoadingScreen: React.FC = () => (
-  <div
-    style={{
-      position: "fixed",
-      top: 0,
-      left: 0,
-      width: "100vw",
-      height: "100vh",
-      background: "rgba(0,0,0,0.0)",
-      color: "#fff",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      fontSize: "2rem",
-      zIndex: 9999,
-      transition: "all",
-      animation:"ease-in-out",
-      animationDuration:"300ms"
-    }}
-  >
-   <LineWobble
-  size="80"
-  stroke="5"
-  bgOpacity="0.1"
-  speed="1.75"
-  color="white" 
-/>
-  </div>
-);
-
 
 export default function Main() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false) 
@@ -144,13 +114,6 @@ export default function Main() {
             const [newsletterError, setNewsletterError] = useState<string | null>(null);
                   const [showSplash, setShowSplash] = useState(true);
 
-  useEffect(() => {
-    // Simulate loading (e.g., fetching data)
-    const timer = setTimeout(() => setLoading(false), 2000);
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (loading) return <LoadingScreen />;
 
 const handleNewsletterSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
