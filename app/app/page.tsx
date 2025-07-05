@@ -100,21 +100,21 @@ export default function MobileApp() {
        className='font-Exo-2 text-xl text-center pt-2 top-150 text-black z-10 h-11 bg-gray-200 absolute w-full'>Pics of the week</h4>
       <CarouselContent>
      <CarouselItem className="left-36 cursor-grab active:cursor-grabbing">
-      <img src="/assets/grello-mobile.jpg" className='w-full h-full'></img>
+      <img src="/assets/britishGP-Mobile-friday.jpg" className='w-full h-full object-cover overflow-hidden'></img>
       <div className="bg-gray-500 opacity-80"></div>
      </CarouselItem>
      <CarouselItem className="text-center left-36 cursor-grab active:cursor-grabbing">
-      <img src="assets/24-Nurburgring-mobile.jpg" className="w-full h-160"></img>
+      <img src="assets/mercedes-austria.webp" className="w-full h-160 object-cover"></img>
      </CarouselItem>
      <CarouselItem className="text-center cursor-grab active:cursor-grabbing">
-      <img src="/assets/MBW-le-mans.jpg" className='h-160'></img>
+      <img src="/assets/reb-bull-austria.jpg" className='h-160 object-cover'></img>
      </CarouselItem>
      </CarouselContent>
       <CarouselPrevious className="left-0 hidden"/>
       <CarouselNext className="right-0 hidden" />
     </Carousel>
               <div className="relative w-full h-100">
-                  <img src="/assets/McLaren-in-FP1-Silverstone-scaled.webp"/>
+                  <img src="/assets/britishGP-Mobile-friday.jpg" className='object-cover h-full w-full hover:scale-120 duration-300 overflow-hidden'/>
                   <div className='text-start bg-gray-200 top-99 h-20 w-full z-10 absolute'>
                   <h3 className='font-Exo-2 text-xl text-center text-black'>Friday report just released!</h3>
                   <a href='/Formula-1/British-Grand-Prix/Friday-Report'>
