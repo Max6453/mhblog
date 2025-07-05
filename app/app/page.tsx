@@ -43,7 +43,7 @@ export default function MobileApp() {
                    <AnimatePresence>
                     {mobileMenuOpen && (
                     <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="block static">
-                    <div className="fixed inset-0 z-50 bg-black/20" />
+                    <div className="fixed inset-1 bg-black/20" />
                     <motion.div
                       initial={{ x: '0', opacity: 0 }}
                       animate={{ x: 1, opacity: 1 }}
@@ -110,15 +110,15 @@ export default function MobileApp() {
       <img src="/assets/reb-bull-austria.jpg" className='h-160 object-cover'></img>
      </CarouselItem>
      </CarouselContent>
-      <CarouselPrevious className="left-0 hidden"/>
-      <CarouselNext className="right-0 hidden" />
+      <CarouselPrevious className="left-0"/>
+      <CarouselNext className="right-0" />
     </Carousel>
               <div className="relative w-full h-100 animate-fade-up animate-once animate-ease-in-out">
-                  <img src="/assets/britishGP-Mobile-friday.jpg" className='object-cover h-full w-full hover:scale-120 duration-300 overflow-hidden'/>
+                  <img src="/assets/britishGP-Mobile-friday.jpg" className='object-cover h-full w-full'/>
                   <div className='text-start bg-gray-200 top-99 h-20 w-full z-10 absolute'>
                   <h3 className='font-Exo-2 text-xl text-center text-black animate-fade-up animate-once animate-ease-in-out'>Friday report just released!</h3>
                   <a href='/Formula-1/British-Grand-Prix/Friday-Report'>
-                      <button className='relative top-3 left-1/3 w-25 h-10 rounded-full text-black bg-white border shadow-4xl border-white hover:bg-white hover:border-white hover:text-white transition duration-300'>
+                      <button className='relative top-1 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-black shadow-4xl hover:border-white hover:bg-black hover:text-white transition duration-300'>
                       See more</button>
                   </a>
                   </div>
@@ -128,7 +128,7 @@ export default function MobileApp() {
                     <div className='text-start bg-gray-200 top-99 h-20 w-full z-10 absolute'>
                     <h3 className='font-Exo-2 text-xl text-center text-black'>24 Hours of Nurburgring was wild</h3>
                     <a href='/'>
-                        <button className='relative top-3 left-1/3 w-25 h-10 rounded-full text-black bg-white border shadow-4xl border-white hover:bg-white hover:border-white hover:text-white transition duration-300'>
+                      <button className='relative top-1 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-black shadow-4xl hover:border-white hover:bg-black hover:text-white transition duration-300'>
                         See more</button>
                     </a>
                     </div>
@@ -138,7 +138,7 @@ export default function MobileApp() {
                     <div className='text-start bg-gray-200 top-99 h-20 w-full z-10 absolute'>
                     <h3 className='font-Exo-2 text-xl text-center text-black'>Newest review of product just released</h3>
                     <a href='/'>
-                        <button className='relative top-3 left-1/3 w-25 h-10 rounded-full text-black bg-white border shadow-4xl border-white hover:bg-white hover:border-white hover:text-white transition duration-300'>
+                    <button className='relative top-1 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-black shadow-4xl hover:border-white hover:bg-black hover:text-white transition duration-300'>
                         See more</button>
                     </a>
                     </div>
@@ -154,7 +154,7 @@ export default function MobileApp() {
                      <div className='text-start bg-gray-200 h-20 w-full z-10 absolute'>
                     <h3 className='font-Exo-2 text-xl text-black'>Have you read the latest WEC debriefing?</h3>
                     <a href='/'>
-                        <button className='relative bottom-5 left-1/3 w-25 h-10 rounded-full text-black bg-white border shadow-4xl border-white hover:bg-white hover:border-white hover:text-white transition duration-300'>
+                    <button className='relative top-1 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-black shadow-4xl hover:border-white hover:bg-black hover:text-white transition duration-300'>
                         See more</button>
                     </a>
                     </div>
