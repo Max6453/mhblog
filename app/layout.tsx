@@ -34,8 +34,7 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "MHBlog",
   description: "Blog ",
-  authors: [{ name: "Maxim harvančík"}],
-  manifest: "manifest.json",
+  manifest: "/manifest.json",
   icons: "favicon.ico"
 };
 
