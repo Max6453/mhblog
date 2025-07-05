@@ -29,6 +29,12 @@ import footer from '@/components/ui/footer'
  
 export type IconProps = React.HTMLAttributes<SVGElement>;
  
+ if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('sw.js');
+        });
+      }
+      
 const Icons = {
   calendar: (props: IconProps) => <CalendarIcon {...props} />,
   email: (props: IconProps) => <MailIcon {...props} />,
