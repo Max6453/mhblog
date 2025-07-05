@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   title: "MHBlog",
   description: "Blog ",
   manifest: "/manifest.json",
-  icons: "favicon.ico"
+  icons: "/mobileIcon-navbar.png"
 };
 
 export const viewport: Viewport = {
