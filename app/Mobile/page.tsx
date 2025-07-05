@@ -61,7 +61,7 @@ export default function MobileApp() {
         <div className={`bg-neutral-950 ${showSplash ? 'opacity-0 pointer-events-none' : 'opacity-100 transition-opacity duration-700'}`}>
         </div>
         */}
-            <header className="relative inset-x-0 top-0 z-50">
+            <header className="relative top-0">
                      <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8 h-10 bg-gray-200 shadow-2xl shadow-white">
                       <div className='text-2xl text-neutral-950 font-edu-vic-wa-nt-beginner top-0 absolute left-33 pt-1'>
                         <h1 className='font-bold font-raleway'>MHBlog</h1>
@@ -82,13 +82,13 @@ export default function MobileApp() {
                    <AnimatePresence>
                     {mobileMenuOpen && (
                     <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
-          <div className="fixed inset-0 z-50 h-screen" />
+          <div className="fixed h-screen" />
             <motion.div
               initial={{ translate: '-60%', opacity: 0 }}
               animate={{ translate: 0, opacity: 1 }}
               exit={{ translate: '-100%', opacity: 1 }}
               transition={{ type:"keyframes", stiffness: 300, damping: 30, duration: 0.5 }}
-              className="fixed inset-y-1 right-0 z-50 w-full overflow-y-auto opacity-10 text-center text-blue-500 bg-white px-6 py-6 sm:max-w-full sm:ring-1 sm:ring-gray-900/10"
+              className="fixed right-0 inset-y-0 z-50 w-full overflow-y-auto opacity-10 text-center text-blue-500 bg-white px-6 py-6 sm:max-w-full sm:ring-1 sm:ring-gray-900/10"
             >
                 <DialogPanel>
                   <div className="flex z-50 items-center justify-between">

@@ -142,7 +142,7 @@ const handleNewsletterSubmit = async (e: React.FormEvent) => {
   <div className='bg-neutral-950'>
     {/*<Banner text="LATEST EVENTS: 24 Hours of Le Man's - WEC; Formula 1 Canadian Grand Prix - Qualifying at 10pm CET; NHL Edmonton Oilers vs Florida Panthers at 2am CET"
     speed={25}/> */}
-<header className="relative inset-x-0 top-0">
+<header className="relative top-0">
          <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8 h-30 bg-gray-200 shadow-2xl shadow-white">
           <div className='text-5xl text-neutral-950 font-edu-vic-wa-nt-beginner'>
             <h1 className='font-bold font-raleway'>MHBlog</h1>
@@ -166,7 +166,7 @@ const handleNewsletterSubmit = async (e: React.FormEvent) => {
        <AnimatePresence>
         {mobileMenuOpen && (
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="block static">
-        <div className="fixed inset-0 z-50 bg-black/20" />
+        <div className="fixed inset-1 bg-black/20" />
         <motion.div
           initial={{ x: '0', opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}

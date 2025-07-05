@@ -92,7 +92,7 @@ const Masonry: React.FC<MasonryProps> = ({
   scaleOnHover = true,
   hoverScale = 0.95,
   blurToFocus = true,
-  colorShiftOnHover = true,
+  colorShiftOnHover = false,
 }) => {
   const columns = useMedia(
     [
@@ -233,7 +233,7 @@ const Masonry: React.FC<MasonryProps> = ({
   };
 
   return (
-    <div ref={containerRef} className="relative h-full lg:w-280 sm:w-full md:w-full lg:left-40 md:left-0 max-md:left-0">
+    <div ref={containerRef} className="relative h-full lg:w-280 sm:w-full md:w-full max-lg:left-40 xl:left-40 md:left-0 min-lg:left-0 max-md:left-0">
       {grid.map((item) => (
         <div
           key={item.id}
