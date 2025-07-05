@@ -27,7 +27,7 @@
      "src": "mobileIcon-navbar.png",
       "sizes": "96x96",
       "type": "image/png",
-      "form_factor": "narrow",
+      "form_factor": "wide",
       "label": "Wonder Widgets"
     }
   ],
