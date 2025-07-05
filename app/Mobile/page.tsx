@@ -95,24 +95,24 @@ export default function MobileApp() {
             </AnimatePresence>
             </header>
             <div className="grid grid-cols-1 grid-rows-1 ">
-       <Carousel className="max-md:left-0 max-md:w-90 rounded-2xl">
-       <h4
-       className='font-Exo-2 text-xl text-center pt-2 top-150 text-black z-10 h-11 bg-gray-200 absolute w-full'>Pics of the week</h4>
-      <CarouselContent>
-     <CarouselItem className="left-36 cursor-grab active:cursor-grabbing">
-      <img src="/assets/britishGP-Mobile-friday.jpg" className='w-full h-full object-cover overflow-hidden'></img>
-      <div className="bg-gray-500 opacity-80"></div>
-     </CarouselItem>
-     <CarouselItem className="text-center left-36 cursor-grab active:cursor-grabbing">
-      <img src="assets/mercedes-austria.webp" className="w-full h-160 object-cover"></img>
-     </CarouselItem>
-     <CarouselItem className="text-center cursor-grab active:cursor-grabbing">
-      <img src="/assets/reb-bull-austria.jpg" className='h-160 object-cover'></img>
-     </CarouselItem>
-     </CarouselContent>
-      <CarouselPrevious className="left-0"/>
-      <CarouselNext className="right-0" />
-    </Carousel>
+                  <Carousel className="max-md:left-0 max-md:w-90 rounded-2xl">
+                  <h4
+                  className='font-Exo-2 text-xl text-center pt-2 top-150 text-black z-10 h-11 bg-gray-200 absolute w-full'>Pics of the week</h4>
+                  <CarouselContent>
+                <CarouselItem className="left-36 cursor-grab active:cursor-grabbing">
+                  <img src="/assets/Formula1/Testing-hungary-Chicane-mobile.jpg" className='object-cover h-full w-full'></img>
+                  <div className="bg-gray-500 opacity-80"></div>
+                </CarouselItem>
+                <CarouselItem className="text-center left-36 cursor-grab active:cursor-grabbing">
+                  <img src="assets/Formula1/Austria-T4.jpg" className="w-full h-full object-cover"></img>
+                </CarouselItem>
+                <CarouselItem className="text-center cursor-grab active:cursor-grabbing">
+                  <img src="/assets/Formula1/testing-Hungary-T4-mobile.jpg" className='w-full h-160 object-cover'></img>
+                </CarouselItem>
+                </CarouselContent>
+                  <CarouselPrevious className="left-0 hidden"/>
+                  <CarouselNext className="right-0 hidden" />
+                </Carousel>
               <div className="relative w-full h-100 animate-fade-up animate-once animate-ease-in-out">
                   <img src="/assets/britishGP-Mobile-friday.jpg" className='object-cover h-full w-full'/>
                   <div className='text-start bg-gray-200 top-99 h-20 w-full z-10 absolute'>
