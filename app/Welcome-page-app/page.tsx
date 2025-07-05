@@ -66,7 +66,7 @@ const Icons = {
  
 const DATA = {
   navbar: [
-    { href: "/app", icon: HomeIcon, label: "Home" },
+    { href: "/Mobile", icon: HomeIcon, label: "Home" },
     { href: "/Archive", icon: ArchiveIcon, label: "Archive" },
     { href: "/Contact", icon: UserIcon, Label: "Contact"},
     { href: "https://www.instagram.com/harvancik_maxim/", icon: InstagramIcon, label: "Instagram "},
@@ -162,7 +162,7 @@ export default function WelcomePage() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="/app"
+                href="/Mobile"
                 className="rounded-md bg-neutral-950 px-3.5 py-2.5 text-sm font-edu-vic-wa-nt-beginner font-semibold text-white hover:text-black shadow-xs hover:bg-white duration-300 hover:border-black border"
               >
                 head to the main page
