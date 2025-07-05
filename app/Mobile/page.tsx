@@ -25,7 +25,7 @@ export default function MobileApp() {
 
     return(
         <div className='bg-neutral-950 font-raleway'>
-          {/* HIDE AFTER A RACE */}
+          {/* Animation 
 <AnimatePresence>
         {showSplash && (
           <motion.div
@@ -60,7 +60,7 @@ export default function MobileApp() {
       </AnimatePresence>
         <div className={`bg-neutral-950 ${showSplash ? 'opacity-0 pointer-events-none' : 'opacity-100 transition-opacity duration-700'}`}>
         </div>
-
+        */}
             <header className="relative inset-x-0 top-0 z-50">
                      <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8 h-10 bg-gray-200 shadow-2xl shadow-white">
                       <div className='text-2xl text-neutral-950 font-edu-vic-wa-nt-beginner top-0 absolute left-33 pt-1'>
