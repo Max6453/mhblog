@@ -92,7 +92,7 @@ const Masonry: React.FC<MasonryProps> = ({
   scaleOnHover = true,
   hoverScale = 0.95,
   blurToFocus = true,
-  colorShiftOnHover = false,
+  colorShiftOnHover = true,
 }) => {
   const columns = useMedia(
     [
@@ -233,7 +233,7 @@ const Masonry: React.FC<MasonryProps> = ({
   };
 
   return (
-    <div ref={containerRef} className="relative h-full lg:w-280 md:w-full  lg:left-40 md:left-0 max-md:left-0">
+    <div ref={containerRef} className="relative h-full lg:w-280 md:w-full lg:left-40 md:left-0 max-md:left-0">
       {grid.map((item) => (
         <div
           key={item.id}
@@ -245,7 +245,7 @@ const Masonry: React.FC<MasonryProps> = ({
           onMouseLeave={(e) => handleMouseLeave(item.id, e.currentTarget)}
         >
           <div
-            className="relative w-full h-full overflow-hidden hover:scale-120 duration-300 bg-cover bg-center rounded-[10px] shadow-[0px_10px_50px_-10px_rgba(0,0,0,0.2)] uppercase text-[10px] leading-[10px]"
+            className="relative w-full h-full hover:scale-105 duration-300 bg-cover bg-center rounded-[10px] shadow-[0px_10px_50px_-10px_rgba(0,0,0,0.2)] uppercase text-[10px] leading-[10px]"
             style={{ backgroundImage: `url(${item.img})` }}
           >
             {colorShiftOnHover && (
