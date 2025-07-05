@@ -97,7 +97,7 @@ export default function AustrianGP() {
           transition={{ type:"spring", stiffness: 300, damping: 30, duration: 0.6 }}
           className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto opacity-10 text-center text-white bg-black/50 px-6 py-6 sm:max-w-full sm:ring-1 sm:ring-gray-900/10"
         >
-    <DialogPanel>
+    <DialogPanel className="z-50">
       <div className="flex items-center justify-between">
         <a href="#" className="-m-1.5 p-1.5">
           <span className="sr-only">Your Company</span>
