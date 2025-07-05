@@ -127,7 +127,7 @@ export default function MobileApp() {
                     )}
             </AnimatePresence>
             </header>
-            <div className="grid grid-cols-1 grid-rows-1 ">
+            <div className="grid grid-cols-1 grid-rows-1 -z-10">
                   <Carousel className="max-md:left-0 max-md:w-90 rounded-2xl">
                   <h4
                   className='font-Exo-2 text-xl text-center pt-2 top-150 text-black z-10 h-11 bg-gray-200 absolute w-full'>Pics of the week</h4>
@@ -143,8 +143,8 @@ export default function MobileApp() {
                   <img src="/assets/britishGP-Mobile-friday.jpg" className='w-full h-160 object-cover'></img>
                 </CarouselItem>
                 </CarouselContent>
-                  <CarouselPrevious className="left-0 hidden"/>
-                  <CarouselNext className="right-0 hidden" />
+                  <CarouselPrevious className="left-0"/>
+                  <CarouselNext className="right-0" />
                 </Carousel>
                 <div className="relative w-full h-100">
                     <img src="/assets/britishGP-Mobile-friday.jpg"
