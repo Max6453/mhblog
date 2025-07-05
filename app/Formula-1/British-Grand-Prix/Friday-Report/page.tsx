@@ -18,35 +18,6 @@ const navigation = [
   { name: 'Portfolio', href: '#About', current: true },
 ] 
 
-const LoadingScreen: React.FC = () => (
-  <div
-    style={{
-      position: "fixed",
-      top: 0,
-      left: 0,
-      width: "100vw",
-      height: "100vh",
-      background: "rgba(0,0,0,0.0)",
-      color: "#fff",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      fontSize: "2rem",
-      zIndex: 9999,
-      transition: "all",
-      animation:"ease-in-out",
-      animationDuration:"300ms"
-    }}
-  >
-   <LineWobble
-  size="80"
-  stroke="5"
-  bgOpacity="0.1"
-  speed="1.75"
-  color="white" 
-/>
-  </div>
-);
 
 const items = [
     {
@@ -91,14 +62,6 @@ const items = [
 export default function AustrianGP() {
       const [mobileMenuOpen, setMobileMenuOpen] = useState(false) 
         const [loading, setLoading] = useState(true);
-  
-    useEffect(() => {
-      // Simulate loading (e.g., fetching data)
-      const timer = setTimeout(() => setLoading(false), 1500);
-      return () => clearTimeout(timer);
-    }, []);
-  
-    if (loading) return <LoadingScreen />;
 
     return(
 <div className="bg-gradient-to-bl from-neutral-50 via-neutral-500 h-full relative">
@@ -229,6 +192,10 @@ export default function AustrianGP() {
                     colorShiftOnHover={true}
                     />
                 </div>
+                <span className="text-sm pl-80 top-190 max-sm:top-550 relative max-sm:pl-0">
+                  Note that the telemetries I am showing you is my own creation using dedicated library
+                  <a href="https://docs.fastf1.dev"className="p-1 underline">(fastf1)</a>.
+                  </span>
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-20 font-josefin-sans lg:pt-200 max-sm:pt-580 lg:w-300 md:w-200 ">
                    FP2 wasn't a different story. Another great source of valuable data and astonishing lap of Lando Norris.
                    Also a little detail i noticed, Both mclarens need to lift in copse or T9. Why? I don't know particulary but when i will, i will keep you posted.
