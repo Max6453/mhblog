@@ -28,13 +28,8 @@ import { supabase } from "@/lib/supabaseClient";
 import footer from '@/components/ui/footer'
  
 export type IconProps = React.HTMLAttributes<SVGElement>;
- 
- if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('sw.js');
-        });
-      }
-      
+
+
 const Icons = {
   calendar: (props: IconProps) => <CalendarIcon {...props} />,
   email: (props: IconProps) => <MailIcon {...props} />,
@@ -105,10 +100,10 @@ const DATA = {
  
 
 const navigation = [
-  { name: 'Latest', href: '#latest', current: false },
-  { name: 'Archive', href: '/Archive', current: false },
-  { name: 'Contact', href: '/Contact', current: false },
-  { name: 'Portfolio', href: '/', current: true },
+  { name: 'Latest', href: '#latest', current: false, id: 1 },
+  { name: 'Archive', href: '/Archive', current: false, id: 2 },
+  { name: 'Contact', href: '/Contact', current: false, id: 3 },
+  { name: 'Portfolio', href: '/', current: true, id: 4 },
 ] 
 
 
@@ -174,12 +169,12 @@ const handleNewsletterSubmit = async (e: React.FormEvent) => {
           transition={{ type:"spring", stiffness: 300, damping: 30, duration: 0.6 }}
           className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto opacity-10 text-center text-white bg-black/50 px-6 py-6 sm:max-w-full sm:ring-1 sm:ring-gray-900/10"
         >
-    <DialogPanel>
+      <DialogPanel>
       <div className="flex items-center justify-between">
-        <a href="#" className="-m-1.5 p-1.5">
+        <a href="/" className="-m-1.5 p-1.5">
           <span className="sr-only">Your Company</span>
           <img
-            alt=""
+            alt="mobileIcon"
             src="./mobileIcon-black.png"
             className="h-20 w-auto"
           />
@@ -198,7 +193,7 @@ const handleNewsletterSubmit = async (e: React.FormEvent) => {
           <div className="space-y-2 py-6">
             {navigation.map((item) => (
               <a
-                key={item.name}
+                key={`${item.name}-${item.href}`}
                 href={item.href}
                 className="-mx-3 block rounded-lg px-3 py-2 font-semibold text-white opacity-90 text-6xl m-8 hover:text-neutral-700 transition-all duration-250"
               >
@@ -206,7 +201,7 @@ const handleNewsletterSubmit = async (e: React.FormEvent) => {
               </a>
             ))}
           </div>
-        </div>
+        </div>  
       </div>
       </DialogPanel>
     </motion.div>

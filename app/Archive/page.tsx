@@ -47,7 +47,7 @@ export default function Archive() {
       <Masonry
         items={items}
         ease="power3.out"
-        duration={0.6}
+        duration={0.3}
         stagger={0.05}
         animateFrom="bottom"
         scaleOnHover={true}

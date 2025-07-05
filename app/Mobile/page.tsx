@@ -11,18 +11,12 @@ const navigation = [
   { name: 'Archive', href: '/Archive', current: false },
   { name: 'WEC/IMSA', href: '/Contact', current: false },
   { name: 'Formula 1', href: '/', current: true },
-  { name: 'GTWC', href: "", current: false },
+  { name: 'GTWC', href: "/", current: false },
 ] 
 
 export default function MobileApp() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
       const [showSplash, setShowSplash] = useState(true);
-
-      useEffect(() => {
-  const timer = setTimeout(() => setShowSplash(false), 2000); // 2 seconds
-  return () => clearTimeout(timer);
-}, []);
-
     return(
         <div className='bg-neutral-950 font-raleway'>
           {/* Animation 
@@ -110,17 +104,15 @@ export default function MobileApp() {
                     </button>
                   </div>
                   <div className=" flow-root">
-                    <div className="divide-gray-500/10">
-                      <div className="">
-                        {navigation.map((item) => (
-                          <a
-                            key={item.name}
-                            href={item.href}
-                            className=" block rounded-lg text-start font-semibold font-orbitron text-neutral-950 mt-10 opacity-90 text-4xl hover:text-neutral-700 transition-all duration-250"
-                          >
-                            {item.name}
-                          </a>
-                        ))}
+                    <div className="divide-gray-500/10 font-Exo-2">
+                      <div className="flex flex-1 text-4xl top-12 relative text-start text-neutral-950">
+                        <ul className='flex flex-col gap-10'>
+                        <li><a href='/'>Latest</a></li>
+                        <li><a href='/'>Formula 1</a></li>
+                        <li><a href='/'>Tutorials</a></li>
+                        <li><a href='/'>Motorsport</a></li>
+                        <li><a href='/Contact'>Contact</a></li>
+                        </ul>
                       </div>
                     </div>
                     <div className='absolute bottom-10 text-start text-neutral-950'>
@@ -160,7 +152,7 @@ export default function MobileApp() {
                     <div className='text-start bg-gray-200 top-99 h-20 w-full z-10 absolute'>
                     <h3 className='font-Exo-2 text-xl text-center text-black'>Friday report just released!</h3>
                     <a href='/Formula-1/British-Grand-Prix/Friday-Report'>
-                        <button className='relative top-3 left-1/3 w-25 h-10 rounded-full text-black bg-white border shadow-4xl border-white hover:bg-white hover:border-white hover:text-white transition duration-300'>
+                        <button className='relative top-1 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-black shadow-4xl hover:bg-black hover:border-white hover:text-white transition duration-300'>
                         See more</button>
                     </a>
                     </div>
@@ -170,8 +162,8 @@ export default function MobileApp() {
                     className='object-cover w-full h-full'/>
                     <div className='text-start bg-gray-200 top-99 h-20 w-full z-10 absolute'>
                     <h3 className='font-Exo-2 text-xl text-center text-black'>Austria, you never dissapoint</h3>
-                    <a href='/Formula-1/Austria-Grand-Prix'>
-                        <button className='relative top-3 left-1/3 w-25 h-10 rounded-full text-black bg-white border shadow-4xl border-white hover:bg-white hover:border-white hover:text-white transition duration-300'>
+                    <a href='/Formula-1/Austrian-Grand-Prix'>
+                        <button className='relative top-1 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-black shadow-4xl hover:bg-black hover:border-white hover:text-white transition duration-300'>
                         See more</button>
                     </a>
                     </div>
