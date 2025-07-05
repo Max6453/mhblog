@@ -180,7 +180,30 @@ export default function AustrianGP() {
                     There was only one thing crazy. After many dissapointing races, Ferrari is looking strong for the first time i dare to say in this season.
                     Hamilton won FP1 with Norris and Piastri behind him. I believe this FP1 was great source of valuable data for the teams and they will progress more in FP2. 
                 </p>
-                <div className="relative top-30">
+                <div >
+                  <ul className="grid lg:grid-cols-3 max-sm:grid-cols-1 sm:grid-cols-2 gap-x-2 gap-10 p-2 mt-5 rounded-4xl w-full h-full ">
+                    <li>
+                      <img src="/assets/telemetry/NORvsLEC-FP2.png" className="rounded-2xl hover:scale-105 duration-300"/>
+                    </li>
+                    <li>
+                      <img src="/assets/telemetry/Results-FP1.png" className="rounded-2xl hover:scale-105 duration-300"/>
+                    </li>
+                    <li>
+                      <img src="/assets/telemetry/Results-FP2.png" className="rounded-2xl hover:scale-105 duration-300"/>
+                    </li>
+                    <li>                      
+                      <img src="/assets/telemetry/Sectors-FP1.png" className="rounded-2xl hover:scale-105 duration-300"/>
+                    </li>
+                    <li>
+                      <img src="/assets/telemetry/Sectors-FP2.png" className="rounded-2xl hover:scale-105 duration-300"/>
+                    </li>
+                    <li>
+                      <img src="/assets/telemetry/Top_Speeds-FP2.png" className="rounded-2xl hover:scale-105 duration-300"/>
+                    </li>
+                  </ul>
+                </div>
+                  {/*
+                  <div className="relative top-30">
                     <Masonry
                     items={items}
                     ease="power3.out"
@@ -190,13 +213,13 @@ export default function AustrianGP() {
                     scaleOnHover={true}
                     blurToFocus={true}
                     colorShiftOnHover={true}
-                    />
-                </div>
-                <span className="text-sm pl-80 top-190 max-sm:top-550 relative max-sm:pl-0">
+                    </div>
+                    />*/}
+                <span className="text-sm lg:pl-110 max-sm:pt-5 relative max-sm:pl-0 sm:pl-5 md:pl-20">
                   Note that the telemetries I am showing you is my own creation using dedicated library
                   <a href="https://docs.fastf1.dev"className="p-1 underline">(fastf1)</a>.
                   </span>
-                <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-20 font-josefin-sans lg:pt-200 max-sm:pt-580 lg:w-300 md:w-200 ">
+                <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-20 font-josefin-sans lg:pt-30 max-sm:pt-30 lg:w-300 md:w-200 ">
                    FP2 wasn't a different story. Another great source of valuable data and astonishing lap of Lando Norris.
                    Also a little detail i noticed, Both mclarens need to lift in copse or T9. Why? I don't know particulary but when i will, i will keep you posted.
                    FP2 won Lando Norris with both ferraris closing the podium.

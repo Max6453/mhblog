@@ -55,8 +55,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script src="https://web.cmp.usercentrics.eu/modules/autoblocker.js"></script>
-        <script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="zBJ9reyj18QlVL" async></script>
       </head>
       <body
         className={`${geistSans.variable} ${Edu.variable} ${Exo.variable} ${raleway.variable} antialiased`}
