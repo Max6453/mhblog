@@ -7,7 +7,7 @@
   "scope": "/",
   "icons": [
     {
-      "src": "/mobileIcon-navbar.png",
+      "src": "/mobileIcon.png",
       "sizes": "96x96",
       "type": "image/png"
     },
