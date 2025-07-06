@@ -10,21 +10,11 @@
       "src": "/mobileIcon.png",
       "sizes": "96x96",
       "type": "image/png"
-    },
-    {
-      "src": "/mobileIcon-navbar.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/mobileIcon-navbar.png",
-      "sizes": "512x512",
-      "type": "image/png"
     }
   ],
   "screenshots": [
     {
-     "src": "mobileIcon-navbar.png",
+     "src": "mobileIcon.png",
       "sizes": "96x96",
       "type": "image/png",
       "form_factor": "wide",

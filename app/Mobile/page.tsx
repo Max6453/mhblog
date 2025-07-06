@@ -148,6 +148,17 @@ export default function MobileApp() {
                   <CarouselPrevious className="left-0"/>
                   <CarouselNext className="right-0" />
                 </Carousel>
+                 <div className="relative w-full h-100">
+                    <img src="/assets/britshGP2025.jpg"
+                    className='w-full h-full object-cover'/>
+                    <div className='text-start bg-gray-200 top-99 h-20 w-full z-10 absolute'>
+                    <h3 className='font-Exo-2 text-xl text-center text-black'>Now what a race that was!!</h3>
+                     <a href='/Formula-1/British-Grand-Prix/Race-Report'>
+                        <button className='relative top-1 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-black shadow-4xl hover:bg-black hover:border-white hover:text-white transition duration-300'>
+                        See more</button>
+                    </a>
+                    </div>
+                </div>
                     <div className="relative w-full h-100">
                     <img src="/assets/download.jpg"
                     className='w-full h-full'/>
