@@ -105,14 +105,16 @@ export default function MobileApp() {
                   </div>
                   <div className=" flow-root">
                     <div className="divide-gray-500/10 font-Exo-2">
-                      <div className="flex flex-1 text-4xl top-12 relative text-start text-neutral-950">
-                        <ul className='flex flex-col gap-10'>
+                      <div className="flex text-4xl top-12 relative text-start text-neutral-950">
+                        <ul className='flex flex-col gap-5'>
                         <li><a href='/'>Latest</a></li>
                         <li><a href='/'>Formula 1</a></li>
                         <li><a href='/'>Tutorials</a></li>
                         <li><a href='/'>Motorsport</a></li>
                         <li><a href='/Contact'>Contact</a></li>
                         </ul>
+                        <hr className='w-50 bg-black absolute top-77'/>
+                        <span className='absolute top-85'><a href='/Account'>MyAccount</a></span>
                       </div>
                     </div>
                     <div className='absolute bottom-10 text-start text-neutral-950'>
@@ -146,6 +148,13 @@ export default function MobileApp() {
                   <CarouselPrevious className="left-0"/>
                   <CarouselNext className="right-0" />
                 </Carousel>
+                    <div className="relative w-full h-100">
+                    <img src="/assets/download.jpg"
+                    className='w-full h-full'/>
+                    <div className='text-start bg-gray-200 top-99 h-20 w-full z-10 absolute'>
+                    <h3 className='font-Exo-2 text-xl text-center text-black'>Don't forget to tun your local TV station on 16:00 CEST!!</h3>
+                    </div>
+                </div>
                 <div className="relative w-full h-100">
                     <img src="/assets/britishGP-Mobile-friday.jpg"
                     className='object-cover w-full h-full'/>
