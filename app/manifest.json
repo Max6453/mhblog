@@ -1,29 +1,15 @@
 {
-  "name": "MHBlog",
-  "short_name": "MHBlog",
-  "author": "Maxim Harvančík",
-  "description": "MHBlog is a place where you can see essays and opinions on many topics from racing to politics.",
-  "start_url": "/Mobile",
-  "scope": "/",
-  "icons": [
-    {
-      "src": "/mobileIcon.png",
-      "sizes": "96x96",
-      "type": "image/png"
-    }
-  ],
-  "screenshots": [
-    {
-     "src": "mobileIcon.png",
-      "sizes": "96x96",
-      "type": "image/png",
-      "form_factor": "wide",
-      "label": "Wonder Widgets"
-    }
-  ],
-  "theme_color": "#18181b",
-  "background_color": "#18181b",
-  "display": "standalone",
-  "orientation": "portrait",
-  "lang": "en"
+    "name": "MHBlog",
+    "description" : "latest news across many topics",
+    "start_url" : "/Welcome-page-app",
+    "icons": [
+        {
+            "src": "/mobileIcon.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
 }
