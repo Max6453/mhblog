@@ -5,14 +5,14 @@
     "icons": [
         {
             "src": "/mobileIcon.png",
-            "sizes": "96x96",
+            "sizes": "146x148",
             "type": "image/png"
         }
     ],
     "screenshots": [
     {
         "src": "/mobileIcon.png",
-        "sizes": "96x96",
+        "sizes": "146x148",
         "type": "image/png"
     }
     ],
