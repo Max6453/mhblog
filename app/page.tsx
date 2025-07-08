@@ -1,12 +1,12 @@
 'use client'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Disclosure, DisclosureButton, DisclosurePanel, Label, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
-import { Bars2Icon, CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
+import { Bars2Icon, CalendarDaysIcon, HandRaisedIcon, SunIcon, MoonIcon } from '@heroicons/react/24/outline'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 import * as React from "react"
 import { Dialog, DialogPanel } from '@headlessui/react'
-import { AnimatePresence, animateVisualElement, motion } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
 import { cn } from "@/lib/utils"
 import Banner from "@/components/ui/Banner";
 import { LineWobble } from 'ldrs/react'
@@ -23,12 +23,9 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Dock, DockIcon } from "@/components/magicui/dock";
-import { icon } from '@fortawesome/fontawesome-svg-core';
 import { supabase } from "@/lib/supabaseClient";
-import footer from '@/components/ui/footer'
- 
-export type IconProps = React.HTMLAttributes<SVGElement>;
 
+export type IconProps = React.HTMLAttributes<SVGElement>;
 
 const Icons = {
   calendar: (props: IconProps) => <CalendarIcon {...props} />,
@@ -73,7 +70,7 @@ const Icons = {
     </svg>
   ),
 };
- 
+
 const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -97,49 +94,70 @@ const DATA = {
   },
 };
 
- 
-
 const navigation = [
   { name: 'Latest', href: '#latest', current: false, id: 1 },
   { name: 'Archive', href: '/Archive', current: false, id: 2 },
   { name: 'Contact', href: '/Contact', current: false, id: 3 },
   { name: 'Portfolio', href: '/', current: true, id: 4 },
-] 
-
+];
 
 export default function Main() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false) 
-      const [loading, setLoading] = useState(true);
-        const [newsletterEmail, setNewsletterEmail] = useState("");
-          const [newsletterSuccess, setNewsletterSuccess] = useState(false);
-            const [newsletterError, setNewsletterError] = useState<string | null>(null);
-                  const [showSplash, setShowSplash] = useState(true);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [colorMode, setColorMode] = useState(
+    typeof window !== "undefined" && document.documentElement.classList.contains("dark")
+      ? "dark"
+      : "light"
+  );
+  const [loading, setLoading] = useState(true);
+  const [newsletterEmail, setNewsletterEmail] = useState("");
+  const [newsletterSuccess, setNewsletterSuccess] = useState(false);
+  const [newsletterError, setNewsletterError] = useState<string | null>(null);
+  const [showSplash, setShowSplash] = useState(true);
 
+  // Color mode toggle using Tailwind's dark class on <html>
+  const toggleColorMode = () => {
+    if (typeof window !== "undefined") {
+      document.documentElement.classList.toggle("dark");
+      setColorMode(document.documentElement.classList.contains("dark") ? "dark" : "light");
+    }
+  };
 
-const handleNewsletterSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-  setNewsletterSuccess(false);
-  setNewsletterError(null);
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setNewsletterSuccess(false);
+    setNewsletterError(null);
 
-  const { error } = await supabase.from("newsletter").insert([
-    { email: newsletterEmail }
-  ]);
+    const { error } = await supabase.from("newsletter").insert([
+      { email: newsletterEmail }
+    ]);
 
-  if (error) {
-    setNewsletterError("Failed to subscribe. Please try again.");
-  } else {
-    setNewsletterSuccess(true);
-    setNewsletterEmail("");
-  }
-};
+    if (error) {
+      setNewsletterError("Failed to subscribe. Please try again.");
+    } else {
+      setNewsletterSuccess(true);
+      setNewsletterEmail("");
+    }
+  };
 
   return (
-  <div className='bg-neutral-950'>
+  <div className='bg-background transition-colors duration-500'>
+    <button
+        onClick={toggleColorMode}
+        className="absolute top-367 max-sm:hidden right-120 z-50 p-1.5 rounded-full bg-opacity-80 bg-neutral-200 dark:bg-white text-white dark:text-white duration-200 transition"
+        aria-label="Toggle color mode"
+      >
+        {/* Show icon based on current mode */}
+        {typeof window !== "undefined" && document.documentElement.classList.contains("dark") ? (
+          <SunIcon className="size-6 text-yellow-400" />
+        ) : (
+          <MoonIcon className="size-6 text-neutral-950" />
+        )}
+      </button>
     {/*<Banner text="LATEST EVENTS: 24 Hours of Le Man's - WEC; Formula 1 Canadian Grand Prix - Qualifying at 10pm CET; NHL Edmonton Oilers vs Florida Panthers at 2am CET"
     speed={25}/> */}
-<header className="relative top-0">
-         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8 h-30 bg-gray-200 shadow-2xl shadow-white">
-          <div className='text-5xl text-neutral-950 font-edu-vic-wa-nt-beginner'>
+<header className="relative top-0 dark:text-white">
+         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8 h-32 border-b-2 pt-6">
+          <div className='text-5xl dark:text-white font-edu-vic-wa-nt-beginner'>
             <h1 className='font-bold font-raleway'>MHBlog</h1>
             <h3 className='text-3xl max-sm:text-2xl max-sm:w-60'>Latest news and intrigues across many topics</h3>
           </div>
@@ -150,7 +168,7 @@ const handleNewsletterSubmit = async (e: React.FormEvent) => {
             id='openBtn'
               type="button"
               onClick={() => setMobileMenuOpen(true)}
-              className="pb-10 icon-default inline-flex items-center justify-center rounded-md p-2.5 text-neutral-950 z-50 animation duration-300 transform transition-all"
+              className="pb-10 icon-default inline-flex items-center justify-center rounded-md p-2.5 text-white z-50 animation duration-300 transform transition-all"
             >
               <span className="sr-only">Open main menu</span>
               <Bars3Icon aria-hidden="true" className="size-10 block hover:-scale-y-110 max-sm:hidden animation duration-300 transition-all transform" />
@@ -212,7 +230,7 @@ const handleNewsletterSubmit = async (e: React.FormEvent) => {
 
 {/* DOCK NAVBAR FOR WEB APP */}
 
- <div className="flex flex-col fixed z-50 top-150 pl-8 items-center justify-center max-sm:block md:hidden lg:hidden xl:hidden 2xl:hidden max-md:hidden">
+ <div className="flex flex-col fixed z-50 top-150 pl-3 items-center justify-center max-sm:block md:hidden lg:hidden xl:hidden 2xl:hidden max-md:hidden">
       <TooltipProvider>
         <Dock direction="middle">
           {DATA.navbar.map((item) => (
@@ -236,6 +254,29 @@ const handleNewsletterSubmit = async (e: React.FormEvent) => {
               </Tooltip>
             </DockIcon>
           ))}
+          <DockIcon>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <button
+              onClick={toggleColorMode}
+              aria-label="Toggle color mode"
+              className={cn(
+                buttonVariants({ variant: "ghost", size: "icon" }),
+                "size-12 rounded-full"
+              )}
+            >
+              {typeof window !== "undefined" && document.documentElement.classList.contains("dark") ? (
+                <SunIcon className="size-6 text-yellow-400" />
+              ) : (
+                <MoonIcon className="size-6 text-gray-800" />
+              )}
+            </button>
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>Toggle color mode</p>
+          </TooltipContent>
+        </Tooltip>
+      </DockIcon>
           {Object.entries(DATA.contact.social).map(([name, social]) => (
             <DockIcon key={name}>
               <Tooltip>
@@ -265,8 +306,8 @@ const handleNewsletterSubmit = async (e: React.FormEvent) => {
 
 {/* LATEST */}
 <div className='relative h-dvh' id='Latest'>
-  <div className="absolute top-0 z-[-2] h-370 w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
-      <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white relative  max-md:top-10 lg:pt-10 pl-10 font-Exo-2'>latest</h1>
+  <div className="absolute top-0 z-[-2] h-370 w-full"></div>
+      <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white relative max-md:top-10 lg:pt-10 pl-10 font-Exo-2'>latest</h1>
     <div className="relative top-20 max-sm:pl-11.5 lg:pl-12 max-md:pl-11.5 md:pl-0 grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
      <a href='/Formula-1/British-Grand-Prix/Race-Report'>
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
@@ -321,7 +362,7 @@ const handleNewsletterSubmit = async (e: React.FormEvent) => {
     {/* END LATEST */}
       {/* FOOTER */}
        <footer
-       className="relative lg:top-30 md:top-125 max-md:top-165 max-sm:top-285 h-full w-full text-center sm:footer-horizontal pt-10 bg-gradient-to-b from-neutral-950 via-neutral-950 to-gray-900 text-black font-edu-vic-wa-nt-beginner p-10 text-2xl">
+       className="relative lg:top-30 md:top-125 max-md:top-165 max-sm:top-285 h-full w-full text-center sm:footer-horizontal pt-10 text-black font-edu-vic-wa-nt-beginner p-10 text-2xl">
           <div className="relative isolate overflow-hidden py-16 sm:py-24 lg:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
@@ -408,9 +449,8 @@ const handleNewsletterSubmit = async (e: React.FormEvent) => {
             </div>
         </div>
       </footer>
-    <aside className="relative bg-gray-900 text-center items-baseline pr-20 lg:top-30 md:top-125 max-md:top-165 max-sm:top-280 max-md:text-lg max-md:text-center max-sm:pl-18">
+    <aside className="relative text-center items-baseline pr-20 lg:top-30 md:top-125 max-md:top-165 max-sm:top-280 max-md:text-lg max-md:text-center max-sm:pl-18">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
-        <span><a href='/Mobile'>Devlink</a></span>
       </aside>
 </div>
   )

@@ -6,14 +6,6 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, } from "@/components/ui/carousel";
 import React from 'react';
 
-const navigation = [
-  { name: 'Latest', href: '/app', current: false },
-  { name: 'Archive', href: '/Archive', current: false },
-  { name: 'WEC/IMSA', href: '/Contact', current: false },
-  { name: 'Formula 1', href: '/', current: true },
-  { name: 'GTWC', href: "/", current: false },
-] 
-
 export default function MobileApp() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
       const [showSplash, setShowSplash] = useState(true);
@@ -115,6 +107,7 @@ export default function MobileApp() {
                         </ul>
                         <hr className='w-50 bg-black absolute top-77'/>
                         <span className='absolute top-85'><a href='/Account'>MyAccount</a></span>
+                        <span className='absolute top-95'><a href='/Mobile/About'>About</a></span>
                       </div>
                     </div>
                     <div className='absolute bottom-10 text-start text-neutral-950'>
