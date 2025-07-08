@@ -34,7 +34,7 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "MHBlog",
   description: "Blog ",
-  manifest: "site.webmanifest",
+  manifest: "manifest.json",
   icons: "/mobileIcon.png"
 };
 
