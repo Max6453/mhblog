@@ -141,18 +141,6 @@ export default function Main() {
 
   return (
   <div className='bg-background transition-colors duration-500'>
-    <button
-        onClick={toggleColorMode}
-        className="absolute top-367 max-sm:hidden right-120 z-50 p-1.5 rounded-full bg-opacity-80 bg-neutral-200 dark:bg-white text-white dark:text-white duration-200 transition"
-        aria-label="Toggle color mode"
-      >
-        {/* Show icon based on current mode */}
-        {typeof window !== "undefined" && document.documentElement.classList.contains("dark") ? (
-          <SunIcon className="size-6 text-yellow-400" />
-        ) : (
-          <MoonIcon className="size-6 text-neutral-950" />
-        )}
-      </button>
     {/*<Banner text="LATEST EVENTS: 24 Hours of Le Man's - WEC; Formula 1 Canadian Grand Prix - Qualifying at 10pm CET; NHL Edmonton Oilers vs Florida Panthers at 2am CET"
     speed={25}/> */}
 <header className="relative top-0 dark:text-white">
@@ -161,14 +149,15 @@ export default function Main() {
             <h1 className='font-bold font-raleway'>MHBlog</h1>
             <h3 className='text-3xl max-sm:text-2xl max-sm:w-60'>Latest news and intrigues across many topics</h3>
           </div>
-          <img src='/mobileIcon-navbar.png'
+          <img
+          src={colorMode === "dark" ? "/mobileIcon-black.png" : "/mobileIcon-navbar.png"}
           className='h-30 w-auto hover:scale-110 right-175 transition-all duration-300 absolute sm:hidden md:hidden lg:hidden xl:block'/>
           <div className="absolute right-5 pt-10 pr-5 max-md:pr-0 max-md:right-0 max-md:pt-25">
             <button
             id='openBtn'
               type="button"
               onClick={() => setMobileMenuOpen(true)}
-              className="pb-10 icon-default inline-flex items-center justify-center rounded-md p-2.5 text-white z-50 animation duration-300 transform transition-all"
+              className="bottom-5 relative icon-default inline-flex items-center justify-center rounded-md p-2.5 text-white z-50 animation duration-300 transform transition-all"
             >
               <span className="sr-only">Open main menu</span>
               <Bars3Icon aria-hidden="true" className="size-10 block hover:-scale-y-110 max-sm:hidden animation duration-300 transition-all transform" />
@@ -213,12 +202,24 @@ export default function Main() {
               <a
                 key={`${item.name}-${item.href}`}
                 href={item.href}
-                className="-mx-3 block rounded-lg px-3 py-2 font-semibold text-white opacity-90 text-6xl m-8 hover:text-neutral-700 transition-all duration-250"
+                className="-mx-3 block rounded-lg px-3 py-2 font-semibold text-white opacity-90 text-6xl m-8 hover:text-blue-500 transition-all duration-250"
               >
                 {item.name}
               </a>
             ))}
           </div>
+              <button
+        onClick={toggleColorMode}
+        className="absolute max-sm:hidden z-50 p-4 right-180 rounded-full bg-opacity-10 bg-neutral-200 dark:bg-white text-white dark:text-white duration-200 transition"
+        aria-label="Toggle color mode"
+      >
+        {/* Show icon based on current mode */}
+        {typeof window !== "undefined" && document.documentElement.classList.contains("dark") ? (
+          <SunIcon className="size-6 text-yellow-400" />
+        ) : (
+          <MoonIcon className="size-6 text-neutral-950" />
+        )}
+      </button>
         </div>  
       </div>
       </DialogPanel>
