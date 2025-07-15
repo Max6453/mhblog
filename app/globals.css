@@ -54,15 +54,15 @@ html{
 
 :root {
   --radius: 0.625rem;
-  --background: rgb(0, 140, 255);
+  --background: #171717;
   --foreground: rgb(255, 255, 255);
-  --mobile-background: rgb(0, 140, 255);
+  --mobile-background: #171717;
   --mobile-foreground: rgb(255, 255, 255);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: rgb(0, 140, 255);
+  --primary: #171717;
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);

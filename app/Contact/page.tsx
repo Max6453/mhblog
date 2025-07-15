@@ -90,11 +90,12 @@ const DATA = {
 };
 
 const navigation = [
-  { name: 'Home', href: '/', current: false },
-  { name: 'Archive', href: '/Archive', current: false },
-  { name: 'Latest', href: '/', current: false },
-  { name: 'Portfolio', href: '#About', current: true },
-] 
+  { name: 'Home', href: '/', current: false, id: 1 },
+  { name: 'Archive', href: '/Archive', current: false, id: 2 },
+  { name: 'Contact', href: '/Contact', current: false, id: 3 },
+  { name: 'Portfolio', href: 'https://maximharvancik.vercel.app', current: true, id: 4 },
+];
+
 
 
 export default function Contact() {

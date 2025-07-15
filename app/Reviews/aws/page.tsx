@@ -18,6 +18,7 @@ const navigation = [
   { name: 'Portfolio', href: 'https://maximharvancik.vercel.app', current: true, id: 4 },
 ];
 
+
 const items = [
     {
       id: "1",
@@ -141,14 +142,14 @@ export default function AustrianGP() {
           <ScrollProgress />
             <header>
             <div className="relative inset-0">
-            <h1 className="absolute text-6xl top-82 left-50 z-10 font-josefin-sans max-md:left-7 items-baseline max-md:top-20 md:text-3xl sm:text-xl lg:text-6xl max-md:text-3xl text-white text-center font-bold">
-                British Grand Prix - Friday Report
+            <h1 className="absolute text-6xl top-102 left-50 z-10 font-josefin-sans max-md:left-7 items-baseline max-md:top-20 md:text-3xl sm:text-xl lg:text-6xl max-md:text-3xl text-white text-center font-bold">
+                MHBlog connected with AWS
             </h1>
-            <h5 className="absolute text-6xl top-100 left-20 z-10 font-sans max-md:left-0 max-md:top-50 md:text-3xl sm:text-xl lg:text-6xl text-center max-md:text-xl text-white font-bold">
-                Wrap up for friday in 2025 british Grand Prix
+            <h5 className="absolute text-6xl top-130 left-20 z-10 font-sans max-md:left-0 max-md:top-50 md:text-3xl sm:text-xl lg:text-6xl text-center max-md:text-xl text-white font-bold">
+                Another great milestone for small blog
             </h5>
             <img
-                src="/assets/McLaren-in-FP1-Silverstone-scaled.webp"
+                src="/assets/awsxf1.jpg"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96 overflow-hidden"
                 alt="Miami Grand Prix"
             />
@@ -157,74 +158,48 @@ export default function AustrianGP() {
             <div className="relative pb-10 md:left-0">
                 <div className="text-2xl justify-center text-white to-neutral-900 relative text-start">
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:w-90 lg:w-300 font-josefin-sans pt-15">
-                  From the beggining of this weekend we thought that this year's british grand prix will be close.
-                </p>
-                <h3 className="text-4xl m-5 lg:pl-75 pt-5">Before Silverstone</h3>
-                <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-0 max-md:w-90 max-lg:w-200 xl:w-300 font-josefin-sans pt-15">
-                    In Austria, Mclaren were driving in their own championship. they gave leclerc up to 20 seconds and lapped cars to roughly P7.
-                    Until 20th lap, Mclarens were after themselves. I believe every mclaren fan was having an heart attacks every lap.
-                    The climax of this racing was OP81 attempt to overtake LN4 to T4 but he locked-up his tyres and nearly hit it's own teammate.
+                  Hey everyone. I've got some exiting news for you. 
+                  After many attempts and researching, I have officialy opened a AWS account for you to view my formula 1 analysis.
                 </p>
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-50 font-josefin-sans pt-15 lg:w-300"> 
-                    After the first pitstop, the action on track got quiet. Sometimes, backmarkers fought each other but the gap at front was getting bigger every lap.
-                    This phenonemon last only 6 laps. OP81 started to push and managed to lower the gap to LN4.
-                    But Mclaren didn't planned to repeat the situation from 14th lap so they pitted LN4 again sooner than OP81. This was the whole race.
-                    Behind Mclarens, Leclerc was in no-man zone. No one was around him, only fans cheering and occasional backmarkers. GR63s mercedes was worse on that.
-                    Nearly got lapped at the end of the race but backmarkers slowed down enough mclarens.
-                    The backmarkers were really god at slowing front runners this year.
-                    FC43 nearly collided with OP81, pushing him off track. To Argentinian defense, he didn't notice him in his mirros because he was occupied wis his own fight with another.
-                    Lando Norris managed to finish P1 fith Piastri P2 and Leclerc completing the podium.
+                    I am super extited to finally share my work with someone and I hope we can build more things like this together.
+
                 </p>
-                <h3 className="text-4xl m-5 lg:pl-75 pt-5">FP1 and FP2</h3>
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-20 font-josefin-sans pt-15 lg:w-300"> 
-                    FP1 started at 13:30 CEST and it was calm. Only here and there some spins from Gasly or Bortoleto but nothing crazy.
-                    There was only one thing crazy. After many dissapointing races, Ferrari is looking strong for the first time i dare to say in this season.
-                    Hamilton won FP1 with Norris and Piastri behind him. I believe this FP1 was great source of valuable data for the teams and they will progress more in FP2. 
+                    Logging is super simple. Here is an instructions how to gain access. Reminder for you you have access only for the specific S3 bucket.
+                    You wont see nothing else and I am reccomending official AWS app if you don't bother to download it.
+                    Instructions:
                 </p>
-                <div >
-                  <ul className="grid lg:grid-cols-3 max-sm:grid-cols-1 sm:grid-cols-2 gap-x-2 gap-10 p-2 mt-5 rounded-4xl w-full h-full ">
+                <div>
+                  <ul className="text-center pr-20 max-sm:pr-2 text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-20 font-josefin-sans pt-15 lg:w-300">
                     <li>
-                      <img src="/assets/telemetry/NORvsLEC-FP2.png" className="rounded-2xl hover:scale-105 duration-300"/>
+                        <h4>1.</h4>
+                        <span>
+                        <a className="underline" href="https://eu-north-1.signin.aws.amazon.com/oauth?client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&code_challenge=hwrnVaEV32h9BO5XPzx6R-c320regUVWOoNsahXyKaE&code_challenge_method=SHA-256&response_type=code&redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26oauthStart%3D1752608099017%26state%3DhashArgsFromTB_eu-north-1_0fdd58fd3d9c92e3">
+                        Open this link</a></span>
                     </li>
                     <li>
-                      <img src="/assets/telemetry/Results-FP1.png" className="rounded-2xl hover:scale-105 duration-300"/>
+                        <h4>2.</h4>
+                        <div className="grid grid-cols-1">
+                            <span>Login with this details:</span>
+                            <span>Account ID or alias: mhblog</span>
+                            <span>username: mhblogUser</span>
+                            <span>password: mhblog_2025</span>
+                        </div>
                     </li>
                     <li>
-                      <img src="/assets/telemetry/Results-FP2.png" className="rounded-2xl hover:scale-105 duration-300"/>
-                    </li>
-                    <li>                      
-                      <img src="/assets/telemetry/Sectors-FP1.png" className="rounded-2xl hover:scale-105 duration-300"/>
+                        <h4>3.</h4>
+                        <span>Login</span>
                     </li>
                     <li>
-                      <img src="/assets/telemetry/Sectors-FP2.png" className="rounded-2xl hover:scale-105 duration-300"/>
-                    </li>
-                    <li>
-                      <img src="/assets/telemetry/Top_Speeds-FP2.png" className="rounded-2xl hover:scale-105 duration-300"/>
+                        <h4>4.</h4>
+                        <span>Here you go! enjoy and whenever you want you can give me a feedback what to improve etc.</span>
                     </li>
                   </ul>
                 </div>
-                  {/*
-                  <div className="relative top-30">
-                    <Masonry
-                    items={items}
-                    ease="power3.out"
-                    duration={0.1}
-                    stagger={0.05}
-                    animateFrom="bottom"
-                    scaleOnHover={true}
-                    blurToFocus={true}
-                    colorShiftOnHover={true}
-                    </div>
-                    />*/}
-                <span className="text-sm lg:pl-110 max-sm:pt-5 relative max-sm:pl-0 sm:pl-5 md:pl-20">
-                  Note that the telemetries I am showing you is my own creation using dedicated library
-                  <a href="https://docs.fastf1.dev"className="p-1 underline">(fastf1)</a>.
-                  </span>
-                <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-20 font-josefin-sans lg:pt-30 max-sm:pt-30 lg:w-300 md:w-200 ">
-                   FP2 wasn't a different story. Another great source of valuable data and astonishing lap of Lando Norris.
-                   Also a little detail i noticed, Both mclarens need to lift in copse or T9. Why? I don't know particulary but when i will, i will keep you posted.
-                   FP2 won Lando Norris with both ferraris closing the podium.
-                   Tommorow wil be full of surprises and overall an fun day to watch.
+                <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-20 font-josefin-sans pt-15 lg:w-300"> 
+                    There you have it. I really hope you like it and for myself i can finally share my creation with you.
+                    But now i'm just repeating myself so enjoy and we will be soon in touch once again.
                 </p>
               </div>
             </div>

@@ -11,12 +11,11 @@ import { LineWobble } from 'ldrs/react'
 import 'ldrs/react/LineWobble.css'
 
 const navigation = [
-  { name: 'Latest', href: '#latest', current: false },
-  { name: 'Topics', href: '/Categories', current: false },
-  { name: 'Contact', href: '#Contact', current: false },
-  { name: 'Portfolio', href: '#About', current: true },
-] 
-
+  { name: 'Home', href: '/', current: false, id: 1 },
+  { name: 'Archive', href: '/Archive', current: false, id: 2 },
+  { name: 'Contact', href: '/Contact', current: false, id: 3 },
+  { name: 'Portfolio', href: 'https://maximharvancik.vercel.app', current: true, id: 4 },
+];
 const LoadingScreen: React.FC = () => (
   <div
     style={{

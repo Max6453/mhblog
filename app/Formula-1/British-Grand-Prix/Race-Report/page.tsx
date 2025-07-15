@@ -12,11 +12,11 @@ import 'ldrs/react/LineWobble.css'
 import Masonry from '@/components/ui/Masonry';
 
 const navigation = [
-  { name: 'Latest', href: '#latest', current: false },
-  { name: 'Topics', href: '/Categories', current: false },
-  { name: 'Contact', href: '#Contact', current: false },
-  { name: 'Portfolio', href: '#About', current: true },
-] 
+  { name: 'Home', href: '/', current: false, id: 1 },
+  { name: 'Archive', href: '/Archive', current: false, id: 2 },
+  { name: 'Contact', href: '/Contact', current: false, id: 3 },
+  { name: 'Portfolio', href: 'https://maximharvancik.vercel.app', current: true, id: 4 },
+];
 
 
 const items = [
@@ -71,8 +71,10 @@ export default function AustrianGP() {
             <h1 className='font-bold font-raleway'>MHBlog</h1>
             <h3 className='text-3xl max-sm:text-2xl max-sm:w-60'>Latest news and intrigues across many topics</h3>
           </div>
+          <a href="/">
           <img src='/mobileIcon-navbar.png'
           className='h-30 w-auto hover:scale-110 right-175 transition-all duration-300 absolute sm:hidden md:hidden lg:hidden xl:block'/>
+          </a>
           <div className="absolute right-5 pt-10 pr-5 max-md:pr-0 max-md:right-0 max-md:pt-25">
             <button
             id='openBtn'

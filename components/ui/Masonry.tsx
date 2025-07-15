@@ -83,7 +83,7 @@ interface MasonryProps {
   colorShiftOnHover?: boolean;
 }
 
-const Masonry: React.FC<MasonryProps> = ({
+const   Masonry: React.FC<MasonryProps> = ({
   items,
   ease = "power3.out",
   duration = 0.6,
@@ -245,7 +245,7 @@ const Masonry: React.FC<MasonryProps> = ({
           onMouseLeave={(e) => handleMouseLeave(item.id, e.currentTarget)}
         >
           <div
-            className="relative w-full h-full hover:scale-105 duration-300 bg-cover bg-center rounded-[10px] shadow-[0px_10px_50px_-10px_rgba(0,0,0,0.2)] uppercase text-[10px] leading-[10px]"
+            className="relative w-full h-full hover:scale-105 duration-300 flex gap-x-10 bg-cover bg-center rounded-[10px] shadow-[0px_10px_50px_-10px_rgba(0,0,0,0.2)] uppercase text-[10px] leading-[10px]"
             style={{ backgroundImage: `url(${item.img})` }}
           >
             {colorShiftOnHover && (

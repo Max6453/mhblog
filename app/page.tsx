@@ -98,29 +98,17 @@ const navigation = [
   { name: 'Latest', href: '#latest', current: false, id: 1 },
   { name: 'Archive', href: '/Archive', current: false, id: 2 },
   { name: 'Contact', href: '/Contact', current: false, id: 3 },
-  { name: 'Portfolio', href: '/', current: true, id: 4 },
+  { name: 'Portfolio', href: 'https://maximharvancik.vercel.app', current: true, id: 4 },
 ];
 
 export default function Main() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const [colorMode, setColorMode] = useState(
-    typeof window !== "undefined" && document.documentElement.classList.contains("dark")
-      ? "dark"
-      : "light"
-  );
   const [loading, setLoading] = useState(true);
   const [newsletterEmail, setNewsletterEmail] = useState("");
   const [newsletterSuccess, setNewsletterSuccess] = useState(false);
   const [newsletterError, setNewsletterError] = useState<string | null>(null);
   const [showSplash, setShowSplash] = useState(true);
 
-  // Color mode toggle using Tailwind's dark class on <html>
-  const toggleColorMode = () => {
-    if (typeof window !== "undefined") {
-      document.documentElement.classList.toggle("dark");
-      setColorMode(document.documentElement.classList.contains("dark") ? "dark" : "light");
-    }
-  };
 
   const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -140,7 +128,7 @@ export default function Main() {
   };
 
   return (
-  <div className='bg-background transition-colors duration-500'>
+  <div className=' bg-neutral-900 transition-colors duration-500'>
     {/*<Banner text="LATEST EVENTS: 24 Hours of Le Man's - WEC; Formula 1 Canadian Grand Prix - Qualifying at 10pm CET; NHL Edmonton Oilers vs Florida Panthers at 2am CET"
     speed={25}/> */}
 <header className="relative top-0 dark:text-white">
@@ -149,9 +137,11 @@ export default function Main() {
             <h1 className='font-bold font-raleway'>MHBlog</h1>
             <h3 className='text-3xl max-sm:text-2xl max-sm:w-60'>Latest news and intrigues across many topics</h3>
           </div>
+          {/* 
           <img
           src={colorMode === "dark" ? "/mobileIcon-black.png" : "/mobileIcon-navbar.png"}
           className='h-30 w-auto hover:scale-110 right-175 transition-all duration-300 absolute sm:hidden md:hidden lg:hidden xl:block'/>
+          */}
           <div className="absolute right-5 pt-10 pr-5 max-md:pr-0 max-md:right-0 max-md:pt-25">
             <button
             id='openBtn'
@@ -208,18 +198,6 @@ export default function Main() {
               </a>
             ))}
           </div>
-              <button
-        onClick={toggleColorMode}
-        className="absolute max-sm:hidden z-50 p-4 right-180 rounded-full bg-opacity-10 bg-neutral-200 dark:bg-white text-white dark:text-white duration-200 transition"
-        aria-label="Toggle color mode"
-      >
-        {/* Show icon based on current mode */}
-        {typeof window !== "undefined" && document.documentElement.classList.contains("dark") ? (
-          <SunIcon className="size-6 text-yellow-400" />
-        ) : (
-          <MoonIcon className="size-6 text-neutral-950" />
-        )}
-      </button>
         </div>  
       </div>
       </DialogPanel>
@@ -231,7 +209,7 @@ export default function Main() {
 
 {/* DOCK NAVBAR FOR WEB APP */}
 
- <div className="flex flex-col fixed z-50 top-150 pl-3 items-center justify-center max-sm:block md:hidden lg:hidden xl:hidden 2xl:hidden max-md:hidden">
+ <div className="flex flex-col fixed z-50 top-150 pl-8 items-center justify-center max-sm:block md:hidden lg:hidden xl:hidden 2xl:hidden max-md:hidden">
       <TooltipProvider>
         <Dock direction="middle">
           {DATA.navbar.map((item) => (
@@ -255,29 +233,6 @@ export default function Main() {
               </Tooltip>
             </DockIcon>
           ))}
-          <DockIcon>
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <button
-              onClick={toggleColorMode}
-              aria-label="Toggle color mode"
-              className={cn(
-                buttonVariants({ variant: "ghost", size: "icon" }),
-                "size-12 rounded-full"
-              )}
-            >
-              {typeof window !== "undefined" && document.documentElement.classList.contains("dark") ? (
-                <SunIcon className="size-6 text-yellow-400" />
-              ) : (
-                <MoonIcon className="size-6 text-gray-800" />
-              )}
-            </button>
-          </TooltipTrigger>
-          <TooltipContent>
-            <p>Toggle color mode</p>
-          </TooltipContent>
-        </Tooltip>
-      </DockIcon>
           {Object.entries(DATA.contact.social).map(([name, social]) => (
             <DockIcon key={name}>
               <Tooltip>
@@ -310,6 +265,14 @@ export default function Main() {
   <div className="absolute top-0 z-[-2] h-370 w-full"></div>
       <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white relative max-md:top-10 lg:pt-10 pl-10 font-Exo-2'>latest</h1>
     <div className="relative top-20 max-sm:pl-11.5 lg:pl-12 max-md:pl-11.5 md:pl-0 grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
+    <a href='/Reviews/aws'>
+      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
+        <img src='/assets/awsxf1.jpg' className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
+        <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>MHBlog connected with AWS</h3>
+        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
+          See more</button>
+      </div>
+    </a>  
      <a href='/Formula-1/British-Grand-Prix/Race-Report'>
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
         <img src='/assets/britshGP2025.jpg' className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
@@ -347,14 +310,6 @@ export default function Main() {
         <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Canadian Grand Prix Debriefing</h3>
         <a href='/Formula-1/Canadian-Grand-Prix'>
         <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-          See more</button>
-        </a>
-      </div>
-      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/Le-Mans.jpg' className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
-        <h3 className='relative text-xl  bottom-66 pl-8 text-white font-bold font-Exo-2'>24 Hours of Le Man's</h3>
-        <a href='/Motorsport/WEC/Le-Mans'>
-        <button className='relative lg:bottom-20 max-md:bottom-20 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
           See more</button>
         </a>
       </div>
