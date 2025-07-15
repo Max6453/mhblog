@@ -192,7 +192,11 @@ export default function AustrianGP() {
                         <span>Login</span>
                     </li>
                     <li>
-                        <h4>4.</h4>
+                      <h4>4.</h4>
+                      <span>When you are in AWS console, look for S3 option</span>
+                    </li>
+                    <li>
+                        <h4>5.</h4>
                         <span>Here you go! enjoy and whenever you want you can give me a feedback what to improve etc.</span>
                     </li>
                   </ul>
