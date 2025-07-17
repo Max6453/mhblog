@@ -30,11 +30,9 @@ export default function Main() {
             <h1 className='font-bold font-raleway'>MHBlog</h1>
             <h3 className='text-3xl max-sm:text-2xl max-sm:w-60'>Latest news and intrigues across many topics</h3>
           </div>
-          {/* 
           <img
-          src={colorMode === "dark" ? "/mobileIcon-black.png" : "/mobileIcon-navbar.png"}
+          src= "/mobileIcon-black.png"
           className='h-30 w-auto hover:scale-110 right-175 transition-all duration-300 absolute sm:hidden md:hidden lg:hidden xl:block'/>
-          */}
           <div className="absolute right-5 pt-10 pr-5 max-md:pr-0 max-md:right-0 max-md:pt-25">
             <button
             id='openBtn'
@@ -111,6 +109,14 @@ export default function Main() {
   <div className="absolute top-0 z-[-2] h-370 w-full"></div>
       <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white relative max-md:top-10 lg:pt-10 pl-10 font-Exo-2'>latest</h1>
     <div className="relative top-20 max-sm:pl-11.5 lg:pl-12 max-md:pl-11.5 md:pl-0 grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
+    <a href='/Reviews/Gaming/Cyberpunk-2077-patch-2.3'>
+      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
+        <img src='/assets/cyberpunk-2077-tipy-cover.jpg' className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
+        <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Cyberpunk 2077 2.3 Patch just released</h3>
+        <button className='relative lg:bottom-28 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
+          See more</button>
+      </div>
+    </a>  
     <a href='/Reviews/aws'>
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
         <img src='/assets/awsxf1.jpg' className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
@@ -119,7 +125,7 @@ export default function Main() {
           See more</button>
       </div>
     </a>  
-     <a href='/Formula-1/British-Grand-Prix/Race-Report'>
+     <a href='/Motorpsort/Formula-1/British-Grand-Prix/Race-Report'>
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
         <img src='/assets/britshGP2025.jpg' className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
         <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>British Grand Prix - Race Report</h3>
@@ -130,7 +136,7 @@ export default function Main() {
      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
         <img src='/assets/McLaren-in-FP1-Silverstone-scaled.webp' className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
         <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>British Grand Prix - Friday Report</h3>
-        <a href='/Formula-1/British-Grand-Prix/Friday-Report'>
+        <a href='/Motorpsort/Formula-1/British-Grand-Prix/Friday-Report'>
         <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
           See more</button>
         </a>
@@ -138,7 +144,7 @@ export default function Main() {
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
         <img src='/assets/Austria.webp' className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
         <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Austrian Grand Prix debriefing</h3>
-        <a href='/Formula-1/Austrian-Grand-Prix'>
+        <a href='/Motorpsort/Formula-1/Austrian-Grand-Prix'>
         <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
           See more</button>
         </a>
@@ -151,20 +157,76 @@ export default function Main() {
           See more</button>
         </a>
       </div>
-      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/Canada.webp' className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Canadian Grand Prix Debriefing</h3>
-        <a href='/Formula-1/Canadian-Grand-Prix'>
-        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-          See more</button>
-        </a>
-      </div>
     </div>
    </div>
     {/* END LATEST */}
+
+    {/* MOST POPULAR */}
+          <div className='relative flex w-full h-250 top-50 max-sm:top-330'>
+           <div className=' relative w-full'>
+            <h3 className='lg:text-4xl md:text-5xl max-md:text-5xl text-white relative max-md:top-0 lg:pt-10 pl-10  font-Exo-2'>Most Popular</h3>
+            <ul className='grid grid-cols-1'>
+            <li>
+               <a href='Motorsport/Formula-1/British-Grand-Prix/Race-Report'>
+               <div className='w-100 h-full overflow-hidden m-10 rounded-3xl border-2 border-white'>
+                <img src="/assets/britshGP2025.jpg" className='hover:scale-110 duration-250'/>
+               </div>
+               </a>
+            </li>
+            <li>
+               <a href='Motorsport/Formula-1/Austrian-Grand-Prix'>
+               <div className='w-100 h-full overflow-hidden m-10 rounded-3xl border-2 border-white'>
+                <img src="/assets/Austria.webp" className='hover:scale-110 duration-250'/>
+               </div>
+               </a>
+            </li>
+            <li>
+               <a href='Reviews/aws'>
+               <div className='w-100 h-full overflow-hidden m-10 rounded-3xl border-2 border-white'>
+                <img src="/assets/awsxf1.jpg" className='hover:scale-110 duration-250'/>
+               </div>
+               </a>
+            </li>
+           </ul>
+          </div>
+          {/* TECH, REVIEW, ETC... */}
+          <div className=' overflow-y-scroll relative w-5/5 pr-20 max-sm:top-200 grid grid-cols-1 h-full rounded-4xl'>
+           <h3 className='lg:text-4xl md:text-5xl max-md:text-5xl  text-white relative max-md:top-80 lg:pt-10 pl-10 font-Exo-2'>For you</h3>
+           <div className=' h-screen rounded-3xl'>
+            <a href='/' className='hover:text-gray-400'>
+            <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
+              <span>2025 British Grand Prix Race Report</span>
+              <div className='flex gap-x-5 pt-3'>
+              <span>Date: 06/07/2025</span>
+              <span>Read time: 3 minutes</span>
+              </div>
+            </div>
+            </a>
+            <a href='/' className='hover:text-gray-400'>
+            <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
+              <span>MHBlog now connected with AWS for analysing Formula 1 Data</span>
+               <div className='flex gap-x-5 pt-3'>
+              <span>Date: 06/07/2025</span>
+              <span>Read time: 3 minutes</span>
+              </div>
+            </div>
+            </a>
+            <a href='/' className='hover:text-gray-400'>
+            <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
+              <span>Cyberpunk 2077 - Did patch 2.3 deserved all that hype?</span>
+              <div className='flex gap-x-5 pt-3'>
+              <span>Date: 06/07/2025</span>
+              <span>Read time: 3 minutes</span>
+              </div>
+            </div>
+            </a>
+           </div>
+            </div>
+        </div>
+    {/* END MOST POPULAR */}
       {/* FOOTER */}
        <footer
-       className="relative lg:top-30 md:top-125 max-md:top-165 max-sm:top-285 h-full w-full text-center sm:footer-horizontal pt-10 text-black font-edu-vic-wa-nt-beginner p-10 text-2xl">
+       className="relative lg:top-80 md:top-125 max-md:top-165 max-sm:top-285 h-full w-full text-center sm:footer-horizontal pt-10 text-black font-edu-vic-wa-nt-beginner p-10 text-2xl">
           <div className="relative isolate overflow-hidden py-16 sm:py-24 lg:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
@@ -223,7 +285,7 @@ export default function Main() {
             </div>
         </div>
       </footer>
-    <aside className="relative text-center items-baseline pr-20 lg:top-30 md:top-125 max-md:top-165 max-sm:top-280 max-md:text-lg max-md:text-center max-sm:pl-18">
+    <aside className="relative text-center items-baseline pr-20 lg:top-80 md:top-125 max-md:top-165 max-sm:top-280 max-md:text-lg max-md:text-center max-sm:pl-18">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
       </aside>
 </div>

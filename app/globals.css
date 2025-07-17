@@ -171,7 +171,7 @@ LOADER CSS
 SCROLLBAR 
 */
 ::-webkit-scrollbar{
-  background: rgb(255, 255, 255);
+  background: none;
   box-shadow: 10px 10px;
   width: 10px;
 }
@@ -202,4 +202,26 @@ background-image: linear-gradient(transparent, transparent), linear-gradient(rgb
 .link-underline:hover {
 background-size: 75% 3px;
 background-position: 0 100%
+}
+
+
+/*
+OVERFLOW ELEMENTS SCROLLBAR HIDDEN
+*/
+
+.btnHidden{
+  background: none;
+  ::-webkit-scrollbar{
+    color: #171717;
+    background: #171717;
+  };
+  ::-webkit-scrollbar-track{
+    background: none;
+    color: #171717;
+  };
+  ::-webkit-scrollbar-button{
+    background: none;
+    color: #171717;
+  }
+
 }
