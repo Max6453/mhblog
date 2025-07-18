@@ -8,6 +8,7 @@ import { AnimatePresence, motion } from "framer-motion"
 import 'ldrs/react/LineWobble.css'
 import SupabaseForm from '@/components/ui/supabaseForm';
 import DockBar from '@/components/ui/Dock'
+import ScrollImage from "@/components/ui/ScrollImage";
 
 const navigation = [
   { name: 'Latest', href: '#latest', current: false, id: 1 },
@@ -164,25 +165,34 @@ export default function Main() {
     {/* MOST POPULAR */}
           <div className='relative flex w-full h-250 top-50 max-sm:top-330'>
            <div className=' relative w-full'>
-            <h3 className='lg:text-4xl md:text-5xl max-md:text-5xl text-white relative max-md:top-0 lg:pt-10 pl-10  font-Exo-2'>Most Popular</h3>
+            <h3 className='lg:text-4xl md:text-5xl max-md:text-5xl text-white relative max-md:top-0 lg:pt-10 pl-10 font-Exo-2'>Most Popular</h3>
             <ul className='grid grid-cols-1'>
             <li>
                <a href='Motorsport/Formula-1/British-Grand-Prix/Race-Report'>
-               <div className='w-100 h-full overflow-hidden m-10 rounded-3xl border-2 border-white'>
-                <img src="/assets/britshGP2025.jpg" className='hover:scale-110 duration-250'/>
+               <div className='w-100 h-65 overflow-hidden m-10 rounded-3xl border-2 border-white -z-50'>
+                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-85 h-10 pl-5 rounded-b-3xl w-100'>
+                  British Grand Prix Race Report
+                  </span>                
+                <img src="/assets/britshGP2025.jpg" className='hover:scale-110 duration-250 object-cover -z-10'/>
                </div>
                </a>
             </li>
             <li>
                <a href='Motorsport/Formula-1/Austrian-Grand-Prix'>
-               <div className='w-100 h-full overflow-hidden m-10 rounded-3xl border-2 border-white'>
+               <div className='w-100 h-65  overflow-hidden m-10 rounded-3xl border-2 border-white'>
+                                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-170 h-10 pl-5 rounded-b-3xl w-100'>
+                  Austrian Grand Prix Race Report
+                  </span>                
                 <img src="/assets/Austria.webp" className='hover:scale-110 duration-250'/>
                </div>
                </a>
             </li>
             <li>
                <a href='Reviews/aws'>
-               <div className='w-100 h-full overflow-hidden m-10 rounded-3xl border-2 border-white'>
+               <div className='w-100 h-55  overflow-hidden m-10 rounded-3xl border-2 border-white'>
+                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-245 h-10 pl-5 rounded-b-3xl w-100'>
+                  MHBlog connected with AWS
+                  </span>                
                 <img src="/assets/awsxf1.jpg" className='hover:scale-110 duration-250'/>
                </div>
                </a>
@@ -194,16 +204,7 @@ export default function Main() {
            <h3 className='lg:text-4xl md:text-5xl max-md:text-5xl  text-white relative max-md:top-80 lg:pt-10 pl-10 font-Exo-2'>For you</h3>
            <div className=' h-screen rounded-3xl'>
             <a href='/' className='hover:text-gray-400'>
-            <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
-              <span>2025 British Grand Prix Race Report</span>
-              <div className='flex gap-x-5 pt-3'>
-              <span>Date: 06/07/2025</span>
-              <span>Read time: 3 minutes</span>
-              </div>
-            </div>
-            </a>
-            <a href='/' className='hover:text-gray-400'>
-            <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
+            <div className='text-2xl font-edu-vic-wa-nt-beginner'>
               <span>MHBlog now connected with AWS for analysing Formula 1 Data</span>
                <div className='flex gap-x-5 pt-3'>
               <span>Date: 06/07/2025</span>
@@ -214,6 +215,33 @@ export default function Main() {
             <a href='/' className='hover:text-gray-400'>
             <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
               <span>Cyberpunk 2077 - Did patch 2.3 deserved all that hype?</span>
+              <div className='flex gap-x-5 pt-3'>
+              <span>Date: 06/07/2025</span>
+              <span>Read time: 3 minutes</span>
+              </div>
+            </div>
+            </a>
+            <a href='/' className='hover:text-gray-400'>
+            <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
+              <span>2025 British Grand Prix Race Report</span>
+              <div className='flex gap-x-5 pt-3'>
+              <span>Date: 06/07/2025</span>
+              <span>Read time: 3 minutes</span>
+              </div>
+            </div>
+            </a>
+            <a href='/' className='hover:text-gray-400'>
+            <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
+              <span>Austrian Grand Prix Race Report</span>
+              <div className='flex gap-x-5 pt-3'>
+              <span>Date: 06/07/2025</span>
+              <span>Read time: 3 minutes</span>
+              </div>
+            </div>
+            </a>
+            <a href='/' className='hover:text-gray-400'>
+            <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
+              <span>24 Hours of Nurburgring - Great race but with controversial end</span>
               <div className='flex gap-x-5 pt-3'>
               <span>Date: 06/07/2025</span>
               <span>Read time: 3 minutes</span>
@@ -277,7 +305,7 @@ export default function Main() {
                     <ul className='grid grid-cols-1 gap-7 relative pl-20 max-sm:pl-13 justify-end text-white'>
                       <li className='hover:text-gray-400 duration-300'><a href='/Privacy-Policy'>Privacy Policy</a></li>
                       <li className='hover:text-gray-400 duration-300'><a href='/Terms-of-use'>Terms of use</a></li>
-                      <li className='hover:text-gray-400 duration-300'><a href='/'>Contact</a></li>
+                      <li className='hover:text-gray-400 duration-300'><a href='/Contact'>Contact</a></li>
                     </ul>
                   </div>
                 </dl>
