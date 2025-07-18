@@ -191,9 +191,9 @@ export default function AustrianGP() {
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-20 font-josefin-sans pt-15 lg:w-300"> 
                     Many more updates and features were added so you can view it personally below this article where will be link for full patch notes.
                     I've got mixed feelings for this patch. I was glad when i saw the delamain cab feature. I wanted it for a long time.
-                    To be honest, who really use photo mode? personally, I have never ued it before and i don't plan it using it.
-                    The autodrive feaute is pretty redudant. I don't see point in this. Surely when you need to have small break it is good but again i don't plan it to use it.
-                    vehicles are great. I really liked the new Yaiba motorcylce and whole proccess of buying it.
+                    To be honest, who really use photo mode? personally, I have never ued it before and i don't plan  using it.
+                    The autodrive feaute is pretty redudant. I don't see point in this. Surely when you need to have small break it is good but again i don't plan to use it.
+                    vehicles are great. I really liked the new Yaiba motorcycle and whole proccess of buying it.
                     I didn't have time to test the other cars but i will.
                     Whole community (and ofcourse me) want new game +. We still don't have it even after 5 years of release.
                     This update get from me 5/10.

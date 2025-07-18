@@ -132,14 +132,17 @@ export default function AustrianGP() {
         )}
 </AnimatePresence>
 </header>
+<div className="bg-black fixed w-full h-full top-0 z-50 jusitfy-items-center">
+ <span className="text-6xl font-Exo-2 items-baseline relative jusitfy-center top-1/3 left-1/3">Not yet published...</span>
+</div>
           <ScrollProgress />
             <header>
             <div className="relative inset-0">
             <h1 className="absolute text-6xl top-82 left-50 z-10 font-josefin-sans max-md:left-7 items-baseline max-md:top-20 md:text-3xl sm:text-xl lg:text-6xl max-md:text-3xl text-white text-center font-bold">
-                Canadian Grand Prix - debriefing
+                Austrian Grand Prix - race report
             </h1>
-            <h5 className="absolute text-6xl top-100 left-20 z-10 font-sans max-md:left-0 max-md:top-50 md:text-3xl sm:text-xl lg:text-6xl text-center max-md:text-xl text-white font-bold">
-                hear everything in eventfull Canadian Grand Prix
+            <h5 className="absolute text-6xl top-100 left-10 z-10 font-sans max-md:left-0 max-md:top-50 md:text-3xl sm:text-xl lg:text-6xl text-center max-md:text-xl text-white font-bold">
+                hear everything in eventfull Austrian Grand Prix
             </h5>
             <img
                 src="/assets/Austria.webp"
@@ -150,7 +153,6 @@ export default function AustrianGP() {
             </header>
             <div className="relative pb-10">
                 <div className="text-2xl justify-center text-white to-neutral-900 relative text-start">
-                <span className="text-2xl text-white pl-2">Reading time: <span className="text-white">1.55 minutes</span></span>
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:w-90 lg:w-300 font-josefin-sans pt-15">
                   This years Canadian Grand Prix was underwhelming
                 </p>

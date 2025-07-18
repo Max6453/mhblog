@@ -26,26 +26,48 @@ export default function Main() {
     {/*<Banner text="LATEST EVENTS: 24 Hours of Le Man's - WEC; Formula 1 Canadian Grand Prix - Qualifying at 10pm CET; NHL Edmonton Oilers vs Florida Panthers at 2am CET"
     speed={25}/> */}
 <header className="relative top-0 dark:text-white">
-         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8 h-32 border-b-2 pt-6">
-          <div className='text-5xl dark:text-white font-edu-vic-wa-nt-beginner'>
+         <nav aria-label="Global" className="flex items-center justify-between lg:px-8 h-70 border-b-2">
+          <div className='text-5xl dark:text-white font-edu-vic-wa-nt-beginner relative'>
             <h1 className='font-bold font-raleway'>MHBlog</h1>
             <h3 className='text-3xl max-sm:text-2xl max-sm:w-60'>Latest news and intrigues across many topics</h3>
           </div>
+          <a href='/'>
           <img
           src= "/mobileIcon-black.png"
-          className='h-30 w-auto hover:scale-110 right-175 transition-all duration-300 absolute sm:hidden md:hidden lg:hidden xl:block'/>
+          className='h-32 w-auto hover:scale-110 top-52 right-175 transition-all duration-300 absolute sm:hidden md:hidden lg:hidden xl:block'/>
+          </a>
           <div className="absolute right-5 pt-10 pr-5 max-md:pr-0 max-md:right-0 max-md:pt-25">
             <button
             id='openBtn'
               type="button"
               onClick={() => setMobileMenuOpen(true)}
-              className="bottom-5 relative icon-default inline-flex items-center justify-center rounded-md p-2.5 text-white z-50 animation duration-300 transform transition-all"
+              className="bottom-5  relative icon-default inline-flex items-center justify-center rounded-md p-2.5 text-white z-50 animation duration-300 transform transition-all"
             >
               <span className="sr-only">Open main menu</span>
               <Bars3Icon aria-hidden="true" className="size-10 block hover:-scale-y-110 max-sm:hidden animation duration-300 transition-all transform" />
 
             </button>
           </div>
+           <ul className='flex gap-x-10 sm:gap-x-6 items-baseline xl:right-110 lg:right-60 md:right-30 sm:pt-0 sm:bottom-30 sm:right-35 max-sm:hidden block relative lg:bottom-25 pt-5 h-10 text-xl'>
+            <li>
+              <a href='#Latest' className='hover-underline-animation center'>latest</a>
+            </li>
+            <li>
+              <a href='' className='hover-underline-animation center'>Motorsport</a>
+            </li>
+            <li>
+              <a href='' className='hover-underline-animation center'>Reviews</a>
+            </li>
+            <li>
+              <a href='' className='hover-underline-animation center'>Gaming</a>
+            </li>
+            <li>
+              <a href='' className='hover-underline-animation center'>Newsletter</a>
+            </li>
+            <li>
+              <a href='' className='hover-underline-animation center'>Contact</a>
+            </li>
+          </ul>
         </nav>
        <AnimatePresence>
         {mobileMenuOpen && (
@@ -163,10 +185,10 @@ export default function Main() {
     {/* END LATEST */}
 
     {/* MOST POPULAR */}
-          <div className='relative flex w-full h-250 top-50 max-sm:top-330'>
+          <div className='relative flex md:flex-col-2 sm:flex-col-1 w-full h-250 max-lg:top-80 lg:top-100 md:top-110 max-sm:top-330'>
            <div className=' relative w-full'>
-            <h3 className='lg:text-4xl md:text-5xl max-md:text-5xl text-white relative max-md:top-0 lg:pt-10 pl-10 font-Exo-2'>Most Popular</h3>
-            <ul className='grid grid-cols-1'>
+            <h3 className='lg:text-4xl md:text-4xl text-white relative max-md:top-0 lg:pt-10 pl-10 font-Exo-2'>Most Popular</h3>
+            <ul className='grid grid-cols-1 '>
             <li>
                <a href='Motorsport/Formula-1/British-Grand-Prix/Race-Report'>
                <div className='w-100 h-65 overflow-hidden m-10 rounded-3xl border-2 border-white -z-50'>
@@ -200,37 +222,37 @@ export default function Main() {
            </ul>
           </div>
           {/* TECH, REVIEW, ETC... */}
-          <div className=' overflow-y-scroll relative w-5/5 pr-20 max-sm:top-200 grid grid-cols-1 h-full rounded-4xl'>
-           <h3 className='lg:text-4xl md:text-5xl max-md:text-5xl  text-white relative max-md:top-80 lg:pt-10 pl-10 font-Exo-2'>For you</h3>
+          <div className=' overflow-y-scroll relative w-5/5 pr-20 md:pr-0 max-sm:top-200 grid md:grid-cols-1 h-full rounded-4xl'>
+           <h3 className='lg:text-4xl md:text-4xl text-white relative max-md:top-80 lg:pt-10 pl-10 font-Exo-2'>For you</h3>
            <div className=' h-screen rounded-3xl'>
-            <a href='/' className='hover:text-gray-400'>
+            <a href='/Reviews/aws' className='hover:text-gray-400'>
             <div className='text-2xl font-edu-vic-wa-nt-beginner'>
               <span>MHBlog now connected with AWS for analysing Formula 1 Data</span>
                <div className='flex gap-x-5 pt-3'>
               <span>Date: 06/07/2025</span>
-              <span>Read time: 3 minutes</span>
+              <span>Read time: 0.38 minutes</span>
               </div>
             </div>
             </a>
-            <a href='/' className='hover:text-gray-400'>
+            <a href='/Reviews/Gaming/Cyberpunk-2077-patch-2.3' className='hover:text-gray-400'>
             <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
               <span>Cyberpunk 2077 - Did patch 2.3 deserved all that hype?</span>
               <div className='flex gap-x-5 pt-3'>
               <span>Date: 06/07/2025</span>
-              <span>Read time: 3 minutes</span>
+              <span>Read time: 1.45 minutess</span>
               </div>
             </div>
             </a>
-            <a href='/' className='hover:text-gray-400'>
+            <a href='/Motorsport/Formula-1/British-Grand-Prix/Race-Report' className='hover:text-gray-400'>
             <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
               <span>2025 British Grand Prix Race Report</span>
               <div className='flex gap-x-5 pt-3'>
               <span>Date: 06/07/2025</span>
-              <span>Read time: 3 minutes</span>
+              <span>Read time: 3.22 minutes</span>
               </div>
             </div>
             </a>
-            <a href='/' className='hover:text-gray-400'>
+            <a href='/Motorsport/Formula-1/Austrian-Grand-Prix' className='hover:text-gray-400'>
             <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
               <span>Austrian Grand Prix Race Report</span>
               <div className='flex gap-x-5 pt-3'>
@@ -239,12 +261,12 @@ export default function Main() {
               </div>
             </div>
             </a>
-            <a href='/' className='hover:text-gray-400'>
+            <a href='/Motorsport/GTWC/24-Hours-of-Nurburgring' className='hover:text-gray-400'>
             <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
               <span>24 Hours of Nurburgring - Great race but with controversial end</span>
               <div className='flex gap-x-5 pt-3'>
               <span>Date: 06/07/2025</span>
-              <span>Read time: 3 minutes</span>
+              <span>Read time: 2 minutes</span>
               </div>
             </div>
             </a>

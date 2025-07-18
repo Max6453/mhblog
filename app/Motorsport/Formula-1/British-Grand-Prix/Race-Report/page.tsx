@@ -166,10 +166,10 @@ export default function AustrianGP() {
                 <h3 className="text-4xl m-5 lg:pl-75 pt-5">First laps</h3>
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-50 font-josefin-sans pt-15 lg:w-300"> 
                   But first things first. Verstappen started in P1 with both mclarens in P2 and P3. Behind was invencible George Russell on P4 and Lewis Hamilton with ferrari on P5.
-                  From the formation lap, Things escalated quickly. Many drivers such as GR63 or CL16 pitted for slicks even though the track was damp with 3th sectors absolutely wet.
+                  From the formation lap, Things escalated quickly. Many drivers such as GR63 or CL16 pitted for slicks even though the track was damp and 3rd sector was absolutely wet.
                   Their gamble didn't worked out and they needed to pit once again.
-                  But MV1 had a good start. Even in one point it looked like OP81 would pass him but MV1 civered him perfectly and LN4 behind them just watch how would thing unfold.
-                  For a few laps, There was a calm at the front of the field but i midfield, literally a war was happening. Cars were flying in every direction off and on track.
+                  But MV1 had a good start. Even in one point, it looked like OP81 would pass him but MV1 covered him perfectly and LN4 behind them just watch how would thing unfold.
+                  For a few laps, There was a calm at the front of the field but in midfield, literally a war was happening. Cars were flying in every direction off and on track.
                   Liam lawson unfortunately paid the ultimate price and retired after a collision with Esteban Ocon in T4.
                   But let's go back to the front for now.
                   Around 8th to 12 lap. OP81 managed to get close to MV1. MV1 Already felt the first signs of tyre wear.
@@ -230,16 +230,16 @@ export default function AustrianGP() {
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-20 font-josefin-sans pt-15 lg:w-300"> 
                   FA14 and GR63 were the first one to pit for slick tyres.
                   Rest of the field followed them after 1-4 laps after they pitted. But the track in first couple of laps was still wet so the performance was quite bad.
-                  But when the track dryed up, The performance incrisead massively promoting them many positions.
+                  But when the track dryed up, The performance increased massively promoting them many positions.
                   After the last pitstops the field was stabilized, at least for a moment. And also with many Surprises.
                   Like Nico Hulkenberg who finished this race on unbelievably P3 with Sauber. the car which was literally the worst last and the beggining of this season.
-                  Also, PG10 finished on P6 with alpine wich was also briliant for the team.
+                  Also, PG10 finished on P6 with alpine which was also briliant for the team.
                   But Lando Norris won his first british grand prix in silverstone with Oscar Piastri in 2nd and Hulkenberg in P3.
                   Because of Hulkenberg's P3, Hamilton's record of finishing every season on podium in silverstone was crushed.
                   But after a decade, Nico Hulkenberg finished for the first time on podium.
                 </p>
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-20 font-josefin-sans pt-15 lg:w-300">
-                  Overall this race was for me the best race of the season yet. It's really close to Australia but Silverstone was much entertaining.
+                  Overall this race was for me the best race of the season yet. It's really close to Australia but Silverstone was much more entertaining.
                   With many crashes and many happy stories but also many tragic ones, I must say that I am looking forward to next year's British Grand Prix.
                   Silverstone, You never dissapoint...
                 </p>
