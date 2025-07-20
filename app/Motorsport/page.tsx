@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { CalendarDaysIcon, HandRaisedIcon} from '@heroicons/react/24/outline'
+import { CalendarDaysIcon, HandRaisedIcon, ChevronRightIcon, ChevronLeftIcon} from '@heroicons/react/24/outline'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import * as React from "react"
 import { Dialog, DialogPanel } from '@headlessui/react'
@@ -8,7 +8,6 @@ import { AnimatePresence, motion } from "framer-motion"
 import 'ldrs/react/LineWobble.css'
 import SupabaseForm from '@/components/ui/supabaseForm';
 import DockBar from '@/components/ui/Dock'
-import ScrollImage from "@/components/ui/ScrollImage";
 
 const navigation = [
   { name: 'Latest', href: '#latest', current: false, id: 1 },
@@ -22,15 +21,69 @@ const navigation = [
   { name: 'Newsletter', href: 'https://maximharvancik.vercel.app', current: true, id: 8 },
 ];
 
-export default function Main() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [loading, setLoading] = useState(true);
+const itemsPerPage = 6;
 
-  return (
-  <div className=' bg-neutral-900 transition-colors duration-500'>
-    {/*<Banner text="LATEST EVENTS: 24 Hours of Le Man's - WEC; Formula 1 Canadian Grand Prix - Qualifying at 10pm CET; NHL Edmonton Oilers vs Florida Panthers at 2am CET"
-    speed={25}/> */}
-<header className="relative top-0 dark:text-white">
+const articles = [
+  {
+    title: "British Grand Prix - race report",
+    href: "/Reviews/Gaming/Cyberpunk-2077-patch-2.3",
+    image: "/assets/britshGP2025.jpg",
+  },
+  {
+    title: "British Grand Prix - Friday report",
+    href: "/Reviews/aws",
+    image: "/assets/McLaren-in-FP1-Silverstone-scaled.webp",
+  },
+  {
+    title: "Austrian Grand Prix",
+    href: "/Motorpsort/Formula-1/British-Grand-Prix/Race-Report",
+    image: "/assets/Austria.webp",
+  },
+  {
+    title: "24 Hours of Nurburgring",
+    href: "/Motorsport/GTWC/24-Hours-of-Nurburgring",
+    image: "/assets/24-Nurburgring.jpg",
+  },
+  {
+    title: "Canadian Grand Prix",
+    href: "/Motorsport/Formula-1/Canadian-Grand-Prix",
+    image: "/assets/Canada.webp",
+  },
+  {
+    title: "24 Hours of Le Man's",
+    href: "/Motorsport/WEC/24-Hours-of-Le-Mans",
+    image: "/assets/Le-Mans.jpg",
+  },
+  {
+    title: "Spanish Grand Prix",
+    href: "/Motorsport/Formula-1/Spanish-Grand-Prix",
+    image: "/assets/Spain.jpg",
+  },
+  {
+    title: "Monaco Grand Prix",
+    href: "/Motorsport/Formula-1/Monaco-Grand-Prix",
+    image: "/assets/monaco.jpg",
+  },
+  {
+    title: "Emilia-Romagna Grand Prix",
+    href: "/Motorsport/Formula-1/Emilia-Romagna-Grand-Prix",
+    image: "/assets/Emilia-romagna.webp",
+  },
+];
+
+export default function Motorsport() {
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [currentPage, setCurrentPage] = useState(1);
+
+    const totalPages = Math.ceil(articles.length / itemsPerPage);
+
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const selectedArticles = articles.slice(startIndex, startIndex + itemsPerPage);
+
+
+    return(
+        <div>
+            <header className="relative top-0 dark:text-white">
          <nav aria-label="Global" className="flex items-center justify-between lg:px-8 h-70 border-b-2">
           <div className='text-5xl left-110 dark:text-white font-edu-vic-wa-nt-beginner relative'>
             <h1 className='font-bold font-raleway text-center'>MHBlog</h1>
@@ -155,156 +208,53 @@ export default function Main() {
 
 {/* END NAVBAR */}
 
+
+<div>
+    <h1 className='text-5xl text-start m-5 pt-10'>Motorsport</h1>
+    <div className='w-200 text-xl m-5 text-start'>
+        <p>
+            Welcome to mhblog motorsport hub. Here you can view latest news, reports, briefings and more content focused on motorsport.
+            You will mainly see formula 1, WEC, GTWC or any big event in the world of motorsport.
+            In recent years, motorsport is finally getting the recognition it deserve and it is my pleasure to be the first one to inform you about latest intrigues in world of motorsport.
+        </p>
+    </div>
+</div>
+
 {/* LATEST */}
-<div className='relative h-dvh' id='Latest'>
-  <div className="absolute top-0 z-[-2] h-370 w-full"></div>
-      <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white relative max-md:top-10 lg:pt-10 pl-10 font-Exo-2'>latest</h1>
-    <div className="relative top-20 max-sm:pl-11.5 lg:pl-12 max-md:pl-11.5 md:pl-0 grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
-    <a href='/Reviews/Gaming/Cyberpunk-2077-patch-2.3'>
-      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/cyberpunk-2077-tipy-cover.jpg' className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Cyberpunk 2077 2.3 Patch just released</h3>
-        <button className='relative lg:bottom-28 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-          See more</button>
+<div className='relative h-screen' id='Latest'>
+      <div className="absolute top-0 z-[-2] h-370 w-full"></div>
+      <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white relative max-md:top-10 lg:pt-10 pl-10 font-Exo-2'>Articles</h1>
+
+      <div className="relative top-20 max-sm:pl-11.5 lg:pl-12 max-md:pl-11.5 md:pl-0 grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
+        {selectedArticles.map((article, index) => (
+          <a href={article.href} key={index}>
+            <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
+              <img src={article.image} className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250' />
+              <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>{article.title}</h3>
+              <button className='relative lg:bottom-28 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
+                See more
+              </button>
+            </div>
+          </a>
+        ))}
       </div>
-    </a>  
-    <a href='/Reviews/aws'>
-      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/awsxf1.jpg' className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>MHBlog connected with AWS</h3>
-        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-          See more</button>
-      </div>
-    </a>  
-     <a href='/Motorpsort/Formula-1/British-Grand-Prix/Race-Report'>
-      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/britshGP2025.jpg' className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>British Grand Prix - Race Report</h3>
-        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-          See more</button>
-      </div>
-    </a>  
-     <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/McLaren-in-FP1-Silverstone-scaled.webp' className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>British Grand Prix - Friday Report</h3>
-        <a href='/Motorpsort/Formula-1/British-Grand-Prix/Friday-Report'>
-        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-          See more</button>
-        </a>
-      </div>
-      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/Austria.webp' className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Austrian Grand Prix debriefing</h3>
-        <a href='/Motorpsort/Formula-1/Austrian-Grand-Prix'>
-        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-          See more</button>
-        </a>
-      </div>
-      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/24-Nurburgring.jpg' className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>24 Hours of Nurburgring</h3>
-        <a href='/Motorsport/GTWC/24-Hours-of-Nurburgring'>
-        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-          See more</button>
+
+      {/* Pagination Controls */}
+      <div className="flex px-39 relative bottom-30 h-20">
+        <a href='/Motorsport/Pages/2'>
+        <button
+          className="w-30 h-15 rounded text-white text-black border rounded-full hover:bg-white hover:text-black duration-250"
+        >
+          Next
+        </button>
         </a>
       </div>
     </div>
-   </div>
     {/* END LATEST */}
 
-    {/* MOST POPULAR */}
-          <div className='relative flex md:flex-col-2 sm:flex-col-1 w-full h-250 xl:top-40 lg:top-100 md:top-110 max-sm:top-330'>
-           <div className=' relative w-full'>
-            <h3 className='lg:text-4xl md:text-4xl text-white relative max-md:top-0 lg:pt-10 pl-10 font-Exo-2'>Most Popular</h3>
-            <ul className='grid grid-cols-1 '>
-            <li>
-               <a href='Motorsport/Formula-1/British-Grand-Prix/Race-Report'>
-               <div className='w-100 h-65 overflow-hidden m-10 rounded-3xl border-2 border-white -z-50'>
-                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-85 h-10 pl-5 rounded-b-3xl w-100'>
-                  British Grand Prix Race Report
-                  </span>                
-                <img src="/assets/britshGP2025.jpg" className='hover:scale-110 duration-250 object-cover -z-10'/>
-               </div>
-               </a>
-            </li>
-            <li>
-               <a href='Motorsport/Formula-1/Austrian-Grand-Prix'>
-               <div className='w-100 h-65  overflow-hidden m-10 rounded-3xl border-2 border-white'>
-                                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-170 h-10 pl-5 rounded-b-3xl w-100'>
-                  Austrian Grand Prix Race Report
-                  </span>                
-                <img src="/assets/Austria.webp" className='hover:scale-110 duration-250'/>
-               </div>
-               </a>
-            </li>
-            <li>
-               <a href='Reviews/aws'>
-               <div className='w-100 h-55  overflow-hidden m-10 rounded-3xl border-2 border-white'>
-                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-245 h-10 pl-5 rounded-b-3xl w-100'>
-                  MHBlog connected with AWS
-                  </span>                
-                <img src="/assets/awsxf1.jpg" className='hover:scale-110 duration-250'/>
-               </div>
-               </a>
-            </li>
-           </ul>
-          </div>
-          {/* TECH, REVIEW, ETC... */}
-          <div className=' overflow-y-scroll relative w-5/5 pr-20 md:pr-0 max-sm:top-200 grid md:grid-cols-1 h-full rounded-4xl'>
-           <h3 className='lg:text-4xl md:text-4xl text-white relative max-md:top-80 lg:pt-10 pl-10 font-Exo-2'>For you</h3>
-           <div className=' h-screen rounded-3xl'>
-            <a href='/Reviews/aws' className='hover:text-gray-400'>
-            <div className='text-2xl font-edu-vic-wa-nt-beginner'>
-              <span>MHBlog now connected with AWS for analysing Formula 1 Data</span>
-               <div className='flex gap-x-5 pt-3'>
-              <span>Date: 06/07/2025</span>
-              <span>Read time: 0.38 minutes</span>
-              </div>
-            </div>
-            </a>
-            <a href='/Reviews/Gaming/Cyberpunk-2077-patch-2.3' className='hover:text-gray-400'>
-            <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
-              <span>Cyberpunk 2077 - Did patch 2.3 deserved all that hype?</span>
-              <div className='flex gap-x-5 pt-3'>
-              <span>Date: 06/07/2025</span>
-              <span>Read time: 1.45 minutess</span>
-              </div>
-            </div>
-            </a>
-            <a href='/Motorsport/Formula-1/British-Grand-Prix/Race-Report' className='hover:text-gray-400'>
-            <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
-              <span>2025 British Grand Prix Race Report</span>
-              <div className='flex gap-x-5 pt-3'>
-              <span>Date: 06/07/2025</span>
-              <span>Read time: 3.22 minutes</span>
-              </div>
-            </div>
-            </a>
-            <a href='/Motorsport/Formula-1/Austrian-Grand-Prix' className='hover:text-gray-400'>
-            <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
-              <span>Austrian Grand Prix Race Report</span>
-              <div className='flex gap-x-5 pt-3'>
-              <span>Date: 06/07/2025</span>
-              <span>Read time: 3 minutes</span>
-              </div>
-            </div>
-            </a>
-            <a href='/Motorsport/GTWC/24-Hours-of-Nurburgring' className='hover:text-gray-400'>
-            <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
-              <span>24 Hours of Nurburgring - Great race but with controversial end</span>
-              <div className='flex gap-x-5 pt-3'>
-              <span>Date: 06/07/2025</span>
-              <span>Read time: 2 minutes</span>
-              </div>
-            </div>
-            </a>
-           </div>
-            </div>
-        </div>
-    {/* END MOST POPULAR */}
-      {/* FOOTER */}
+ {/* FOOTER */}
        <footer
-       className="relative xl:top-40 lg:top-80 md:top-125 max-md:top-165 max-sm:top-285 h-full w-full text-center sm:footer-horizontal pt-10 text-black font-edu-vic-wa-nt-beginner p-10 text-2xl"
+       className="relative xl:top-80 lg:top-80 md:top-125 max-md:top-165 max-sm:top-285 h-full w-full text-center sm:footer-horizontal text-black font-edu-vic-wa-nt-beginner text-2xl"
        id='Newsletter'>
           <div className="relative isolate overflow-hidden py-16 sm:py-24 lg:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -370,9 +320,9 @@ export default function Main() {
             </div>
         </div>
       </footer>
-    <aside className="relative text-center items-baseline pr-20 xl:top-40 lg:top-80 md:top-125 max-md:top-165 max-sm:top-280 max-md:text-lg max-md:text-center max-sm:pl-18">
+    <aside className="relative text-center items-baseline pr-20 xl:top-100 lg:top-80 md:top-125 max-md:top-165 max-sm:top-280 max-md:text-lg max-md:text-center max-sm:pl-18">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
       </aside>
-</div>
-  )
+  </div>
+ )
 }
