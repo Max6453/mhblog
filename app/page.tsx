@@ -11,15 +11,14 @@ import DockBar from '@/components/ui/Dock'
 import ScrollImage from "@/components/ui/ScrollImage";
 
 const navigation = [
-  { name: 'Latest', href: '#latest', current: false, id: 1 },
+  { name: 'Latest', href: '/latest', current: false, id: 1 },
   { name: 'Motorsport', href: '/Archive', current: false, id: 2 },
-  { name: 'Tech', href: '/Contact', current: false, id: 3 },
-  { name: 'gaming', href: 'https://maximharvancik.vercel.app', current: true, id: 4 },
-  { name: 'Reviews', href: 'https://maximharvancik.vercel.app', current: true, id: 5 },
-  { name: 'AWS', href: 'https://maximharvancik.vercel.app', current: true, id: 6 },
+  { name: 'Tech', href: '/', current: false, id: 3 },
+  { name: 'gaming', href: '/Reviews/Gaming', current: true, id: 4 },
+  { name: 'Reviews', href: '/Reviews', current: true, id: 5 },
   { name: 'Formula 1 Analysis', href: 'https://maximharvancik.vercel.app', current: true, id: 6 },
-  { name: 'Contact', href: 'https://maximharvancik.vercel.app', current: true, id: 7 },
-  { name: 'Newsletter', href: 'https://maximharvancik.vercel.app', current: true, id: 8 },
+  { name: 'Contact', href: '/Contact', current: true, id: 7 },
+  { name: 'Newsletter', href: '#Newsletter', current: true, id: 8 },
 ];
 
 export default function Main() {
