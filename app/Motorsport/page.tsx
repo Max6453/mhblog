@@ -11,8 +11,8 @@ import DockBar from '@/components/ui/Dock'
 
 const navigation = [
   { name: 'Latest', href: '/latest', current: false, id: 1 },
-  { name: 'Motorsport', href: '/Archive', current: false, id: 2 },
-  { name: 'Tech', href: '/Contact', current: false, id: 3 },
+  { name: 'Motorsport', href: '/Motorsport', current: false, id: 2 },
+  { name: 'Tech', href: '/Tech', current: false, id: 3 },
   { name: 'gaming', href: '/Reviews/Gaming', current: true, id: 4 },
   { name: 'Reviews', href: '/Reviews', current: true, id: 5 },
   { name: 'Formula 1 Analysis', href: 'https://maximharvancik.vercel.app', current: true, id: 6 },
@@ -105,7 +105,7 @@ export default function Motorsport() {
 
             </button>
           </div>
-           <ul className='flex gap-x-10 sm:gap-x-6 items-baseline xl:right-112 lg:right-60 md:right-30 sm:pt-0 sm:bottom-30 sm:right-35 max-sm:hidden block relative lg:bottom-25 pt-5 h-10 text-xl'>
+           <ul className='max-sm:hidden flex gap-x-10 sm:gap-x-6 items-baseline xl:right-112 lg:right-60 md:right-30 sm:pt-0 sm:bottom-30 sm:right-35 max-sm:hidden block relative lg:bottom-25 pt-5 h-10 text-xl'>
             <li>
               <a href='#Latest' className='hover-underline-animation center'>latest</a>
             </li>

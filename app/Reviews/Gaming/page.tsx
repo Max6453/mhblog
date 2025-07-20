@@ -44,7 +44,7 @@ export default function Motorsport() {
         <div>
             <header className="relative top-0 dark:text-white">
          <nav aria-label="Global" className="flex items-center justify-between lg:px-8 h-70 border-b-2">
-          <div className='text-5xl left-110 dark:text-white font-edu-vic-wa-nt-beginner relative'>
+          <div className='text-5xl left-110 text-center max-sm:left-15 dark:text-white font-edu-vic-wa-nt-beginner relative'>
             <h1 className='font-bold font-raleway text-center'>MHBlog</h1>
             <h3 className='text-3xl max-sm:text-2xl max-sm:w-60'>Latest news and intrigues across many topics</h3>
           </div>
@@ -171,7 +171,7 @@ export default function Motorsport() {
 <div>
     <h1 className='text-5xl text-start m-5 pt-10'>Reviews</h1>
     <div className='w-200 text-xl m-5 text-start'>
-        <p>
+        <p className='max-sm:w-80'>
         Gaming left significant mark on my life. I grew up with games, even now days i play many hours per day. 
         I want to get you closer to the world of gaming trough reviews and mayber convince you to buy a game.
           
@@ -197,8 +197,8 @@ export default function Motorsport() {
           </a>
         ))}
       </div>
-      <div className="flex px-39 relative bottom-30 h-20 hidden">
-        <a href='/Motorsport/Pages/2'>
+      <div className="flex px-39 max-sm:px-0  relative bottom-100 h-20">
+        <a href='/Reviews/Gaming/Pages/2'>
         <button
           className="w-30 h-15 rounded text-white text-black border rounded-full hover:bg-white hover:text-black duration-250"
         >
@@ -211,7 +211,7 @@ export default function Motorsport() {
 
  {/* FOOTER */}
        <footer
-       className="relative xl:top-0 lg:top-80 md:top-125 max-md:top-165 max-sm:top-285 h-full w-full text-center sm:footer-horizontal text-black font-edu-vic-wa-nt-beginner text-2xl"
+       className="relative xl:top-0 lg:top-80 md:top-125 max-md:top-165 max-sm:top-5 h-full w-full text-center sm:footer-horizontal text-black font-edu-vic-wa-nt-beginner text-2xl"
        id='Newsletter'>
           <div className="relative isolate overflow-hidden py-16 sm:py-24 lg:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -277,7 +277,7 @@ export default function Motorsport() {
             </div>
         </div>
       </footer>
-    <aside className="relative text-center items-baseline pr-20 xl:top-10 lg:top-80 md:top-125 max-md:top-165 max-sm:top-280 max-md:text-lg max-md:text-center max-sm:pl-18">
+    <aside className="relative text-center items-baseline pr-20 xl:top-10 lg:top-80 md:top-125 max-md:top-165 max-sm:top-5 max-md:text-lg max-md:text-center max-sm:pl-18">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
       </aside>
   </div>
