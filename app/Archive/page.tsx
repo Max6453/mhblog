@@ -2,6 +2,12 @@
 import Masonry from '@/components/ui/Masonry'
 
 const items = [
+  {
+    id: "1",
+    img: "/assets/24-Nurburgring.jpg",
+    url: "/Motorsport/GTWC/24-hours-of/Nurburgring",
+    height: 600,
+  },
       {
     id: "1",
     img: "/assets/Canada.webp",

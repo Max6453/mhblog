@@ -111,14 +111,14 @@ export default function Account() {
                     <div className="divide-gray-500/10 font-Exo-2">
                       <div className="flex text-4xl top-12 relative text-start text-neutral-950">
                         <ul className='flex flex-col gap-5'>
-                          <li><a href='/'>Latest</a></li>
-                          <li><a href='/'>Formula 1</a></li>
-                          <li><a href='/'>Tutorials</a></li>
-                          <li><a href='/'>Motorsport</a></li>
+                          <li><a href='/Mobile'>Latest</a></li>
+                          <li><a href='/Motorsport/Formula-1'>Formula 1</a></li>
+                          <li><a href='/Tutorials-and-tips'>Tutorials</a></li>
+                          <li><a href='/Motorpsort'>Motorsport</a></li>
                           <li><a href='/Contact'>Contact</a></li>
                         </ul>
                         <hr className='w-50 bg-black absolute top-77' />
-                        <span className='absolute top-85'><a href='/Account'>MyAccount</a></span>
+                        <span className='absolute top-85'><a href='/Mobile/Account'>MyAccount</a></span>
                       </div>
                     </div>
                     <div className='absolute bottom-10 text-start text-neutral-950'>

@@ -13,12 +13,12 @@ export default function About() {
 
             <div className='relative top-30 text-2xl text-start'>
                 <p className='font-raleway'>
-                    MHBlog was created with a purpose to learnand develop my skills as web developer.
+                    MHBlog was created with a purpose to learn and develop my skills as web developer.
                     Main content of this blog is motorsport but you can also see on my blog tutorials, game, tech, movie reviews,...
                     If you are interested to collaborate or anything more you can view my personal portfolio where you can learn much more about me.
                 </p>
                 <p className='pt-10'>
-                  <a href='/'>Link here.</a>
+                  <a href='https://maximharvancik.vercel.app'>Link here.</a>
                 </p>
 
                     <a href='/Mobile'>

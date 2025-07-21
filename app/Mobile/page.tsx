@@ -9,65 +9,70 @@ import React from 'react';
 export default function MobileApp() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
       const [showSplash, setShowSplash] = useState(true);
-    return(
-        <div className='bg-neutral-950 font-raleway'>
-          {/* Animation 
-<AnimatePresence>
-        {showSplash && (
-          <motion.div
-            key="splash"
-            className="fixed inset-0 z-[9999] flex items-center justify-center bg-neutral-950"
-            initial={{ opacity: 1,}}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 1 }}
-            transition={{ duration: 0.7, ease: "easeInOut" }}
-          >
-            <motion.img
-              src="/mobileIcon-navbar.png"
-              alt="Benefactor Logo"
-              className="w-32 h-32"
-              initial={{ scale: 0.7, opacity: 0 }}
-              animate={{ scale: 1.1, opacity: 1 }}
-              exit={{ scale: 0.7, opacity: 0 }}
-              transition={{ duration: 0.7, ease: "easeInOut" }}
-              style={{ filter: 'drop-shadow(0 0 20px #ffffff)' }}
-            />
-            <motion.h1
-              className="text-white absolute bottom-20 text-3xl font-orbitron text-center"
-              initial={{ y: 40, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: -40, opacity: 0 }}
+
+      useEffect(() => {
+  const timer = setTimeout(() => {
+    setShowSplash(false); // triggers exit animation
+  }, 2000); // 3 seconds splash screen
+
+  return () => clearTimeout(timer);
+}, []);
+
+return(
+ <div className='bg-neutral-950 font-raleway'>
+        <AnimatePresence>
+          {showSplash && (
+            <motion.div
+              key="splash"
+              className="absolute inset-0 z-[9999] flex items-center justify-center bg-neutral-950"
+              initial={{ opacity: 1 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 1 }}
               transition={{ duration: 0.7, ease: "easeInOut" }}
             >
-              MHBlog
-            </motion.h1>
-          </motion.div>
-        )}
-      </AnimatePresence>
-        <div className={`bg-neutral-950 ${showSplash ? 'opacity-0 pointer-events-none' : 'opacity-100 transition-opacity duration-700'}`}>
-        </div>
-        */}
+              <motion.img
+                src="/mobileIcon-Black.png"
+                alt="Benefactor Logo"
+                className="w-32 h-32"
+                initial={{ scale: 0.7, opacity: 0 }}
+                animate={{ scale: 1.1, opacity: 1 }}
+                exit={{ scale: 0.7, opacity: 0 }}
+                transition={{ duration: 0.7, ease: "easeInOut" }}
+                style={{ filter: 'drop-shadow(0 0 20px #ffffff)' }}
+              />
+              <motion.h1
+                className="text-white absolute bottom-20 text-3xl font-orbitron text-center"
+                initial={{ y: 40, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -40, opacity: 0 }}
+                transition={{ duration: 0.7, ease: "easeInOut" }}
+              >
+                MHBlog
+              </motion.h1>
+            </motion.div>
+          )}
+        </AnimatePresence>
             <header className="relative top-0">
-                     <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8 h-10 bg-gray-200 shadow-2xl shadow-white">
-                      <div className='text-2xl text-neutral-950 font-edu-vic-wa-nt-beginner top-0 absolute left-33 pt-1'>
-                        <h1 className='font-bold font-raleway'>MHBlog</h1>
-                      </div>
-                      <div className="absolute right-5 pt-10 pr-5 max-md:pr-0 max-md:right-0 max-md:pt-25">
-                        <button
-                        id='openBtn'
-                          type="button"
-                          onClick={() => setMobileMenuOpen(true)}
-                          className="pb-25 icon-default inline-flex items-center justify-center rounded-md p-2.5 text-neutral-950 z-50 animation duration-300 transform transition-all"
-                        >
-                          <span className="sr-only">Open main menu</span>
-                          <Bars3Icon aria-hidden="true" className="size-10 block hover:-scale-y-110  animation duration-300 transition-all transform" />
-            
-                        </button>
-                      </div>
-                    </nav>
-                   <AnimatePresence>
-                    {mobileMenuOpen && (
-                    <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
+              <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8 h-10 bg-foreground border-b border-black shadow-2xl shadow-white">
+              <div className='text-2xl text-neutral-950 font-edu-vic-wa-nt-beginner top-0 absolute left-33 pt-1'>
+                <h1 className='font-bold font-raleway'>MHBlog</h1>
+              </div>
+              <div className="absolute right-5 pt-10 pr-5 max-md:pr-0 max-md:right-0 max-md:pt-25">
+                <button
+                id='openBtn'
+                  type="button"
+                  onClick={() => setMobileMenuOpen(true)}
+                  className="pb-25 icon-default inline-flex items-center justify-center rounded-md p-2.5 text-neutral-950 z-50 animation duration-300 transform transition-all"
+                >
+                  <span className="sr-only">Open main menu</span>
+                  <Bars3Icon aria-hidden="true" className="size-10 block hover:-scale-y-110  animation duration-300 transition-all transform" />
+    
+                </button>
+              </div>
+            </nav>
+            <AnimatePresence>
+            {mobileMenuOpen && (
+            <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
           <div className="fixed h-screen" />
             <motion.div
               initial={{ translate: '-60%', opacity: 0 }}
@@ -106,14 +111,14 @@ export default function MobileApp() {
                         <li><a href='/Contact'>Contact</a></li>
                         </ul>
                         <hr className='w-50 bg-black absolute top-77'/>
-                        <span className='absolute top-85'><a href='/Account'>MyAccount</a></span>
+                        <span className='absolute top-85'><a href='/Mobile/Account'>MyAccount</a></span>
                         <span className='absolute top-95'><a href='/Mobile/About'>About</a></span>
                       </div>
                     </div>
                     <div className='absolute bottom-10 text-start text-neutral-950'>
                     <span>MHBlog</span>
                     <br/>
-                    <span className='opacity-50'>App version: 2.0.0</span><br/>
+                    <span className='opacity-50'>App version: 2.0.1</span><br/>
                     </div>
                   </div>
                   </DialogPanel>
@@ -128,19 +133,30 @@ export default function MobileApp() {
                   className='font-Exo-2 text-xl text-center pt-2 top-150 text-black z-10 h-11 bg-gray-200 absolute w-full'>Pics of the week</h4>
                   <CarouselContent>
                 <CarouselItem className="left-36 cursor-grab active:cursor-grabbing">
-                  <img src="/assets/reb-bull-austria.jpg" className='object-cover h-full w-full'></img>
+                  <img src="/assets/GT.png" className='object-cover h-full w-full'></img>
                   <div className="bg-gray-500 opacity-80"></div>
                 </CarouselItem>
                 <CarouselItem className="text-center left-36 cursor-grab active:cursor-grabbing">
-                  <img src="/assets/mercedes-austria.webp" className="w-full h-full object-cover"></img>
+                  <img src="/assets/GTWC-Misano-BMW.jpg" className="w-full h-full object-cover"></img>
                 </CarouselItem>
                 <CarouselItem className="text-center cursor-grab active:cursor-grabbing">
-                  <img src="/assets/britishGP-Mobile-friday.jpg" className='w-full h-160 object-cover'></img>
+                  <img src="/assets/Silverstone-2025-mobile-wallpaper.jpg" className='w-full h-160 object-cover'></img>
                 </CarouselItem>
                 </CarouselContent>
                   <CarouselPrevious className="left-0"/>
                   <CarouselNext className="right-0" />
                 </Carousel>
+                 <div className="relative w-full h-100">
+                    <img src="/assets/Cyberpunk-2077-tipy-cover.jpg"
+                    className='w-full h-full object-cover'/>
+                    <div className='text-start bg-gray-200 top-99 h-20 w-full z-10 absolute'>
+                    <h3 className='font-Exo-2 text-xl text-center text-black'>Cyberpunk 2077 - patch 2.3 </h3>
+                     <a href='/Reviews/Gaming/Cyberpunk-2077-patch-2.3'>
+                        <button className='relative top-1 left-1/3 w-25 h-10 rounded-full text-black bg-white border border-black shadow-4xl hover:bg-black hover:border-white hover:text-white transition duration-300'>
+                        See more</button>
+                    </a>
+                    </div>
+                </div>
                  <div className="relative w-full h-100">
                     <img src="/assets/britshGP2025.jpg"
                     className='w-full h-full object-cover'/>
@@ -181,7 +197,7 @@ export default function MobileApp() {
                     </a>
                     </div>
                 </div>
+              </div>
             </div>
-        </div>
     );
 };
