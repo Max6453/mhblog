@@ -9,7 +9,8 @@ import {
 } from "@/components/ui/tooltip";
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import { cn } from "@/lib/utils"
-import { CalendarIcon, HomeIcon, MailIcon, UserIcon, ArchiveIcon, InstagramIcon } from "lucide-react";
+import { CalendarIcon, HomeIcon, MailIcon, UserIcon, ArchiveIcon, InstagramIcon, GamepadIcon, CarIcon } from "lucide-react";
+import { DocumentIcon } from "@heroicons/react/24/outline";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
@@ -64,7 +65,9 @@ const DATA = {
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/Archive", icon: ArchiveIcon, label: "Archive" },
     { href: "/Contact", icon: UserIcon, Label: "Contact"},
-    { href: "https://www.instagram.com/harvancik_maxim/", icon: InstagramIcon, label: "Instagram "},
+    { href: "/Motorsport", icon: CarIcon, label: "Motorsport hub"},
+    { href: "/Gaming", icon: GamepadIcon, Label: "Gaming"},
+    { href: "/Reviews", icon: DocumentIcon, Label: "Reviews"},
   ],
   contact: {
     social: {
@@ -83,7 +86,7 @@ const DATA = {
 };
 
 return(
-    <div className="flex flex-col fixed z-50 top-140 pl-8 items-center justify-center max-sm:block md:hidden 2xl:hidden max-md:hidden">
+    <div className="flex flex-col fixed z-50 top-150 items-center justify-center max-sm:block md:hidden 2xl:hidden max-md:hidden">
       <TooltipProvider>
         <Dock direction="middle">
           {DATA.navbar.map((item) => (

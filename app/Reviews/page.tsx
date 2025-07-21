@@ -10,9 +10,9 @@ import SupabaseForm from '@/components/ui/supabaseForm';
 import DockBar from '@/components/ui/Dock'
 
 const navigation = [
-  { name: 'Latest', href: '/latest', current: false, id: 1 },
-  { name: 'Motorsport', href: '/Archive', current: false, id: 2 },
-  { name: 'Tech', href: '/Contact', current: false, id: 3 },
+  { name: 'Latest', href: '/', current: false, id: 1 },
+  { name: 'Motorsport', href: '/Motorsport', current: false, id: 2 },
+  { name: 'Tech', href: '/', current: false, id: 3 },
   { name: 'gaming', href: '/Reviews/Gaming', current: true, id: 4 },
   { name: 'Reviews', href: '/Reviews', current: true, id: 5 },
   { name: 'Formula 1 Analysis', href: 'https://maximharvancik.vercel.app', current: true, id: 6 },
@@ -47,30 +47,30 @@ export default function Motorsport() {
 
     return(
         <div>
-            <header className="relative top-0 dark:text-white">
+<header className="relative top-0 dark:text-white">
          <nav aria-label="Global" className="flex items-center justify-between lg:px-8 h-70 border-b-2">
-          <div className='text-5xl left-110 dark:text-white font-edu-vic-wa-nt-beginner relative'>
+          <div className='text-5xl left-110 max-sm:left-15 dark:text-white font-edu-vic-wa-nt-beginner relative'>
             <h1 className='font-bold font-raleway text-center'>MHBlog</h1>
-            <h3 className='text-3xl max-sm:text-2xl max-sm:w-60'>Latest news and intrigues across many topics</h3>
+            <h3 className='text-3xl text-center max-sm:text-2xl max-sm:w-60'>Latest news and intrigues across many topics</h3>
           </div>
           <a href='/'>
           <img
           src= "/mobileIcon-black.png"
-          className='h-32 w-auto hover:scale-110 top-52 right-175 transition-all duration-300 absolute sm:hidden md:hidden lg:hidden xl:block'/>
+          className='h-32 max-sm:h-25 w-auto hover:scale-110 top-52 max-sm:top-56 right-175 max-sm:right-33.5 transition-all duration-300 absolute sm:hidden md:hidden lg:hidden xl:block'/>
           </a>
           <div className="absolute right-5 pt-10 pr-5 max-md:pr-0 max-md:right-0 max-md:pt-25">
             <button
             id='openBtn'
               type="button"
               onClick={() => setMobileMenuOpen(true)}
-              className="bottom-5  relative icon-default inline-flex items-center justify-center rounded-md p-2.5 text-white z-50 animation duration-300 transform transition-all"
+              className="bottom-5 relative icon-default inline-flex items-center justify-center rounded-md p-2.5 text-white z-50 animation duration-300 transform transition-all"
             >
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon aria-hidden="true" className="size-10 block hover:-scale-y-110 max-sm:hidden animation duration-300 transition-all transform" />
+              <Bars3Icon aria-hidden="true" className="size-10 block hover:-scale-y-110 animation duration-300 transition-all transform" />
 
             </button>
           </div>
-           <ul className='flex gap-x-10 sm:gap-x-6 items-baseline xl:right-112 lg:right-60 md:right-30 sm:pt-0 sm:bottom-30 sm:right-35 max-sm:hidden block relative lg:bottom-25 pt-5 h-10 text-xl'>
+           <ul className='flex max-sm:hidden gap-x-10 sm:gap-x-10 items-baseline xl:right-112 lg:right-80 sm:pt-0 sm:right-35 max-sm:hidden block relative lg:bottom-25 pt-5 h-10 text-xl'>
             <li>
               <a href='#Latest' className='hover-underline-animation center'>latest</a>
             </li>
@@ -123,7 +123,7 @@ export default function Motorsport() {
       </div>
       <div className="flow-root">
         <div className="divide-y divide-gray-500/10">
-          <div className=" grid grid-cols-2 pr-5">
+          <div className=" grid grid-cols-2 max-sm:grid-cols-1 pr-5 max-sm:pr-0">
             {navigation.map((item) => (
               <a
                 key={`${item.name}-${item.href}`}
@@ -136,7 +136,7 @@ export default function Motorsport() {
           </div>
         </div>  
       </div>
-        <div className='flex flex-col-2 gap-x-10 items-center left-145  w-100 relative pt-5'>
+        <div className='flex flex-col-2 gap-x-10 items-center left-145 max-sm:left-12 w-100 max-sm:w-0 relative pt-5'>
         <span>
           <a href='/'>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className='size-12'>
@@ -166,17 +166,13 @@ export default function Motorsport() {
 </AnimatePresence>
 </header>
 
-{/* DOCK NAVBAR FOR WEB APP */}
-
-    <DockBar/>
-
 {/* END NAVBAR */}
 
 
 <div>
     <h1 className='text-5xl text-start m-5 pt-10'>Reviews</h1>
-    <div className='w-200 text-xl m-5 text-start'>
-        <p>
+    <div className='text-xl m-5 text-start'>
+        <p className='max-sm:w-80 w-200'>
             Fancy to buy new gadgets? I can provide you with necessary information about particular phone, headphones, laptops, etc...
             Whether you are considering buying latest samsung or gaming laptop or high-end headphones, I'll provide with necessary info and also observations during my testing phase with gadget.
             Or you want to know latest patch for your favorite game, latest releases of new games with detailed essay.
@@ -217,7 +213,7 @@ export default function Motorsport() {
 
  {/* FOOTER */}
        <footer
-       className="relative xl:top-0 lg:top-80 md:top-125 max-md:top-165 max-sm:top-285 h-full w-full text-center sm:footer-horizontal text-black font-edu-vic-wa-nt-beginner text-2xl"
+       className="relative xl:top-0 lg:top-80 md:top-125 max-md:top-165 max-sm:top-15 h-full w-full text-center sm:footer-horizontal text-black font-edu-vic-wa-nt-beginner text-2xl"
        id='Newsletter'>
           <div className="relative isolate overflow-hidden py-16 sm:py-24 lg:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -266,7 +262,7 @@ export default function Motorsport() {
                     </div>
                </div>
                   <div className='flex relative'>
-                    <ul className='grid grid-cols-1 gap-7 relative pl-20 max-sm:pl-13 justify-end text-white'>
+                    <ul className='grid grid-cols-1 gap-7 relative pl-20 max-sm:pl-23 justify-end text-white'>
                       <li className='hover:text-gray-400 duration-300'><a href='/Privacy-Policy'>Privacy Policy</a></li>
                       <li className='hover:text-gray-400 duration-300'><a href='/Terms-of-use'>Terms of use</a></li>
                       <li className='hover:text-gray-400 duration-300'><a href='/Contact'>Contact</a></li>
@@ -274,7 +270,7 @@ export default function Motorsport() {
                   </div>
                   <span>
                 <a href="#top">
-                <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 0 384 512" className="absolute right-28">
+                <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 0 384 512" className="absolute right-28 max-sm:right-32">
                 <path fill="#ffffff" d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/>
                 </svg></a>
                   </span>
@@ -283,7 +279,7 @@ export default function Motorsport() {
             </div>
         </div>
       </footer>
-    <aside className="relative text-center items-baseline pr-20 xl:top-100 lg:top-80 md:top-125 max-md:top-165 max-sm:top-280 max-md:text-lg max-md:text-center max-sm:pl-18">
+    <aside className="relative text-center items-baseline pr-20 xl:top-100 lg:top-80 md:top-125 max-md:top-165 max-sm:top-15 max-md:text-lg max-md:text-center max-sm:pl-18">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
       </aside>
   </div>

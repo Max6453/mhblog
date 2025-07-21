@@ -1,3 +1,11 @@
+/* 
+TO-DO:
+RESPONSIVE DESIGN FOR NEW PAGES
+FINALLY DEPLOY TO PRODUCTION
+
+*/
+
+
 'use client'
 import { useState } from 'react'
 import { CalendarDaysIcon, HandRaisedIcon} from '@heroicons/react/24/outline'
@@ -11,8 +19,8 @@ import DockBar from '@/components/ui/Dock'
 import ScrollImage from "@/components/ui/ScrollImage";
 
 const navigation = [
-  { name: 'Latest', href: '/latest', current: false, id: 1 },
-  { name: 'Motorsport', href: '/Archive', current: false, id: 2 },
+  { name: 'Latest', href: '/', current: false, id: 1 },
+  { name: 'Motorsport', href: '/Motorsport', current: false, id: 2 },
   { name: 'Tech', href: '/', current: false, id: 3 },
   { name: 'gaming', href: '/Reviews/Gaming', current: true, id: 4 },
   { name: 'Reviews', href: '/Reviews', current: true, id: 5 },
@@ -38,7 +46,7 @@ export default function Main() {
           <a href='/'>
           <img
           src= "/mobileIcon-black.png"
-          className='h-32 w-auto hover:scale-110 top-52 right-175 transition-all duration-300 absolute sm:hidden md:hidden lg:hidden xl:block'/>
+          className='h-32 max-sm:h-25 w-auto hover:scale-110 top-52 max-sm:top-56 right-175 max-sm:right-33.5 transition-all duration-300 absolute sm:hidden md:hidden lg:hidden xl:block'/>
           </a>
           <div className="absolute right-5 pt-10 pr-5 max-md:pr-0 max-md:right-0 max-md:pt-25">
             <button
@@ -52,7 +60,7 @@ export default function Main() {
 
             </button>
           </div>
-           <ul className='flex hidden gap-x-10 sm:gap-x-10 items-baseline xl:right-112 lg:right-60  sm:pt-0 sm:right-35 max-sm:hidden block relative lg:bottom-25 pt-5 h-10 text-xl'>
+           <ul className='flex max-sm:hidden gap-x-10 sm:gap-x-10 items-baseline xl:right-112 lg:right-80 sm:pt-0 sm:right-35 max-sm:hidden block relative lg:bottom-25 pt-5 h-10 text-xl'>
             <li>
               <a href='#Latest' className='hover-underline-animation center'>latest</a>
             </li>
@@ -118,7 +126,7 @@ export default function Main() {
           </div>
         </div>  
       </div>
-        <div className='flex flex-col-2 gap-x-10 items-center left-145  w-100 relative pt-5'>
+        <div className='flex flex-col-2 gap-x-10 items-center left-145 max-sm:left-12 w-100 max-sm:w-0 relative pt-5'>
         <span>
           <a href='/'>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className='size-12'>
@@ -148,16 +156,17 @@ export default function Main() {
 </AnimatePresence>
 </header>
 
-{/* DOCK NAVBAR FOR WEB APP */}
-
+{/* DOCK NAVBAR FOR WEB APP 
+    <div className='top-20 relative'>
     <DockBar/>
+    </div>
 
-{/* END NAVBAR */}
+{/* END NAVBAR 
 
 {/* LATEST */}
 <div className='relative h-dvh' id='Latest'>
   <div className="absolute top-0 z-[-2] h-370 w-full"></div>
-      <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white relative max-md:top-10 lg:pt-10 pl-10 font-Exo-2'>latest</h1>
+      <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white relative max-md:top-10 lg:pt-15 pl-10 font-Exo-2'>latest</h1>
     <div className="relative top-20 max-sm:pl-11.5 lg:pl-12 max-md:pl-11.5 md:pl-0 grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
     <a href='/Reviews/Gaming/Cyberpunk-2077-patch-2.3'>
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
@@ -249,9 +258,9 @@ export default function Main() {
            </ul>
           </div>
           {/* TECH, REVIEW, ETC... */}
-          <div className='relative max-sm:flex flex-col-2 w-full max-sm:right-90 max-sm:top-280 h-full rounded-4xl'>
+          <div className='relative max-sm:flex flex-col-2 w-full max-sm:right-90 max-sm:top-240 h-full rounded-4xl'>
            <h3 className='lg:text-4xl max-sm:text-5xl text-white relative lg:pt-10 pl-10 font-Exo-2'>For you</h3>
-           <div className='grid w-full max-sm:w-screen max-sm:top-40 pt-15 max-sm:right-17 relative'>
+           <div className='grid w-full max-sm:w-screen max-sm:top-40 max-sm:right-17 relative'>
             <a href='/Reviews/aws' className='hover:text-gray-400'>
             <div className='text-2xl font-edu-vic-wa-nt-beginner'>
               <span>MHBlog now connected with AWS for analysing Formula 1 Data</span>
@@ -303,7 +312,7 @@ export default function Main() {
     {/* END MOST POPULAR */}
       {/* FOOTER */}
        <footer
-       className="relative xl:top-40 lg:top-80 md:top-125 max-md:top-165 max-sm:top-670 h-full w-full text-center sm:footer-horizontal pt-10 text-black font-edu-vic-wa-nt-beginner p-10 text-2xl"
+       className="relative xl:top-40 lg:top-80 md:top-125 max-md:top-165 max-sm:top-620 h-full w-full text-center sm:footer-horizontal pt-10 text-black font-edu-vic-wa-nt-beginner p-10 text-2xl"
        id='Newsletter'>
           <div className="relative isolate overflow-hidden py-16 sm:py-24 lg:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -369,7 +378,7 @@ export default function Main() {
             </div>
         </div>
       </footer>
-    <aside className="relative text-center items-baseline pr-20 xl:top-40 lg:top-80 md:top-125 max-md:top-165 max-sm:top-670 max-md:text-lg max-md:text-center max-sm:pl-18">
+    <aside className="relative text-center items-baseline pr-20 xl:top-40 lg:top-80 md:top-125 max-md:top-165 max-sm:top-620 max-md:text-lg max-md:text-center max-sm:pl-18">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
       </aside>
 </div>
