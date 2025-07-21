@@ -60,7 +60,7 @@ export default function Main() {
 
             </button>
           </div>
-           <ul className='flex max-sm:hidden gap-x-10 sm:gap-x-10 items-baseline xl:right-112 lg:right-80 sm:pt-0 sm:right-35 max-sm:hidden block relative lg:bottom-25 pt-5 h-10 text-xl'>
+           <ul className='flex max-sm:hidden gap-x-10 sm:gap-x-10 items-baseline xl:right-102 lg:right-80 sm:pt-0 sm:right-35 max-sm:hidden block relative lg:bottom-25 pt-5 h-10 text-xl'>
             <li>
               <a href='#Latest' className='hover-underline-animation center'>latest</a>
             </li>
@@ -172,7 +172,7 @@ export default function Main() {
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
         <img src='/assets/GTWC-Misano-BMW.jpg' className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
         <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>GTWC - Misano report</h3>
-        <button className='relative lg:bottom-28 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
+        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
           See more</button>
       </div>
     </a>  
@@ -260,7 +260,7 @@ export default function Main() {
           {/* TECH, REVIEW, ETC... */}
           <div className='relative max-sm:flex flex-col-2 w-full max-sm:right-90 max-sm:top-240 h-full rounded-4xl'>
            <h3 className='lg:text-4xl max-sm:text-5xl text-white relative lg:pt-10 pl-10 font-Exo-2'>For you</h3>
-           <div className='grid w-full max-sm:w-screen max-sm:top-40 max-sm:right-17 relative'>
+           <div className='grid w-full max-sm:w-screen max-sm:top-40 max-sm:right-17 relative pt-10'>
             <a href='/Reviews/aws' className='hover:text-gray-400'>
             <div className='text-2xl font-edu-vic-wa-nt-beginner'>
               <span>MHBlog now connected with AWS for analysing Formula 1 Data</span>
