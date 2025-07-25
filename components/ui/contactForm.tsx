@@ -137,7 +137,7 @@ return(
             {loading ? "Submitting..." : "Submit"}
           </button>
         </div>
-        {success && <p className="text-green-600 text-xl text-center">Thank you for your feedback!</p>}
+        {success && <p className="text-green-600 text-xl text-center">Message recieved :)</p>}
         {error && <p className="text-red-600 text-xl text-center">{error}</p>}
       </form>
 )

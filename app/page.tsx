@@ -14,9 +14,8 @@ import * as React from "react"
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { AnimatePresence, motion } from "framer-motion"
 import 'ldrs/react/LineWobble.css'
-import SupabaseForm from '@/components/ui/supabaseForm';
-import DockBar from '@/components/ui/Dock'
-import ScrollImage from "@/components/ui/ScrollImage";
+import SupabaseForm from '../components/ui/supabaseForm';
+
 
 const navigation = [
   { name: 'Latest', href: '/', current: false, id: 1 },
@@ -24,7 +23,7 @@ const navigation = [
   { name: 'Tech', href: '/', current: false, id: 3 },
   { name: 'gaming', href: '/Reviews/Gaming', current: true, id: 4 },
   { name: 'Reviews', href: '/Reviews', current: true, id: 5 },
-  { name: 'Formula 1 Analysis', href: 'https://maximharvancik.vercel.app', current: true, id: 6 },
+  { name: 'Formula 1 Analysis', href: 'https://fad-mhblog.vercel.app', current: true, id: 6 },
   { name: 'Contact', href: '/Contact', current: true, id: 7 },
   { name: 'Newsletter', href: '#Newsletter', current: true, id: 8 },
 ];
@@ -60,7 +59,7 @@ export default function Main() {
 
             </button>
           </div>
-           <ul className='flex max-sm:hidden gap-x-10 sm:gap-x-10 items-baseline xl:right-102 lg:right-80 sm:pt-0 sm:right-35 max-sm:hidden block relative lg:bottom-25 pt-5 h-10 text-xl'>
+           <ul className='flex max-sm:hidden gap-x-10 sm:gap-x-10 items-baseline xl:right-102 lg:right-80 sm:pt-0 sm:right-35 max-sm:hidden max-md:hidden block relative lg:bottom-25 pt-5 h-10 text-xl'>
             <li>
               <a href='#Latest' className='hover-underline-animation center'>latest</a>
             </li>
@@ -78,6 +77,9 @@ export default function Main() {
             </li>
             <li>
               <a href='/Contact' className='hover-underline-animation center'>Contact</a>
+            </li>
+            <li>
+              <a href='../Admin' className='hover-underline-animation center'>Admin</a>
             </li>
           </ul>
         </nav>
@@ -376,6 +378,7 @@ export default function Main() {
                 </dl>
               </div>
             </div>
+
         </div>
       </footer>
     <aside className="relative text-center items-baseline pr-20 xl:top-40 lg:top-80 md:top-125 max-md:top-165 max-sm:top-620 max-md:text-lg max-md:text-center max-sm:pl-18">
