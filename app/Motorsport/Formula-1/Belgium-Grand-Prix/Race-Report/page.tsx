@@ -187,13 +187,13 @@ export default function AustrianGP() {
             <header>
             <div className="relative inset-0">
             <h1 className="absolute text-6xl top-82 left-50 z-10 font-josefin-sans max-md:left-7 items-baseline max-md:top-20 md:text-3xl sm:text-xl lg:text-6xl max-md:text-3xl text-white text-center font-bold">
-                Belgium Grand Prix - Friday Report
+                Belgium Grand Prix - Race Report
             </h1>
             <h5 className="absolute text-6xl top-100 left-20 z-10 font-sans max-md:left-0 max-md:top-50 md:text-3xl sm:text-xl lg:text-6xl text-center max-md:text-xl text-white font-bold">
-                Everything what happened during friday, saturday in 2025 belgium Grand Prix
+                Everything what happened in 2025 belgium Grand Prix
             </h5>
             <img
-                src="/assets/OP81-Spa.jpg"
+                src="/assets/MCL-Spa.jpg"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96 overflow-hidden"
                 alt="Miami Grand Prix"
             />
@@ -202,44 +202,48 @@ export default function AustrianGP() {
             <div className="relative pb-10 md:left-0">
                 <div className="text-2xl justify-center text-white to-neutral-900 relative text-start">
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:w-90 lg:w-300 font-josefin-sans pt-15">
-                  Spa-Francorchamps is favourite track for many drivers on the grid. And i like it too.
+                  Spa-Francorchamps is unique track, but its uniqueness is slowly killing the racing.
                 </p>
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-0 max-md:w-90 max-lg:w-200 xl:w-300 font-josefin-sans pt-15">
-                  Friday was sunny with handful of clouds. This weekend is sprint weekend so we got only one practice session.
-                  OP81 won practice 1 with MV1 and LN4 closing the podium.
+                  We must now admit that spa is becoming more and more boring every year. When i started to watch f1 in 2022, Even in that year spa was boring.
+                  Nothing changed in 3 years but only degraded more.
                 </p>
-                <h3 className="text-4xl m-5 lg:pl-75 pt-5">Sprint Qualifying</h3>
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-50 font-josefin-sans pt-15 lg:w-300"> 
-                  SQ was intersting one. LH44 made a mistake in bus stop chicane, causing him to finish 16th. AKA was frustrated too. Only 17 on the grid for the sprint.
-                  OP81 won the SQ with more than 0.4 seconds to MV1 on 2nd and LN4 on 3rd.
-                  Really dominant lap from Aussie in the service of Mclaren.
+                    Firstly, the race started afer 1 hour and 20 minutes later because the officials were scared to let drivers race.
+                    I know that stewards were afraid because of high chance of accident but we must also addmit that the safety of this car is on level where practically a death is same as commercial plane.
+                    We're not in 1970's were drivers were dying like on battlefield.
+                    But lets go racing after nearly 1 and half hours of waiting
                 </p>
-                 <h3 className="text-4xl m-5 lg:pl-75 pt-5">Sprint</h3>
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-20 font-josefin-sans pt-15 lg:w-300"> 
-                  Sprint was raced in sunny weather in beautiful arden nature.
-                  OP81 on 1st, MV1 2nd and LN4 on 3rd. It was great addvertisment for a sprint race.
-                  The race started calmly. OP81 was first until the end of kemmell straight. CL16 overtook LN4 for 3rd place.
-                  Overtake of MV1 was pivotal for results of this sprint.
-                  Mclarens didn't had enough straight line speed to catch up red bull.
-                  Overall in the whole sprint, only like 5 overtakes was made.
-                  3 were made in front and other somewhere behind.
-                  But what we could expect from the sprint right?
-                  personally i don't like the sprint format.
-                </p>
-                <h3 className="text-4xl m-5 lg:pl-75 pt-5">Qualifying</h3>
-                <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-20 font-josefin-sans pt-15 lg:w-300">
-                  We knew before that friday, saturday would be driven in dry conditions. Now only the race will be driven in wet.
-                  But lets go back to Quali...
+                    The race begun as a rolling start so like in GT's or WEC, cars were moving and not stationed in box.
+                    LN4 started from the 1st place with OP81 behind and CL16 watching from behind.
+                    LN4 started the race but his start was tragicomedy. Later we heard from the radio that there was some potential issue with battery but still how he started the race was tragicomedic.
+                    OP81 took advantage and easily overtook for 1st place at the kemmell straight.
+                    After this overtake it was more or less seattled.
+                    But there was still some action behind.
+                    From 2nd to 6th place, the drivers were driving like without senses. In some places wven they were faster like 0.7 seconds per lap than mclarens.
+                    First pitstops came.
+                    OP81 pitstop was okay. There was some time lost but nothing significant.
+                    Than came LN4. The pitstop was 4 seconds longer and he pitted for hards. The choice wasn't really bad. After all, pirelli nominated C1, C3, C4 tyres.
+                    The hard tyre was marked as C1. The hardest compound on pirelli's menu.
                 </p>
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-20 font-josefin-sans pt-15 lg:w-300">
-                  Q1 saw once again LH44 on 16th and AKA on 18th. But AM drove worst qualifying session this season finishing P19 and P20.
-                  But LN4 won pole position, beating OP81 by 0.85 seconds. Behind them, surpisingly, CL16 on 3rd and MV1 4th.
-                  But AA23 drove best qualifying session for williams yet. He finished on astonishing 5th place.
+                  The pace looked promising from LN4 but the mistakes he kept doing ultimately cost him a potential win.
+                  Many lock-ups, going out of track lost him ~ 4-5 seconds Exactly that time was missing in the last couple of laps.
+                </p>
+                <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-20 font-josefin-sans pt-15 lg:w-300">
+                  But Oscar Piastri drove flawless race and won his 8th total win of his carrer, equaling Charles Leclerc and Lando Norris wins.
+                  Totaly deserved win for Aussie in the service on Mclarens.
+                  Lando Norris finished on 2nd place with, surprisingly, Charles Leclerc on ferrari on 3rd place.
                 </p>
                  <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-20 font-josefin-sans pt-15 lg:w-300">
-                  I can say that tommorow will be really tricky day for drivers and a day of full entertainment.
-                  Certainly looking forward to main race in arden mountains.
+                  Spa-francorchamps is a beautiful track in arden mountains. It will be a shame to lose such track to american or middle east tracks but something needs to change.
+                  Because the f1 shifted from pure racing to entertainment. And Spa once again wasn't entertaining.
+                  Looking forward to Hungaroring. Made beautiful memories last year there and it is favourite track of mine.
+                  So really looking forward to it.<br/>
+                  <a href="https://fad-mhblog.vercel.app/Belgium-Grand-Prix/Race" className="underline">Race analysis</a>
                 </p>
+
               </div>
             </div>
             <footer
