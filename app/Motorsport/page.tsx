@@ -23,6 +23,26 @@ const navigation = [
 const itemsPerPage = 6;
 
 const articles = [
+    {
+    title: "Hungarian Grand Prix - preview",
+    href: "/Reviews/Gaming/Cyberpunk-2077-patch-2.3",
+    image: "/assets/britshGP2025.jpg",
+  },
+    {
+    title: "Belgium Grand Prix - race report",
+    href: "/Reviews/Gaming/Cyberpunk-2077-patch-2.3",
+    image: "/assets/britshGP2025.jpg",
+  },
+    {
+    title: "Belgium Grand Prix - weekend report",
+    href: "/Reviews/Gaming/Cyberpunk-2077-patch-2.3",
+    image: "/assets/britshGP2025.jpg",
+  },
+    {
+    title: "GTWC Misano - report",
+    href: "/Reviews/Gaming/Cyberpunk-2077-patch-2.3",
+    image: "/assets/britshGP2025.jpg",
+  },
   {
     title: "British Grand Prix - race report",
     href: "/Reviews/Gaming/Cyberpunk-2077-patch-2.3",
