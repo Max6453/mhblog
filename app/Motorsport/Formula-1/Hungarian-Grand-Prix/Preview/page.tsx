@@ -216,7 +216,7 @@ export default function AustrianGP() {
                 </p>
                 <div className="lg:flex lg:flex-col-1">
                 <img src="/assets/Hungary_Circuit.avif"
-                className="w-200 h-100 top-10 relative"/>
+                className="w-200 h-100 top-10 lg:pl-30 relative"/>
                 <p className="text-start text-2xl max-sm:pl-2 md:pl-10 max-md:pl-20 font-josefin-sans pt-15 lg:w-100">
                   Hungaroring can offer us 2 and only DRS zones in first sector.
                   Hungaroring is also versatile in corner profiles. We can see many high speed corners like 4, 10 or 11.
