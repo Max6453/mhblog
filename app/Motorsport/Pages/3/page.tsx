@@ -48,7 +48,7 @@ export default function Motorsport() {
               </div>
                <ul className='flex gap-x-10 sm:gap-x-6 items-baseline xl:right-112 lg:right-60 md:right-30 sm:pt-0 sm:bottom-30 sm:right-35 max-sm:hidden block relative lg:bottom-25 pt-5 h-10 text-xl'>
                 <li>
-                  <a href='#Latest' className='hover-underline-animation center'>latest</a>
+                  <a href='/' className='hover-underline-animation center'>latest</a>
                 </li>
                 <li>
                   <a href='/Motorsport' className='hover-underline-animation center'>Motorsport</a>
@@ -148,22 +148,6 @@ export default function Motorsport() {
         <div className="absolute top-0 z-[-2] h-370 w-full"/>
       <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white relative max-md:top-10 lg:pt-10 pl-10 font-Exo-2'>latest</h1>
     <div className="relative top-20 max-sm:pl-11.5 lg:pl-12 max-md:pl-11.5 md:pl-0 grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
-    <a href='/Motorsport/Formula-1/Spanish-Grand-Prix'>
-      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/Spain.jpg' className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Spanish Grand Prix</h3>
-        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-          See more</button>
-      </div>
-    </a>  
-    <a href='/Motorsport/Formula-1/Monaco-Grand-Prix'>
-      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/monaco.jpg' className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Monaco Grand Prix</h3>
-        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-          See more</button>
-      </div>
-    </a>  
      <a href='/Motorsport/Formula-1/Emilia-Romagna-Grand-Prix'>
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
         <img src='/assets/Emilia-romagna.webp' className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
@@ -176,7 +160,7 @@ export default function Motorsport() {
 
 
           <div className="flex gap-50 max-sm:gap-25 item-center justify-center pr-15 max-sm:pr-2 bottom-120 max-sm:top-50 relative h-2s0">
-        <a href='/Motorsport/'>
+        <a href='/Motorsport/Pages/2'>
         <button
           className="w-30 h-15 rounded text-white text-black border rounded-full hover:bg-white hover:text-black duration-250"
         >
@@ -191,7 +175,7 @@ export default function Motorsport() {
             </button>
         </a>
       </div>
-      <span className='relative bottom-135 max-sm:top-40 left-170 max-sm:left-34 item-center jusitfy-center'> Page 2 of 2</span>
+      <span className='relative bottom-135 max-sm:top-40 left-170 max-sm:left-34 item-center jusitfy-center'> Page 3 of 3</span>
   </div>
         {/* END LATEST */}
     

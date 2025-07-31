@@ -90,7 +90,7 @@ export default function AustrianGP() {
                </div>
                 <ul className='flex gap-x-10 sm:gap-x-6 items-baseline xl:right-112 lg:right-60 md:right-30 sm:pt-0 sm:bottom-30 sm:right-35 max-sm:hidden block relative lg:bottom-25 pt-5 h-10 text-xl'>
                  <li>
-                   <a href='#Latest' className='hover-underline-animation center'>latest</a>
+                   <a href='/' className='hover-underline-animation center'>latest</a>
                  </li>
                  <li>
                    <a href='/Motorsport' className='hover-underline-animation center'>Motorsport</a>

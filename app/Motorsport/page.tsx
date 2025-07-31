@@ -25,27 +25,27 @@ const itemsPerPage = 6;
 const articles = [
     {
     title: "Hungarian Grand Prix - preview",
-    href: "/Reviews/Gaming/Cyberpunk-2077-patch-2.3",
-    image: "/assets/britshGP2025.jpg",
+    href: "/Motorsport/Formula-1/Hungarian-Grand-Prix/Preview",
+    image: "/assets/Hungary-Preview.jpg",
   },
     {
     title: "Belgium Grand Prix - race report",
-    href: "/Reviews/Gaming/Cyberpunk-2077-patch-2.3",
-    image: "/assets/britshGP2025.jpg",
+    href: "/Motorsport/Formula-1/Belgium-Grand-Prix/Race-Report",
+    image: "/assets/MCL-Spa.jpg",
   },
     {
     title: "Belgium Grand Prix - weekend report",
-    href: "/Reviews/Gaming/Cyberpunk-2077-patch-2.3",
-    image: "/assets/britshGP2025.jpg",
+    href: "/Motorsport/Formula-1/Belgium-Grand-Prix/Weekend-Report",
+    image: "/assets/OP81-Spa.jpg",
   },
     {
     title: "GTWC Misano - report",
-    href: "/Reviews/Gaming/Cyberpunk-2077-patch-2.3",
-    image: "/assets/britshGP2025.jpg",
+    href: "/Motorsport/GTWC/Misano-Report",
+    image: "/assets/GTWC-Misano-BMW.jpg",
   },
   {
     title: "British Grand Prix - race report",
-    href: "/Reviews/Gaming/Cyberpunk-2077-patch-2.3",
+    href: "/Motorsport/Formula-1/British-Grand-Prix/Race-Report",
     image: "/assets/britshGP2025.jpg",
   },
   {
@@ -55,7 +55,7 @@ const articles = [
   },
   {
     title: "Austrian Grand Prix",
-    href: "/Motorpsort/Formula-1/British-Grand-Prix/Race-Report",
+    href: "/Motorpsort/Formula-1/Austrian-Grand-Prix/Race-Report",
     image: "/assets/Austria.webp",
   },
   {
@@ -127,7 +127,7 @@ export default function Motorsport() {
               </div>
                <ul className='flex gap-x-10 sm:gap-x-6 items-baseline xl:right-112 lg:right-60 md:right-30 sm:pt-0 sm:bottom-30 sm:right-35 max-sm:hidden block relative lg:bottom-25 pt-5 h-10 text-xl'>
                 <li>
-                  <a href='#Latest' className='hover-underline-animation center'>latest</a>
+                  <a href='/' className='hover-underline-animation center'>latest</a>
                 </li>
                 <li>
                   <a href='/Motorsport' className='hover-underline-animation center'>Motorsport</a>
