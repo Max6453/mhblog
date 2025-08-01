@@ -57,7 +57,7 @@ export default function Motorsport() {
                   <a href='/Reviews' className='hover-underline-animation center'>Reviews</a>
                 </li>
                 <li>
-                  <a href='/Reviews/Gaming' className='hover-underline-animation center'>Gaming</a>
+                  <a href='/Gaming' className='hover-underline-animation center'>Gaming</a>
                 </li>
                 <li>
                   <a href='#Newsletter' className='hover-underline-animation center'>Newsletter</a>
