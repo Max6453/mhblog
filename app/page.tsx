@@ -183,7 +183,7 @@ export default function Main() {
           See more</button>
       </div>
     </a>  
-    <a href='/Motorsport/Formula-1/Belgium-Grand-Prix/Friday-Report'>
+    <a href='/Motorsport/Formula-1/Belgium-Grand-Prix/Weekend-Report'>
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
         <img src='/assets/OP81-Spa.jpg'  className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
         <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Belgium Grand Prix - weekend report</h3>
@@ -220,29 +220,29 @@ export default function Main() {
                <a href='Motorsport/Formula-1/British-Grand-Prix/Race-Report'>
                <div className='w-100 h-65 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white -z-50'>
                   <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-85 max-sm:top-70 h-10 pl-5 rounded-b-3xl w-100 max-sm:w-80'>
-                  British Grand Prix Race Report
+                  hungarian Grand Prix Weekend Report
                   </span>                
-                <img src="/assets/britshGP2025.jpg" className='hover:scale-110 duration-250 object-cover -z-10'/>
+                <img src="/assets/Hungary-mcl.avif" className='hover:scale-110 duration-250 object-cover -z-10'/>
                </div>
                </a>
             </li>
             <li>
                <a href='Motorsport/Formula-1/Austrian-Grand-Prix'>
                <div className='w-100 h-65  max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white'>
-                                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-170 max-sm:top-146 h-10 pl-5 rounded-b-3xl w-100 max-sm:w-80'>
-                  Austrian Grand Prix Race Report
+               <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-170 max-sm:top-146 h-10 pl-5 rounded-b-3xl w-100 max-sm:w-80'>
+                  belgium Grand Prix Race Report
                   </span>                
-                <img src="/assets/Austria.webp" className='hover:scale-110 duration-250'/>
+                <img src="/assets/MCL-Spa.jpg" className='hover:scale-110 duration-250'/>
                </div>
                </a>
             </li>
             <li>
-               <a href='Reviews/aws'>
+               <a href='Motorsport/Formula-1/belgium-Grand-Prix/Weekend-Report'>
                <div className='w-100 h-55 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white'>
                   <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-245 max-sm:top-212 h-10 pl-5 rounded-b-3xl w-100 max-sm:w-80'>
-                  MHBlog connected with AWS
+                  Belgium Grand Prix Weekend Report
                   </span>                
-                <img src="/assets/awsxf1.jpg" className='hover:scale-110 duration-250'/>
+                <img src="/assets/OP81-Spa.jpg" className='hover:scale-110 duration-250'/>
                </div>
                </a>
             </li>
@@ -252,12 +252,12 @@ export default function Main() {
           <div className='relative max-sm:flex flex-col-2 w-full max-sm:right-90 max-sm:top-240 h-full rounded-4xl'>
            <h3 className='lg:text-4xl max-sm:text-5xl text-white relative lg:pt-10 pl-10 font-Exo-2'>For you</h3>
            <div className='grid w-full max-sm:w-screen max-sm:top-40 max-sm:right-17 relative pt-10'>
-            <a href='/Reviews/aws' className='hover:text-gray-400'>
+            <a href='/Motorsport/Formula-1/Hungarian-Grand-Prix/Weekend-Report' className='hover:text-gray-400'>
             <div className='text-2xl font-edu-vic-wa-nt-beginner'>
-              <span>MHBlog now connected with AWS for analysing Formula 1 Data</span>
+              <span>Hungarian Grand Prix - Weeked Report</span>
                <div className='gap-x-5 pt-3'>
-              <span>Date: 06/07/2025</span><br/>
-              <span>Read time: 0.38 minutes</span>
+              <span>Date: 03/08/2025</span><br/>
+              <span>Read time: 3.31 minutes</span>
               </div>
             </div>
             </a>
@@ -270,30 +270,30 @@ export default function Main() {
               </div>
             </div>
             </a>
+            <a href='/Motorsport/Formula-1/Belgium-Grand-Prix/Race-Report' className='hover:text-gray-400'>
+            <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
+              <span>Belgium Grand Prix Race Report</span>
+              <div className='gap-x-5 pt-3'>
+              <span>Date: 27/07/2025</span><br/>
+              <span>Read time: 3.12 minutes</span>
+              </div>
+            </div>
+            </a>
             <a href='/Motorsport/Formula-1/British-Grand-Prix/Race-Report' className='hover:text-gray-400'>
             <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
-              <span>2025 British Grand Prix Race Report</span>
+              <span>British Grand Prix Race Report</span>
               <div className='gap-x-5 pt-3'>
               <span>Date: 06/07/2025</span><br/>
-              <span>Read time: 3.22 minutes</span>
+              <span>Read time: 3.12 minutes</span>
               </div>
             </div>
             </a>
-            <a href='/Motorsport/Formula-1/Austrian-Grand-Prix' className='hover:text-gray-400'>
+            <a href='/Motorsport/GTWC/Misano-Report' className='hover:text-gray-400'>
             <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
-              <span>Austrian Grand Prix Race Report</span>
+              <span>2GTWC Misano - Report</span>
               <div className='gap-x-5 pt-3'>
-              <span>Date: 06/07/2025</span><br/>
-              <span>Read time: 3 minutes</span>
-              </div>
-            </div>
-            </a>
-            <a href='/Motorsport/GTWC/24-Hours-of-Nurburgring' className='hover:text-gray-400'>
-            <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
-              <span>24 Hours of Nurburgring - Great race but with controversial end</span>
-              <div className='gap-x-5 pt-3'>
-              <span>Date: 06/07/2025</span><br/>
-              <span>Read time: 2 minutes</span>
+              <span>Date: 20/07/2025</span><br/>
+              <span>Read time: 1.20 minutes</span>
               </div>
             </div>
             </a>

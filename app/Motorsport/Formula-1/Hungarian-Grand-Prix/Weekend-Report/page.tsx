@@ -242,7 +242,7 @@ export default function AustrianGP() {
                   Their solution was increased pressure in tyres. What I managed to find was that the ferrari were running the car to much low. 
                   So their skid block on plank, which is located on floor and thanks to it we have the sparks, were to much worn out.
                   But because of increased tyre pressures, their performance dropped significantly. Later in the race, GR63 overtakes CL16 but it wasn't easy for briton.
-                  CL16 was moving under breaking which is banned due to safety concerns. But after all, GR63 was on podium.
+                  CL16 was moving under breaking which is banned due to safety reasons. But after all, GR63 was on podium.
                   Meanwhile LN4 changed his tyres to hard on which he made 32 laps. Also mclaren broked this season's record for fastest pitstop.
                   They made 1.9 seconds for LN4.
                   He was on 1st place because OP81 needed to box again.
@@ -256,7 +256,8 @@ export default function AustrianGP() {
                  <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-20 font-josefin-sans pt-15 lg:w-300">
                   Ferrari was concerned with many problems that race.
                   On CL16 side, The main problem was worn skid blocks on plank. This was caused by ferrari running their cars really low to the ground.
-                  Ferrari is struggling with this trough out this whole season. They also, if you remember correctly, DNF'd in China because of this problem.
+                  This is the only way for ferrari to make the car the most competetive.
+                  They are struggling with this trough out this whole season. They also, if you remember correctly, DNF'd in China because of this problem.
                   This problem caused a solution which significantly reduced the performance of the car.
                   Also LH44 had brake problems.
                 </p>
