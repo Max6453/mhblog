@@ -23,6 +23,11 @@ const navigation = [
 const itemsPerPage = 6;
 
 const articles = [
+      {
+    title: "Hungarian Grand Prix - Weekend report",
+    href: "/Motorsport/Formula-1/Hungarian-Grand-Prix/Weekend-Report",
+    image: "/assets/Hungary-mcl.avif",
+  },
     {
     title: "Hungarian Grand Prix - preview",
     href: "/Motorsport/Formula-1/Hungarian-Grand-Prix/Preview",
