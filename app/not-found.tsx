@@ -3,7 +3,7 @@ import { GalleryVerticalEnd } from "lucide-react"
  
 export default function NotFound() {
   return (
-    <div className='bg-blue-500 h-screen w-full font-Exo-2'>
+    <div className='bg-background h-screen w-full font-Exo-2'>
             <div className="grid min-h-svh lg:grid-cols-2">
       <div className="flex flex-col gap-4 p-6 md:p-10">
         <div className="flex justify-center gap-2 md:justify-start">
@@ -19,7 +19,7 @@ export default function NotFound() {
             <span className='text-3xl'>Page not found</span>
             <span className='text-xl pt-6'>Sorry, couldn't find a page you're looking for</span>
             <a href='/'>
-        <button className='w-25 h-10 rounded-full relative top-5 text-blue-500 bg-white border border-black hover:bg-blue-500 hover:border-white hover:shadow-2xl hover:text-white transition duration-300'>
+        <button className='w-25 h-10 rounded-full relative top-5 text-black bg-linear-240 bg-white to-black hover:bg-linear-150 hover:bg-black-to-bg-white border border-black hover:border-white hover:shadow-2xl hover:text-white transition duration-300'>
           See more</button>
         </a>
         </div>
