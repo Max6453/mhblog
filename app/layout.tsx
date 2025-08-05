@@ -55,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      </head>
+      </head>  
       <body
         className={`${geistSans.variable} ${Edu.variable} ${Exo.variable} ${raleway.variable} antialiased`}
       >

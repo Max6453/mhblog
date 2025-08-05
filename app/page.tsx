@@ -7,7 +7,7 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { AnimatePresence, motion } from "framer-motion"
 import 'ldrs/react/LineWobble.css'
 import SupabaseForm from '../components/ui/supabaseForm';
-
+import Image from 'next/image'
 
 const navigation = [
   { name: 'Latest', href: '/', current: false, id: 1 },
@@ -25,7 +25,7 @@ export default function Main() {
   const [loading, setLoading] = useState(true);
 
   return (
-  <div className=' bg-neutral-900 transition-colors duration-500'>
+  <div className='bg-neutral-900 transition-colors duration-500'>
     {/*<Banner text="LATEST EVENTS: 24 Hours of Le Man's - WEC; Formula 1 Canadian Grand Prix - Qualifying at 10pm CET; NHL Edmonton Oilers vs Florida Panthers at 2am CET"
     speed={25}/> */}
 <header className="relative top-0 dark:text-white">
@@ -44,12 +44,12 @@ export default function Main() {
             id='openBtn'
               type="button"
               onClick={() => setMobileMenuOpen(true)}
-              className="bottom-5 relative icon-default inline-flex items-center justify-center rounded-md p-2.5 text-white z-50 animation duration-300 transform transition-all"
+              className=" bottom-5 relative icon-default inline-flex items-center justify-center rounded-md p-2.5 text-white z-50 animation duration-300 transform transition-all"
             >
-              <span className="sr-only">Open main menu</span>
-              <Bars3Icon aria-hidden="true" className="size-10 block hover:-scale-y-110 animation duration-300 transition-all transform" />
-
+            <span className="sr-only">Open main menu</span>
+              <Bars3Icon aria-hidden="true" className=" size-10 block hover:shadow-xl shadow-neutral-950 rounded-xl animation duration-300 transition-all transform" />
             </button>
+
           </div>
            <ul className='flex max-sm:hidden gap-x-10 sm:gap-x-10 items-baseline xl:right-102 lg:right-80 sm:pt-0 sm:right-35 max-sm:hidden max-md:hidden block relative lg:bottom-25 pt-5 h-10 text-xl'>
             <li>
@@ -109,7 +109,7 @@ export default function Main() {
               <a
                 key={`${item.name}-${item.href}`}
                 href={item.href}
-                className="-mx-3 block rounded-lg px-3 py-2 font-semibold text-white opacity-90 text-6xl m-8 hover:text-blue-500 transition-all duration-250"
+                className="-mx-3 block rounded-lg px-3 py-2 font-semibold text-white opacity-90 text-6xl m-8 hover:text-gray-500 transition-all duration-250"
               >
                 {item.name}
               </a>
