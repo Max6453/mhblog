@@ -15,6 +15,8 @@ const navigation = [
   { name: 'Formula 1 Analysis', href: 'https://fad-mhblog.vercel.app', current: true, id: 6 },
   { name: 'Contact', href: '/Contact', current: true, id: 7 },
   { name: 'Wallpapers', href: '/Wallpaper', current: true, id: 8 },
+  { name: 'Pomodoro', href: 'https://pomodoro-mhblog.vercel.app', current: true, id: 9 },
+  { name: 'About Author', href: 'https://maximharvancik.vercel.app', current: true, id: 8 },
 ];
 
 export default function Header() {
