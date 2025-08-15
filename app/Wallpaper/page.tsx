@@ -85,7 +85,7 @@ export default function Wallpaper() {
               <a href='/Reviews/Gaming' className='hover-underline-animation center'>Gaming</a>
             </li>
             <li>
-              <a href='/Wallpaper' className='hover-underline-animation center'>Wallappers</a>
+              <a href='https://pomodoro-mhblog.vercel.app' className='hover-underline-animation center'>Pomodoro</a>
             </li>
             <li>
               <a href='/Contact' className='hover-underline-animation center'>Contact</a>

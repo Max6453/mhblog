@@ -17,7 +17,7 @@ const navigation = [
   { name: 'Reviews', href: '/Reviews', current: true, id: 5 },
   { name: 'Formula 1 Analysis', href: 'https://maximharvancik.vercel.app', current: true, id: 6 },
   { name: 'Contact', href: '/Contact', current: true, id: 7 },
-  { name: 'Newsletter', href: '#Newsletter', current: true, id: 8 },
+  { name: 'Pomodoro', href: 'https://pomodoro-mhblog.vercel.app', current: true, id: 8 },
 ];
 
 const itemsPerPage = 6;

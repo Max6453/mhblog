@@ -65,7 +65,7 @@ export default function Main() {
               <a href='/Reviews/Gaming' className='hover-underline-animation center'>Gaming</a>
             </li>
             <li>
-              <a href='#Newsletter' className='hover-underline-animation center'>Newsletter</a>
+              <a href='https://pomodoro-mhblog.vercel.app' className='hover-underline-animation center'>Pomodoro</a>
             </li>
             <li>
               <a href='/Contact' className='hover-underline-animation center'>Contact</a>
