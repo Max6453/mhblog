@@ -9,6 +9,23 @@ import 'ldrs/react/LineWobble.css'
 import SupabaseForm from '../components/ui/supabaseForm';
 import Image from 'next/image'
 import Header from '@/components/main/header'
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBC6MG8qo8BMLF790znTnsuYPz3I7XnNE0",
+  authDomain: "mhsys-solutions.firebaseapp.com",
+  projectId: "mhsys-solutions",
+  storageBucket: "mhsys-solutions.firebasestorage.app",
+  messagingSenderId: "469597815926",
+  appId: "1:469597815926:web:927c6740b6611d85a6cb57",
+  measurementId: "G-4P2K691D7M"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
 
 export default function Main() {
   return (
