@@ -85,7 +85,7 @@ export default function Header() {
                 <span className="sr-only">Your Company</span>
                 <img
                     alt="mobileIcon"
-                    src="./mobileIcon-black.png"
+                    src="/mobileIcon-black.png"
                     className="h-20 w-auto"
                 />
                 </a>
