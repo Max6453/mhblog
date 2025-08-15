@@ -1,22 +1,25 @@
   'use client'
   import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
-
-export default function SpanishGP() {
+import Header from "@/components/main/header";
+export default function MiamiGP() {
 
     return(
 <div className="bg-white relative">
+  <div>
+    <Header/>
+  </div>
           <ScrollProgress />
             <header>
             <div className="relative inset-0">
-            <h1 className="absolute text-6xl top-82 left-50 z-10 font-josefin-sans max-md:left-7 max-md:top-20 max-md:text-3xl text-blue-400 text-center font-bold">
+            <h1 className="absolute text-6xl top-82 left-50 z-10 font-josefin-sans max-md:left-7 max-md:top-20 max-md:text-3xl text-blue-500 text-center font-bold">
                 Emilia-Romagna Grand Prix - debriefing
             </h1>
             <h5 className="absolute text-6xl top-100 left-20 z-10 font-sans max-md:left-0 max-md:top-50 text-center max-md:text-xl text-blue-500 font-bold">
                 hear everything in eventfull Italian Grand Prix
             </h5>
             <img
-                src="/assets/Spain.jpg"
+                src="/assets/Emilia-romagna.webp"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96"
                 alt="Miami Grand Prix"
             />

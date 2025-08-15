@@ -1,64 +1,68 @@
-  'use client'
-  import { ScrollProgress } from "@/components/magicui/scroll-progress";
+'use client'
+import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
-
+import Header from "@/components/main/header";
 export default function MiamiGP() {
 
     return(
 <div className="bg-white relative">
+  <Header/>
           <ScrollProgress />
             <header>
             <div className="relative inset-0">
-            <h1 className="absolute text-6xl top-82 left-50 z-10 font-josefin-sans max-md:left-7 max-md:top-20 max-md:text-3xl text-blue-500 text-center font-bold">
-                Emilia-Romagna Grand Prix - debriefing
+            <h1 className="absolute text-6xl top-82 left-75 z-10 font-josefin-sans max-md:left-7 max-md:top-20 max-md:text-3xl text-blue-500 text-center font-bold">
+                Monaco Grand Prix - debriefing
             </h1>
-            <h5 className="absolute text-6xl top-100 left-20 z-10 font-sans max-md:left-0 max-md:top-50 text-center max-md:text-xl text-blue-500 font-bold">
-                hear everything in eventfull Italian Grand Prix
+            <h5 className="absolute text-6xl top-100 left-13 z-10 font-sans max-md:left-0 max-md:top-50 text-center max-md:text-xl text-blue-500 font-bold">
+                hear everything in eventfull Monaco Grand Prix
             </h5>
             <img
-                src="/assets/Emilia-romagna.webp"
+                src="/assets/monaco.webp"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96"
                 alt="Miami Grand Prix"
             />
             </div>
             </header>
             <div className="bg-white h-screen pb-10">
-                <span className="text-2xl text-black">Reading time: <span className="text-blue-500">1.55 minutes</span></span>
+                <span className="text-2xl text-black">Reading time: <span className="text-blue-500">1.50 minutes</span></span>
                 <div className="text-2xl text-center justify-center text-black bg-white">
                 <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300">
-                    Emilia-Romagna once again did not dissapoint.
-                    We will talk now about everything that happened in the Emilia-Romagna Grand Prix.
+                    Monaco Grand Prix as Mclaren fan and LN4 fun really delivered.
+                    This year's Monaco grand prix presented a change in strategy with mandatory 2 stop strategy.
                 </p>
                 <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300">
-                    From the beggining of the weekend, Max Verstappen and his red bull showed signs of speed and possible threat to dominant Mcl39 of Lando Norris and Oscar Piastri.
-                    Right after the start, MV1 saw the oportunity to overtake in T1 because OP81 choose more conservative approach to T1 and MV1 took advantage of it.
-                    MV1 overtook the OP81 and from then on, MV1 shows excellent pace and he was practically unstopable.
-                    Mclaren from the first time this season were slower on average than red bull of MV1.
-                    Soon after, LN4 made great overtake into villenueve chicane (T4) and grabbed the P3.
+                    The start of the race was chaotic. Lando Norris from 1st place locked up his tyres but managed to stayed on first place from Charles Leclerc on 2nd.
+                    As we know monaco, the racing was boring and overtaking was impossible. From mcl fan perspective, The race was tense.
+                    Lando Norris started from first place but nothing was guaranted. There was still a threat of either mchanical failure or overtake via strategy.
+                    Charles leclerc was fast whole weekend. the threat was there.
+                    In last 10 laps, Max verstappen stayed much longer on track promoting him on first place.
+                    Lando Norris after last pitstop was 2nd and Leclerc was 3th.
+                    In very last lap, Max verstappen pitted with him ending in P4 ahead of Hamilton.
+                    Lando Norris won Monaco grand Prix, Second win of the season after Australia and 6th of total win.
+                    Leclerc and Piastri topped the podium with P2 and P3.
                 </p>
-                <img src='/assets/Race_Pace-Imola.png'
+                <img src='/assets/Race_Pace-Monaco.png'
                 className="w-320 h-150 items-center justify-center pt-5 pl-20 left-10 relative max-md:w-200 max-md:left-0 max-md:pl-0 object-cover max-md:h-100"/>
                 <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300"> 
-                    Around the 30th lap, The engine of Esteban Ocon couldn't handled it and blow up causing the virtual safety car (VSC).
-                    The drivers whose pitted sooner such as Charles Leclerc on Oscar Piastri were in serious disadvanatge. Cars which stayed longer on medium had opportunity to pit and change the tires.
-                    So MV1 stayed in P1 and LN4 P2.
-                    In the last 20th laps, the car of Andrea Kimi Antonelli couldn't handled it either and AKA12 DNF causing another this time safety car.
-                    MV1, LN4, LH44 took this advantage and pitted for newer tires. However CL16 and OP81 were once again disadvantaged.
+                    Someone had brilliant weekend, someone had a weekend to forget. mercedes are one of them.
+                    After disasterious qualifying which ended with antonelli crashing in Q2 and Russell's "retirement" from qualifying after an battery issue.
+                    In race, Mercedes was indinstict. until 70th lap, mercedes was still P14 and P15. 
+                    After a bold and illegal overtake from cutting the chicane, Russell was handed a drive-trough penalty, an eqvuivalent of 18+ seconds penalty.
+                    After chequered flag, Mercedes ended up in P11 for Russel and P18 for Antonelli.
+                    Really tragic weekend from squad from brekley.
                 </p>
-                <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300"> 
-                    The first driver to finish was none other than Max Verstappen.
-                    Second was Lando Norris.
-                    Closing the podium on 3th was Oscar Piastri.
-                </p>
+                <img src='/assets/Position_Changes.png'
+                className="w-320 h-150 items-center justify-center pt-5 pl-20 left-10 relative max-md:w-200 max-md:left-0 max-md:pl-0 object-cover max-md:h-100"/>
                 <p className="text-start text-2xl pl-80 max-md:pl-2 max-md:w-90 font-josefin-sans pt-15 w-300 pb-10">
-                   This Years Imola was one to watch with planty of action on the track and also with amazing atmosphere whole weekend.
-                   If this was the last Imola for a long time, then it was a beautifull way to say goodbye to Formula 1.
+                   This Years Monaco was as same as the last year. Boring and long. But atleast for papaya fans, Their drivers finished in P1 and P3 in Monaco.
+                   Really great weekend from them.
+                   I'm personally looking forward to upcoming Spanish grand prix with new directive on flexi wings. This should make racing and championships much interesting.
                 </p>
                 </div>
             </div>
 
              <footer
-       className="footer relative top-338 max-md:top-650 border-b text-center border-white grid lg:gap-250 max-md:gap-40 grid-cols-3 grid-rows-1 sm:footer-horizontal pt-20 bg-black text-blue-500 border-t font-edu-vic-wa-nt-beginner p-10 text-2xl"
+       className="footer relative top-500 max-md:top-805 border-b text-center border-white grid lg:gap-250 max-md:gap-40 grid-cols-3 grid-rows-1 sm:footer-horizontal pt-20 bg-black text-blue-500 border-t font-edu-vic-wa-nt-beginner p-10 text-2xl"
        id='Contact'>
           <div className='grid pl-50 max-md:pl-0'>
             <h5>Content</h5>
@@ -79,7 +83,7 @@ export default function MiamiGP() {
             <a href='#'></a>
           </div>
       </footer>
-          <div className="relative isolate overflow-hidden bg-black py-16 sm:py-24 lg:py-32 top-162 max-md:top-380 pt-20">
+          <div className="relative isolate overflow-hidden bg-black py-16 sm:py-24 lg:py-32 top-320 max-md:top-530 pt-20">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
                 <div className="max-w-xl lg:max-w-lg">
@@ -131,7 +135,7 @@ export default function MiamiGP() {
               </div>
             </div>
         </div>
-    <aside className="bg-black/90 pl-124 top-228 max-md:top-447 relative max-md:pl-0 max-md:text-lg max-md:text-center">
+    <aside className="bg-black/90 pl-124 top-390 max-md:top-601 relative max-md:pl-0 max-md:text-lg max-md:text-center">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
       </aside>
         </div>
