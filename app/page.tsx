@@ -90,14 +90,6 @@ export default function Main() {
           See more</button>
       </div>
     </a>  
-    <a href='/Motorsport/GTWC/Misano-Report'>
-      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/GTWC-Misano-BMW.jpg' className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>GTWC - Misano report</h3>
-        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-          See more</button>
-      </div>  
-    </a>
     </div>
    </div>
     {/* END LATEST */}
