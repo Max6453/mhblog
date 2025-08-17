@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { CalendarDaysIcon, HandRaisedIcon} from '@heroicons/react/24/outline'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import * as React from "react"
@@ -8,28 +8,21 @@ import { AnimatePresence, motion } from "framer-motion"
 import 'ldrs/react/LineWobble.css'
 import SupabaseForm from '../components/ui/supabaseForm';
 import Image from 'next/image'
-import Header from '@/components/main/header'
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-
-const firebaseConfig = {
-  apiKey: "AIzaSyBC6MG8qo8BMLF790znTnsuYPz3I7XnNE0",
-  authDomain: "mhsys-solutions.firebaseapp.com",
-  projectId: "mhsys-solutions",
-  storageBucket: "mhsys-solutions.firebasestorage.app",
-  messagingSenderId: "469597815926",
-  appId: "1:469597815926:web:927c6740b6611d85a6cb57",
-  measurementId: "G-4P2K691D7M"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
+import Header from '@/components/main/header';
+import { analytics, logEvent } from "@/lib/firebase";
 
 export default function Main() {
+   const trackClick = () => {
+    if (analytics) {
+      logEvent(analytics, "button_click", { label: "CTA" });
+    }
+  };
+
   return (
   <div className='bg-neutral-900 transition-colors duration-500'>
+    <main>
+      <button onClick={trackClick}>Click me</button>;
+    </main>
     {/*<Banner text="LATEST EVENTS: 24 Hours of Le Man's - WEC; Formula 1 Canadian Grand Prix - Qualifying at 10pm CET; NHL Edmonton Oilers vs Florida Panthers at 2am CET"
     speed={25}/> */}
 
@@ -49,6 +42,14 @@ export default function Main() {
   <div className="absolute top-0 z-[-2] h-370 w-full"></div>
       <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white relative max-md:top-10 lg:pt-15 pl-10 font-Exo-2'>latest</h1>
     <div className="relative top-20 max-sm:pl-11.5 lg:pl-12 max-md:pl-11.5 md:pl-0 grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
+    <a href='/Reviews/Gaming/A-Plague-tale-Requiem'>
+      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
+        <img src='/assets/plagueTale.jpg'  className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
+        <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>A Plague Tale: requiem - review</h3>
+        <button className='relative lg:bottom-26 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
+          See more</button>
+      </div>
+    </a> 
     <a href='/Reviews/Other/What-to-Watch'>
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
         <img src='/assets/summer-break.jpg'  className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
