@@ -99,49 +99,18 @@ export default function AustrianGP() {
                     Trough out the story, you will uncover the secrets of the plague, how it started, where and when.
                     But nothing comes easy as it seems.
                 </p>
-                <h3 className="text-4xl m-5 lg:pl-75 pt-5">Story</h3>
-                <h5 className="text-4xl m-5 lg:pl-75 pt-5">BEWARE SPOLIRES SKIPS <a href='#skip'>HERE</a></h5>
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-20 font-josefin-sans pt-15 lg:w-300">
-                    We begun in village in southern France where we meet Alicia and Hugo playing. 
-                    Later we meet another crucial character - Lucas. A young alchymists whose learning from Amicia's and Hugo's mother - Beatrice.
-                    After problems they met in destroyed town, they decided to relocate to another town. 
-                    When they came to that city, everything seems beautiful. The plague seemed to heal, and overall no troubles right? 
-                    But after first night, Hugo's health detorated. They needed a healer, a healer from the anscient order which specialised in plague.
-                    Amicia and Lucas managed to find a healer named Vaudin, he was part of the order.
-                    But after a seizure. Whole city was destroyed, along the healer who was killed by falling debris. 
-                    They had no choice but to run away, again...
-                    But another trouble ahead they were crossing a pontar when suddently, a soldiers attacked.
-                    Here was a first moment were Amicia nearly died and Hugo, by his power to control rats, saved his sister.
-                    In that particular moment they decided to not go to the Marseille where to order would take care of him but to La Cuna island.
-                    This island was seen in Hugo's nightmares when he always nearly died but was saved by fenix and healing water.
-                    They came to la cuňa island. Another beautiful and peaceful place. But not for long. they met a Arnauld along the way. A commander or captain on which soldiers either turned on him or deserted.
-                    And he seek revenge on local count. He made a deal with Hugo that if he save his sister, Hugo would help him to kill count. Of course that Hugo accept it.
-                    Later after Arnauld was locked up afrter Amicia betrayed him, the count and countess invited them to their palace as their personal guests.
-                    Later in story we begun to understand more about the plague. Before Amicia and Hugo, there was another "carrier" and "protector" - Basilius was the carrier before Hugo and Aelia was the protector.
-                    Basilius and Aeila foreshadowed Amelia and Hugos lives from the beggining. How both cared and protected at all costs their borthers. And carriers how fragile and innocent were.
-                    After the discovery they came back to palace to reunite with mother and Lucas.
-                    But count wanted to speak with Amicia. the count wanted to kill her so Hugo can be count and countess's son.
-                    But he failed. But one live was extinguished. The mother was killed or more like "sacrificed".
-                    After we see hugo in bed. He can't see his family so he goes investigate.
-                    But when he sees in courtyard injured sister and his mother killed, the macula or the plague took control of him.
-                    This was the first step of many.
-                    After they leaved island, only more problems occured.
-                    The count came for his "son".
-                    So the fought, Arnauld with Amicia against the count's army. But Amicia was beadly injured even it seemed that she died. Another thing shifted in Hugo.
-                    This step was pivotal for the macula to fully control the carrier.
-                    Fortunately, Amicia lived but Aranauld gave up his live so she can safe her brother.
-                    After many fights and dodging rats, Amicia and Lucas managed to get close to Hugo but he was lost.
-                    The macula took over him completely. However only one way was possible.
-                    The way was to kill Hugo. Amicia, heartbroken and devasted did what she had to...
-                </p>
-                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-20 font-josefin-sans pt-15 lg:w-300" id="skip">
-                    2022 year was underatted for gaming industry. So many games were released but only handful of games took all the credit.
-                    A plague tale: requiem will shine in my collection as oe of the most underrated games ever.
-                    In 2022, I haven't seen anything about this game. Maybe only some trailers but nothing else.
-                    Even in GOTY ceremony, The spotlight was on elden ring and GOW Ragnarok. I understand why.
-                    GOWR is goated game. Played that myself. i didn't played elden ring yet so can't judge.
-                    A plague tale: requiem shows how important is family bond and what we can overcome when we are together.
-                    And also when we are alone...
+                    A plague tale: requiem brought us something, what not every game can.
+                    A trully heartbreaking story with false hope of healing your brother.
+                    But the visuals of this game were breathtaking.
+                    Also stealth combat and overall the game mechanics were also on highest level.
+                    Developers from focus really put everything into this game.
+                    Only one thing i don't like is the ending to the story.
+                    But overall this game deserve from me solid 9/10.
+                    Surelly there were some insignificant lacking like the AI.
+                    I mean yes, i played the game on medium difficulty but still it could be more challenging.
+                    but only those 2 things bothered me the most.
+                    And also the psychological state this game put me in wasn't the brightest...
                 </p>
               </div>
             </div>

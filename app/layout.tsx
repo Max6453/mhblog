@@ -4,8 +4,6 @@ import { Edu_VIC_WA_NT_Beginner, Exo_2, Geist, Raleway, Roboto} from "next/font/
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import FirebaseAnalyticsProvider from '@/components/FirebaseAnalyticsProvider'; // Adjust path
-
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

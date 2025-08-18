@@ -9,23 +9,13 @@ import 'ldrs/react/LineWobble.css'
 import SupabaseForm from '../components/ui/supabaseForm';
 import Image from 'next/image'
 import Header from '@/components/main/header';
-import { analytics, logEvent } from "@/lib/firebase";
 
 export default function Main() {
-   const trackClick = () => {
-    if (analytics) {
-      logEvent(analytics, "button_click", { label: "CTA" });
-    }
-  };
 
   return (
   <div className='bg-neutral-900 transition-colors duration-500'>
-    <main>
-      <button onClick={trackClick}>Click me</button>;
-    </main>
     {/*<Banner text="LATEST EVENTS: 24 Hours of Le Man's - WEC; Formula 1 Canadian Grand Prix - Qualifying at 10pm CET; NHL Edmonton Oilers vs Florida Panthers at 2am CET"
     speed={25}/> */}
-
     <div>
       <Header/>
     </div>
