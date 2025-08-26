@@ -5,7 +5,7 @@ import Header from "@/components/main/header";
 export default function MiamiGP() {
 
     return(
-<div className="bg-white relative">
+<div className="bg-background relative">
   <Header/>
           <ScrollProgress />
             <header>

@@ -28,7 +28,7 @@ export default function WEC24H() {
   
 
     return(
-<div className="bg-white relative">
+<div className="bg-background relative">
   <Header/>
           <ScrollProgress />
             <header>
