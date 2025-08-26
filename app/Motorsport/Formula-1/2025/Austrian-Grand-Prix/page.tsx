@@ -53,7 +53,7 @@ export default function AustrianGP() {
     if (loading) return <LoadingScreen />;
 
     return(
-<div className="bg-gradient-to-bl from-neutral-50 via-neutral-500 h-full relative">
+<div className="bg-background h-full relative">
   <div>
     <Header/>
   </div>

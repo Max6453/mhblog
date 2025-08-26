@@ -64,7 +64,7 @@ export default function AustrianGP() {
         const [loading, setLoading] = useState(true);
 
     return(
-<div className="bg-gradient-to-bl from-neutral-50 via-neutral-500 h-full relative">
+<div className="bg-background h-full relative">
   <header className="relative inset-x-0 top-0 z-50" id="top">
          <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8 h-30 bg-gray-200 shadow-2xl shadow-white">
           <div className='text-5xl text-neutral-950 font-edu-vic-wa-nt-beginner'>
