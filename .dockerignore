@@ -1,0 +1,10 @@
+node_modules
+.next
+.git
+.env.local
+.env.development
+.env.production
+README.md
+.dockerignore
+Dockerfile
+docker-compose.yml

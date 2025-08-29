@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "docker-build": "docker build -f Dockerfile -t mhblog-app .",
+    "docker-run":"docker run -p 3000:3000 my-next-app"
   },
   "dependencies": {
     "@chakra-ui/react": "^3.22.0",
