@@ -21,14 +21,14 @@ export default function AustrianGP() {
           <ScrollProgress />
             <header>
             <div className="relative inset-0">
-            <h1 className="absolute text-6xl top-82 left-70 z-10 font-josefin-sans max-md:left-7 items-baseline max-md:top-20 md:text-3xl sm:text-xl lg:text-6xl max-md:text-3xl text-background text-center font-bold">
-                Dutch Grand Prix - Friday report
+            <h1 className="absolute text-6xl top-82 left-70 z-10 font-josefin-sans max-md:left-7 items-baseline max-md:top-20 md:text-3xl sm:text-xl lg:text-6xl max-md:text-3xl text-white text-center font-bold">
+                Dutch Grand Prix - Qualifying report
             </h1>
-            <h5 className="absolute text-6xl top-100 z-10 font-sans left-15 max-md:left-0 max-md:top-50 md:text-3xl sm:text-xl lg:text-6xl text-center max-md:text-xl text-background font-bold">
-                Wild day for drivers in 2025 Dutch grand prix
+            <h5 className="absolute text-6xl top-100 z-10 font-sans left-15 max-md:left-0 max-md:top-50 md:text-3xl sm:text-xl lg:text-6xl text-center max-md:text-xl text-white font-bold">
+                Learn starting positions for upcoming 2025 Dutch Grand Prix
             </h5>
             <img
-                src="/assets/DutchGP2025.png"
+                src="/assets/DutchGP2025-Q.webp"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96 overflow-hidden"
                 alt="Miami Grand Prix"
             />
@@ -37,31 +37,20 @@ export default function AustrianGP() {
             <div className="relative pb-10 md:left-0">
                 <div className="text-2xl justify-center text-white to-neutral-900 relative text-start">
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:w-90 lg:w-300 font-josefin-sans pt-15">
-                    It was really hard day for drivers in tricky and changing conditions in friday practices.
+                    What a performance from both mclarens and Hadjar on racing bulls
                 </p>
-                <h3 className="text-4xl m-5 lg:pl-75 pt-5">FP1</h3>
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-0 max-md:w-90 max-lg:w-200 xl:w-300 font-josefin-sans pt-15">
-                    It is good to be back after 3 weeks of vacation from formula 1.
-                    for friday practice, we started with Kimi Antonelli who beached his car in gravel.
-                    First red flag of weekend.
-                    And Max Verstappen beached it too. But fortunately for him at the end of session.
-                    But overall productive session for engineering teams and for drivers too.
+                    In Q1, Stroll once again crashed when he run over a grass in T13 which make it impossible to compete in qualifying.
+                    If you put out mclarens, we had another strong and close qualifying.
+                    Bortoleto and Tsunoda managed to even their laptime. But insufficient enough to advance forward.
+                    But Oscar Piastri took his 5th pole position this season.
+                    And the margin was to low for hi comfort.
+                    Lando Norris only after solid practice sessions on dissapointing 2nd place and Verstappen on 3rd.
+                    Ferrari managed to finished on P6 and P7 which can be said as successful day for them but Isack Hadjar on Racing Bulls finished on P4.
+                    And Alonso only on P10.
                 </p>
-                <h3 className="text-4xl m-5 lg:pl-75 pt-5">FP2</h3>
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-50 font-josefin-sans pt-15 lg:w-300"> 
-                    Many drivers made mistakes in FP2.
-                    But Lance Stroll paid the ultimate price because he crashed into barriers in T3.
-                    Fortunately, he got out with no harm and session could progress as exptected.
-                    Also Ferrari's were slowed and spun out many times and Albon crashed in T1.
-                </p>
-                <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-2 max-md:pl-20 font-josefin-sans pt-15 lg:w-300">
-                </p>
-                <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-20 font-josefin-sans pt-15 lg:w-300">
-                    Overall, productive day for teams with many valuable data earned but also many fixes must be done in many teams.
-                    Notably in ferrari where they need to sort their speed out and in Aston martin were they need to fix Stroll's car.
-                    But Mclaren looks dominant with mercedes and Verstappen behind.
-                    Pace of AM looks pretty solid too.
-                    You can learn more from data <a href="https://fad-mhblog.vercel.app">here.</a>
+                    We got nice prelude for race so make sure to tune your local station at 15:00 CET on sunday.
                 </p>
               </div>
             </div>

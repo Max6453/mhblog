@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Viewport } from "next";
 import { Edu_VIC_WA_NT_Beginner, Exo_2, Geist, Raleway, Roboto} from "next/font/google";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,19 +30,18 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-  title: "MHBlog",
-  description: "Blog ",
-  manifest: "manifest.json",
-  icons: "/mobileIcon-black.png"
-};
+  title: 'MHBLog',
+  description: 'blog, specializing on many topics from motorsport to gaming',
+  manifest: '/manifest.json'
+}
 
 export const viewport: Viewport = {
+  themeColor: '#171717',
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 1,
+  minimumScale: 1,
   userScalable: false,
-  // Also supported but less commonly used
-  // interactiveWidget: 'resizes-visual',
+  viewportFit: 'cover',
 }
 
 export default function RootLayout({
