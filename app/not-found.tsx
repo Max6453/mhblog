@@ -26,9 +26,9 @@ export default function NotFound() {
       </div>
       <div className="bg-muted relative hidden lg:block">
         <img
-          src="/assets/Le-Mans.jpg"
+          src="/assets/404.gif"
           alt="Image"
-          className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
+          className="absolute w-full dark:brightness-[0.2] dark:grayscale"
         />
       </div>
     </div>

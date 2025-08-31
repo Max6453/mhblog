@@ -89,32 +89,32 @@ export default function Main() {
             <h3 className='lg:text-4xl max-sm:text-5xl text-white relative max-md:top-0 lg:pt-10 pl-10 font-Exo-2'>Most Popular</h3>
             <ul className='grid'>
             <li>
-               <a href='Motorsport/Formula-1/2025/British-Grand-Prix/Race-Report'>
+               <a href='Reviews/Gaming/Death-Stranding-2-On-The-Beach'>
                <div className='w-100 h-65 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white -z-50'>
                   <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-85 max-sm:top-70 h-10 pl-5 rounded-b-3xl w-100 max-sm:w-80'>
-                  hungarian Grand Prix Weekend Report
+                   Death Stranding 2: On the beach - review
                   </span>                
-                <img src="/assets/Hungary-mcl.avif" className='hover:scale-110 duration-250 object-cover -z-10'/>
+                <img src="/assets/DS2.jpg" className='hover:scale-110 duration-250 object-cover -z-10'/>
                </div>
                </a>
             </li>
             <li>
-               <a href='Motorsport/Formula-1/2025/Austrian-Grand-Prix'>
+               <a href='Reviews/Gaming/No-Mans-Sky-Voyagers'>
                <div className='w-100 h-65  max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white'>
                <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-170 max-sm:top-146 h-10 pl-5 rounded-b-3xl w-100 max-sm:w-80'>
-                  belgium Grand Prix Race Report
+                   No Man's Sky: Voyagers update review
                   </span>                
-                <img src="/assets/MCL-Spa.jpg" className='hover:scale-110 duration-250'/>
+                <img src="/assets/no-mans-sky-voyagers.jpg" className='hover:scale-110 duration-250'/>
                </div>
                </a>
             </li>
             <li>
-               <a href='Motorsport/Formula-1/2025/belgium-Grand-Prix/Weekend-Report'>
+               <a href='Reviews/Other/What-To-Watch'>
                <div className='w-100 h-55 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white'>
                   <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-245 max-sm:top-212 h-10 pl-5 rounded-b-3xl w-100 max-sm:w-80'>
-                  Belgium Grand Prix Weekend Report
+                   What to watch during summer break
                   </span>                
-                <img src="/assets/OP81-Spa.jpg" className='hover:scale-110 duration-250'/>
+                <img src="/assets/summer-break.jpg" className='hover:scale-110 duration-250'/>
                </div>
                </a>
             </li>

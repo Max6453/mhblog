@@ -24,6 +24,21 @@ const itemsPerPage = 6;
 
 const articles = [
   {
+    title: "No-Mans-Sky-Voyagers - Review",
+    href: "/Reviews/Gaming/Cyberpunk-2077-patch-2.3",
+    image: "/assets/no-mans-sky-voyagers.jpg",
+  },
+  {
+    title: "Death Stranding 2: On the beach - Review",
+    href: "/Reviews/Gaming/Death-Stranding-2-On-The-Beach",
+    image: "/assets/DS2.jpg",
+  },
+    {
+    title: "A Plague Tale: Requiem - Review",
+    href: "/Reviews/Gaming/A-Plague-tale-Requiem",
+    image: "/assets/plagueTale.jpg",
+  },
+  {
     title: "Cyberpunk 2077 - Dissapointing patch or exiting one?",
     href: "/Reviews/Gaming/Cyberpunk-2077-patch-2.3",
     image: "/assets/Cyberpunk-2077-tipy-cover.jpg",
@@ -68,14 +83,14 @@ export default function Motorsport() {
             <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
               <img src={article.image} className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250' />
               <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>{article.title}</h3>
-              <button className='relative lg:bottom-28 max-md:bottom-27 md:bottom-22 max-sm:bottom-33 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
+              <button className='relative lg:bottom-26 max-md:bottom-27 md:bottom-22 max-sm:bottom-33 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
                 See more
               </button>
             </div>
           </a>
         ))}
       </div>
-      <div className="flex px-39 max-sm:px-0  relative bottom-100 h-20">
+      <div className="flex px-39 max-sm:px-0 relative bottom-40 h-20">
         <a href='/Reviews/Gaming/Pages/2'>
         <button
           className="w-30 h-15 rounded text-white text-black border rounded-full hover:bg-white hover:text-black duration-250"
@@ -89,7 +104,7 @@ export default function Motorsport() {
 
  {/* FOOTER */}
        <footer
-       className="relative xl:top-0 lg:top-80 md:top-125 max-md:top-165 max-sm:top-5 h-full w-full text-center sm:footer-horizontal text-black font-edu-vic-wa-nt-beginner text-2xl"
+       className="relative xl:top-50 lg:top-80 md:top-125 max-md:top-165 max-sm:top-5 h-full w-full text-center sm:footer-horizontal text-black font-edu-vic-wa-nt-beginner text-2xl"
        id='Newsletter'>
           <div className="relative isolate overflow-hidden py-16 sm:py-24 lg:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -155,7 +170,7 @@ export default function Motorsport() {
             </div>
         </div>
       </footer>
-    <aside className="relative text-center items-baseline pr-20 xl:top-10 lg:top-80 md:top-125 max-md:top-165 max-sm:top-5 max-md:text-lg max-md:text-center max-sm:pl-18">
+    <aside className="relative text-center items-baseline pr-20 xl:top-50 lg:top-80 md:top-125 max-md:top-165 max-sm:top-5 max-md:text-lg max-md:text-center max-sm:pl-18">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
       </aside>
   </div>

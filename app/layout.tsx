@@ -30,7 +30,7 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-  title: 'MHBLog',
+  title: 'MHBlog',
   description: 'blog, specializing on many topics from motorsport to gaming',
   manifest: '/manifest.json'
 }
