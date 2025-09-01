@@ -13,8 +13,23 @@ import Header from '@/components/main/header'
 const itemsPerPage = 6;
 
 const articles = [
+        {
+    title: "Dutch Grand Prix - Race report",
+    href: "/Motorsport/Formula-1/2025/Dutch-Grand-Prix/Race-Report",
+    image: "/assets/DutchGP2025-R.jpg",
+  },
+        {
+    title: "Dutch Grand Prix - Qualifying report",
+    href: "/Motorsport/Formula-1/2025/Dutch-Grand-Prix/Qualifying-Report",
+    image: "/assets/DutchGP2025-Q.webp",
+  },
+        {
+    title: "Dutch Grand Prix - Friday report",
+    href: "/Motorsport/Formula-1/2025/Dutch-Grand-Prix/Friday-Report",
+    image: "/assets/DutchGP2025.png",
+  },
       {
-    title: "Hungarian Grand Prix - Weekend report",
+    title: "Hungarian Grand Prix - Weekend Report",
     href: "/Motorsport/Formula-1/2025/Hungarian-Grand-Prix/Weekend-Report",
     image: "/assets/Hungary-mcl.avif",
   },
