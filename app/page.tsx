@@ -91,7 +91,7 @@ export default function Main() {
             <li>
                <a href='Reviews/Gaming/Death-Stranding-2-On-The-Beach'>
                <div className='w-100 h-65 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white -z-50'>
-                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-85 max-sm:top-70 h-10 pl-5 rounded-b-3xl w-100 max-sm:w-80'>
+                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-190 max-sm:top-68 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
                    Death Stranding 2: On the beach - review
                   </span>                
                 <img src="/assets/DS2.jpg" className='hover:scale-110 duration-250 object-cover -z-10'/>
@@ -101,7 +101,7 @@ export default function Main() {
             <li>
                <a href='Reviews/Gaming/No-Mans-Sky-Voyagers'>
                <div className='w-100 h-65  max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white'>
-               <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-170 max-sm:top-146 h-10 pl-5 rounded-b-3xl w-100 max-sm:w-80'>
+               <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-170 max-sm:top-142 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
                    No Man's Sky: Voyagers update review
                   </span>                
                 <img src="/assets/no-mans-sky-voyagers.jpg" className='hover:scale-110 duration-250'/>
@@ -111,7 +111,7 @@ export default function Main() {
             <li>
                <a href='Reviews/Other/What-To-Watch'>
                <div className='w-100 h-55 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white'>
-                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-245 max-sm:top-212 h-10 pl-5 rounded-b-3xl w-100 max-sm:w-80'>
+                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-245 max-sm:top-208 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
                    What to watch during summer break
                   </span>                
                 <img src="/assets/summer-break.jpg" className='hover:scale-110 duration-250'/>
