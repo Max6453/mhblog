@@ -31,6 +31,14 @@ export default function Main() {
   <div className="absolute top-0 z-[-2] h-370 w-full"></div>
       <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white relative max-md:top-10 lg:pt-15 pl-10 font-Exo-2'>latest</h1>
     <div className="relative top-20 max-sm:pl-11.5 lg:pl-12 max-md:pl-11.5 md:pl-0 grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
+      <a href='/Tech/Google/google-court-rulling-3-9'>
+      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
+        <img src='/assets/google-court.webp'  className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
+        <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Why did google's stock spiked up by 8%</h3>
+        <button className='relative lg:bottom-26 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
+          See more</button>
+      </div>
+    </a> 
       <a href='/Motorsport/Formula-1/2025/Dutch-Grand-Prix/Race-Report'>
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
         <img src='/assets/DutchGP2025-R.jpg'  className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
@@ -71,14 +79,6 @@ export default function Main() {
           See more</button>
       </div>
     </a> 
-    <a href='/Reviews/Gaming/A-Plague-tale-Requiem'>
-      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/plagueTale.jpg'  className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>A Plague Tale: requiem - review</h3>
-        <button className='relative lg:bottom-19 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-          See more</button>
-      </div>
-    </a> 
     </div>
    </div>
     {/* END LATEST */}
@@ -91,7 +91,7 @@ export default function Main() {
             <li>
                <a href='Reviews/Gaming/Death-Stranding-2-On-The-Beach'>
                <div className='w-100 h-65 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white -z-50'>
-                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-190 max-sm:top-68 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
+                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-81 max-sm:top-68 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
                    Death Stranding 2: On the beach - review
                   </span>                
                 <img src="/assets/DS2.jpg" className='hover:scale-110 duration-250 object-cover -z-10'/>
@@ -101,7 +101,7 @@ export default function Main() {
             <li>
                <a href='Reviews/Gaming/No-Mans-Sky-Voyagers'>
                <div className='w-100 h-65  max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white'>
-               <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-170 max-sm:top-142 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
+               <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-165 max-sm:top-142 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
                    No Man's Sky: Voyagers update review
                   </span>                
                 <img src="/assets/no-mans-sky-voyagers.jpg" className='hover:scale-110 duration-250'/>
@@ -111,7 +111,7 @@ export default function Main() {
             <li>
                <a href='Reviews/Other/What-To-Watch'>
                <div className='w-100 h-55 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white'>
-                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-245 max-sm:top-208 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
+                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-242 max-sm:top-208 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
                    What to watch during summer break
                   </span>                
                 <img src="/assets/summer-break.jpg" className='hover:scale-110 duration-250'/>

@@ -26,7 +26,7 @@ export default function Header() {
   return (
         <header className="relative top-0 dark:text-white z-50">
                 <nav aria-label="Global" className="flex items-center justify-between lg:px-8 h-70 border-b-2">
-                <div className='text-5xl left-110 max-sm:left-15 dark:text-white font-edu-vic-wa-nt-beginner relative'>
+                <div className='text-5xl lg:left-110 md:left-80 sm:left-20 max-sm:left-15 dark:text-white font-edu-vic-wa-nt-beginner relative'>
                     <h1 className='font-bold font-raleway text-center'>MHBlog</h1>
                     <h3 className='text-3xl text-center max-sm:text-2xl max-sm:w-60'>Latest news and intrigues across many topics</h3>
                 </div>
@@ -47,7 +47,7 @@ export default function Header() {
                     </button>
 
                 </div>
-                <ul className='flex max-sm:hidden gap-x-10 sm:gap-x-10 items-baseline xl:right-102 lg:right-80 sm:pt-0 sm:right-35 max-sm:hidden max-md:hidden block relative lg:bottom-25 pt-5 h-10 text-xl'>
+                <ul className='flex gap-x-10 sm:gap-x-10 items-baseline xl:right-107 lg:right-80 sm:pt-0 sm:right-35 max-sm:hidden max-md:hidden block relative lg:bottom-25 pt-5 h-10 text-xl'>
                     <li>
                     <a href='/' className='hover-underline-animation center'>latest</a>
                     </li>
@@ -61,7 +61,7 @@ export default function Header() {
                     <a href='/Reviews/Gaming' className='hover-underline-animation center'>Gaming</a>
                     </li>
                     <li>
-                    <a href='https://pomodoro-mhblog.vercel.app' className='hover-underline-animation center'>Pomodoro</a>
+                    <a href='/Tech' className='hover-underline-animation center'>Tech</a>
                     </li>
                     <li>
                     <a href='/Contact' className='hover-underline-animation center'>Contact</a>
