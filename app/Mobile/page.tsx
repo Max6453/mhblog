@@ -33,7 +33,7 @@ return(
               transition={{ duration: 0.7, ease: "easeInOut" }}
             >
               <motion.img
-                src="/mobileIcon-Black.png"
+                src="/mobileIcon-black.png"
                 alt="Benefactor Logo"
                 className="w-32 h-32"
                 initial={{ scale: 0.7, opacity: 0 }}

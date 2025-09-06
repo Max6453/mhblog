@@ -244,7 +244,11 @@ export default function Main() {
       </footer>
     <aside className="relative text-center items-baseline pr-20 xl:top-40 lg:top-80 md:top-125 max-md:top-165 max-sm:top-620 max-md:text-lg max-md:text-center max-sm:pl-18">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
+<<<<<<< HEAD
         <a href="/Mobile">link fdor mobile </a>
+=======
+        <a href='/Mobile'>link for mbile</a>
+>>>>>>> ff69fc6e9ed1d0d619b53c2d4a31c97e1b12fe36
       </aside>
 </div>
   )
