@@ -1,5 +1,12 @@
 {
   "app": {
+    "[project]/app/Mobile/page": [
+      "static/media/b0a57561b6cb5495-s.p.da1ebef7.woff2",
+      "static/media/fdf36576e1e8fa51-s.p.9215a258.woff2",
+      "static/media/6d438f2f7548d3bf-s.p.04edc821.woff2",
+      "static/media/42f3602226789c73-s.p.a3111b96.woff2",
+      "static/media/4c650e1ac62b3415-s.p.a797655c.woff2"
+    ],
     "[project]/app/page": [
       "static/media/b0a57561b6cb5495-s.p.da1ebef7.woff2",
       "static/media/fdf36576e1e8fa51-s.p.9215a258.woff2",
