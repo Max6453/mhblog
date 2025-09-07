@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion"
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, } from "@/components/ui/carousel";
 import React from 'react';
+import SupabaseForm from '@/components/ui/supabaseForm'
 
 export default function MobileApp() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -137,7 +138,6 @@ return(
              <h4 className='font-Exo-2 text-4xl text-center top-13 text-white z-10 h-11 bg-background absolute w-full'>
                Latest
              </h4>
-              {/* *
                   <Carousel className="max-md:left-0 max-md:w-full rounded-2xl">
                   <h4
                   className='font-Exo-2 text-4xl text-center top-0 text-white z-10 h-11 bg-background absolute w-full'>
@@ -162,7 +162,6 @@ return(
                   <CarouselPrevious className="left-0"/>
                   <CarouselNext className="right-0" />
                 </Carousel>
-                */}
 
 
 
@@ -236,6 +235,16 @@ return(
         <button className='relative left-31 top-5 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
             See pricing
         </button>
+      </div>
+
+      <div className='pt-10 h-95 bg-neutral-800'>
+        <div className="">
+          <h2 className="text-4xl font-semibold tracking-tight text-white text-center">Subscribe to our newsletter</h2>
+          <p className="mt-4 text-md pl-1 text-gray-300">
+            Be notify at every event which happened recent days in motorsport, tech, gaming and more.
+          </p>
+          <SupabaseForm/>
+        </div>
       </div>
     </div>
   </div>

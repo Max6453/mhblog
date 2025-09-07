@@ -48,7 +48,7 @@ return(
     <form className='bg-neutral-900 text-white' onSubmit={handleSubmit}>
       <div className="space-y-12 top-15 relative">
         <div className="border-b border-white pb-12">
-       <h1 className='font-Exo-2 text-3xl max-sm:text-xl pt-3left-1/5 max-sm:left-0 md:left-0 max-md:left-0'>
+       <h1 className='font-Exo-2 text-3xl max-sm:text-xl pt-3 left-1/5 max-sm:left-0 md:left-0 max-md:left-0'>
         hey, If you have any questions or if you want to give me a feedback on my website, you can do it here and also you can contact via socials here</h1>
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div className="col-span-full">
