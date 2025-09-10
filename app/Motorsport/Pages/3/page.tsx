@@ -9,36 +9,72 @@ import 'ldrs/react/LineWobble.css'
 import SupabaseForm from '@/components/ui/supabaseForm';
 import Header from "@/components/main/header";
 
+
+const itemsPerPage = 6;
+
+const articles = [
+  {
+    title: "24 Hours of Nurburgring",
+    href: "/Motorsport/GTWC/24-Hours-of-Nurburgring",
+    image: "/assets/24-Nurburgring.jpg",
+  },
+  {
+    title: "Canadian Grand Prix",
+    href: "/Motorsport/Formula-1/2025/Canadian-Grand-Prix",
+    image: "/assets/Canada.webp",
+  },
+  {
+    title: "24 Hours of Le Man's",
+    href: "/Motorsport/WEC/24-Hours-of-Le-Mans",
+    image: "/assets/Le-Mans.jpg",
+  },
+  {
+    title: "Spanish Grand Prix",
+    href: "/Motorsport/Formula-1/2025/Spanish-Grand-Prix",
+    image: "/assets/Spain.jpg",
+  },
+  {
+    title: "Monaco Grand Prix",
+    href: "/Motorsport/Formula-1/2025/Monaco-Grand-Prix",
+    image: "/assets/monaco.jpg",
+  },
+  {
+    title: "Emilia-Romagna Grand Prix",
+    href: "/Motorsport/Formula-1/2025/Emilia-Romagna-Grand-Prix",
+    image: "/assets/Emilia-romagna.webp",
+  },
+];
+
+
 export default function Motorsport() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [currentPage, setCurrentPage] = useState(1);
+
+    const totalPages = Math.ceil(articles.length / itemsPerPage);
+
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const selectedArticles = articles.slice(startIndex, startIndex + itemsPerPage);
     return( 
         <div>
           <Header/>
     {/* LATEST */}
     <div className='relative h-screen' id='Latest'>
-        <div className="absolute top-0 z-[-2] h-370 w-full"/>
-      <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white relative max-md:top-10 lg:pt-10 pl-10 font-Exo-2'>latest</h1>
-    <div className="relative top-20 max-sm:pl-11.5 lg:pl-12 max-md:pl-11.5 md:pl-0 grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
-    <a href='/Motorsport/Formula-1/2025/Monaco-Grand-Prix'>
-      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/Monaco.webp' className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Monaco Grand Prix </h3>
-        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-          See more</button>
+      <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white relative max-md:top-10 lg:pt-10 pl-10 font-Exo-2'>Articles</h1>
+            <div className="relative top-20 max-sm:pl-11.5 lg:pl-12 max-md:pl-11.5 md:pl-0 grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
+        {selectedArticles.map((article, index) => (
+          <a href={article.href} key={index}>
+            <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
+              <img src={article.image} className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250' />
+              <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>{article.title}</h3>
+              <button className='relative lg:bottom-28 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
+                See more
+              </button>
+            </div>
+          </a>
+        ))}
       </div>
-    </a>  
-     <a href='/Motorsport/Formula-1/2025/Emilia-Romagna-Grand-Prix'>
-      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/Emilia-romagna.webp' className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Emilia Romagna Grand Prix </h3>
-        <button className='relative lg:bottom-20 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-          See more</button>
-      </div>
-    </a>  
-    </div>
 
-
-          <div className="flex gap-50 max-sm:gap-25 item-center justify-center pr-15 max-sm:pr-2 bottom-120 max-sm:top-50 relative h-2s0">
+          <div className="flex gap-50 max-sm:gap-25 item-center justify-center pr-15 max-sm:pr-2 bottom-30 max-sm:top-50 relative h-20">
         <a href='/Motorsport/Pages/2'>
         <button
           className="w-30 h-15 rounded text-white text-black border rounded-full hover:bg-white hover:text-black duration-250"
@@ -54,13 +90,13 @@ export default function Motorsport() {
             </button>
         </a>
       </div>
-      <span className='relative bottom-135 max-sm:top-40 left-170 max-sm:left-34 item-center jusitfy-center'> Page 3 of 3</span>
+      <span className='relative bottom-45 max-sm:top-40 left-170 max-sm:left-34 item-center jusitfy-center'> Page 3 of 3</span>
   </div>
         {/* END LATEST */}
     
      {/* FOOTER */}
            <footer
-           className="relative xl:top-0 lg:top-80 md:top-125 max-md:top-165 max-sm:top-120 h-full w-full text-center sm:footer-horizontal text-black font-edu-vic-wa-nt-beginner text-2xl"
+           className="relative xl:top-60 lg:top-80 md:top-125 max-md:top-165 max-sm:top-120 h-full w-full text-center sm:footer-horizontal text-black font-edu-vic-wa-nt-beginner text-2xl"
            id='Newsletter'>
               <div className="relative isolate overflow-hidden py-16 sm:py-24 lg:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -126,7 +162,7 @@ export default function Motorsport() {
                 </div>
             </div>
           </footer>
-        <aside className="relative text-center items-baseline pr-20 xl:top-10 lg:top-80 md:top-125 max-md:top-165 max-sm:top-120 max-md:text-lg max-md:text-center max-sm:pl-18">
+        <aside className="relative text-center items-baseline pr-20 xl:top-80 lg:top-80 md:top-125 max-md:top-165 max-sm:top-120 max-md:text-lg max-md:text-center max-sm:pl-18">
             <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
           </aside>
       </div>
