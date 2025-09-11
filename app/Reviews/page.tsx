@@ -15,7 +15,7 @@ const itemsPerPage = 6;
 
 const articles = [
   {
-    title: "British Grand Prix - race report",
+    title: "Cyberpunk 2077 - Underserved hype for redundant features?",
     href: "/Reviews/Gaming/Cyberpunk-2077-patch-2.3",
     image: "/assets/Cyberpunk-2077-tipy-cover.jpg",
   },
@@ -151,7 +151,7 @@ export default function Motorsport() {
             </div>
         </div>
       </footer>
-    <aside className="relative text-center items-baseline pr-20 xl:top-100 lg:top-80 md:top-125 max-md:top-165 max-sm:top-15 max-md:text-lg max-md:text-center max-sm:pl-18">
+    <aside className="relative text-center items-baseline pr-20 xl:top-20 lg:top-80 md:top-125 max-md:top-165 max-sm:top-15 max-md:text-lg max-md:text-center max-sm:pl-18">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
       </aside>
   </div>

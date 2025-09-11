@@ -9,6 +9,12 @@ import 'ldrs/react/LineWobble.css'
 import SupabaseForm from '../components/ui/supabaseForm';
 import Image from 'next/image'
 import Header from '@/components/main/header';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 
 export default function Main() {
   return (
@@ -89,22 +95,22 @@ export default function Main() {
             <h3 className='lg:text-4xl max-sm:text-5xl text-white relative max-md:top-0 lg:pt-10 pl-10 font-Exo-2'>Most Popular</h3>
             <ul className='grid'>
             <li>
-               <a href='Reviews/Gaming/Death-Stranding-2-On-The-Beach'>
+               <a href='Tech/Oracle/Meteoric-Rise-For-Oracle'>
                <div className='w-100 h-65 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white -z-50'>
                   <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-81 max-sm:top-68 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
-                   Death Stranding 2: On the beach - review
+                   What caused meteoric rise in stocks for oracle
                   </span>                
-                <img src="/assets/DS2.jpg" className='hover:scale-110 duration-250 object-cover -z-10'/>
+                <img src="/assets/oracle.png" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
                </div>
                </a>
             </li>
             <li>
-               <a href='Reviews/Gaming/No-Mans-Sky-Voyagers'>
-               <div className='w-100 h-65  max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white'>
-               <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-165 max-sm:top-142 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
-                   No Man's Sky: Voyagers update review
+               <a href='Reviews/Gaming/Death-Stranding-2-On-The-Beach'>
+               <div className='w-100 h-65 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white -z-50'>
+                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-166 max-sm:top-68 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
+                   Death Stranding 2: On the beach - review
                   </span>                
-                <img src="/assets/no-mans-sky-voyagers.jpg" className='hover:scale-110 duration-250'/>
+                <img src="/assets/DS2.jpg" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
                </div>
                </a>
             </li>
@@ -123,49 +129,44 @@ export default function Main() {
           {/* TECH, REVIEW, ETC... */}
           <div className='relative max-sm:flex flex-col-2 w-full max-sm:right-90 max-sm:top-240 h-full rounded-4xl'>
            <h3 className='lg:text-4xl max-sm:text-5xl text-white relative lg:pt-10 pl-10 font-Exo-2'>For you</h3>
-           <div className='grid w-full max-sm:w-screen max-sm:top-40 max-sm:right-17 relative pt-10'>
+                     <div className='grid w-full max-sm:w-screen max-sm:top-40 max-sm:right-17 relative pt-10'>
             <a href='/Motorsport/Formula-1/2025/Hungarian-Grand-Prix/Weekend-Report' className='hover:text-gray-400'>
             <div className='text-2xl font-edu-vic-wa-nt-beginner'>
-              <span>Hungarian Grand Prix - Weeked Report</span>
+              <span>Italian Grand Prix - Weeked Report</span>
                <div className='gap-x-5 pt-3'>
-              <span>Date: 03/08/2025</span><br/>
-              <span>Read time: 3.31 minutes</span>
+              <span>Date: 07/09/2025</span><br/>
               </div>
             </div>
             </a>
             <a href='/Reviews/Gaming/Cyberpunk-2077-patch-2.3' className='hover:text-gray-400'>
             <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
-              <span>Cyberpunk 2077 - Did patch 2.3 deserved all that hype?</span>
+              <span>Why did google's stock spiked up by 8%</span>
               <div className='gap-x-5 pt-3'>
-              <span>Date: 06/07/2025</span><br/>
-              <span>Read time: 1.45 minutess</span>
+              <span>Date: 04/09/2025</span><br/>
               </div>
             </div>
             </a>
             <a href='/Motorsport/Formula-1/2025/Belgium-Grand-Prix/Race-Report' className='hover:text-gray-400'>
             <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
-              <span>Belgium Grand Prix Race Report</span>
+              <span>What caused meteoric rise in stocks for Oracle</span>
               <div className='gap-x-5 pt-3'>
-              <span>Date: 27/07/2025</span><br/>
-              <span>Read time: 3.12 minutes</span>
+              <span>Date: 10/09/2025</span><br/>
               </div>
             </div>
             </a>
             <a href='/Motorsport/Formula-1/2025/British-Grand-Prix/Race-Report' className='hover:text-gray-400'>
             <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
-              <span>British Grand Prix Race Report</span>
+              <span>No-Mans-Sky-Voyagers - Review</span>
               <div className='gap-x-5 pt-3'>
-              <span>Date: 06/07/2025</span><br/>
-              <span>Read time: 3.12 minutes</span>
+              <span>Date: 29/08/2025</span><br/>
               </div>
             </div>
             </a>
             <a href='/Motorsport/GTWC/Misano-Report' className='hover:text-gray-400'>
             <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
-              <span>2GTWC Misano - Report</span>
+              <span>Death Stranding 2: On the beach - review</span>
               <div className='gap-x-5 pt-3'>
-              <span>Date: 20/07/2025</span><br/>
-              <span>Read time: 1.20 minutes</span>
+                <span>Date: 26/08/2025</span><br/>
               </div>
             </div>
             </a>
@@ -173,6 +174,7 @@ export default function Main() {
             </div>
         </div>
     {/* END MOST POPULAR */}
+
       {/* FOOTER */}
        <footer
        className="relative xl:top-40 lg:top-80 md:top-125 max-md:top-165 max-sm:top-620 h-full w-full text-center sm:footer-horizontal pt-10 text-black font-edu-vic-wa-nt-beginner p-10 text-2xl"

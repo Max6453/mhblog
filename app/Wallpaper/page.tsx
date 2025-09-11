@@ -47,6 +47,7 @@ export default function Wallpaper() {
         <p className='max-sm:w-80 w-200'>
             I'm passionate about photos, aesthetic backgrounds, etc.
             Every weekend you can expect new wallpapers for mobiles and laptops across many topics.
+            By clicking on wallpaper, the download will start automated so keep that in mind.
         </p>
 
     </div>
