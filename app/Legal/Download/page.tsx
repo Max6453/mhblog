@@ -16,7 +16,7 @@ export default function Download() {
                 <button
                 onClick={() => {
                   window.location.href =
-                    "https://expo.dev/artifacts/eas/rxEgbnsZqP6M3guzypTavJ.aab"; // <-- APK link
+                    "https://expo.dev/artifacts/eas/8kJJ4bVGgiuAPKuDPNdGW6.aab"; // <-- APK link
                 }}
                 className="px-6 py-3 top-20 right-4 relative font-Exo-2 bg-background hover:bg-white text-white hover:text-black border-white border rounded-xl shadow-lg z-50 transition"
               >
