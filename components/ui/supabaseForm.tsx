@@ -28,7 +28,7 @@ function SupabaseForm () {
   };
 
   return(
-    <form onSubmit={handleNewsletterSubmit} className="mt-6 flex max-w-md max-sm:w-60 max-sm:grid max-sm:grid-col-2 gap-x-4">
+    <form onSubmit={handleNewsletterSubmit} className="mt-6 flex max-w-md max-sm:w-60 max-sm:left-8 text-center relative max-sm:grid gap-x-4">
         <label htmlFor="email-address" className="sr-only">
             Email address
         </label>

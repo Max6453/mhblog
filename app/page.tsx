@@ -107,7 +107,7 @@ export default function Main() {
             <li>
                <a href='Reviews/Gaming/Death-Stranding-2-On-The-Beach'>
                <div className='w-100 h-65 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white -z-50'>
-                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-166 max-sm:top-68 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
+                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-166 max-sm:top-143 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
                    Death Stranding 2: On the beach - review
                   </span>                
                 <img src="/assets/DS2.jpg" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>

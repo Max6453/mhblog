@@ -96,7 +96,7 @@ export default function Motorsport() {
     
      {/* FOOTER */}
            <footer
-           className="relative xl:top-60 lg:top-80 md:top-125 max-md:top-165 max-sm:top-120 h-full w-full text-center sm:footer-horizontal text-black font-edu-vic-wa-nt-beginner text-2xl"
+           className="relative xl:top-60 lg:top-80 md:top-125 max-md:top-165 max-sm:top-360 h-full w-full text-center sm:footer-horizontal text-black font-edu-vic-wa-nt-beginner text-2xl"
            id='Newsletter'>
               <div className="relative isolate overflow-hidden py-16 sm:py-24 lg:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -162,7 +162,7 @@ export default function Motorsport() {
                 </div>
             </div>
           </footer>
-        <aside className="relative text-center items-baseline pr-20 xl:top-80 lg:top-80 md:top-125 max-md:top-165 max-sm:top-120 max-md:text-lg max-md:text-center max-sm:pl-18">
+        <aside className="relative text-center items-baseline pr-20 xl:top-80 lg:top-80 md:top-125 max-md:top-165 max-sm:top-360 max-md:text-lg max-md:text-center max-sm:pl-18">
             <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
           </aside>
       </div>

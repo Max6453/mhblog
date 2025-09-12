@@ -9,7 +9,7 @@ import 'ldrs/react/LineWobble.css'
 const navigation = [
   { name: 'Latest', href: '/', current: false, id: 1 },
   { name: 'Motorsport', href: '/Motorsport', current: false, id: 2 },
-  { name: 'Tech', href: '/', current: false, id: 3 },
+  { name: 'Tech', href: '/Tech', current: false, id: 3 },
   { name: 'gaming', href: '/Reviews/Gaming', current: true, id: 4 },
   { name: 'Reviews', href: '/Reviews', current: true, id: 5 },
   { name: 'Formula 1 Analysis', href: 'https://fad-mhblog.vercel.app', current: true, id: 6 },
