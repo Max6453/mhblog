@@ -240,7 +240,7 @@ export default function Main() {
                   </span>
                 </dl>
               </div>
-              <div className='pt-10 absolute bottom-60 left-50 max-sm:bottom-220 max-sm:left-5'>
+              <div className='pt-10 absolute md:bottom-60 sm:bottom-125 md:left-50 sm:left-15 max-sm:bottom-200 max-sm:left-12'>
               <button
                 onClick={() => {
                   window.location.href =

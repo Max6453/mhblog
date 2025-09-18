@@ -26,14 +26,14 @@ export default function Header() {
   return (
         <header className="relative top-0 dark:text-white z-50">
                 <nav aria-label="Global" className="flex items-center justify-between lg:px-8 h-70 border-b-2">
-                <div className='text-5xl lg:left-110 md:left-80 sm:left-20 max-sm:left-15 dark:text-white font-edu-vic-wa-nt-beginner relative'>
-                    <h1 className='font-bold font-raleway text-center'>MHBlog</h1>
-                    <h3 className='text-3xl text-center max-sm:text-2xl max-sm:w-60'>Latest news and intrigues across many topics</h3>
+                <div className='text-5xl text-center xl:left-110 lg:left-90 md:left-60 max-sm:left-10 sm:left-30 dark:text-white font-edu-vic-wa-nt-beginner absolute'>
+                    <h1 className='font-bold font-raleway'>MHBlog</h1>
+                    <h3 className='text-3xl max-sm:text-2xl max-sm:w-60'>Latest news and intrigues across many topics</h3>
                 </div>
                 <a href='/'>
                 <img
                 src= "/mobileIcon-black.png"
-                className='h-32 max-sm:h-25 w-auto hover:scale-110 top-52 max-sm:top-56 right-175 max-sm:right-33.5 transition-all duration-300 absolute sm:hidden md:hidden lg:hidden xl:block'/>
+                className='h-32 max-sm:h-25 w-auto hover:scale-110 top-52 max-sm:top-56 right-175 max-sm:right-33.5 transition-all duration-300 absolute max-sm:hidden sm:hidden md:hidden lg:hidden xl:block'/>
                 </a>
                 <div className="absolute right-5 pt-10 pr-5 max-md:pr-0 max-md:right-0 max-md:pt-25">
                     <button
@@ -47,7 +47,7 @@ export default function Header() {
                     </button>
 
                 </div>
-                <ul className='flex gap-x-10 sm:gap-x-10 items-baseline xl:right-107 lg:right-80 sm:pt-0 sm:right-35 max-sm:hidden max-md:hidden block relative lg:bottom-25 pt-5 h-10 text-xl'>
+                <ul className='flex gap-x-10 sm:gap-x-10 items-center xl:right-107 lg:right-80 sm:pt-0 sm:right-35 bottom-25 max-md:hidden block relative pt-5 h-10 text-xl'>
                     <li>
                     <a href='/' className='hover-underline-animation center'>latest</a>
                     </li>
