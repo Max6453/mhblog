@@ -26,7 +26,7 @@ export default function Header() {
   return (
         <header className="relative top-0 dark:text-white z-50">
                 <nav aria-label="Global" className="flex items-center justify-between lg:px-8 h-70 border-b-2">
-                <div className='text-5xl text-center xl:left-110 lg:left-90 md:left-60 max-sm:left-10 sm:left-30 dark:text-white font-edu-vic-wa-nt-beginner absolute'>
+                <div className='text-5xl text-center xl:left-115 lg:left-90 md:left-60 max-sm:left-10 sm:left-30 dark:text-white font-edu-vic-wa-nt-beginner absolute'>
                     <h1 className='font-bold font-raleway'>MHBlog</h1>
                     <h3 className='text-3xl max-sm:text-2xl max-sm:w-60'>Latest news and intrigues across many topics</h3>
                 </div>
