@@ -8,25 +8,25 @@ import { AnimatePresence, motion } from "framer-motion"
 import 'ldrs/react/LineWobble.css'
 import SupabaseForm from '@/components/ui/supabaseForm';
 import DockBar from '@/components/ui/Dock'
-import ImageGallery from '@/components/ui/ImageGallery';
 import Header from '@/components/main/header'
+
 
 const itemsPerPage = 6;
 
 const articles = [
   {
-    title: "British Grand Prix - race report",
-    href: "/Reviews/Gaming/Cyberpunk-2077-patch-2.3",
-    image: "/assets/Cyberpunk-2077-tipy-cover.jpg",
+    title: "What caused meteoric rise in stocks for oracle",
+    href: "/Tech/Oracle/Meteoric-Rise-For-Oracle",
+    image: "/assets/oracle.png",
   },
   {
-    title: "MHBlog connected with AWS",
-    href: "/Reviews/aws",
-    image: "/assets/awsxf1.jpg",
+    title: "Why did google's stock spiked up by 8%",
+    href: "/Tech/Google/google-court-rulling-3-9",
+    image: "/assets/google-court.webp",
   }
 ];
 
-export default function Wallpaper() {
+export default function Motorsport() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
     
@@ -37,24 +37,22 @@ export default function Wallpaper() {
 
 
     return(
-        <div>
-          <div>
-            <Header/>
-          </div>
-<div>
-    <h1 className='text-5xl text-start m-5 pt-10'>Wallpapers</h1>
-    <div className='text-xl m-5 text-start'>
-        <p className='max-sm:w-80 w-200'>
-            I'm passionate about photos, aesthetic backgrounds, etc.
-            Every weekend you can expect new wallpapers for mobiles and laptops across many topics.
-            By clicking on wallpaper, the download will start automated so keep that in mind.
-        </p>
-
+   <div>
+    <div>
+      <Header/>
     </div>
-    <ImageGallery />
-</div>
+      <div>
+          <h1 className='text-5xl text-start m-5 pt-10'>Tech</h1>
+          <div className='text-xl m-5 text-start'>
+              <p className='max-sm:w-80 w-200'>
+                Under the concept of tech, we can understand many topics.
+                Main topics under tech will be news in stock market, Silicon valley's gigants intrigues or news in IT sector.
 
-{/* LATEST 
+              </p>
+          </div>
+      </div>
+
+{/* LATEST */}
 <div className='relative h-screen' id='Latest'>
       <div className="absolute top-0 z-[-2] h-370 w-full"></div>
       <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white relative max-md:top-10 lg:pt-10 pl-10 font-Exo-2'>Articles</h1>
@@ -82,7 +80,7 @@ export default function Wallpaper() {
         </a>
       </div>
     </div>
-     END LATEST */}
+    {/* END LATEST */}
 
  {/* FOOTER */}
        <footer

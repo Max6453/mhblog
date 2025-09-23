@@ -13,6 +13,11 @@ import Header from '@/components/main/header'
 const itemsPerPage = 6;
 
 const articles = [
+          {
+    title: "Italian Grand Prix - Weekend report",
+    href: "/Motorsport/Formula-1/2025/Italian-Grand-Prix/Weekend-Report",
+    image: "/assets/Monza2025.jpg",
+  },
         {
     title: "Dutch Grand Prix - Race report",
     href: "/Motorsport/Formula-1/2025/Dutch-Grand-Prix/Race-Report",
@@ -225,7 +230,7 @@ export default function Motorsport() {
             </div>
         </div>
       </footer>
-    <aside className="relative text-center items-baseline pr-20 xl:top-100 lg:top-80 md:top-125 max-md:top-165 max-sm:top-350 max-md:text-lg max-md:text-center max-sm:pl-18">
+    <aside className="relative text-center items-baseline pr-20 xl:top-80 lg:top-80 md:top-125 max-md:top-165 max-sm:top-350 max-md:text-lg max-md:text-center max-sm:pl-18">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
       </aside>
   </div>

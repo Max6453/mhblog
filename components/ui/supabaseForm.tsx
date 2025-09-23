@@ -28,7 +28,7 @@ function SupabaseForm () {
   };
 
   return(
-    <form onSubmit={handleNewsletterSubmit} className="mt-6 flex max-w-md gap-x-4">
+    <form onSubmit={handleNewsletterSubmit} className="mt-6 flex max-w-md max-sm:w-60 max-sm:left-8 text-center relative max-sm:grid gap-x-4">
         <label htmlFor="email-address" className="sr-only">
             Email address
         </label>
@@ -45,7 +45,7 @@ function SupabaseForm () {
         />
         <button
             type="submit"
-            className="flex-none rounded-md bg-transparent px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-white hover:text-black focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-300 border-2 border-white transition duration-300"
+            className="flex-none rounded-md bg-transparent px-3.5 py-2.5 max-sm:top-3.5 relative text-sm font-semibold text-white shadow-xs hover:bg-white hover:text-black focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-300 border-2 border-white transition duration-300"
             id='submitBtn'
         >
             Subscribe
