@@ -62,7 +62,7 @@ export default function AustrianGP() {
                     I just liked the idea more of broken samurai who would abandon his way of samurai and his honor to save his home than a bounty hunter who's haunted by the night where her family was killed. 
                 </p>
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-50 font-josefin-sans pt-15 lg:w-300">
-                    Nonetheless, I give ghost of Yotei solid 9/10.
+                    Nonetheless, Ghost of yotei deservd from me 10/10.
                     A solid game but strong competition to win a game of the year.
                 </p>
               </div>
