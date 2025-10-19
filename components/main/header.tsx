@@ -23,49 +23,50 @@ export default function Header() {
   const [loading, setLoading] = useState(true);
 
   return (
-        <header className="relative top-0 dark:text-white z-50">
-                <nav aria-label="Global" className="flex items-center justify-between lg:px-8 h-70 border-b-2">
-                <div className='text-5xl text-center xl:left-115 lg:left-90 md:left-60 max-sm:left-10 sm:left-30 dark:text-white font-edu-vic-wa-nt-beginner absolute'>
+        <header className="dark:text-white z-50">
+                <nav className="flex justify-center h-70 border-b-2">
+                <div className='text-5xl text-center top-25 relative dark:text-white font-edu-vic-wa-nt-beginner'>
                     <h1 className='font-bold font-raleway'>MHBlog</h1>
                     <h3 className='text-3xl max-sm:text-2xl max-sm:w-60'>Latest news and intrigues across many topics</h3>
                 </div>
                 <a href='/'>
                 <img
                 src= "/mobileIcon-black.png"
-                className='h-32 max-sm:h-25 w-auto hover:scale-110 top-52 max-sm:top-56 right-175 max-sm:right-33.5 transition-all duration-300 absolute max-sm:hidden sm:hidden md:hidden lg:hidden xl:block'/>
+                className='h-32 max-sm:h-25 w-auto hover:scale-110 top-52 max-sm:top-56 right-170 max-sm:right-33.5 transition-all duration-300 absolute max-sm:hidden sm:hidden md:hidden lg:hidden xl:block'/>
                 </a>
-                <div className="absolute right-5 pt-10 pr-5 max-md:pr-0 max-md:right-0 max-md:pt-25">
+                <div className="absolute right-5 top-45 pr-5 max-md:pr-0 max-md:right-0">
                     <button
                     id='openBtn'
                     type="button"
                     onClick={() => setMobileMenuOpen(true)}
-                    className=" bottom-5 relative icon-default inline-flex items-center justify-center rounded-md p-2.5 text-white z-50 animation duration-300 transform transition-all"
+                    className="relative icon-default inline-flex items-center justify-center rounded-md p-2.5 text-white z-50 animation duration-300 transform transition-all"
                     >
                     <span className="sr-only">Open main menu</span>
                     <Bars3Icon aria-hidden="true" className=" size-10 block hover:shadow-xl shadow-neutral-950 rounded-xl animation duration-300 transition-all transform" />
                     </button>
-
                 </div>
-                <ul className='flex gap-x-10 sm:gap-x-10 items-center xl:right-107 lg:right-80 sm:pt-0 sm:right-35 bottom-25 max-md:hidden block relative pt-5 h-10 text-xl'>
-                    <li>
-                    <a href='/' className='hover-underline-animation center'>latest</a>
-                    </li>
-                    <li>
-                    <a href='/Motorsport' className='hover-underline-animation center'>Motorsport</a>
-                    </li>
-                    <li>
-                    <a href='/Reviews' className='hover-underline-animation center'>Reviews</a>
-                    </li>
-                    <li>
-                    <a href='/Reviews/Gaming' className='hover-underline-animation center'>Gaming</a>
-                    </li>
-                    <li>
-                    <a href='/Tech' className='hover-underline-animation center'>Tech</a>
-                    </li>
-                    <li>
-                    <a href='/Contact' className='hover-underline-animation center'>Contact</a>
-                    </li>
-                </ul>
+                <div className='absolute text-center pt-5 lg:flex max-sm:hidden md:hidden'>
+                    <ul className='flex gap-10 text-xl relative'>
+                        <li>
+                        <a href='/' className='hover-underline-animation center'>latest</a>
+                        </li>
+                        <li>
+                        <a href='/Motorsport' className='hover-underline-animation center'>Motorsport</a>
+                        </li>
+                        <li>
+                        <a href='/Reviews' className='hover-underline-animation center'>Reviews</a>
+                        </li>
+                        <li>
+                        <a href='/Reviews/Gaming' className='hover-underline-animation center'>Gaming</a>
+                        </li>
+                        <li>
+                        <a href='/Tech' className='hover-underline-animation center'>Tech</a>
+                        </li>
+                        <li>
+                        <a href='/Contact' className='hover-underline-animation center'>Contact</a>
+                        </li>
+                    </ul>
+                </div>
                 </nav>
             <AnimatePresence>
                 {mobileMenuOpen && (
