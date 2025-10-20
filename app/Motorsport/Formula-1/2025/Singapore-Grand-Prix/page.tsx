@@ -19,13 +19,13 @@ export default function AustrianGP() {
             <header>
             <div className="relative inset-0">
             <h1 className="absolute text-6xl top-82 left-50 z-10 font-josefin-sans max-md:left-7 items-baseline max-md:top-20 md:text-3xl sm:text-xl lg:text-6xl max-md:text-3xl text-white text-center font-bold">
-                Azerbaijan grand prix - weekend report
+                Singapore grand prix - weekend report
             </h1>
             <h5 className="absolute text-6xl top-100 z-10 left-70 font-sans max-md:left-0 max-md:top-50 md:text-3xl sm:text-xl lg:text-6xl max-md:text-xl text-white font-bold">
-                Up's and down's in Azerbaijan
+                what's happening with Mclaren?
             </h5>
             <img
-                src="/assets/bakuF1.jpg"
+                src="/assets/SingaporeGP2025.jpg"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96 overflow-hidden"
                 alt="Miami Grand Prix"
             />
@@ -34,53 +34,46 @@ export default function AustrianGP() {
             <div className="relative pb-10 md:left-0">
                 <div className="text-2xl justify-center text-white to-neutral-900 relative text-start">
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:w-90 lg:w-300 font-josefin-sans pt-15">
-                    Possible turnaround in championship now possible for verstappen
+                    Russell with 2nd win of the season and mclaren drowning in papaya rules.
                 </p>
                 <h3 className="text-4xl m-5 lg:pl-75 pt-5">Friday</h3>
                  <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-0 max-md:w-90 max-lg:w-200 xl:w-300 font-josefin-sans pt-15">
-                    I didn't watched friday's practices and also data were funny from fastf1 so i couldn't fully analyse drives from friday.
-                    Also, as always, nothing really happened in FP1 and FP2, apart Norris's little crash at T4 where he damaged suspension.
-                    And Piastri a lap later sratched wall at T16.
+                    I'm going to be perfectly honest, i skipped practices because of review I am prepping for you.
                 </p>
                 <h3 className="text-4xl m-5 lg:pl-75 pt-5">Qualifying</h3>
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-0 max-md:w-90 max-lg:w-200 xl:w-300 font-josefin-sans pt-15">
-                    2025 Azerbaijan grand prix saw longest qualifying session ever recorded.
-                    It lasted for 2 hours (race in monza was 1.30 hours), and also another record was broken for most red flags in session.
-                    We seen 6 red flags across 3 qualifying sessions.
-                    From top teams, only CL16 and OP81 failed to complete Q3 where they crahed into barriers.
-                    Pole position won MV1 and surprisingly, CS55 finished P2 in qualy with Lawson in P3.
-                    LN4 and McLaren didn't managed session very well and they finished only at P7.
+                    A fine surprise from GR63 to take pole position in Singapore by nearly 2 tenths.
+                    MV1 on 2nd place and OP81 on 3rd.
+                    We have a competition nicely spread out so a grand prix will be exiting to watch.
                 </p>
                 <h3 className="text-4xl m-5 lg:pl-75 pt-5">Sunday</h3>
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-50 font-josefin-sans pt-15 lg:w-300"> 
-                    Race was calm until T5-T6 where OP81 crashed into barriers, causing a safety car.
-                    His race came to the end after failing start procedure when he moved before lights went out.
-                    Stewards gave him 5 second time penalty but won't be converted into grid penalty for Singapore.
-                    Later when he wanted salvage atleast something, he made an error in braking and locked his tyres, causing him to go straight into barrier.
-                    Now this was golden opportunity for LN4 to gain for championship most of the points available.
-                    for the rest of the race it was quiet. Sometimes someone fought but for only lower places.
-                    Podium was stabilised and top 10 too.
-                    MV1 won 2025 Azerbaijan grand prix with GR63 in P2 and beautiful result for spaniard in williams colors.
-                    CS55 finished in P3, achieving 1st podium in current regulations.
+                    Start was calm but aggresive from LN4 who overtook AKA12 and a controversial overtake on his teammate for P3.
+                    after 1st lap our top 3 looked like: GR63, MV1, LN4.
+                    But this was unfortunately only action for reminder of race.
+                    But we have another entertainment called fernando alonso.
+                    He had 10 second pitstop and later had to fight with IH6 who got malfunctioned engine and older tyres.
+                    And his radio made every fan laugh.
+                    GR63 won Singapore grand prix with great margin, MV1 on 2nd and LN4 on 3rd.
                 </p>
-                <h3 className="text-4xl m-5 lg:pl-75 pt-5">What is happening to McLaren?</h3>
+                <h3 className="text-4xl m-5 lg:pl-75 pt-5">Glorius mclaren?</h3>
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-50 font-josefin-sans pt-15 lg:w-300">
-                    After their decisions and their incopetence in recent races, I need to write whole section for them.
-                    I'm a Mclaren fan. I have always been a mclaren fan. I still remember 2023 season where in Bahrain, Oscar's race ended after 10 laps with techical failure.
-                    Or Miami where they have been dead last.
-                    But let's go back to present. Mclaren right now are making mistakes which no top team should do.
-                    5th race in a row bad pitstop for Lando. For a driver which was there for 7 years, won constructors championship last year and a driver's championship contender is just unacceptable.
-                    I mean, this race was just oscar's fault so no hard feeling towards him, I believe in singapore he will make a day harder for every competitor.
-                    For Lando, today he did everyhting right, apart the safety car restart where he overslept a bit to much.
-                    But otherwise he did everything right. Today the team when he needed them the most, they let him down once again.
-                    Miserable pitstops and a car which for the last 3 years have top speed as a turtle and this season so optimize aero, they biggest weakness is drag.
-                    I only hope they can bounce back and win in Singapore atleast one of them.
+                    Mclaren can celebrate their 10th constructors championship but we need to ask a question.
+                    Do they really want to celebrate?
+                    I'm a Mclaren fan so might be biased but what are whole mclaren group doing in recent races is unwatchable.
+                    Asking their drivers if they are willing to sucrifice their pitstop before teammate.
+                    Whole papaya rules which i don't want to mention.
+                    And climax of the night was a crash between teammates.
+                    Surely if you can rationally think you can see that it wasn't on purpose.
+                    LN4 musjudged lenght between him and MV1 which can also be caused by harsh breaking of MV1.
+                    nevertheless LNN4 still hit MV1 rear which caused oversteer hence the crash between teammates.
+                    I don't think Norris did something wrong/ilegal/unethical.
+                    Also I can see some similiarities to Monza 2024. Piastri made pretty much same aggresive move to Norris which caused him to lose 2 places and potentially win for Mclaren.
                 </p>
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-50 font-josefin-sans pt-15 lg:w-300">
-                    This race was underwhelming.
-                    I didn't enjoyed any minute of the race and I personally don't like Baku as a track.
-                    But anyway,
-                    Next stop: Singapore.
+                    very meh race.
+                    nothing to add more.
+                    next stop: Austin, Texas
                 </p>
               </div>
             </div>

@@ -6,41 +6,9 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import * as React from "react"
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { AnimatePresence, motion } from "framer-motion"
-import 'ldrs/react/LineWobble.css'
-import { LineWobble } from 'ldrs/react'
-import 'ldrs/react/LineWobble.css'
 import { supabase } from "@/lib/supabaseClient";
 import Header from "@/components/main/header";
 
-const LoadingScreen: React.FC = () => (
-  <div
-    style={{
-      position: "fixed",
-      top: 0,
-      left: 0,
-      width: "100vw",
-      height: "100vh",
-      background: "rgba(0,0,0,0.0)",
-      color: "#fff",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      fontSize: "2rem",
-      zIndex: 9999,
-      transition: "all",
-      animation:"ease-in-out",
-      animationDuration:"300ms"
-    }}
-  >
-   <LineWobble
-  size="80"
-  stroke="5"
-  bgOpacity="0.1"
-  speed="1.75"
-  color="white" 
-/>
-  </div>
-);
 
 export default function Nurburgring() {
       const [mobileMenuOpen, setMobileMenuOpen] = useState(false) 
@@ -54,8 +22,6 @@ export default function Nurburgring() {
       const timer = setTimeout(() => setLoading(false), 1500);
       return () => clearTimeout(timer);
     }, []);
-  
-    if (loading) return <LoadingScreen />;
   
     
     const handleNewsletterSubmit = async (e: React.FormEvent) => {
