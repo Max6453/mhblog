@@ -75,7 +75,7 @@ export default function Header() {
                 <motion.div
                 initial={{ x: '0', opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
-                exit={{ x: '0', opacity: 0 }}
+                exit={{ y: '50', opacity: 0 }}
                 transition={{ type:"spring", stiffness: 300, damping: 30, duration: 0.6 }}
                 className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto opacity-10 text-center text-white bg-black/50 px-6 py-6 sm:max-w-full sm:ring-1 sm:ring-gray-900/10"
                 >
