@@ -32,7 +32,7 @@ export default function Header() {
                 <a href='/'>
                 <img
                 src= "/mobileIcon-black.png"
-                className='h-32 max-sm:h-25 w-auto hover:scale-110 top-52 max-sm:top-56 right-170 max-sm:right-33.5 transition-all duration-300 absolute max-sm:hidden sm:hidden md:hidden lg:hidden xl:block'/>
+                className='h-32 max-sm:h-25 z-50 w-auto hover:scale-110 top-52 max-sm:top-56 right-170 max-sm:right-33.5 transition-all duration-300 absolute max-sm:hidden sm:hidden md:hidden lg:hidden xl:block'/>
                 </a>
                 <div className="absolute right-5 top-45 pr-5 max-md:pr-0 max-md:right-0">
                     <button
