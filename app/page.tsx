@@ -39,14 +39,6 @@ export default function Main() {
       <a href='/Motorsport/Formula-1/2025/American-Grand-Prix/weekend-report'>
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
         <img src='/assets/cota2025.webp' className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>American Grand Prix - Weekend report</h3>
-        <button className='relative lg:bottom-26 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-          See more</button>
-      </div>
-      </a> 
-      <a href='/Motorsport/Formula-1/2025/American-Grand-Prix/weekend-report'>
-      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/cota2025.webp' className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
         <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>American Grand Prix - weekend report</h3>
         <button className='relative lg:bottom-26 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
           See more</button>
@@ -204,7 +196,7 @@ export default function Main() {
                     </div>
                     <dt className="mt-4 text-base font-semibold text-white">No spam</dt>
                     <dd className="mt-2 text-base/7 text-white">
-                      If you subscribe to our newsletter and later change your mind, don’t worry — you can unsubscribe at any time
+                      If you subscribe to our newsletter and later change your mind, don’t worry — you can unsubscribe at any time.
                     </dd>
                   </div>
                   <div className='relative grid grid-cols-2 max-sm:grid-cols-1 max-sm:grid-rows-1 left-20 max-sm:left-0'>
