@@ -39,6 +39,14 @@ export default function Main() {
       <a href='/Motorsport/Formula-1/2025/American-Grand-Prix/weekend-report'>
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
         <img src='/assets/cota2025.webp' className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
+        <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>American Grand Prix - Weekend report</h3>
+        <button className='relative lg:bottom-26 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
+          See more</button>
+      </div>
+      </a> 
+      <a href='/Motorsport/Formula-1/2025/American-Grand-Prix/weekend-report'>
+      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
+        <img src='/assets/cota2025.webp' className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
         <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>American Grand Prix - weekend report</h3>
         <button className='relative lg:bottom-26 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
           See more</button>
@@ -89,88 +97,80 @@ export default function Main() {
     {/* END LATEST */}
 
     {/* MOST POPULAR */}
-          <div className='relative flex md:flex-col-2 sm:flex-col-1 w-full h-250 xl:top-40 lg:top-100 md:top-110 max-sm:top-330'>
-           <div className=' relative w-full'>
-            <h3 className='lg:text-4xl max-sm:text-5xl text-white relative max-md:top-0 lg:pt-10 pl-10 font-Exo-2'>Most Popular</h3>
-            <ul className='grid'>
+          <div className='relative grid lg:grid-cols-2 max-sm:grid-cols-1 sm:grid-cols-1 w-full h-250 xl:top-40 lg:top-100 md:top-110 max-sm:top-330'>
+           <div className='relative w-full'>
+            <h3 className='lg:text-4xl text-center max-sm:text-5xl text-white relative max-md:top-0 lg:pt-10 pr-10 pb-0.5 font-Exo-2'>Trending</h3>
+             <hr className='w-100 left-37 relative'/>
+            <ul className='grid relative pl-27'>
             <li>
-               <a href='Tech/Oracle/Meteoric-Rise-For-Oracle'>
+               <a href='/Reviews/Gaming/Ghost-of-Yotei'>
                <div className='w-100 h-65 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white -z-50'>
-                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-81 max-sm:top-68 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
-                   What caused meteoric rise in stocks for oracle
+                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-61.5 max-sm:top-68 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
+                   Ghost of Yotei: Review
                   </span>                
-                <img src="/assets/oracle.png" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
+                <img src="/assets/ghost-of-yotei.png" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
                </div>
                </a>
             </li>
             <li>
-               <a href='Reviews/Gaming/Death-Stranding-2-On-The-Beach'>
+               <a href='Motorsport/Formula-1/2025/Singapore-Grand-Prix/weekend-report'>
                <div className='w-100 h-65 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white -z-50'>
-                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-166 max-sm:top-143 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
-                   Death Stranding 2: On the beach - review
+                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-146.5 max-sm:top-68 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
+                   Singapore Grand Prix - Weekend report
                   </span>                
-                <img src="/assets/DS2.jpg" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
+                <img src="/assets/SingaporeGP2025.jpg" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
                </div>
                </a>
             </li>
             <li>
-               <a href='Reviews/Other/What-To-Watch'>
+               <a href='Motorsport/Formula-1/2025/American-Grand-Prix/weekend-report'>
                <div className='w-100 h-55 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white'>
-                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-242 max-sm:top-208 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
-                   What to watch during summer break
+                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-221 max-sm:top-68 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
+                   American Grand Prix - Weekend Report
                   </span>                
-                <img src="/assets/summer-break.jpg" className='hover:scale-110 duration-250'/>
+                <img src="/assets/cota2025.webp" className='hover:scale-110 duration-250'/>
                </div>
                </a>
             </li>
            </ul>
           </div>
           {/* TECH, REVIEW, ETC... */}
-          <div className='relative max-sm:flex flex-col-2 w-full max-sm:right-90 max-sm:top-240 h-full rounded-4xl'>
-           <h3 className='lg:text-4xl max-sm:text-5xl text-white relative lg:pt-10 pl-10 font-Exo-2'>For you</h3>
-                     <div className='grid w-full max-sm:w-screen max-sm:top-40 max-sm:right-17 relative pt-10'>
-            <a href='/Motorsport/Formula-1/2025/Hungarian-Grand-Prix/Weekend-Report' className='hover:text-gray-400'>
-            <div className='text-2xl font-edu-vic-wa-nt-beginner'>
-              <span>Italian Grand Prix - Weeked Report</span>
-               <div className='gap-x-5 pt-3'>
-              <span>Date: 07/09/2025</span><br/>
-              </div>
-            </div>
-            </a>
-            <a href='/Reviews/Gaming/Cyberpunk-2077-patch-2.3' className='hover:text-gray-400'>
-            <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
-              <span>Why did google's stock spiked up by 8%</span>
-              <div className='gap-x-5 pt-3'>
-              <span>Date: 04/09/2025</span><br/>
-              </div>
-            </div>
-            </a>
-            <a href='/Motorsport/Formula-1/2025/Belgium-Grand-Prix/Race-Report' className='hover:text-gray-400'>
-            <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
-              <span>What caused meteoric rise in stocks for Oracle</span>
-              <div className='gap-x-5 pt-3'>
-              <span>Date: 10/09/2025</span><br/>
-              </div>
-            </div>
-            </a>
-            <a href='/Motorsport/Formula-1/2025/British-Grand-Prix/Race-Report' className='hover:text-gray-400'>
-            <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
-              <span>No-Mans-Sky-Voyagers - Review</span>
-              <div className='gap-x-5 pt-3'>
-              <span>Date: 29/08/2025</span><br/>
-              </div>
-            </div>
-            </a>
-            <a href='/Motorsport/GTWC/Misano-Report' className='hover:text-gray-400'>
-            <div className='text-2xl font-edu-vic-wa-nt-beginner pt-10'>
-              <span>Death Stranding 2: On the beach - review</span>
-              <div className='gap-x-5 pt-3'>
-                <span>Date: 26/08/2025</span><br/>
-              </div>
-            </div>
-            </a>
-           </div>
-            </div>
+          <div className=' relative w-full'>
+            <h3 className='lg:text-4xl text-center max-sm:text-5xl text-white relative max-md:top-0 lg:pt-10 pl-10 pb-0.5 font-Exo-2'>Editor's choice</h3>
+            <hr className='w-100 left-46 relative'/>
+            <ul className='grid relative pl-37'>
+            <li>
+               <a href='/Motorsport/Formula-1/2025/Azerbaijan-Grand-Prix'>
+               <div className='w-100 h-65 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white -z-50'>
+                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-61.5 max-sm:top-68 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
+                   Azerbaijan Grand Prix - Weekend report
+                  </span>                
+                <img src="/assets/bakuF1.jpg" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
+               </div>
+               </a>
+            </li>
+            <li>
+               <a href='/Reviews/Gaming/Ghost-of-Yotei'>
+               <div className='w-100 h-65 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white -z-50'>
+                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-146.5 max-sm:top-68 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
+                   Ghost of yotei: Review
+                  </span>                
+                <img src="/assets/ghost-of-yotei.png" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
+               </div>
+               </a>
+            </li>
+            <li>
+               <a href='Motorsport/Formula-1/2025/American-Grand-Prix/weekend-report'>
+               <div className='w-100 h-55 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white'>
+                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-221 max-sm:top-68 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
+                   American Grand Prix - Weekend report
+                  </span>                
+                <img src="/assets/cota2025.webp" className='hover:scale-110 duration-250'/>
+               </div>
+               </a>
+            </li>
+           </ul>
+          </div>
         </div>
     {/* END MOST POPULAR */}
 
@@ -195,7 +195,7 @@ export default function Main() {
                     </div>
                     <dt className="mt-4 text-base font-semibold text-white">Weekly articles</dt>
                     <dd className="mt-2 text-base/7 text-white">
-                      I'm pulbishing every week multiple articles about many topics. Be first to see them out.
+                      I’m publishing multiple articles every week on a variety of topics. Be the first to see them.
                     </dd>
                   </div>
                   <div className="flex flex-col items-start">
@@ -204,7 +204,7 @@ export default function Main() {
                     </div>
                     <dt className="mt-4 text-base font-semibold text-white">No spam</dt>
                     <dd className="mt-2 text-base/7 text-white">
-                      If you subscribed to our newsletter and later changed your mind, don't worry you can unsubscribed any time.
+                      If you subscribe to our newsletter and later change your mind, don’t worry — you can unsubscribe at any time
                     </dd>
                   </div>
                   <div className='relative grid grid-cols-2 max-sm:grid-cols-1 max-sm:grid-rows-1 left-20 max-sm:left-0'>
@@ -226,8 +226,8 @@ export default function Main() {
                </div>
                   <div className='flex relative'>
                     <ul className='grid grid-cols-1 gap-7 relative pl-20 max-sm:pl-13 justify-end text-white'>
-                      <li className='hover:text-gray-400 duration-300'><a href='/Privacy-Policy'>Privacy Policy</a></li>
-                      <li className='hover:text-gray-400 duration-300'><a href='/Terms-of-use'>Terms of use</a></li>
+                      <li className='hover:text-gray-400 duration-300'><a href='/Legal/Privacy-Policy'>Privacy Policy</a></li>
+                      <li className='hover:text-gray-400 duration-300'><a href='/Legal/Terms-of-use'>Terms of use</a></li>
                       <li className='hover:text-gray-400 duration-300'><a href='/Contact'>Contact</a></li>
                     </ul>
                   </div>
