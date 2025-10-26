@@ -95,32 +95,32 @@ export default function Main() {
              <hr className='w-100 left-37 relative'/>
             <ul className='grid relative pl-27'>
             <li>
-               <a href='/Motorsport/formula-1/2025/American-Grand-Prix/weekend-report'>
+               <a href='/Reviews/Gaming/Ghost-of-Yotei'>
                <div className='w-100 h-65 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white -z-50'>
                   <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-61.5 max-sm:top-68 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
-                   What caused meteoric rise in stocks for oracle
+                   Ghost of Yotei: Review
                   </span>                
-                <img src="/assets/oracle.png" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
+                <img src="/assets/ghost-of-yotei.png" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
                </div>
                </a>
             </li>
             <li>
-               <a href='Reviews/Gaming/Death-Stranding-2-On-The-Beach'>
+               <a href='Motorsport/Formula-1/2025/Singapore-Grand-Prix/weekend-report'>
                <div className='w-100 h-65 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white -z-50'>
                   <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-146.5 max-sm:top-68 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
-                   What caused meteoric rise in stocks for oracle
+                   Singapore Grand Prix - Weekend report
                   </span>                
-                <img src="/assets/DS2.jpg" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
+                <img src="/assets/SingaporeGP2025.jpg" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
                </div>
                </a>
             </li>
             <li>
-               <a href='Reviews/Other/What-To-Watch'>
+               <a href='Motorsport/Formula-1/2025/American-Grand-Prix/weekend-report'>
                <div className='w-100 h-55 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white'>
                   <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-221 max-sm:top-68 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
-                   What caused meteoric rise in stocks for oracle
+                   American Grand Prix - Weekend Report
                   </span>                
-                <img src="/assets/summer-break.jpg" className='hover:scale-110 duration-250'/>
+                <img src="/assets/cota2025.webp" className='hover:scale-110 duration-250'/>
                </div>
                </a>
             </li>
@@ -132,32 +132,32 @@ export default function Main() {
             <hr className='w-100 left-46 relative'/>
             <ul className='grid relative pl-37'>
             <li>
-               <a href='/Motorsport/formula-1/2025/American-Grand-Prix/weekend-report'>
+               <a href='/Motorsport/Formula-1/2025/Azerbaijan-Grand-Prix'>
                <div className='w-100 h-65 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white -z-50'>
                   <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-61.5 max-sm:top-68 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
-                   What caused meteoric rise in stocks for oracle
+                   Azerbaijan Grand Prix - Weekend report
                   </span>                
-                <img src="/assets/oracle.png" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
+                <img src="/assets/bakuF1.jpg" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
                </div>
                </a>
             </li>
             <li>
-               <a href='Reviews/Gaming/Death-Stranding-2-On-The-Beach'>
+               <a href='/Reviews/Gaming/Ghost-of-Yotei'>
                <div className='w-100 h-65 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white -z-50'>
                   <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-146.5 max-sm:top-68 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
-                   What caused meteoric rise in stocks for oracle
+                   Ghost of yotei: Review
                   </span>                
-                <img src="/assets/DS2.jpg" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
+                <img src="/assets/ghost-of-yotei.png" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
                </div>
                </a>
             </li>
             <li>
-               <a href='Reviews/Other/What-To-Watch'>
+               <a href='Motorsport/Formula-1/2025/American-Grand-Prix/weekend-report'>
                <div className='w-100 h-55 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white'>
                   <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-221 max-sm:top-68 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
-                   What caused meteoric rise in stocks for oracle
+                   American Grand Prix - Weekend report
                   </span>                
-                <img src="/assets/summer-break.jpg" className='hover:scale-110 duration-250'/>
+                <img src="/assets/cota2025.webp" className='hover:scale-110 duration-250'/>
                </div>
                </a>
             </li>
@@ -187,7 +187,7 @@ export default function Main() {
                     </div>
                     <dt className="mt-4 text-base font-semibold text-white">Weekly articles</dt>
                     <dd className="mt-2 text-base/7 text-white">
-                      I'm pulbishing every week multiple articles about many topics. Be first to see them out.
+                      I’m publishing multiple articles every week on a variety of topics. Be the first to see them.
                     </dd>
                   </div>
                   <div className="flex flex-col items-start">
@@ -196,7 +196,7 @@ export default function Main() {
                     </div>
                     <dt className="mt-4 text-base font-semibold text-white">No spam</dt>
                     <dd className="mt-2 text-base/7 text-white">
-                      If you subscribed to our newsletter and later changed your mind, don't worry you can unsubscribed any time.
+                      If you subscribe to our newsletter and later change your mind, don’t worry — you can unsubscribe at any time
                     </dd>
                   </div>
                   <div className='relative grid grid-cols-2 max-sm:grid-cols-1 max-sm:grid-rows-1 left-20 max-sm:left-0'>
@@ -218,8 +218,8 @@ export default function Main() {
                </div>
                   <div className='flex relative'>
                     <ul className='grid grid-cols-1 gap-7 relative pl-20 max-sm:pl-13 justify-end text-white'>
-                      <li className='hover:text-gray-400 duration-300'><a href='/Privacy-Policy'>Privacy Policy</a></li>
-                      <li className='hover:text-gray-400 duration-300'><a href='/Terms-of-use'>Terms of use</a></li>
+                      <li className='hover:text-gray-400 duration-300'><a href='/Legal/Privacy-Policy'>Privacy Policy</a></li>
+                      <li className='hover:text-gray-400 duration-300'><a href='/Legal/Terms-of-use'>Terms of use</a></li>
                       <li className='hover:text-gray-400 duration-300'><a href='/Contact'>Contact</a></li>
                     </ul>
                   </div>
