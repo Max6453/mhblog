@@ -13,6 +13,10 @@
 # testing
 /coverage
 
+# Electron build output
+dist/
+out/
+
 # next.js
 /.next/
 /out/
