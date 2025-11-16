@@ -13,6 +13,10 @@
 # testing
 /coverage
 
+# Mobile folder
+
+/Mobile
+
 # next.js
 /.next/
 /out/
