@@ -2,7 +2,7 @@
  import { useState, useEffect } from 'react'
  import { supabase } from "@/lib/supabaseClient";
  
- function ContactForm() {
+ export default function ContactForm() {
 
  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -142,5 +142,3 @@ return(
       </form>
 )
 }
-
-export default ContactForm;
