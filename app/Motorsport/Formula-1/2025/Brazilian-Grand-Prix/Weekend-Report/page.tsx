@@ -1,4 +1,4 @@
-  'use client'
+'use client'
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import { useState, useEffect } from 'react'
 import { Bars2Icon, CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
@@ -18,11 +18,11 @@ export default function AustrianGP() {
           <ScrollProgress />
             <header>
             <div className="relative inset-0">
-            <h1 className="absolute text-6xl top-82 left-80 z-10 font-josefin-sans max-md:left-7 items-baseline max-md:top-20 md:text-3xl sm:text-xl lg:text-6xl max-md:text-3xl text-white text-center font-bold">
-                Where Winds Meet - Review
+            <h1 className="absolute text-6xl top-62 left-52 z-10 font-josefin-sans max-md:left-7 items-baseline max-md:top-20 md:text-3xl sm:text-xl lg:text-6xl max-md:text-3xl text-white text-center font-bold">
+                Brazilian Grand Prix - Weekend report
             </h1>
             <img
-                src="/assets/WWMGame.jpg"
+                src="/assets/Brazil2025.avif"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96 overflow-hidden"
                 alt="Miami Grand Prix"
             />
@@ -31,34 +31,48 @@ export default function AustrianGP() {
             <div className="relative pb-10 md:left-0">
                 <div className="text-2xl justify-center text-white to-neutral-900 relative text-start">
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:w-90 lg:w-300 font-josefin-sans pt-15">
-                    Where Winds Meet is free-to-play, action RPG game with vast open world.
-                    It was released 14.11.2025 on PlayStation 5.
+                    The championship is getting trickier for drivers.
                 </p>
                  <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-0 max-md:w-90 max-lg:w-200 xl:w-300 font-josefin-sans pt-15">
-                    You get welcomed by a vast and beautiful Chinese world during Song Dynasty.
-                    The game’s world is stunning — forests, mountains, and ancient villages feel handcrafted, and the lighting and weather systems add a cinematic feel to almost every moment.
-                    Combat and overall handling feels natural and easy to adapt.
-                    With multiple weapon choices such as blades, spears, dual blades or even umbrella...
+                    Brazil showed us once again why it is one of the best circuits on calendar.
                 </p>
+                <h3 className="text-4xl m-5 lg:pl-75 pt-5">Friday</h3>
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-0 max-md:w-90 max-lg:w-200 xl:w-300 font-josefin-sans pt-15">
-                    Altough first touch feels great, the game lacks in multiple location.
-                    Biggest issue while playing was misplaced dialogs or even missing dialogs, or sometimes even no dialogs played but subtitles were actively playing.
-                    When you watch cutscenes, you get a weird feeling from dialogs. You feel that characters aren't saying what the dialogs says.
-                    Also, I suffered on PS5 significant FPS drops which impacted whole experience.
-                    Also the game itself is massively online depended.
+                    We saw first surprises on friday in Sprint Qualifying with mercedes being 2nd best car on track with Kimi Antonelli leading in P2.
+                    but also Aston Martin coocked some performance in SQ, where they finished in P5 and P7 and MV1 between them.
+                    Ultimately, LN4 took Pole position for upcoming sprint race on saturday.
+                </p>
+                <h3 className="text-4xl m-5 lg:pl-75 pt-5">Saturday</h3>
+                <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-50 font-josefin-sans pt-15 lg:w-300"> 
+                    Sprint was raced on damp/dry conditions with track being dry in most part of the track but 1st sector was still wet.
+                    OP81, NH27 and FC43 paid the price for it. They went wider, than most of the cars, on the kerb sending their cars into uncotrolable spin and into barriers.
+                    This was significant loss for OP81 which extended LN4 lead by 9 points.
+                    But we also saw a horrifying accident for Gabriel Bortoleto when after mysterious reasons his car lost the rear, sending him into 1st barrier with 34G force impact and a few moments later another hit into barriers with 57G force of impact.
+                    Luckily, Bortoleto was safe, unharmed and was ready to race in qualifying but his car was unable to take part of qualifying.
+                </p>
+                <h3 className="text-4xl m-5 lg:pl-75 pt-5">Sunday</h3>
+                <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-50 font-josefin-sans pt-15 lg:w-300"> 
+                    After another pole position and sprint win from LN4, he saw only one thing - A win in Brazilian grand prix.
+                    and he went for it, and successfuly he won by significant margin to 2nd AKA12 and 3rd MV1.
+                    MV1 damage limitation after horrible qualifying which set him on P16 and later start from the pit box was beyond expectation.
+                    No every driver can achieve what verstappen did 2-times in a row in Brazil.
+                </p>
+                <h3 className="text-4xl m-5 lg:pl-75 pt-5">Another controversy...</h3>
+                <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-50 font-josefin-sans pt-15 lg:w-300"> 
+                    However, what race it would be if we wouldn't have any controversial decision by stewards.
+                    After safety car restart around 20th lap, LN4 pulled off AKA12 who got much slower acceleration and OP81 with CL16 quickly caught up from both of his sides.
+                    In T1, it looked like they could get trough 3-wide with CL16 giving AKA12 extra space on right side, but He instead started closing his left side where was OP81.
+                    And accident happened where OP81 took Antonelli's RR tyre, sending him straight into CL16 who had no choice but to retire from the race because of significant damages sustained from the crash.
+                    To be honest, if I was a steward, from me it would be a racing incident because AKA12 closed to much OP81 but also OP81 didn't had right for the corner by the driving regulations...
+                    The stewards awarded OP81 with 10 second time penalty for causing collision. 
                 </p>
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-50 font-josefin-sans pt-15 lg:w-300"> 
-                    Overall, this game feels underdeveloped with multiple big issues which significantly impact whole game experience.
-                    I hope the devs will fix the game because the concept is unique with a great idea but that idea must be develop to the end.
-                    MHBlog gives Where Winds Meet 5/10.
+                    Anyway, LN4 extends his lead to OP81 by 24 points.
+                    It was fun and exiting race and Im looking forward to next year.
+                    Next stop: Las vegas, Nevada, USA.
                 </p>
               </div>
-              <div className="grid md:grid-cols-3 sm:grid-cols-2 max-sm:grid-cols-1  grid-rows pt-15">
-                <img src="/assets/WWM-day.jpg" alt="" />
-                <img src="/assets/WWM-sunset.jpg" alt="" />
-                <img src="/assets/WWM-dimension.jpg" alt="" />
-              </div>
-            </div>
+             </div>
             <footer
             className="relative lg:top-0 min-md:top-0 max-md:top-0 max-sm:top-0 sm:top-0 h-full w-full text-center border-white sm:footer-horizontal pt-10 text-black font-edu-vic-wa-nt-beginner p-10 text-2xl"
             id='Contact'>
