@@ -1,50 +1,14 @@
 'use client'
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
-import { useState, useEffect } from 'react'
 import { Bars2Icon, CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import * as React from "react"
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { AnimatePresence, motion } from "framer-motion"
-import { supabase } from "@/lib/supabaseClient";
 import Header from "@/components/main/header";
 
 
 export default function Nurburgring() {
-      const [mobileMenuOpen, setMobileMenuOpen] = useState(false) 
-        const [loading, setLoading] = useState(true);
-            const [newsletterEmail, setNewsletterEmail] = useState("");
-              const [newsletterSuccess, setNewsletterSuccess] = useState(false);
-                const [newsletterError, setNewsletterError] = useState<string | null>(null);
-
-                    useEffect(() => {
-      // Simulate loading (e.g., fetching data)
-      const timer = setTimeout(() => setLoading(false), 1500);
-      return () => clearTimeout(timer);
-    }, []);
-  
-    
-    const handleNewsletterSubmit = async (e: React.FormEvent) => {
-      e.preventDefault();
-      setNewsletterSuccess(false);
-      setNewsletterError(null);
-    
-      const { error } = await supabase.from("newsletter").insert([
-        { email: newsletterEmail }
-      ]);
-    
-      if (error) {
-        setNewsletterError("Failed to subscribe. Please try again.");
-      } else {
-        setNewsletterSuccess(true);
-        setNewsletterEmail("");
-      }
-    };
-    
-
     return(
-<div className="bg-background h-full relative">
-<Header/>
+        <div className="bg-background h-full relative">
+        <Header/>
           <ScrollProgress />
             <header>
             <div className="relative inset-0">
