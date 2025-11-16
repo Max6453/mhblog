@@ -1,10 +1,7 @@
  'use client'
  import { useState, useEffect } from 'react'
- import { supabase } from "@/lib/supabaseClient";
  
  export default function ContactForm() {
-
- const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     about: "",
@@ -25,22 +22,29 @@
   setError(null);
   setSuccess(false);
 
-  const { error } = await supabase.from("contacts").insert([
-    {
-      about: form.about,
-      first_name: form.firstName,
-      last_name: form.lastName,
-      email: form.email,
-    },
-  ]);
-  setLoading(false);
+  try {
+    const { supabase } = await import("@/lib/supabaseClient");
+    const { error } = await supabase.from("contacts").insert([
+      {
+        about: form.about,
+        first_name: form.firstName,
+        last_name: form.lastName,
+        email: form.email,
+      },
+    ]);
+    setLoading(false);
 
-  if (error) {
-    console.error(error); // <-- Add this line
+    if (error) {
+      console.error(error);
+      setError("Failed to submit. Please try again.");
+    } else {
+      setSuccess(true);
+      setForm({ about: "", firstName: "", lastName: "", email: "" });
+    }
+  } catch (err) {
+    console.error(err);
     setError("Failed to submit. Please try again.");
-  } else {
-    setSuccess(true);
-    setForm({ about: "", firstName: "", lastName: "", email: "" });
+    setLoading(false);
   }
 };
 
