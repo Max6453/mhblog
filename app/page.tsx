@@ -36,6 +36,14 @@ export default function Main() {
   <div className="absolute top-0 z-[-2] h-370 w-full"></div>
       <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white relative max-md:top-10 lg:pt-15 pl-10 font-Exo-2'>latest</h1>
     <div className="relative top-20 max-sm:pl-11.5 lg:pl-12 max-md:pl-11.5 md:pl-0 grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
+      <a href='/Reviews/Gaming/Silent-Hill-2-Remake'>
+      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
+        <img src='/assets/Silent-hill-2.jpg' className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
+        <h3 className='relative items-center bottom-66 text-xl pl-17 text-gray-600 font-bold font-Exo-2'>Silent Hill 2 - Review</h3>
+        <button className='relative lg:bottom-19 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
+          See more</button>
+      </div>
+      </a> 
       <a href='/Reviews/Gaming/Where-Winds-Meet'>
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
         <img src='/assets/WWMGame.jpg' className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
@@ -76,14 +84,6 @@ export default function Main() {
           See more</button>
       </div>
       </a> 
-      <a href='/Motorsport/Formula-1/2025/Singapore-Grand-Prix'>
-      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/SingaporeGP2025.jpg'  className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>Singapore Grand Prix - Weekend report</h3>
-        <button className='relative lg:bottom-26 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-          See more</button>
-      </div>
-      </a>  
     </div>
    </div>
     {/* END LATEST */}
@@ -91,13 +91,13 @@ export default function Main() {
     {/* MOST POPULAR */}
           <div className='relative grid lg:grid-cols-2 max-sm:grid-cols-1 sm:grid-cols-1 w-full h-250 xl:top-40 lg:top-100 md:top-110 max-sm:top-330'>
            <div className='relative w-full'>
-            <h3 className='lg:text-4xl text-center max-sm:text-5xl text-white relative max-md:top-0 lg:pt-10 pr-10 pb-0.5 font-Exo-2'>Trending</h3>
-             <hr className='w-100 left-37 relative'/>
-            <ul className='grid relative pl-27'>
+            <h3 className='lg:text-4xl text-center max-sm:text-5xl text-white relative max-md:top-0 lg:pt-10 pr-10 pb-0.5 max-sm:pb-2 font-Exo-2'>Trending</h3>
+             <hr className='w-100 max-sm:w-70 left-37 max-sm:left-10 relative'/>
+            <ul className='grid relative pl-27 max-sm:pl-0.5'>
             <li>
                <a href='/Reviews/Gaming/Ghost-of-Yotei'>
                <div className='w-100 h-65 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white -z-50'>
-                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-61.5 max-sm:top-68 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
+                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-61.5 max-sm:top-57 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
                    Ghost of Yotei: Review
                   </span>                
                 <img src="/assets/ghost-of-yotei.png" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
@@ -107,7 +107,7 @@ export default function Main() {
             <li>
                <a href='Motorsport/Formula-1/2025/Singapore-Grand-Prix/weekend-report'>
                <div className='w-100 h-65 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white -z-50'>
-                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-146.5 max-sm:top-68 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
+                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-146.5 max-sm:top-131 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
                    Singapore Grand Prix - Weekend report
                   </span>                
                 <img src="/assets/SingaporeGP2025.jpg" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
@@ -117,7 +117,7 @@ export default function Main() {
             <li>
                <a href='Motorsport/Formula-1/2025/American-Grand-Prix/weekend-report'>
                <div className='w-100 h-55 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white'>
-                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-221 max-sm:top-68 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
+                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-221 max-sm:top-195 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
                    American Grand Prix - Weekend Report
                   </span>                
                 <img src="/assets/cota2025.webp" className='hover:scale-110 duration-250'/>
@@ -128,13 +128,13 @@ export default function Main() {
           </div>
           {/* TECH, REVIEW, ETC... */}
           <div className=' relative w-full'>
-            <h3 className='lg:text-4xl text-center max-sm:text-5xl text-white relative max-md:top-0 lg:pt-10 pl-10 pb-0.5 font-Exo-2'>Editor's choice</h3>
-            <hr className='w-100 left-46 relative'/>
-            <ul className='grid relative pl-37'>
+            <h3 className='lg:text-4xl text-center max-sm:text-5xl text-white relative max-md:top-0 lg:pt-10 max-sm:pt-20 pl-10 max-sm:pl-3 pb-0.5 max-sm:pb-2 font-Exo-2'>Editor's choice</h3>
+            <hr className='w-100 max-sm:w-70 left-48 max-sm:left-10 relative'/>
+            <ul className='grid relative pl-37 max-sm:pl-0.5'>
             <li>
                <a href='/Motorsport/Formula-1/2025/Azerbaijan-Grand-Prix'>
                <div className='w-100 h-65 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white -z-50'>
-                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-61.5 max-sm:top-68 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
+                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-61.5 max-sm:top-57 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
                    Azerbaijan Grand Prix - Weekend report
                   </span>                
                 <img src="/assets/bakuF1.jpg" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
@@ -144,7 +144,7 @@ export default function Main() {
             <li>
                <a href='/Reviews/Gaming/Ghost-of-Yotei'>
                <div className='w-100 h-65 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white -z-50'>
-                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-146.5 max-sm:top-68 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
+                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-146.5 max-sm:top-131 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
                    Ghost of yotei: Review
                   </span>                
                 <img src="/assets/ghost-of-yotei.png" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
@@ -154,7 +154,7 @@ export default function Main() {
             <li>
                <a href='Motorsport/Formula-1/2025/American-Grand-Prix/weekend-report'>
                <div className='w-100 h-55 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white'>
-                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-221 max-sm:top-68 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
+                  <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-221 max-sm:top-195 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
                    American Grand Prix - Weekend report
                   </span>                
                 <img src="/assets/cota2025.webp" className='hover:scale-110 duration-250'/>
@@ -168,10 +168,10 @@ export default function Main() {
 
       {/* FOOTER */}
        <footer
-       className="relative xl:top-40 lg:top-80 md:top-125 max-md:top-165 max-sm:top-620 h-full w-full text-center sm:footer-horizontal pt-10 text-black font-edu-vic-wa-nt-beginner p-10 text-2xl"
+       className="relative xl:top-40 lg:top-80 md:top-125 max-md:top-165 max-sm:top-580 h-full w-full text-center sm:footer-horizontal pt-10 text-black font-edu-vic-wa-nt-beginner p-10 text-2xl"
        id='Newsletter'>
-          <div className="relative isolate overflow-hidden py-16 sm:py-24 lg:py-32">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="relative isolate overflow-hidden py-16 sm:py-24 max-sm:py-0 lg:py-32">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8 max-sm:px-0">
               <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
                 <div className="max-w-xl lg:max-w-lg">
                   <h2 className="text-4xl font-semibold tracking-tight text-white">Subscribe to our newsletter</h2>
@@ -202,7 +202,7 @@ export default function Main() {
                   <div className='relative grid grid-cols-2 max-sm:grid-cols-1 max-sm:grid-rows-1 left-20 max-sm:left-0'>
                     <div className='grid lg:grid-cols-1 max-sm:left-0'>
                     <h3 className='text-white max-sm:pl-0'>Follow me on my journey</h3>
-                    <ul className='flex gap-5 max-sm:gap-8 max-sm:pt-10 max-sm:pl-5 relative justify-center'>
+                    <ul className='flex gap-5 max-sm:gap-8 max-sm:pt-10 max-sm:pl-1 relative justify-center'>
                     <li>
                     <a href='https://www.instagram.com/harvancik_maxim/'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className='size-10 hover:text-shadow-blue-400'>
                     <path fill="#ffffff" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
@@ -216,7 +216,7 @@ export default function Main() {
                     </div>
                </div>
                   <div className='flex relative'>
-                    <ul className='grid grid-cols-1 gap-7 relative pl-20 max-sm:pl-13 justify-end text-white'>
+                    <ul className='grid grid-cols-1 gap-7 relative pl-20 max-sm:pl-19 justify-end text-white'>
                       <li className='hover:text-gray-400 duration-300'><a href='/Legal/Privacy-Policy'>Privacy Policy</a></li>
                       <li className='hover:text-gray-400 duration-300'><a href='/Legal/Terms-of-use'>Terms of use</a></li>
                       <li className='hover:text-gray-400 duration-300'><a href='/Contact'>Contact</a></li>
@@ -228,22 +228,17 @@ export default function Main() {
                   </span>
                 </dl>
               </div>
-              <div className='pt-10 hidden absolute md:bottom-60 max-md:bottom-90 sm:bottom-125 md:left-50 sm:left-15 max-sm:bottom-200 max-sm:left-12'>
-              <button
-                onClick={() => {
-                  window.location.href =
-                    "/Legal/Download"; // <-- APK link
-                }}
-                className="px-6 py-3 font-Exo-2 bg-background hover:bg-white text-white hover:text-black border-white border rounded-xl shadow-lg z-50 transition"
-              >
-                Download our app
-              </button>
-              </div>
             </div>
-
+        </div>
+        <div className='pt-10 absolute md:left-50 sm:left-15 max-sm:left-14'>
+          <a href='/application-db7221f0-2ea3-4ec9-83b2-038c33a5801e.apk' download>
+          <button className='className="px-6 py-3 font-Exo-2 bg-background hover:bg-white text-white hover:text-black border-white border rounded-xl shadow-lg transition'>
+            Download our app
+          </button>
+          </a>
         </div>
       </footer>
-    <aside className="relative text-center items-baseline pr-20 xl:top-40 lg:top-80 md:top-125 max-md:top-165 max-sm:top-620 max-md:text-lg max-md:text-center max-sm:pl-18">
+          <aside className="relative text-center items-baseline pr-20 xl:top-40 lg:top-80 md:top-125 max-md:top-165 max-sm:top-620 max-md:text-lg max-md:text-center max-sm:pl-18">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
       </aside>
 </div>
