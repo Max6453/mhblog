@@ -1,19 +1,26 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import * as React from "react"
 import { supabase } from "../../lib/supabaseClient";
 
 
 function SupabaseForm () {
- const [newsletterEmail, setNewsletterEmail] = useState("");
+const [newsletterEmail, setNewsletterEmail] = useState("");
   const [newsletterSuccess, setNewsletterSuccess] = useState(false);
-   const [newsletterError, setNewsletterError] = useState<string | null>(null);
+  const [newsletterError, setNewsletterError] = useState<string | null>(null);
+  const [isClient, setIsClient] = useState(false);
 
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setNewsletterSuccess(false);
     setNewsletterError(null);
+
+    // Dynamic import to avoid SSR issues
+    const { supabase } = await import("../../lib/supabaseClient");
 
     const { error } = await supabase.from("newsletter").insert([
       { email: newsletterEmail }
@@ -26,6 +33,10 @@ function SupabaseForm () {
       setNewsletterEmail("");
     }
   };
+
+  if (!isClient) {
+    return null; // or a loading skeleton
+  }
 
   return(
     <form onSubmit={handleNewsletterSubmit} className="mt-6 flex max-w-md max-sm:w-60 max-sm:left-8 text-center relative max-sm:grid gap-x-4">
