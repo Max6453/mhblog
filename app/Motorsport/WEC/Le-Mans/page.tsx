@@ -6,27 +6,7 @@ import { supabase } from "@/lib/supabaseClient";
 import Header from "@/components/main/header";
 import SupabaseForm from "@/components/ui/supabaseForm";
 
-export default function WEC24H() {
-          const [newsletterEmail, setNewsletterEmail] = useState("");
-          const [newsletterSuccess, setNewsletterSuccess] = useState(false);
-          const [newsletterError, setNewsletterError] = useState<string | null>(null);
-          const handleNewsletterSubmit = async (e: React.FormEvent) => {
-            e.preventDefault();
-            setNewsletterSuccess(false);
-            setNewsletterError(null);
-          
-            const { error } = await supabase.from("newsletter").insert([
-              { email: newsletterEmail }
-            ]);
-          
-            if (error) {
-              setNewsletterError("Failed to subscribe. Please try again.");
-            } else {
-              setNewsletterSuccess(true);
-              setNewsletterEmail("");
-            }
-            };
-  
+export default function WEC24H() {  
 
     return(
 <div className="bg-background relative">
