@@ -6,6 +6,14 @@ import { supabase } from "@/lib/supabaseClient";
 import Header from "@/components/main/header";
 import SupabaseForm from "@/components/ui/supabaseForm";
 
+export const meta = {
+  title: "24 Hours of Le Man's",
+  excerpt: "Race report",
+  coverImage: "/images/belgium-gp.jpg",
+  date: "2025-06-15",
+};
+
+
 export default function WEC24H() {  
 
     return(

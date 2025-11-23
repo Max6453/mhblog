@@ -2,8 +2,16 @@
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
 import Header from "@/components/main/header";
-export default function MiamiGP() {
 
+export const meta = {
+  title: "Monaco Grand Prix 2025",
+  excerpt: "Race report",
+  coverImage: "/images/belgium-gp.jpg",
+  date: "2025-05-25",
+};
+
+
+export default function MiamiGP() {
     return(
 <div className="bg-background relative">
   <Header/>

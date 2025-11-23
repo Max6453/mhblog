@@ -8,6 +8,13 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { AnimatePresence, motion } from "framer-motion"
 import Header from "@/components/main/header";
 
+export const meta = {
+  title: "Death Stranding 2: On the beach",
+  excerpt: "Review",
+  coverImage: "/images/belgium-gp.jpg",
+  date: "2025-08-26",
+};
+
 const navigation = [
   { name: 'Home', href: '/', current: false, id: 1 },
   { name: 'Archive', href: '/Archive', current: false, id: 2 },

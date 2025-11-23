@@ -4,6 +4,13 @@ import { Bars2Icon, CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24
 import * as React from "react"
 import Header from "@/components/main/header";
 
+export const meta = {
+  title: "24 Hours of Nurburgring",
+  excerpt: "Race report",
+  coverImage: "/images/belgium-gp.jpg",
+  date: "2025-06-22",
+};
+
 
 export default function Nurburgring() {
     return(

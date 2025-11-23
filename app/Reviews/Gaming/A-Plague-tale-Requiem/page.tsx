@@ -8,6 +8,14 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { AnimatePresence, motion } from "framer-motion"
 import Header from "@/components/main/header";
 
+export const meta = {
+  title: "Plague Tale: Requiem",
+  excerpt: "Review",
+  coverImage: "/images/belgium-gp.jpg",
+  date: "2025-08-17",
+};
+
+
 const navigation = [
   { name: 'Home', href: '/', current: false, id: 1 },
   { name: 'Archive', href: '/Archive', current: false, id: 2 },

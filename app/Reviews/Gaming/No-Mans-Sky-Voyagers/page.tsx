@@ -8,6 +8,12 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { AnimatePresence, motion } from "framer-motion"
 import Header from "@/components/main/header";
 
+export const meta = {
+  title: "No Mans Sky - Voyagers update",
+  excerpt: "Review",
+  coverImage: "/images/belgium-gp.jpg",
+  date: "2025-08-29",
+};
 
 export default function AustrianGP() {
       const [mobileMenuOpen, setMobileMenuOpen] = useState(false) 
