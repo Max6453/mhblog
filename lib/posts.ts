@@ -19,7 +19,7 @@ interface PostMeta {
 }
 
 // Top-level folders to scan (adjust to your structure)
-const CONTENT_DIRS = ['Tech', 'Motorsport', 'Reviews'];
+const CONTENT_DIRS = ['Tech', 'Motorsport'];
 const appDirectory = path.join(process.cwd(), 'app');
 
 function scanDirectory(dir: string, category: string): BlogPost[] {
@@ -89,3 +89,4 @@ export function getAllPosts(): BlogPost[] {
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
 }
+

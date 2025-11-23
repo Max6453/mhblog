@@ -1,7 +1,30 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getAllPosts } from '@/lib/posts';
 
+// Enable CORS for Expo app
 export async function GET(request: NextRequest) {
+  const response = await handleRequest(request);
+  
+  // Add CORS headers
+  response.headers.set('Access-Control-Allow-Origin', '*');
+  response.headers.set('Access-Control-Allow-Methods', 'GET, OPTIONS');
+  response.headers.set('Access-Control-Allow-Headers', 'Content-Type');
+  
+  return response;
+}
+
+export async function OPTIONS() {
+  return new NextResponse(null, {
+    status: 200,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type',
+    },
+  });
+}
+
+async function handleRequest(request: NextRequest) {
   const { searchParams } = new URL(request.url);
   const page = parseInt(searchParams.get('page') ?? '1');
   const limit = parseInt(searchParams.get('limit') ?? '10');
