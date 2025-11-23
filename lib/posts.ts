@@ -12,7 +12,7 @@ export interface BlogPost {
 }
 
 // Folders to scan for articles (adjust to your structure)
-const CONTENT_DIRS = ['Tech', 'motorsport'];
+const CONTENT_DIRS = ['Tech', 'Motorsport', 'Reviews'];
 const appDirectory = path.join(process.cwd(), 'app');
 
 function scanDirectory(dir: string, category: string): BlogPost[] {
