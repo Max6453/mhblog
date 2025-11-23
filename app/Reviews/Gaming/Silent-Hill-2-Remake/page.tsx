@@ -8,13 +8,6 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { AnimatePresence, motion } from "framer-motion"
 import Header from "@/components/main/header";
 
-export const meta = {
-  title: "Silent Hill 2",
-  excerpt: "Review",
-  coverImage: "/images/belgium-gp.jpg",
-  date: "2025-11-22",
-};
-
 export default function AustrianGP() {
     return(
         <div className="bg-background h-full relative">

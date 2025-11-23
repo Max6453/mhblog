@@ -8,13 +8,6 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { AnimatePresence, motion } from "framer-motion"
 import Header from "@/components/main/header";
 
-export const meta = {
-  title: "Where winds meet",
-  excerpt: "Review",
-  coverImage: "/images/belgium-gp.jpg",
-  date: "2025-11-16",
-};
-
 export default function AustrianGP() {
       const [mobileMenuOpen, setMobileMenuOpen] = useState(false) 
     const [loading, setLoading] = useState(true);

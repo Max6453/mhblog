@@ -8,13 +8,6 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { AnimatePresence, motion } from "framer-motion"
 import Header from "@/components/main/header";
 
-export const meta = {
-  title: "Cyberpunk 2077",
-  excerpt: "Patch 2.3",
-  coverImage: "/images/belgium-gp.jpg",
-  date: "2025-07-16",
-};
-
 const items = [
     {
       id: "1",

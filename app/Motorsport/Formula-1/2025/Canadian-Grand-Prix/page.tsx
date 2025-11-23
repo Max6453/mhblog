@@ -8,13 +8,6 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { AnimatePresence, motion } from "framer-motion"
 import Header from "@/components/main/header";
 
-export const meta = {
-  title: "Canadian Grand Prix 2025",
-  excerpt: "Race report",
-  coverImage: "/images/belgium-gp.jpg",
-  date: "2025-06-15",
-};
-
 export default function MiamiGP() {
       const [mobileMenuOpen, setMobileMenuOpen] = useState(false) 
         const [loading, setLoading] = useState(true);

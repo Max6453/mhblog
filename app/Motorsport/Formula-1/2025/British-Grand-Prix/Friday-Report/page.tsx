@@ -8,13 +8,6 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { AnimatePresence, motion } from "framer-motion"
 import Header from "@/components/main/header";
 
-export const meta = {
-  title: "British Grand Prix 2025",
-  excerpt: "Friday report",
-  coverImage: "/images/belgium-gp.jpg",
-  date: "2025-07-04",
-};
-
 const items = [
     {
       id: "1",
