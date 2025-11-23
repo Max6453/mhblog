@@ -1,11 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getAllPosts } from '@/lib/posts';
 
-// Enable CORS for Expo app
 export async function GET(request: NextRequest) {
   const response = await handleRequest(request);
   
-  // Add CORS headers
   response.headers.set('Access-Control-Allow-Origin', '*');
   response.headers.set('Access-Control-Allow-Methods', 'GET, OPTIONS');
   response.headers.set('Access-Control-Allow-Headers', 'Content-Type');
@@ -28,11 +26,10 @@ async function handleRequest(request: NextRequest) {
   const { searchParams } = new URL(request.url);
   const page = parseInt(searchParams.get('page') ?? '1');
   const limit = parseInt(searchParams.get('limit') ?? '10');
-  const category = searchParams.get('category'); // optional filter
+  const category = searchParams.get('category');
 
   let allPosts = getAllPosts();
 
-  // Filter by category if provided
   if (category) {
     allPosts = allPosts.filter(
       (p) => p.category.toLowerCase() === category.toLowerCase()

@@ -4,10 +4,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
+    "dev": "node scripts/generate-posts.js && next dev --turbopack",
+    "build": "node scripts/generate-posts.js && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "node scripts/generate-posts.js"
   },
   "dependencies": {
     "@chakra-ui/react": "^3.22.0",
