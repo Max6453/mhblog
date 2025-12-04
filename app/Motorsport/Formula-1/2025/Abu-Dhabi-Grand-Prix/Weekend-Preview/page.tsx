@@ -48,7 +48,7 @@ export default function AustrianGP() {
                     Jak Crawford – Aston Martin. <br/>
                     Cian Shields – Aston Martin.
                 </p>
-                <div className="grid grid-cols-2 p-10 pt-20">
+                <div className="grid md:grid-cols-2 sm:grid-cols-1 max-sm:grid-cols-1 p-10 pt-20">
                 <p className="text-start text-2xl lg:pl-20 max-sm:pl-2 md:pl-0 font-josefin-sans pt-15">
                     Abu Dhabi will be more likely executed same as Qatar. The track provides few overtaking zones.
                     The significant ones are in T5, T6 or T10.
