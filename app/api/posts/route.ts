@@ -28,7 +28,22 @@ async function handleRequest(request: NextRequest) {
   const limit = parseInt(searchParams.get('limit') ?? '10');
   const category = searchParams.get('category');
 
+
+  {/* OLD CODE 
+      let allPosts = getAllPosts();
+  */}
+  {/* TEST FOR API */}
+  const slug = searchParams.get('id'); // or rename to 'slug'
+
   let allPosts = getAllPosts();
+
+  if (slug) {
+    const post = allPosts.find(
+      (p) => p.slug.toLowerCase() === slug.toLowerCase()
+    );
+
+    return NextResponse.json(post ?? null);
+  }
 
   if (category) {
     allPosts = allPosts.filter(
