@@ -4,6 +4,15 @@
     "slug": "/Motorsport/Formula-1/2025/Abu-Dhabi-Grand-Prix/Weekend-Report",
     "title": "Abu Dhabi Grand Prix 2025",
     "excerpt": "Weekend Report",
+    "coverImage": "https://mhblog-xi.vercel.app/assets/lando-abu-dhabi-post-race-moment.webp",
+    "date": "2025-12-14",
+    "category": "Motorsport"
+  },
+  {
+    "id": "Formula-1-2025-Abu-Dhabi-Grand-Prix-Weekend-Preview",
+    "slug": "/Motorsport/Formula-1/2025/Abu-Dhabi-Grand-Prix/Weekend-Preview",
+    "title": "Abu Dhabi Grand Prix 2025",
+    "excerpt": "Weekend Review",
     "coverImage": "https://mhblog-xi.vercel.app/assets/abu-dhabi-preview-MCL.jpg",
     "date": "2025-12-04",
     "category": "Motorsport"

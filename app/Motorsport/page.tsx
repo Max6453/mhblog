@@ -149,17 +149,27 @@ export default function Motorsport() {
       </div>
 
       {/* Pagination Controls */}
-            <div className="flex px-39 max-sm:px-30 relative bottom-30 max-sm:top-40 h-20">
-        <a href='/Motorsport/Pages/2'>
+            <div className="flex px-39 max-sm:px-30 relative bottom-30 max-sm:top-40 h-20 justify-center items-center space-x-4">
         <button
-          className="w-30 h-15 rounded text-white text-black border rounded-full hover:bg-white hover:text-black duration-250"
+          onClick={() => setCurrentPage(currentPage - 1)}
+          disabled={currentPage === 1}
+          className="w-30 h-15 rounded text-white text-black border rounded-full hover:bg-white hover:text-black duration-250 disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          Previous
+        </button>
+        <span className="text-white">Page {currentPage} of {totalPages}</span>
+        <button
+          onClick={() => setCurrentPage(currentPage + 1)}
+          disabled={currentPage === totalPages}
+          className="w-30 h-15 rounded text-white text-black border rounded-full hover:bg-white hover:text-black duration-250 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           Next
         </button>
-        </a>
       </div>
     </div>
     {/* END LATEST */}
+      {/* CALENDAR */}
+
 
  {/* FOOTER */}
        <footer
