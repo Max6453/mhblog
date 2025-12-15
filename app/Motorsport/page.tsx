@@ -7,7 +7,7 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { AnimatePresence, motion } from "framer-motion"
 import SupabaseForm from '@/components/ui/supabaseForm';
 import DockBar from '@/components/ui/Dock'
-import Header from '@/components/main/header'
+import Header from '@/components/templates/header-template'
 
 const itemsPerPage = 6;
 

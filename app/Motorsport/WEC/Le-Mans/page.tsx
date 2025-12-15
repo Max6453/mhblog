@@ -3,7 +3,7 @@
   import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
 import { supabase } from "@/lib/supabaseClient";
-import Header from "@/components/main/header";
+import Header from "@/components/templates/header-template";
 import SupabaseForm from "@/components/ui/supabaseForm";
 
 export default function WEC24H() {  

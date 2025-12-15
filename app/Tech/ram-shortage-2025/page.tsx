@@ -1,6 +1,6 @@
 'use client'
 
-import ArticleTemplate from "@/components/templates/template"
+import ArticleTemplate from "@/components/templates/article-template"
 
 export default function ArticleRam() {
     return(

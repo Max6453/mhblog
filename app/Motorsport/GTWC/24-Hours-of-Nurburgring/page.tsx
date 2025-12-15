@@ -2,7 +2,7 @@
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import { Bars2Icon, CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
 import * as React from "react"
-import Header from "@/components/main/header";
+import Header from "@/components/templates/header-template";
 
 export default function Nurburgring() {
     return(

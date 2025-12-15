@@ -6,7 +6,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import * as React from "react"
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { AnimatePresence, motion } from "framer-motion"
-import Header from "@/components/main/header";
+import Header from "@/components/templates/header-template";
 
 
 

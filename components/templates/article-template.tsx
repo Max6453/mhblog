@@ -1,5 +1,5 @@
 'use client'
-import Header from "../main/header"
+import Header from "./header-template"
 import { ScrollProgress } from "../magicui/scroll-progress"
 import Footer from "../ui/footer"
 

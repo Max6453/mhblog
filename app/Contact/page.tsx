@@ -1,6 +1,6 @@
 'use client'
 import ContactForm from '@/components/ui/contactForm';
-import Header from '@/components/main/header';
+import Header from '@/components/templates/header-template';
 
 
 export default function Contact() {
