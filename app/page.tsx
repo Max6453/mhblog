@@ -15,11 +15,40 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 
+const articles = [
+  {title: 'Portimao returns for 2027, 2028 season',
+   href: '/Motorsport/Formula-1/feed/portimao-returns',
+   coverImage: '/assets/motorsport/portimao.avif'
+  },
+  {title: 'Big RAM shortage - Could AI drastically change RAM market',
+   href: '/Tech/ram-shortage-2025',
+   coverImage: '/assets/tech/ram-shortage.jpg'
+  },
+  {title: 'Abu Dhabi Grand Prix - Weekend Report',
+   href: '/Motorsport/Formula-1/2025/Abu-Dhabi-Grand-Prix/Weekend-Report',
+   coverImage: '/assets/motorsport/lando-abu-dhabi-post-race-moment.webp'
+  },
+  {title: 'Abu Dhabi Grand Prix - Weekend Preview',
+   href: '/Motorsport/Formula-1/2025/Abu-Dhabi-Grand-Prix/Weekend-Preview',
+   coverImage: '/assets/motorsport/abu-dhabi-preview-MCL.jpg'
+  },
+  {title: 'Qatar Grand Prix - Race report',
+   href: '/Motorsport/Formula-1/2025/Qatar-Grand-Prix/Race-Report',
+   coverImage: '/assets/motorsport/Qatar2025.jpg'
+  },
+  {title: 'Las Vegas Grand Prix - Race report',
+   href: '/Motorsport/Formula-1/2025/Las-Vegas-Grand-Prix/Weekend-Report',
+   coverImage: '/assets/motorsport/LasVegas2025.avif'
+  },
+]
+
 export default function Main() {
   return (
   <div className='bg-neutral-900 transition-colors duration-500'>
-    {/*<Banner text="LATEST EVENTS: 24 Hours of Le Man's - WEC; Formula 1 Canadian Grand Prix - Qualifying at 10pm CET; NHL Edmonton Oilers vs Florida Panthers at 2am CET"
-    speed={25}/> */}
+    {/*
+    <Banner text="LATEST EVENTS: 24 Hours of Le Man's - WEC; Formula 1 Canadian Grand Prix - Qualifying at 10pm CET; NHL Edmonton Oilers vs Florida Panthers at 2am CET"
+    speed={25}/> 
+    */}
     <div>
       <Header/>
     </div>
@@ -36,54 +65,14 @@ export default function Main() {
   <div className="absolute top-0 z-[-2] h-370 w-full"></div>
       <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white relative max-md:top-10 lg:pt-15 pl-10 font-Exo-2'>latest</h1>
     <div className="relative top-20 max-sm:pl-11.5 lg:pl-12 max-md:pl-11.5 md:pl-0 grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
-      <a href='/Motorsport/Formula-1/feed/portimao-returns'>
-      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/motorsport/portimao.avif' className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-8 linear-90 text-white font-bold font-Exo-2'>Portimao returns for 2027, 2028 season</h3>
-        <button className='relative lg:bottom-26 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-          See more</button>
+      {articles.map((article, index) => (
+        <a href={article.href} key={index}>
+      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden duration-250 hover:shadow-xl shadow-white">
+        <img src={article.coverImage} className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250 hover:shadow-lg shadow-white'/>
+        <h3 className='relative items-center bottom-66 text-xl pl-8 linear-90 text-white font-bold font-Exo-2'>{article.title}</h3>
       </div>
       </a>
-      <a href='/Tech/ram-shortage-2025'>
-      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/tech/ram-shortage.jpg' className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-8 linear-90 text-white font-bold font-Exo-2'>Big RAM shortage - Could AI drastically change RAM market</h3>
-        <button className='relative lg:bottom-26 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-          See more</button>
-      </div>
-      </a>
-      <a href='/Motorsport/Formula-1/2025/Abu-Dhabi-Grand-Prix/Weekend-Report'>
-      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/motorsport/lando-abu-dhabi-post-race-moment.webp' className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-8 linear-90 text-white font-bold font-Exo-2'>Abu Dhabi Grand Prix - Weekend Report</h3>
-        <button className='relative lg:bottom-26 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-          See more</button>
-      </div>
-      </a> 
-      <a href='/Motorsport/Formula-1/2025/Abu-Dhabi-Grand-Prix/Weekend-Preview'>
-      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/motorsport/abu-dhabi-preview-MCL.jpg' className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-8 linear-90 text-orange-500 font-bold font-Exo-2'>Abu Dhabi Grand Prix - Weekend Preview</h3>
-        <button className='relative lg:bottom-26 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-          See more</button>
-      </div>
-      </a> 
-      <a href='/Motorsport/Formula-1/2025/Qatar-Grand-Prix/Race-Report'>
-      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/motorsport/Qatar2025.jpg' className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-10 text-white font-bold font-Exo-2'>Qatar Grand Prix - Race report</h3>
-        <button className='relative lg:bottom-19 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-          See more</button>
-      </div>
-      </a> 
-      <a href='/Motorsport/Formula-1/2025/Las-Vegas-Grand-Prix/Weekend-Report'>
-      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/motorsport/LasVegas2025.avif' className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-12 text-white font-bold font-Exo-2'>Las Vegas Grand Prix - Race report</h3>
-        <button className='relative lg:bottom-26 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-          See more</button>
-      </div>
-      </a> 
+       ))}
     </div>
    </div>
     {/* END LATEST */}
