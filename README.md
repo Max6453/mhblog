@@ -1,1 +1,1 @@
- MHBlog is a blog where i will write articles about many topics from motorsport, latest technologies to even politics.
+ MHBlog, a blog covering latest news and intrigues across many topics.
