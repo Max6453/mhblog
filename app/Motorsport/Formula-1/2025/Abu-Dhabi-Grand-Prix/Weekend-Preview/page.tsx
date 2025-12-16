@@ -22,7 +22,7 @@ export default function AustrianGP() {
                 Abu Dhabi Grand Prix - Weekend preview
             </h1>
             <img
-                src="/assets/abu-dhabi-preview-MCL.jpg"
+                src="/assets/motorsport/abu-dhabi-preview-MCL.jpg"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96 overflow-hidden"
                 alt="Miami Grand Prix"
             />

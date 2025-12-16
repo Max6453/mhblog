@@ -25,7 +25,7 @@ export default function AustrianGP() {
                 Up's and down's in Azerbaijan
             </h5>
             <img
-                src="/assets/bakuF1.jpg"
+                src="/assets/motorsport/bakuF1.jpg"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96 overflow-hidden"
                 alt="Miami Grand Prix"
             />

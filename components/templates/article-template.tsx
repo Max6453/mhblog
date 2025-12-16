@@ -7,11 +7,13 @@ interface articleInputs {
     headerName: string,
     upperTitle: string,
     mainText: string,
+    middleText: string,
     lowerText: string,
+    lowerTextImage: string,
     coverImage: string,
 }
 
-function ArticleTemplate({ headerName, upperTitle, mainText, lowerText, coverImage }: articleInputs) {
+function ArticleTemplate({ headerName, upperTitle, mainText, middleText, lowerText, lowerTextImage, coverImage }: articleInputs) {
     return(
         <div>
         <Header/>
@@ -36,15 +38,14 @@ function ArticleTemplate({ headerName, upperTitle, mainText, lowerText, coverIma
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-0 max-md:w-90 max-lg:w-200 xl:w-300 font-josefin-sans pt-15">
                     {mainText}
                 </p>
+                <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-50 font-josefin-sans pt-15 lg:w-300"> 
+                    {middleText}
+                </p>
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-0 max-md:w-90 max-lg:w-200 xl:w-300 font-josefin-sans pt-15">
                     {lowerText}
+                    <img src={lowerTextImage} className="items-center justify-center justify-items-center pr-20"/>
                 </p>
-                {/* IF I NEEDED MORE TEXT AREA
-                <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-50 font-josefin-sans pt-15 lg:w-300"> 
-                    While MV1 celebrates P1 at 2025 Abu Dhabi Grand Prix, Lando Norris can celebrate too as he becomes the newest formula 1 world driver's champion.
-                    Unbelievable season for LN4 but also for OP81 and MV1. 
-                    As I write this article, the best drivers already recieved their awards at FIA awards in Uzbekistan.
-                </p>
+              {/* IF I NEEDED MORE TEXT AREA
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-50 font-josefin-sans pt-15 lg:w-300"> 
                     Incredible season this was with even more, for me as mclaren and LN4 fan, incredible season finale in Abu Dhabi.
                     Next year, we will welcome on the grid Cadillac, Sauber will transfer to Audi and we also get a new cars.

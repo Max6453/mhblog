@@ -16,12 +16,12 @@ const articles = [
   {
     title: "Cyberpunk 2077 - Underserved hype for redundant features?",
     href: "/Reviews/Gaming/Cyberpunk-2077-patch-2.3",
-    image: "/assets/Cyberpunk-2077-tipy-cover.jpg",
+    image: "/assets/gaming/cyberpunk-2077-tipy-cover.jpg",
   },
   {
     title: "MHBlog connected with AWS",
     href: "/Reviews/aws",
-    image: "/assets/awsxf1.jpg",
+    image: "/assets/motorsport/awsxf1.jpg",
   }
 ];
 

@@ -25,22 +25,22 @@ const articles = [
   {
     title: "No-Mans-Sky-Voyagers - Review",
     href: "/Reviews/Gaming/Cyberpunk-2077-patch-2.3",
-    image: "/assets/no-mans-sky-voyagers.jpg",
+    image: "/assets/gaming/no-mans-sky-voyagers.jpg",
   },
   {
     title: "Death Stranding 2: On the beach - Review",
     href: "/Reviews/Gaming/Death-Stranding-2-On-The-Beach",
-    image: "/assets/DS2.jpg",
+    image: "/assets/gaming/DS2.jpg",
   },
     {
     title: "A Plague Tale: Requiem - Review",
     href: "/Reviews/Gaming/A-Plague-tale-Requiem",
-    image: "/assets/plagueTale.jpg",
+    image: "/assets/gaming/plagueTale.jpg",
   },
   {
     title: "Cyberpunk 2077 - Dissapointing patch or exiting one?",
     href: "/Reviews/Gaming/Cyberpunk-2077-patch-2.3",
-    image: "/assets/Cyberpunk-2077-tipy-cover.jpg",
+    image: "/assets/gaming/cyberpunk-2077-tipy-cover.jpg",
   },
 ];
 

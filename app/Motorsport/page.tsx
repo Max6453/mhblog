@@ -15,92 +15,92 @@ const articles = [
           {
     title: "Italian Grand Prix - Weekend report",
     href: "/Motorsport/Formula-1/2025/Italian-Grand-Prix/Weekend-Report",
-    image: "/assets/Monza2025.jpg",
+    image: "/assets/motorsport-Monza2025.jpg",
   },
         {
     title: "Dutch Grand Prix - Race report",
     href: "/Motorsport/Formula-1/2025/Dutch-Grand-Prix/Race-Report",
-    image: "/assets/DutchGP2025-R.jpg",
+    image: "/assets/motorsport-DutchGP2025-R.jpg",
   },
         {
     title: "Dutch Grand Prix - Qualifying report",
     href: "/Motorsport/Formula-1/2025/Dutch-Grand-Prix/Qualifying-Report",
-    image: "/assets/DutchGP2025-Q.webp",
+    image: "/assets/motorsport-DutchGP2025-Q.webp",
   },
         {
     title: "Dutch Grand Prix - Friday report",
     href: "/Motorsport/Formula-1/2025/Dutch-Grand-Prix/Friday-Report",
-    image: "/assets/DutchGP2025.png",
+    image: "/assets/motorsport-DutchGP2025.png",
   },
       {
     title: "Hungarian Grand Prix - Weekend Report",
     href: "/Motorsport/Formula-1/2025/Hungarian-Grand-Prix/Weekend-Report",
-    image: "/assets/Hungary-mcl.avif",
+    image: "/assets/motorsport-Hungary-mcl.avif",
   },
     {
     title: "Hungarian Grand Prix - preview",
     href: "/Motorsport/Formula-1/2025/Hungarian-Grand-Prix/Preview",
-    image: "/assets/Hungary-Preview.jpg",
+    image: "/assets/motorsport-Hungary-Preview.jpg",
   },
     {
     title: "Belgium Grand Prix - race report",
     href: "/Motorsport/Formula-1/2025/Belgium-Grand-Prix/Race-Report",
-    image: "/assets/MCL-Spa.jpg",
+    image: "/assets/motorsport-MCL-Spa.jpg",
   },
     {
     title: "Belgium Grand Prix - weekend report",
     href: "/Motorsport/Formula-1/2025/Belgium-Grand-Prix/Weekend-Report",
-    image: "/assets/OP81-Spa.jpg",
+    image: "/assets/motorsport-OP81-Spa.jpg",
   },
     {
     title: "GTWC Misano - report",
     href: "/Motorsport/GTWC/Misano-Report",
-    image: "/assets/GTWC-Misano-BMW.jpg",
+    image: "/assets/motorsport-GTWC-Misano-BMW.jpg",
   },
   {
     title: "British Grand Prix - race report",
     href: "/Motorsport/Formula-1/2025/British-Grand-Prix/Race-Report",
-    image: "/assets/britshGP2025.jpg",
+    image: "/assets/motorsport-britshGP2025.jpg",
   },
   {
     title: "British Grand Prix - Friday report",
     href: "/Motorsport/Formula-1/2025/british-Grand-Prix/Friday-Report",
-    image: "/assets/McLaren-in-FP1-Silverstone-scaled.webp",
+    image: "/assets/motorsport-McLaren-in-FP1-Silverstone-scaled.webp",
   },
   {
     title: "Austrian Grand Prix",
     href: "/Motorpsort/Formula-1/2025/Austrian-Grand-Prix/Race-Report",
-    image: "/assets/Austria.webp",
+    image: "/assets/motorsport-Austria.webp",
   },
   {
     title: "24 Hours of Nurburgring",
     href: "/Motorsport/GTWC/24-Hours-of-Nurburgring",
-    image: "/assets/24-Nurburgring.jpg",
+    image: "/assets/motorsport-24-Nurburgring.jpg",
   },
   {
     title: "Canadian Grand Prix",
     href: "/Motorsport/Formula-1/2025/Canadian-Grand-Prix",
-    image: "/assets/Canada.webp",
+    image: "/assets/motorsport-Canada.webp",
   },
   {
     title: "24 Hours of Le Man's",
     href: "/Motorsport/WEC/24-Hours-of-Le-Mans",
-    image: "/assets/Le-Mans.jpg",
+    image: "/assets/motorsport-Le-Mans.jpg",
   },
   {
     title: "Spanish Grand Prix",
     href: "/Motorsport/Formula-1/2025/Spanish-Grand-Prix",
-    image: "/assets/Spain.jpg",
+    image: "/assets/motorsport-Spain.jpg",
   },
   {
     title: "Monaco Grand Prix",
     href: "/Motorsport/Formula-1/2025/Monaco-Grand-Prix",
-    image: "/assets/monaco.jpg",
+    image: "/assets/motorsport-monaco.jpg",
   },
   {
     title: "Emilia-Romagna Grand Prix",
     href: "/Motorsport/Formula-1/2025/Emilia-Romagna-Grand-Prix",
-    image: "/assets/Emilia-romagna.webp",
+    image: "/assets/motorsport-Emilia-romagna.webp",
   },
 ];
 
@@ -112,6 +112,8 @@ export default function Motorsport() {
 
     const startIndex = (currentPage - 1) * itemsPerPage;
     const selectedArticles = articles.slice(startIndex, startIndex + itemsPerPage);
+
+    const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
 
 
     return(
@@ -157,7 +159,19 @@ export default function Motorsport() {
         >
           Previous
         </button>
-        <span className="text-white">Page {currentPage} of {totalPages}</span>
+        {pageNumbers.map((number) => (
+          <button
+            key={number}
+            onClick={() => setCurrentPage(number)}
+            className={`w-10 h-10 rounded-full border ${
+              currentPage === number
+                ? 'bg-white text-black'
+                : 'text-white hover:bg-white hover:text-black'
+            } duration-250`}
+          >
+            {number}
+          </button>
+        ))}
         <button
           onClick={() => setCurrentPage(currentPage + 1)}
           disabled={currentPage === totalPages}

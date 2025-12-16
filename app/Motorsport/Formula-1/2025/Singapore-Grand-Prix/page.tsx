@@ -25,7 +25,7 @@ export default function AustrianGP() {
                 what's happening with Mclaren?
             </h5>
             <img
-                src="/assets/SingaporeGP2025.jpg"
+                src="/assets/motorsport/SingaporeGP2025.jpg"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96 overflow-hidden"
                 alt="Miami Grand Prix"
             />

@@ -22,7 +22,7 @@ export default function AustrianGP() {
                 Qatar Grand Prix - Weekend report
             </h1>
             <img
-                src="/assets/Qatar2025.jpg"
+                src="/assets/motorsport/Qatar2025.jpg"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96 overflow-hidden"
                 alt="Miami Grand Prix"
             />

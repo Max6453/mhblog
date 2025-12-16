@@ -22,7 +22,7 @@ export default function AustrianGP() {
                 Where Winds Meet - Review
             </h1>
             <img
-                src="/assets/WWMGame.jpg"
+                src="/assets/gaming/WWMGame.jpg"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96 overflow-hidden"
                 alt="Miami Grand Prix"
             />

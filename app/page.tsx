@@ -36,17 +36,25 @@ export default function Main() {
   <div className="absolute top-0 z-[-2] h-370 w-full"></div>
       <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white relative max-md:top-10 lg:pt-15 pl-10 font-Exo-2'>latest</h1>
     <div className="relative top-20 max-sm:pl-11.5 lg:pl-12 max-md:pl-11.5 md:pl-0 grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
+      <a href='/Motorsport/Formula-1/feed/portimao-returns'>
+      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
+        <img src='/assets/motorsport/portimao.avif' className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
+        <h3 className='relative items-center bottom-66 text-xl pl-8 linear-90 text-white font-bold font-Exo-2'>Portimao returns for 2027, 2028 season</h3>
+        <button className='relative lg:bottom-26 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
+          See more</button>
+      </div>
+      </a>
       <a href='/Tech/ram-shortage-2025'>
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/ram-shortage.jpg' className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-8 linear-90 text-white font-bold font-Exo-2'>Big RAM shortage - </h3>
+        <img src='/assets/tech/ram-shortage.jpg' className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
+        <h3 className='relative items-center bottom-66 text-xl pl-8 linear-90 text-white font-bold font-Exo-2'>Big RAM shortage - Could AI drastically change RAM market</h3>
         <button className='relative lg:bottom-26 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
           See more</button>
       </div>
       </a>
       <a href='/Motorsport/Formula-1/2025/Abu-Dhabi-Grand-Prix/Weekend-Report'>
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/lando-abu-dhabi-post-race-moment.webp' className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
+        <img src='/assets/motorsport/lando-abu-dhabi-post-race-moment.webp' className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
         <h3 className='relative items-center bottom-66 text-xl pl-8 linear-90 text-white font-bold font-Exo-2'>Abu Dhabi Grand Prix - Weekend Report</h3>
         <button className='relative lg:bottom-26 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
           See more</button>
@@ -54,7 +62,7 @@ export default function Main() {
       </a> 
       <a href='/Motorsport/Formula-1/2025/Abu-Dhabi-Grand-Prix/Weekend-Preview'>
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/abu-dhabi-preview-MCL.jpg' className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
+        <img src='/assets/motorsport/abu-dhabi-preview-MCL.jpg' className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
         <h3 className='relative items-center bottom-66 text-xl pl-8 linear-90 text-orange-500 font-bold font-Exo-2'>Abu Dhabi Grand Prix - Weekend Preview</h3>
         <button className='relative lg:bottom-26 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
           See more</button>
@@ -62,7 +70,7 @@ export default function Main() {
       </a> 
       <a href='/Motorsport/Formula-1/2025/Qatar-Grand-Prix/Race-Report'>
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/Qatar2025.jpg' className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
+        <img src='/assets/motorsport/Qatar2025.jpg' className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
         <h3 className='relative items-center bottom-66 text-xl pl-10 text-white font-bold font-Exo-2'>Qatar Grand Prix - Race report</h3>
         <button className='relative lg:bottom-19 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
           See more</button>
@@ -70,20 +78,12 @@ export default function Main() {
       </a> 
       <a href='/Motorsport/Formula-1/2025/Las-Vegas-Grand-Prix/Weekend-Report'>
       <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/LasVegas2025.avif' className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
+        <img src='/assets/motorsport/LasVegas2025.avif' className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
         <h3 className='relative items-center bottom-66 text-xl pl-12 text-white font-bold font-Exo-2'>Las Vegas Grand Prix - Race report</h3>
         <button className='relative lg:bottom-26 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
           See more</button>
       </div>
       </a> 
-      <a href='/Reviews/Gaming/Silent-Hill-2-Remake'>
-      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-        <img src='/assets/Silent-hill-2.jpg' className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-17 text-gray-600 font-bold font-Exo-2'>Silent Hill 2 - Review</h3>
-        <button className='relative lg:bottom-19 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-          See more</button>
-      </div>
-      </a>  
     </div>
    </div>
     {/* END LATEST */}
@@ -100,7 +100,7 @@ export default function Main() {
                   <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-61.5 max-sm:top-57 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
                    Ghost of Yotei: Review
                   </span>                
-                <img src="/assets/ghost-of-yotei.png" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
+                <img src="/assets/gaming/ghost-of-yotei.png" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
                </div>
                </a>
             </li>
@@ -110,7 +110,7 @@ export default function Main() {
                   <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-146.5 max-sm:top-131 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
                    Singapore Grand Prix - Weekend report
                   </span>                
-                <img src="/assets/SingaporeGP2025.jpg" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
+                <img src="/assets/motorsport/SingaporeGP2025.jpg" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
                </div>
                </a>
             </li>
@@ -120,7 +120,7 @@ export default function Main() {
                   <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-221 max-sm:top-195 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
                    American Grand Prix - Weekend Report
                   </span>                
-                <img src="/assets/cota2025.webp" className='hover:scale-110 duration-250'/>
+                <img src="/assets/motorsport/cota2025.webp" className='hover:scale-110 duration-250'/>
                </div>
                </a>
             </li>
@@ -137,7 +137,7 @@ export default function Main() {
                   <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-61.5 max-sm:top-57 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
                    Azerbaijan Grand Prix - Weekend report
                   </span>                
-                <img src="/assets/bakuF1.jpg" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
+                <img src="/assets/motorsport/bakuF1.jpg" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
                </div>
                </a>
             </li>
@@ -147,7 +147,7 @@ export default function Main() {
                   <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-146.5 max-sm:top-131 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
                    Ghost of yotei: Review
                   </span>                
-                <img src="/assets/ghost-of-yotei.png" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
+                <img src="/assets/gaming/ghost-of-yotei.png" className='hover:scale-110 duration-250 object-cover w-full h-full -z-10'/>
                </div>
                </a>
             </li>
@@ -157,7 +157,7 @@ export default function Main() {
                   <span className='text-xl bg-opacity-60 bg-black/50 z-50 flex absolute top-221 max-sm:top-195 h-13 pl-5 rounded-b-3xl w-100 max-sm:w-79'>
                    American Grand Prix - Weekend report
                   </span>                
-                <img src="/assets/cota2025.webp" className='hover:scale-110 duration-250'/>
+                <img src="/assets/motorsport/cota2025.webp" className='hover:scale-110 duration-250'/>
                </div>
                </a>
             </li>

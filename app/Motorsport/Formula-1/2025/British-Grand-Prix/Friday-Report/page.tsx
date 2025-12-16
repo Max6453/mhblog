@@ -67,7 +67,7 @@ export default function AustrianGP() {
                 Wrap up for friday in 2025 british Grand Prix
             </h5>
             <img
-                src="/assets/McLaren-in-FP1-Silverstone-scaled.webp"
+                src="/assets/motorsport/McLaren-in-FP1-Silverstone-scaled.webp"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96 overflow-hidden"
                 alt="Miami Grand Prix"
             />

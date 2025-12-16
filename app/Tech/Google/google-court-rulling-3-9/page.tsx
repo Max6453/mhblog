@@ -24,7 +24,7 @@ export default function AustrianGP() {
                 Google's stocks spiked up by 8%
             </h1>
             <img
-                src="/assets/google-court.webp"
+                src="/assets/tech/google-court.webp"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96 overflow-hidden"
                 alt="Miami Grand Prix"
             />

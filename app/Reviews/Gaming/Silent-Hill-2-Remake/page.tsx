@@ -19,7 +19,7 @@ export default function AustrianGP() {
                 Silent Hill 2 - Review
             </h1>
             <img
-                src="/assets/WWMGame.jpg"
+                src="/assets/gaming/WWMGame.jpg"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96 overflow-hidden"
                 alt="Miami Grand Prix"
             />
@@ -58,9 +58,9 @@ export default function AustrianGP() {
                 </p>
               </div>
               <div className="grid md:grid-cols-3 sm:grid-cols-2 max-sm:grid-cols-1  grid-rows pt-15">
-                <img src="/assets/WWM-day.jpg" alt="" />
-                <img src="/assets/WWM-sunset.jpg" alt="" />
-                <img src="/assets/WWM-dimension.jpg" alt="" />
+                <img src="/assets/gaming/WWM-day.jpg" alt="" />
+                <img src="/assets/gaming/WWM-sunset.jpg" alt="" />
+                <img src="/assets/gaming/WWM-dimension.jpg" alt="" />
               </div>
             </div>
             <footer

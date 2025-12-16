@@ -24,7 +24,7 @@ export default function AustrianGP() {
                 No Man's Sky Voyagers update review
             </h1>
             <img
-                src="/assets/no-mans-sky-voyagers.jpg"
+                src="/assets/gaming/no-mans-sky-voyagers.jpg"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96 overflow-hidden"
                 alt="Miami Grand Prix"
             />

@@ -20,37 +20,37 @@ const items = [
     {
       id: "1",
       img: "/assets/telemetry/Results-FP1.png",
-      url: "/assets/Telemetry/Results-FP1.png",
+      url: "/assets/telemetry/Results-FP1.png",
       height: 600,
     },
     {
       id: "2",
       img: "/assets/telemetry/Sectors-FP1.png",
-      url: "/assets/Telemetry/Sectors-FP1.png",
+      url: "/assets/telemetry/Sectors-FP1.png",
       height: 800,
     },
     {
       id: "3",
-      img: "/assets/telemetry/Top_Speeds-FP1.png",
-      url: "/assets/Telemetry/Top_Speeds-FP1.png",
+      img: "/assets/telemetry/top_Speeds-FP1.png",
+      url: "/assets/telemetry/top_Speeds-FP1.png",
       height: 600,
     },
         {
       id: "4",
       img: "/assets/telemetry/NORvsLEC-FP2.png",
-      url: "/assets/Telemetry/NORvsLEC-FP2.png",
+      url: "/assets/telemetry/NORvsLEC-FP2.png",
       height: 800,
     },
     {
       id: "5",
       img: "/assets/telemetry/Sectors-FP2.png",
-      url: "/assets/Telemetry/Sectors-FP2.png",
+      url: "/assets/telemetry/Sectors-FP2.png",
       height: 600,
     },
     {
       id: "6",
       img: "/assets/telemetry/Top_Speeds-FP2.png",
-      url: "/assets/Telemetry/Top_Speeds-FP2.png",
+      url: "/assets/telemetry/Top_Speeds-FP2.png",
       height: 400,
     },
     // ... more items
@@ -72,7 +72,7 @@ export default function AustrianGP() {
                 What to watch during summer break
             </h1>
             <img
-                src="/assets/summer-break.jpg"
+                src="/assets/motorsport/summer-break.jpg"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96 overflow-hidden"
                 alt="Miami Grand Prix"
             />

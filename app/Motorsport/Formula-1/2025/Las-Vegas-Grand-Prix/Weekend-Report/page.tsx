@@ -22,7 +22,7 @@ export default function AustrianGP() {
                 Las Vegas Grand Prix - Weekend report
             </h1>
             <img
-                src="/assets/LasVegas2025.avif"
+                src="/assets/motorsport/LasVegas2025.avif"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96 overflow-hidden"
                 alt="Miami Grand Prix"
             />
@@ -47,7 +47,7 @@ export default function AustrianGP() {
                     But the exiting part happened after the race in parc fermé.
                 </p>
                 <h3 className="text-4xl m-5 lg:pl-75 pt-5">DSQ for mclarens</h3>
-                <img src="/assets/plankwear2025.jpg" className="w-80 h-80 hover:scale-130 duration-300 relative left-140 pt-5 hover:pt-10"/>
+                <img src="/assets/motorsport/plankwear2025.jpg" className="w-80 h-80 hover:scale-130 duration-300 relative left-140 pt-5 hover:pt-10"/>
                 <h3 className="text-4xl m-5 lg:pl-75 pt-5">Sunday</h3>
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-50 font-josefin-sans pt-15 lg:w-300"> 
                     After another pole position and sprint win from LN4, he saw only one thing - A win in Brazilian grand prix.

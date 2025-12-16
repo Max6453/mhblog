@@ -16,12 +16,12 @@ const articles = [
   {
     title: "What caused meteoric rise in stocks for oracle",
     href: "/Tech/Oracle/Meteoric-Rise-For-Oracle",
-    image: "/assets/oracle.png",
+    image: "/assets/tech-oracle.png",
   },
   {
     title: "Why did google's stock spiked up by 8%",
     href: "/Tech/Google/google-court-rulling-3-9",
-    image: "/assets/google-court.webp",
+    image: "/assets/tech-google-court.webp",
   }
 ];
 

@@ -24,7 +24,7 @@ export default function AustrianGP() {
                 What caused meteroic rise in stocks for oracle?
             </h1>
             <img
-                src="/assets/oracle.png"
+                src="/assets/tech/oracle.png"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96 overflow-hidden"
                 alt="Miami Grand Prix"
             />

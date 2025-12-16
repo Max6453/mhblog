@@ -24,7 +24,7 @@ export default function AustrianGP() {
                 Evolution or revolution?
             </h5>
             <img
-                src="/assets/ghost-of-yotei.png"
+                src="/assets/gaming/ghost-of-yotei.png"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96 overflow-hidden"
                 alt="Miami Grand Prix"
             />

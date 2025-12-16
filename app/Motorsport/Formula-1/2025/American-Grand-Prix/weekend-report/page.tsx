@@ -25,7 +25,7 @@ export default function AustrianGP() {
                 Potential three-way championship battle?
             </h5>
             <img
-                src="/assets/cota2025.webp"
+                src="/assets/motorsport/cota2025.webp"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96 overflow-hidden"
                 alt="Miami Grand Prix"
             />

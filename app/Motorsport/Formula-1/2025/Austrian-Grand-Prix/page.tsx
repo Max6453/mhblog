@@ -29,7 +29,7 @@ export default function AustrianGP() {
                 hear everything in eventfull Austrian Grand Prix
             </h5>
             <img
-                src="/assets/Austria.webp"
+                src="/assets/motorsport/Austria.webp"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96"
                 alt="Miami Grand Prix"
             />

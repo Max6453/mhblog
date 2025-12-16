@@ -25,7 +25,7 @@ export default function AustrianGP() {
                 New championship leader estabilished
             </h5>
             <img
-                src="/assets/Mexico2025.webp"
+                src="/assets/motorsport/Mexico2025.webp"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96 overflow-hidden"
                 alt="Miami Grand Prix"
             />

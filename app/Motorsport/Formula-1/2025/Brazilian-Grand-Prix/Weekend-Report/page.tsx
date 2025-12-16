@@ -22,7 +22,7 @@ export default function AustrianGP() {
                 Brazilian Grand Prix - Weekend report
             </h1>
             <img
-                src="/assets/Brazil2025.avif"
+                src="/assets/motorsport/Brazil2025.avif"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96 overflow-hidden"
                 alt="Miami Grand Prix"
             />

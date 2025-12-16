@@ -67,7 +67,7 @@ export default function AustrianGP() {
                 Everything what happened in 2025 belgium Grand Prix
             </h5>
             <img
-                src="/assets/MCL-Spa.jpg"
+                src="/assets/motorsport/MCL-Spa.jpg"
                 className="min-w-full transition-transform duration-300 object-cover max-md:size-96 overflow-hidden"
                 alt="Miami Grand Prix"
             />
