@@ -220,7 +220,7 @@ export default function Main() {
             </div>
         </div>
         <div className='pt-10 max-sm:pt-0 absolute top-100 md:left-65 sm:left-20 max-sm:left-18'>
-          <a href='/application-167c16ef-20d8-4555-98a0-3b864bd69ec4.apk' download>
+          <a href='/downloads/application-167c16ef-20d8-4555-98a0-3b864bd69ec4.apk' download>
           <button className='className="px-6 py-3 p-3 font-Exo-2 bg-background hover:bg-white text-white hover:text-black border-white border rounded-xl shadow-lg transition'>
             Download our app
           </button>
