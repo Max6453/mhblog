@@ -32,10 +32,15 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: 'MHBlog',
   description: 'blog, specializing on many topics from motorsport to gaming',
-  manifest: '/manifest.json'
+  manifest: '/manifest.json',
+  alternates: {
+    types: {
+      "application/rss+xml": "https://mhblog-xi.vercel.app/rss/index.xml",
+    },
+  },
 }
 
-export const viewport: Viewport = {
+export const viewport: Viewport = { 
   themeColor: '#171717',
   width: 'device-width',
   initialScale: 1,
