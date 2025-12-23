@@ -14,11 +14,13 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import Snowfall from 'react-snowfall'
+
 
 const articles = [
   {title: 'Portimao returns for 2027, 2028 season',
    href: '/Motorsport/Formula-1/feed/portimao-returns',
-   coverImage: '/assets/motorsport/portimao.avif',
+   coverImage: '/assets/motorsport/Portimao.avif',
    ImageName: 'portimao'
   },
   {title: 'Big RAM shortage - Could AI drastically change RAM market',
@@ -51,6 +53,10 @@ const articles = [
 export default function Main() {
   return (
   <div className='bg-neutral-900 transition-colors duration-500'>
+    {/* FOR WINTER ONLY  */}
+  <Snowfall
+  color='#fff'
+  enable3DRotation={true}/>
     {/*
     <Banner text="LATEST EVENTS: 24 Hours of Le Man's - WEC; Formula 1 Canadian Grand Prix - Qualifying at 10pm CET; NHL Edmonton Oilers vs Florida Panthers at 2am CET"
     speed={25}/> 

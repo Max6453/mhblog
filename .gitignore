@@ -44,3 +44,7 @@ yarn-error.log*
 next-env.d.ts
 
 articleMaker.tsx
+
+# SITE MAP as it isn't made yet
+
+app/site-map/page.tsx
