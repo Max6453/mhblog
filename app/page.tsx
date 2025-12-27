@@ -18,6 +18,11 @@ import Snowfall from 'react-snowfall'
 
 
 const articles = [
+  {title: 'Assassins Creed: Mirage - Review ',
+   href: '/Reviews/Gaming/Assassins-Creed-Mirage',
+   coverImage: '/assets/gaming/ACMirage.jpg',
+   ImageName: 'portimao'
+  },
   {title: 'Portimao returns for 2027, 2028 season',
    href: '/Motorsport/Formula-1/feed/portimao-returns',
    coverImage: '/assets/motorsport/Portimao.avif',
@@ -42,11 +47,6 @@ const articles = [
    href: '/Motorsport/Formula-1/2025/Qatar-Grand-Prix/Race-Report',
    coverImage: '/assets/motorsport/Qatar2025.jpg',
    ImageName: 'Qatar 2025'
-  },
-  {title: 'Las Vegas Grand Prix - Race report',
-   href: '/Motorsport/Formula-1/2025/Las-Vegas-Grand-Prix/Weekend-Report',
-   coverImage: '/assets/motorsport/LasVegas2025.avif',
-   ImageName: 'Las Vegas 2025'
   },
 ]
 
@@ -85,7 +85,7 @@ export default function Main() {
         width={300} height={300}
         src={article.coverImage}
         className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250 hover:shadow-lg shadow-white'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-8 linear-90 text-white font-bold font-Exo-2'>{article.title}</h3>
+        <h3 className='relative items-center bottom-66 text-xl pl-5 linear-90 text-white font-bold font-Exo-2'>{article.title}</h3>
       </div>
       </a>
        ))}
@@ -231,6 +231,7 @@ export default function Main() {
                     <ul className='grid grid-cols-1 gap-7 relative pl-20 max-sm:pl-19 justify-end text-white'>
                       <li className='hover:text-gray-400 duration-300'><a href='/Legal/Privacy-Policy'>Privacy Policy</a></li>
                       <li className='hover:text-gray-400 duration-300'><a href='/Legal/Terms-of-use'>Terms of use</a></li>
+                      <li className='hover:text-gray-400 duration-300'><a href='/site-map'>Site map</a></li>
                       <li className='hover:text-gray-400 duration-300'><a href='/Contact'>Contact</a></li>
                     </ul>
                   </div>

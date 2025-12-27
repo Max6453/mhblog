@@ -8,58 +8,30 @@ import { AnimatePresence, motion } from "framer-motion"
 import SupabaseForm from '@/components/ui/supabaseForm';
 import DockBar from '@/components/ui/Dock'
 import Header from '@/components/templates/header-template'
-
-const navigation = [
-  { name: 'Latest', href: '/', current: false, id: 1 },
-  { name: 'Motorsport', href: '/Motorsport', current: false, id: 2 },
-  { name: 'Tech', href: '/', current: false, id: 3 },
-  { name: 'gaming', href: '/Reviews/Gaming', current: true, id: 4 },
-  { name: 'Reviews', href: '/Reviews', current: true, id: 5 },
-  { name: 'Formula 1 Analysis', href: 'https://maximharvancik.vercel.app', current: true, id: 6 },
-  { name: 'Contact', href: '/Contact', current: true, id: 7 },
-  { name: 'Newsletter', href: '#Newsletter', current: true, id: 8 },
-];
-const itemsPerPage = 6;
-
-const articles = [
-  {
-    title: "No-Mans-Sky-Voyagers - Review",
-    href: "/Reviews/Gaming/Cyberpunk-2077-patch-2.3",
-    image: "/assets/gaming/no-mans-sky-voyagers.jpg",
-  },
-  {
-    title: "Death Stranding 2: On the beach - Review",
-    href: "/Reviews/Gaming/Death-Stranding-2-On-The-Beach",
-    image: "/assets/gaming/DS2.jpg",
-  },
-    {
-    title: "A Plague Tale: Requiem - Review",
-    href: "/Reviews/Gaming/A-Plague-tale-Requiem",
-    image: "/assets/gaming/plagueTale.jpg",
-  },
-  {
-    title: "Cyberpunk 2077 - Dissapointing patch or exiting one?",
-    href: "/Reviews/Gaming/Cyberpunk-2077-patch-2.3",
-    image: "/assets/gaming/cyberpunk-2077-tipy-cover.jpg",
-  },
-];
+import gamingArticles from '../data/gamingArticles.json'
 
 export default function Motorsport() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const [currentPage, setCurrentPage] = useState(1);
-    
-    const totalPages = Math.ceil(articles.length / itemsPerPage);
+  const [currentPage, setCurrentPage] = useState(1);
+  const articlesPerPage = 6;
 
-    const startIndex = (currentPage - 1) * itemsPerPage;
-    const selectedArticles = articles.slice(startIndex, startIndex + itemsPerPage);
+  // Calculate pagination
+  const totalPages = Math.ceil(gamingArticles.length / articlesPerPage);
+  const indexOfLastArticle = currentPage * articlesPerPage;
+  const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
+  const currentArticles = gamingArticles.slice(indexOfFirstArticle, indexOfLastArticle);
 
+  // Generate page numbers array
+  const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1)
+    const handlePageChange = (pageNumber: number) => {
+    setCurrentPage(pageNumber);
+    window.scrollTo({ top: 800, behavior: 'smooth' });
+  };
 
     return(
         <div>
           <div>
             <Header/>
           </div>
-
         <div>
             <h1 className='text-5xl text-start m-5 pt-10'>Reviews</h1>
             <div className=' text-xl m-5 text-start'>
@@ -72,38 +44,40 @@ export default function Motorsport() {
         </div>
 
 {/* LATEST */}
-<div className='relative h-screen' id='Latest'>
-      <div className="absolute top-0 z-[-2] h-370 w-full"></div>
+<div className='relative' id='Latest'>
       <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white relative max-md:top-10 lg:pt-10 pl-10 font-Exo-2'>Articles</h1>
-
       <div className="relative top-20 max-sm:pl-11.5 lg:pl-12 max-md:pl-11.5 md:pl-0 grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
-        {selectedArticles.map((article, index) => (
+        {currentArticles.map((article, index) => (
           <a href={article.href} key={index}>
             <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
               <img src={article.image} className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250' />
               <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>{article.title}</h3>
-              <button className='relative lg:bottom-26 max-md:bottom-27 md:bottom-22 max-sm:bottom-33 left-20 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-                See more
-              </button>
             </div>
           </a>
         ))}
       </div>
-      <div className="flex px-39 max-sm:px-28 relative bottom-40 max-sm:bottom-0 max-sm:top-40 h-20">
-        <a href='/Reviews/Gaming/Pages/2'>
-        <button
-          className="w-30 h-15 rounded text-white text-black border rounded-full hover:bg-white hover:text-black duration-250"
-        >
-          Next
-        </button>
-        </a>
-      </div>
+      {/* Pagination Controls */}
+        <div className="flex max-sm:px-39 relative bottom-30 max-sm:top-40 h-20 justify-center items-center space-x-6">
+          {pageNumbers.map((number) => (
+            <button
+              key={number}
+              onClick={() => handlePageChange(number)}
+              className={`w-10 h-10 rounded-full border ${
+                currentPage === number
+                  ? 'bg-white text-black'
+                  : 'text-white hover:bg-white hover:text-black'
+              } duration-250`}
+            >
+              {number}
+            </button>
+          ))}
+        </div>
     </div>
     {/* END LATEST */}
 
  {/* FOOTER */}
        <footer
-       className="relative xl:top-50 lg:top-80 md:top-125 max-md:top-165 max-sm:top-180 h-full w-full text-center sm:footer-horizontal text-black font-edu-vic-wa-nt-beginner text-2xl"
+       className="relative xl:top-0 lg:top-80 md:top-125 max-md:top-165 max-sm:top-180 h-full w-full text-center sm:footer-horizontal text-black font-edu-vic-wa-nt-beginner text-2xl"
        id='Newsletter'>
           <div className="relative isolate overflow-hidden py-16 sm:py-24 lg:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">

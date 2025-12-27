@@ -3,184 +3,75 @@ import { useState } from 'react'
 import { CalendarDaysIcon, HandRaisedIcon, ChevronRightIcon, ChevronLeftIcon} from '@heroicons/react/24/outline'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import * as React from "react"
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { AnimatePresence, motion } from "framer-motion"
 import SupabaseForm from '@/components/ui/supabaseForm';
-import DockBar from '@/components/ui/Dock'
 import Header from '@/components/templates/header-template'
-
-const itemsPerPage = 6;
-
-const articles = [
-          {
-    title: "Italian Grand Prix - Weekend report",
-    href: "/Motorsport/Formula-1/2025/Italian-Grand-Prix/Weekend-Report",
-    image: "/assets/motorsport-Monza2025.jpg",
-  },
-        {
-    title: "Dutch Grand Prix - Race report",
-    href: "/Motorsport/Formula-1/2025/Dutch-Grand-Prix/Race-Report",
-    image: "/assets/motorsport-DutchGP2025-R.jpg",
-  },
-        {
-    title: "Dutch Grand Prix - Qualifying report",
-    href: "/Motorsport/Formula-1/2025/Dutch-Grand-Prix/Qualifying-Report",
-    image: "/assets/motorsport-DutchGP2025-Q.webp",
-  },
-        {
-    title: "Dutch Grand Prix - Friday report",
-    href: "/Motorsport/Formula-1/2025/Dutch-Grand-Prix/Friday-Report",
-    image: "/assets/motorsport-DutchGP2025.png",
-  },
-      {
-    title: "Hungarian Grand Prix - Weekend Report",
-    href: "/Motorsport/Formula-1/2025/Hungarian-Grand-Prix/Weekend-Report",
-    image: "/assets/motorsport-Hungary-mcl.avif",
-  },
-    {
-    title: "Hungarian Grand Prix - preview",
-    href: "/Motorsport/Formula-1/2025/Hungarian-Grand-Prix/Preview",
-    image: "/assets/motorsport-Hungary-Preview.jpg",
-  },
-    {
-    title: "Belgium Grand Prix - race report",
-    href: "/Motorsport/Formula-1/2025/Belgium-Grand-Prix/Race-Report",
-    image: "/assets/motorsport-MCL-Spa.jpg",
-  },
-    {
-    title: "Belgium Grand Prix - weekend report",
-    href: "/Motorsport/Formula-1/2025/Belgium-Grand-Prix/Weekend-Report",
-    image: "/assets/motorsport-OP81-Spa.jpg",
-  },
-    {
-    title: "GTWC Misano - report",
-    href: "/Motorsport/GTWC/Misano-Report",
-    image: "/assets/motorsport-GTWC-Misano-BMW.jpg",
-  },
-  {
-    title: "British Grand Prix - race report",
-    href: "/Motorsport/Formula-1/2025/British-Grand-Prix/Race-Report",
-    image: "/assets/motorsport-britshGP2025.jpg",
-  },
-  {
-    title: "British Grand Prix - Friday report",
-    href: "/Motorsport/Formula-1/2025/british-Grand-Prix/Friday-Report",
-    image: "/assets/motorsport-McLaren-in-FP1-Silverstone-scaled.webp",
-  },
-  {
-    title: "Austrian Grand Prix",
-    href: "/Motorpsort/Formula-1/2025/Austrian-Grand-Prix/Race-Report",
-    image: "/assets/motorsport-Austria.webp",
-  },
-  {
-    title: "24 Hours of Nurburgring",
-    href: "/Motorsport/GTWC/24-Hours-of-Nurburgring",
-    image: "/assets/motorsport-24-Nurburgring.jpg",
-  },
-  {
-    title: "Canadian Grand Prix",
-    href: "/Motorsport/Formula-1/2025/Canadian-Grand-Prix",
-    image: "/assets/motorsport-Canada.webp",
-  },
-  {
-    title: "24 Hours of Le Man's",
-    href: "/Motorsport/WEC/24-Hours-of-Le-Mans",
-    image: "/assets/motorsport-Le-Mans.jpg",
-  },
-  {
-    title: "Spanish Grand Prix",
-    href: "/Motorsport/Formula-1/2025/Spanish-Grand-Prix",
-    image: "/assets/motorsport-Spain.jpg",
-  },
-  {
-    title: "Monaco Grand Prix",
-    href: "/Motorsport/Formula-1/2025/Monaco-Grand-Prix",
-    image: "/assets/motorsport-monaco.jpg",
-  },
-  {
-    title: "Emilia-Romagna Grand Prix",
-    href: "/Motorsport/Formula-1/2025/Emilia-Romagna-Grand-Prix",
-    image: "/assets/motorsport-Emilia-romagna.webp",
-  },
-];
+import Articles from './data/Articles.json'
 
 export default function Motorsport() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(1);
+  const articlesPerPage = 6;
 
-    const totalPages = Math.ceil(articles.length / itemsPerPage);
+  // Calculate pagination
+  const totalPages = Math.ceil(Articles.length / articlesPerPage);
+  const indexOfLastArticle = currentPage * articlesPerPage;
+  const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
+  const currentArticles = Articles.slice(indexOfFirstArticle, indexOfLastArticle);
 
-    const startIndex = (currentPage - 1) * itemsPerPage;
-    const selectedArticles = articles.slice(startIndex, startIndex + itemsPerPage);
+  // Generate page numbers array
+  const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1)
+    const handlePageChange = (pageNumber: number) => {
+    setCurrentPage(pageNumber);
+    window.scrollTo({ top: 800, behavior: 'smooth' });
+  };
 
-    const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
-
-
-    return(
-        <div>
-          <div>
-            <Header/>
-          </div>
-<div>
-    <h1 className='text-5xl text-start m-5 pt-10'>Motorsport</h1>
-    <div className='text-xl m-5 text-start'>
-        <p className='max-sm:w-80 w-200'>
+  return (
+    <div>
+      <div>
+        <Header />
+      </div>
+      <div>
+        <h1 className='text-5xl text-start m-5 pt-10'>Motorsport</h1>
+        <div className='text-xl m-5 text-start'>
+          <p className='max-sm:w-80 w-200'>
             Welcome to mhblog motorsport hub. Here you can view latest news, reports, briefings and more content focused on motorsport.
             You will mainly see formula 1, WEC, GTWC or any big event in the world of motorsport.
             In recent years, motorsport is finally getting the recognition it deserve and it is my pleasure to be the first one to inform you about latest intrigues in world of motorsport.
-        </p>
-    </div>
-</div>
-
-{/* LATEST */}
-<div className='relative h-screen' id='Latest'>
-      <div className="absolute top-0 z-[-2] h-370 w-full"></div>
-      <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white relative max-md:top-10 lg:pt-10 pl-10 font-Exo-2'>Articles</h1>
-            <div className="relative top-20 max-sm:pl-11.5 lg:pl-12 max-md:pl-11.5 md:pl-0 grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
-        {selectedArticles.map((article, index) => (
-          <a href={article.href} key={index}>
-            <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
-              <img src={article.image} className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250' />
-              <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>{article.title}</h3>
-              <button className='relative lg:bottom-28 max-md:bottom-27 md:bottom-20 left-1/3 w-25 h-10 rounded-full text-white bg-neutral-950 border border-white hover:bg-white hover:border-black hover:text-black transition duration-300'>
-                See more
-              </button>
-            </div>
-          </a>
-        ))}
+          </p>
+        </div>
       </div>
 
-      {/* Pagination Controls */}
-            <div className="flex px-39 max-sm:px-30 relative bottom-30 max-sm:top-40 h-20 justify-center items-center space-x-4">
-        <button
-          onClick={() => setCurrentPage(currentPage - 1)}
-          disabled={currentPage === 1}
-          className="w-30 h-15 rounded text-white text-black border rounded-full hover:bg-white hover:text-black duration-250 disabled:opacity-50 disabled:cursor-not-allowed"
-        >
-          Previous
-        </button>
-        {pageNumbers.map((number) => (
-          <button
-            key={number}
-            onClick={() => setCurrentPage(number)}
-            className={`w-10 h-10 rounded-full border ${
-              currentPage === number
-                ? 'bg-white text-black'
-                : 'text-white hover:bg-white hover:text-black'
-            } duration-250`}
-          >
-            {number}
-          </button>
-        ))}
-        <button
-          onClick={() => setCurrentPage(currentPage + 1)}
-          disabled={currentPage === totalPages}
-          className="w-30 h-15 rounded text-white text-black border rounded-full hover:bg-white hover:text-black duration-250 disabled:opacity-50 disabled:cursor-not-allowed"
-        >
-          Next
-        </button>
+      {/* LATEST */}
+      <div className='relative h-screen' id='Latest'>
+        <div className="absolute top-0 z-[-2] h-370 w-full"></div>
+        <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white relative max-md:top-10 lg:pt-10 pl-10 font-Exo-2'>Articles</h1>
+        <div className="relative top-20 max-sm:pl-11.5 lg:pl-12 max-md:pl-11.5 md:pl-0 grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
+          {currentArticles.map((article, index) => (
+            <a href={article.href} key={index}>
+              <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden">
+                <img src={article.image} className='object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250' />
+                <h3 className='relative items-center bottom-66 text-xl pl-8 text-white font-bold font-Exo-2'>{article.title}</h3>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        {/* Pagination Controls */}
+        <div className="flex max-sm:px-30 relative bottom-30 max-sm:top-40 h-20 justify-center items-center space-x-6">
+          {pageNumbers.map((number) => (
+            <button
+              key={number}
+              onClick={() => handlePageChange(number)}
+              className={`w-10 h-10 rounded-full border ${
+                currentPage === number
+                  ? 'bg-white text-black'
+                  : 'text-white hover:bg-white hover:text-black'
+              } duration-250`}
+            >
+              {number}
+            </button>
+          ))}
+        </div>
       </div>
-    </div>
     {/* END LATEST */}
       {/* CALENDAR */}
 
