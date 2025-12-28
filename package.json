@@ -8,7 +8,8 @@
     "build": "node scripts/generate-posts.js && next build",
     "start": "next start",
     "lint": "next lint",
-    "postbuild": "node scripts/generate-posts.js"
+    "postbuild": "node scripts/generate-posts.js",
+    "xml": "node scripts/generate-xml.js"
   },
   "dependencies": {
     "@chakra-ui/react": "^3.22.0",
