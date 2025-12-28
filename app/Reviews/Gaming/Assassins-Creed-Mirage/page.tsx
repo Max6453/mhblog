@@ -9,7 +9,9 @@ export default function acmArticle() {
             upperTitle="Assassin's Creed Mirage promised a return to the series' stealthy origins, and in many ways, it delivers. After the sprawling RPGs of recent years, the idea of a more focused, narrative-driven experience set in the vibrant city of Baghdad was incredibly appealing. And while Mirage certainly recaptures some of that classic AC magic, it's not without its frustrations."
             lowerText="Nonetheless, I enjoyed this game and I hope i can play assassin's creed shadows as soon as possible.
             MHBlog gives Mirage 7/10."
-            lowerTextImage="/assets/gaming/ACMsand.jpg"
+            lowerTextImage="/assets/gaming/ACM-Viewpoint.jpg"
+            secondImage="/assets/gaming/ACM-Cave.jpg"
+            thirdImage="/assets/gaming/ACM-Sunset.jpg"
             mainText="The highlight is undoubtedly Baghdad. It’s dense, vibrant, and built for verticality.
             Unlike the sprawling fields of the last three games, every alleyway here feels intentional.
             The emphasis on stealth is a welcome change; planning your approach, utilizing distractions, and disappearing into crowds feels genuinely rewarding.
