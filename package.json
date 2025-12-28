@@ -4,8 +4,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node scripts/generate-posts.js && next dev --turbopack",
-    "build": "node scripts/generate-posts.js && next build",
+    "dev": "node scripts/generate-posts.js && node scripts/generate-xml.js && next dev --turbopack",
+    "build": "node scripts/generate-posts.js && node scripts/generate-xml.js && next build",
     "start": "next start",
     "lint": "next lint",
     "postbuild": "node scripts/generate-posts.js",

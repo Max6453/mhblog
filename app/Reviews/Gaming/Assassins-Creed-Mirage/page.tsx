@@ -1,5 +1,7 @@
 'use client'
 import ArticleTemplate from "@/components/templates/article-template"
+import Footer from "@/components/ui/footer"
+import Image from "next/image"
 
 export default function acmArticle() {
     return(
@@ -10,8 +12,6 @@ export default function acmArticle() {
             lowerText="Nonetheless, I enjoyed this game and I hope i can play assassin's creed shadows as soon as possible.
             MHBlog gives Mirage 7/10."
             lowerTextImage="/assets/gaming/ACM-Viewpoint.jpg"
-            secondImage="/assets/gaming/ACM-Cave.jpg"
-            thirdImage="/assets/gaming/ACM-Sunset.jpg"
             mainText="The highlight is undoubtedly Baghdad. It’s dense, vibrant, and built for verticality.
             Unlike the sprawling fields of the last three games, every alleyway here feels intentional.
             The emphasis on stealth is a welcome change; planning your approach, utilizing distractions, and disappearing into crowds feels genuinely rewarding.
@@ -23,6 +23,13 @@ export default function acmArticle() {
             Also, i don't think that assasin's focus is really 'return to roots'. Personally I liked this ability but also it was out of place."
             coverImage="/assets/gaming/ACMirage.jpg"
             />
+            <div className="flex flex-row gap-4">
+                <Image width={120} height={70} className="w-120 h-70 p-2 hover:scale-110 duration-300 rounded-xl" alt="Assassins creed mirage cave" src="/assets/gaming/ACM-Cave.jpg"/>
+                <Image width={120} height={70} className="w-120 h-70 p-2 hover:scale-110 duration-300 rounded-xl" alt="Assassins creed mirage cave" src="/assets/gaming/ACM-Sunset.jpg"/>
+                <Image width={120} height={70} className="w-120 h-70 p-2 hover:scale-110 duration-300 rounded-xl" alt="Assassins creed mirage cave" src="/assets/gaming/ACM-Viewpoint.jpg"/>
+            </div>
+
+            <Footer/>
         </div>
     )
 }

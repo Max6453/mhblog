@@ -10,12 +10,10 @@ interface articleInputs {
     middleText: string,
     lowerText: string,
     lowerTextImage: string,
-    secondImage: string,
-    thirdImage: string
     coverImage: string,
 }
 
-function ArticleTemplate({ headerName, upperTitle, mainText, middleText, lowerText, lowerTextImage, secondImage, thirdImage, coverImage }: articleInputs) {
+function ArticleTemplate({ headerName, upperTitle, mainText, middleText, lowerText, lowerTextImage, coverImage }: articleInputs) {
     return(
         <div>
         <Header/>
@@ -47,10 +45,7 @@ function ArticleTemplate({ headerName, upperTitle, mainText, middleText, lowerTe
                     {lowerText}
                 </p>
                 <div className="flex flex-row gap-5 max-w-full w-auto pt-15">
-                    <img src={lowerTextImage} className="w-120 h-80 items-center justify-center justify-items-center rounded-xl"/>
-                    {/* ADDITIONAL IMAGES */}
-                    <img src={secondImage} className="w-120 h-80 items-center justify-center justify-items-center rounded-xl"/>
-                    <img src={thirdImage} className="w-120 h-80 items-center justify-center justify-items-center rounded-xl"/>
+                    
                 </div>
               {/* IF I NEEDED MORE TEXT AREA
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:pl-50 font-josefin-sans pt-15 lg:w-300"> 
@@ -63,8 +58,6 @@ function ArticleTemplate({ headerName, upperTitle, mainText, middleText, lowerTe
                 */}
               </div>
              </div>
-
-             <Footer/>
         </div>
     )
 }
