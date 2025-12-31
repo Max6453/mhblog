@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>Your Blog</title>
+    <title>MHBlog feed</title>
     <link>https://mhblog-xi.vercel.app</link>
     <description>Latest articles</description>
     
