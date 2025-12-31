@@ -18,6 +18,11 @@ import Snowfall from 'react-snowfall'
 
 
 const articles = [
+  {title: 'Clair Obscur: Expedition 33 - Review ',
+   href: '/Reviews/Gaming/Clair-Obscur-Expedition-33',
+   coverImage: '/assets/gaming/Expedition-33.avif',
+   ImageName: 'E33'
+  },
   {title: 'Assassins Creed: Mirage - Review ',
    href: '/Reviews/Gaming/Assassins-Creed-Mirage',
    coverImage: '/assets/gaming/ACMirage.jpg',
@@ -42,11 +47,6 @@ const articles = [
    href: '/Motorsport/Formula-1/2025/Abu-Dhabi-Grand-Prix/Weekend-Preview',
    coverImage: '/assets/motorsport/abu-dhabi-preview-MCL.jpg',
    ImageName: 'Abu Dhabi 2025'
-  },
-  {title: 'Qatar Grand Prix - Race report',
-   href: '/Motorsport/Formula-1/2025/Qatar-Grand-Prix/Race-Report',
-   coverImage: '/assets/motorsport/Qatar2025.jpg',
-   ImageName: 'Qatar 2025'
   },
 ]
 
@@ -85,7 +85,7 @@ export default function Main() {
         width={300} height={300}
         src={article.coverImage}
         className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250 hover:shadow-lg shadow-white'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-5 linear-90 text-white font-bold font-Exo-2'>{article.title}</h3>
+        <h3 className='relative items-center bottom-66 text-xl pl-3 linear-90 text-white font-bold font-Exo-2'>{article.title}</h3>
       </div>
       </a>
        ))}
