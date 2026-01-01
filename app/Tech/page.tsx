@@ -151,7 +151,7 @@ export default function Motorsport() {
             </div>
         </div>
       </footer>
-    <aside className="relative text-center items-baseline pr-20 xl:top-100 lg:top-80 md:top-125 max-md:top-165 max-sm:top-15 max-md:text-lg max-md:text-center max-sm:pl-18">
+    <aside className="relative text-center items-baseline pr-20 xl:top-10 lg:top-80 md:top-125 max-md:top-165 max-sm:top-15 max-md:text-lg max-md:text-center max-sm:pl-18">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
       </aside>
   </div>

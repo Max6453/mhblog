@@ -11,10 +11,7 @@ const navigation = [
   { name: 'Tech', href: '/Tech', current: false, id: 3 },
   { name: 'gaming', href: '/Reviews/Gaming', current: true, id: 4 },
   { name: 'Reviews', href: '/Reviews', current: true, id: 5 },
-  { name: 'Formula 1 Analysis', href: 'https://fad-mhblog.vercel.app', current: true, id: 6 },
   { name: 'Contact', href: '/Contact', current: true, id: 7 },
-  { name: 'Wallpapers', href: '/Wallpaper', current: true, id: 8 },
-  { name: 'Pomodoro', href: 'https://pomodoro-mhblog.vercel.app', current: true, id: 9 },
   { name: 'About Author', href: 'https://maximharvancik.vercel.app', current: true, id: 8 },
 ];
 
@@ -39,13 +36,13 @@ export default function Header() {
                     id='openBtn'
                     type="button"
                     onClick={() => setMobileMenuOpen(true)}
-                    className="relative icon-default inline-flex items-center justify-center rounded-md p-2.5 text-white z-50 animation duration-300 transform transition-all"
+                    className="relative icon-default inline-flex items-center justify-center lg:hidden rounded-md p-2.5 text-white z-50 animation duration-300 transform transition-all"
                     >
                     <span className="sr-only">Open main menu</span>
                     <Bars3Icon aria-hidden="true" className=" size-10 block hover:shadow-xl shadow-neutral-950 rounded-xl animation duration-300 transition-all transform" />
                     </button>
                 </div>
-                <div className='absolute text-center pt-5 lg:flex max-sm:hidden md:hidden'>
+                <div className='absolute text-center pt-5 lg:flex max-sm:hidden sm:hidden md:hidden'>
                     <ul className='flex gap-10 text-xl relative'>
                         <li>
                         <a href='/' className='hover-underline-animation center'>latest</a>

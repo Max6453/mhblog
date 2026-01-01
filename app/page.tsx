@@ -94,11 +94,11 @@ export default function Main() {
     {/* END LATEST */}
 
     {/* MOST POPULAR */}
-          <div className='relative grid lg:grid-cols-2 max-sm:grid-cols-1 sm:grid-cols-1 w-full h-250 xl:top-40 lg:top-100 md:top-110 max-sm:top-330'>
+          <div className='relative grid lg:grid-cols-2 max-sm:grid-cols-1 sm:grid-cols-1 w-full h-250 xl:top-40 lg:top-100 md:top-110 sm:top-100 max-sm:top-330'>
            <div className='relative w-full'>
             <h3 className='lg:text-4xl text-center max-sm:text-5xl text-white relative max-md:top-0 lg:pt-10 pr-10 pb-0.5 max-sm:pb-2 font-Exo-2'>Trending</h3>
              <hr className='w-100 max-sm:w-70 left-37 max-sm:left-10 relative'/>
-            <ul className='grid relative pl-27 max-sm:pl-0.5'>
+            <ul className='grid relative lg:pl-27 max-sm:pl-0.5'>
             <li>
                <a href='/Reviews/Gaming/Ghost-of-Yotei'>
                <div className='w-100 h-65 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white -z-50'>
@@ -133,9 +133,9 @@ export default function Main() {
           </div>
           {/* TECH, REVIEW, ETC... */}
           <div className=' relative w-full'>
-            <h3 className='lg:text-4xl text-center max-sm:text-5xl text-white relative max-md:top-0 lg:pt-10 max-sm:pt-20 pl-10 max-sm:pl-3 pb-0.5 max-sm:pb-2 font-Exo-2'>Editor's choice</h3>
+            <h3 className='lg:text-4xl text-center max-sm:text-5xl text-white relative max-md:top-0 lg:pt-10 max-sm:pt-20 pl-10 md:pl-0 max-sm:pl-3 pb-0.5 max-sm:pb-2 font-Exo-2'>Editor's choice</h3>
             <hr className='w-100 max-sm:w-70 left-48 max-sm:left-10 relative'/>
-            <ul className='grid relative pl-37 max-sm:pl-0.5'>
+            <ul className='grid relative pl-27 lg:pl-37 md:pl-17 max-sm:pl-0.5'>
             <li>
                <a href='/Motorsport/Formula-1/2025/Azerbaijan-Grand-Prix'>
                <div className='w-100 h-65 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 rounded-3xl border-2 border-white -z-50'>
@@ -173,7 +173,7 @@ export default function Main() {
 
       {/* FOOTER */}
        <footer
-       className="relative xl:top-40 lg:top-80 md:top-125 max-md:top-165 max-sm:top-580 h-full w-full text-center sm:footer-horizontal pt-10 text-black font-edu-vic-wa-nt-beginner p-10 text-2xl"
+       className="relative xl:top-40 lg:top-80 md:top-125 max-md:top-165 sm:top-350 max-sm:top-580 h-full w-full text-center sm:footer-horizontal pt-10 text-black font-edu-vic-wa-nt-beginner p-10 text-2xl"
        id='Newsletter'>
           <div className="relative isolate overflow-hidden py-16 sm:py-24 max-sm:py-0 lg:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8 max-sm:px-0">
@@ -251,7 +251,7 @@ export default function Main() {
           </a>
         </div>
       </footer>
-          <aside className="relative text-center items-baseline pr-20 xl:top-40 lg:top-80 md:top-125 max-md:top-165 max-sm:top-620 max-md:text-lg max-md:text-center max-sm:pl-18">
+          <aside className="relative text-center items-baseline pr-20 xl:top-40 lg:top-80 md:top-125 max-md:top-165 sm:top-350 max-sm:top-620 max-md:text-lg max-md:text-center max-sm:pl-18">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
       </aside>
 </div>
