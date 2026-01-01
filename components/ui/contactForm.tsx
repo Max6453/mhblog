@@ -51,10 +51,10 @@
 return(
     <form className='bg-neutral-900 text-white' onSubmit={handleSubmit}>
       <div className="space-y-12 top-15 relative">
-        <div className="border-b border-white pb-12">
-       <h1 className='font-Exo-2 text-3xl max-sm:text-xl pt-3 left-1/5 max-sm:left-0 md:left-0 max-md:left-0'>
-        hey, If you have any questions or if you want to give me a feedback on my website, you can do it here and also you can contact via socials here</h1>
-          <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+        <div className="pb-12">
+       <h1 className='font-Exo-2 text-3xl max-sm:text-xl pt-3 lg:p-30 md:p-15 p-10 left-1/5 max-sm:left-0 md:left-0 max-md:left-0'>
+        hey, If you have any questions or if you want to give me a feedback on my website, you can do it here and also you can contact via socials here.</h1>
+          <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div className="col-span-full">
               <div className="mt-2">
               <textarea
@@ -73,22 +73,22 @@ return(
         </div>
         <div className="pb-12 text-center">
           <h2 className="text-xl pl-5 font-semibold">Optional information</h2>
-          <div className="mt-10 grid grid-cols-1 grid-rows-1 gap-x-6 gap-y-8 sm:grid-cols-2">
+          <div className="mt-10 flex flex-row max-sm:flex-col gap-x-5 p-10 items-center justify-center justify-items-center gap-x-6 gap-y-8 sm:grid-cols-2">
             <div className="sm:col-span-3">
               <label htmlFor="first-name" className="block text-sm/6 font-medium ">
                 First name
               </label>
               <div className="mt-2">
-          <input
-          id="first-name"
-          name="firstName"
-          type="text"
-          placeholder='first name'
-          autoComplete="given-name"
-          className="border-2 border-black rounded-md h-10"
-          value={form.firstName}
-          onChange={handleChange}
-        />
+                <input
+                  id="first-name"
+                  name="firstName"
+                  type="text"
+                  placeholder='first name'
+                  autoComplete="given-name"
+                  className="border-2 border-white p-1 rounded-md h-10"
+                  value={form.firstName}
+                  onChange={handleChange}
+              />
               </div>
             </div>
             <div className="sm:col-span-3">
@@ -97,36 +97,35 @@ return(
               </label>
               <div className="mt-2">
                 <input
-          id="last-name"
-          name="lastName"
-          type="text"
-          placeholder='last name'
-          autoComplete="family-name"
-          className="border-2 border-black rounded-md h-10"
-          value={form.lastName}
-          onChange={handleChange}
-        />
+                  id="last-name"
+                  name="lastName"
+                  type="text"
+                  placeholder='last name'
+                  autoComplete="family-name"
+                  className="border-2 border-white p-1 rounded-md h-10"
+                  value={form.lastName}
+                  onChange={handleChange}
+                />
               </div>
             </div>
-
-            <div className="sm:col-span-4 max-sm:left-0 relative">
+          </div>
+           <div className="sm:col-span-2 max-sm:left-0 pl-2 relative">
               <label htmlFor="email" className="block text-sm/6 font-medium">
                 Email address
               </label>
               <div className="mt-2">
                 <input
-          id="email"
-          name="email"
-          type="email"
-          placeholder='mhblog.enjoyer@gmail.com' 
-          autoComplete="email"
-          className="border-2 border-black rounded-md h-10"
-          value={form.email}
-          onChange={handleChange}
-        />
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder='mhblog.enjoyer@gmail.com' 
+                  autoComplete="email"
+                  className="border-2 border-white p-1 w-60 rounded-md h-10"
+                  value={form.email}
+                  onChange={handleChange}
+                />
               </div>
             </div>
-          </div>
         </div>
       </div>
  <div className="mt-6 flex items-center justify-center pb-10 pt-5 gap-x-6">
