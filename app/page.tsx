@@ -91,7 +91,7 @@ export default function Main() {
         width={300} height={300}
         src={article.coverImage}
         className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250 hover:shadow-lg shadow-white'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-3 linear-90 text-white font-bold font-Exo-2'>{article.title}</h3>
+        <h3 className='relative items-center bottom-66 text-xl pl-3 max-sm:pt-2 linear-90 text-white font-bold font-Exo-2'>{article.title}</h3>
       </div>
       </a>
        ))}
@@ -102,9 +102,9 @@ export default function Main() {
     {/* MOST POPULAR */}
           <div className='relative grid lg:grid-cols-2  p-1 -m-6 pt-10 max-sm:grid-cols-1 sm:grid-cols-1 w-full h-250 xl:top-40 lg:top-100 md:top-110 sm:top-100 max-sm:top-330'>
            <div className='relative w-full'>
-            <h3 className='lg:text-4xl text-center max-sm:text-5xl text-white relative max-md:top-0 lg:pt-10 pr-10 pb-0.5 max-sm:pb-2 font-Exo-2'>Trending</h3>
-             <hr className='w-100 max-sm:w-70 left-37 max-sm:left-10 relative'/>
-            <div className='flex flex-col relative lg:pl-26 md:pl-0'>
+            <h3 className='lg:text-4xl text-center max-sm:text-5xl text-white relative max-md:top-0 lg:pt-10 pr-10 max-sm:pl-15 pb-0.5 max-sm:pb-2 font-Exo-2'>Trending</h3>
+             <hr className='w-100 max-sm:w-70 left-37 max-sm:left-14 relative'/>
+            <div className='flex flex-col relative lg:pl-26 md:pl-0 max-sm:pl-3'>
             {selectedArticlesPopular.map(article => (
               <a href={article.href} key={article.href}>
                 <div className="w-100 h-65 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 justify-items-center rounded-3xl border-2 border-white">
@@ -125,9 +125,9 @@ export default function Main() {
           </div>
           {/* TECH, REVIEW, ETC... */}
           <div className=' relative w-full '>
-            <h3 className='lg:text-4xl text-center max-sm:text-5xl text-white relative max-md:top-0 lg:pt-10 max-sm:pt-20 pl-10 md:pl-0 max-sm:pl-3 pb-0.5 max-sm:pb-2 font-Exo-2'>Editor's choice</h3>
-            <hr className='w-100 max-sm:w-70 left-48 max-sm:left-10 relative'/>
-           <div className='flex flex-col relative pl-37'>
+            <h3 className='lg:text-4xl text-center max-sm:text-5xl text-white relative max-md:top-0 lg:pt-10 max-sm:pt-20 pl-10 md:pl-0 max-sm:pl-9 pb-0.5 max-sm:pb-2 font-Exo-2'>Editor's choice</h3>
+            <hr className='w-100 max-sm:w-70 left-48 max-sm:left-14 relative'/>
+           <div className='flex flex-col relative lg:pl-37 md:pl-0 max-sm:pl-3'>
             {selectedArticles.map(article => (
               <a href={article.href} key={article.href}>
                 <div className="w-100 h-65 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 justify-items-center rounded-3xl border-2 border-white">
@@ -151,7 +151,7 @@ export default function Main() {
 
       {/* FOOTER */}
        <footer
-       className="relative xl:top-40 lg:top-80 md:top-125 max-md:top-165 sm:top-350 max-sm:top-600 h-full w-full text-center sm:footer-horizontal pt-10 text-black font-edu-vic-wa-nt-beginner p-10 text-2xl"
+       className="relative xl:top-60 lg:top-80 md:top-125 max-md:top-165 sm:top-350 max-sm:top-600 h-full w-full text-center sm:footer-horizontal pt-10 text-black font-edu-vic-wa-nt-beginner p-10 text-2xl"
        id='Newsletter'>
           <div className="relative isolate overflow-hidden py-16 sm:py-24 max-sm:py-0 lg:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8 max-sm:px-0">
@@ -163,7 +163,7 @@ export default function Main() {
                   </p>
                   <SupabaseForm/>
                 </div>
-                <dl className="grid relative grid-cols-1 gap-x-8 gap-y-10 max-sm:pt-20 sm:grid-cols-2 lg:pt-2">
+                <dl className="grid relative grid-cols-1 gap-x-8 gap-y-10 max-sm:pt-25 sm:grid-cols-2 lg:pt-2">
                   <div className="flex flex-col items-start">
                     <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
                       <CalendarDaysIcon aria-hidden="true" className="size-6 text-white" />
@@ -220,7 +220,7 @@ export default function Main() {
               </div>
             </div>
         </div>
-        <div className='pt-10 max-sm:pt-0 absolute top-100 md:left-65 sm:left-20 max-sm:left-18'>
+        <div className='pt-10 max-sm:pt-0 absolute top-100 md:left-65 sm:left-20 max-sm:left-16'>
           <a href='/downloads/application-167c16ef-20d8-4555-98a0-3b864bd69ec4.apk' download>
           <button className='className="px-6 py-3 p-3 font-Exo-2 bg-background hover:bg-white text-white hover:text-black border-white border rounded-xl shadow-lg transition'>
             Download our app
