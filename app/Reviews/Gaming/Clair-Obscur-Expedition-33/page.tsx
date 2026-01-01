@@ -1,8 +1,7 @@
 'use client'
 
 import ArticleTemplate from "@/components/templates/article-template"
-import Footer from "@/components/ui/footer"
-
+import Footer from "@/components/templates/footer-template"
 export default function E33Article() {
     return(
         <div>
