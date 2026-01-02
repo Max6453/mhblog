@@ -5,8 +5,7 @@ import SupabaseForm from '../components/ui/supabaseForm';
 import Image from 'next/image'
 import Header from '@/components/templates/header-template';
 import Snowfall from 'react-snowfall'
-
-
+import RssIcon from '@heroicons/react/24/outline';
 const articles = [
   {title: 'Clair Obscur: Expedition 33 - Review ',
    href: '/Reviews/Gaming/Clair-Obscur-Expedition-33',
@@ -197,10 +196,9 @@ export default function Main() {
                         </svg></a>
                     </li>
                     <li>
-                      <a href='/rss/index.xml'>
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" className='size-10'>
-                       <path fill="#ffffff" d="M96 128C96 110.3 110.3 96 128 96C357.8 96 544 282.2 544 512C544 529.7 529.7 544 512 544C494.3 544 480 529.7 480 512C480 317.6 322.4 160 128 160C110.3 160 96 145.7 96 128zM96 480C96 444.7 124.7 416 160 416C195.3 416 224 444.7 224 480C224 515.3 195.3 544 160 544C124.7 544 96 515.3 96 480zM128 224C287.1 224 416 352.9 416 512C416 529.7 401.7 544 384 544C366.3 544 352 529.7 352 512C352 388.3 251.7 288 128 288C110.3 288 96 273.7 96 256C96 238.3 110.3 224 128 224z"/>
-                      </svg></a>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-10 hover:text-gray-400 duration-300 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 19.5v-.75a7.5 7.5 0 0 0-7.5-7.5H4.5m0-6.75h.75c7.87 0 14.25 6.38 14.25 14.25v.75M6 18.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                      </svg>
                     </li>
                     </ul>
                     </div>
@@ -228,7 +226,7 @@ export default function Main() {
           </a>
         </div>
       </footer>
-          <aside className="relative text-center items-baseline pr-20 xl:top-40 lg:top-80 md:top-125 max-md:top-165 sm:top-350 max-sm:top-600 max-md:text-lg max-md:text-center max-sm:pl-18">
+          <aside className="relative text-center items-baseline pr-20 xl:top-60 lg:top-80 md:top-125 max-md:top-165 sm:top-350 max-sm:top-600 max-md:text-lg max-md:text-center max-sm:pl-18">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
       </aside>
 </div>
