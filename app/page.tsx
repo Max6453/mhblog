@@ -6,7 +6,13 @@ import Image from 'next/image'
 import Header from '@/components/templates/header-template';
 import Snowfall from 'react-snowfall'
 import RssIcon from '@heroicons/react/24/outline';
+
 const articles = [
+  {title: 'Stock market in feburary - big drop for tech giant',
+   href: '/Tech/stock/stock-market-last-february-week-2026',
+   coverImage: '/assets/tech/microsoft-drop-february.webp',
+   ImageName: 'microsoft drop'
+  },
   {title: 'Clair Obscur: Expedition 33 - Review ',
    href: '/Reviews/Gaming/Clair-Obscur-Expedition-33',
    coverImage: '/assets/gaming/Expedition-33.avif',
@@ -32,11 +38,6 @@ const articles = [
    coverImage: '/assets/motorsport/lando-abu-dhabi-post-race-moment.webp',
    ImageName: 'LN1'
   },
-  {title: 'Abu Dhabi Grand Prix - Weekend Preview',
-   href: '/Motorsport/Formula-1/2025/Abu-Dhabi-Grand-Prix/Weekend-Preview',
-   coverImage: '/assets/motorsport/abu-dhabi-preview-MCL.jpg',
-   ImageName: 'Abu Dhabi 2025'
-  },
 ]
 
 export default function Main() {
@@ -58,10 +59,11 @@ export default function Main() {
 
   return (
   <div className='bg-neutral-900 transition-colors duration-500'>
-    {/* FOR WINTER ONLY  */}
+    {/* FOR WINTER ONLY  
   <Snowfall
   color='#fff'
   enable3DRotation={true}/>
+  */}
     {/*
     <Banner text="LATEST EVENTS: 24 Hours of Le Man's - WEC; Formula 1 Canadian Grand Prix - Qualifying at 10pm CET; NHL Edmonton Oilers vs Florida Panthers at 2am CET"
     speed={25}/> 

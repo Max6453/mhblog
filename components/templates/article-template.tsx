@@ -20,7 +20,7 @@ function ArticleTemplate({ headerName, upperTitle, mainText, middleText, lowerTe
             <ScrollProgress />
             <header>
             <div className="relative inset-0">
-            <h1 className="absolute text-6xl top-62 left-42 z-10 font-josefin-sans max-md:left-7 items-baseline max-md:top-20 md:text-3xl sm:text-xl lg:text-6xl max-md:text-3xl text-white text-center font-bold">
+            <h1 className="absolute text-6xl flex justify-center top-1/2 z-10 font-josefin-sans max-md:left-7 items-baseline max-md:top-20 md:text-3xl sm:text-xl lg:text-6xl max-md:text-3xl text-white text-center font-bold">
                 {headerName}
             </h1>
             <img
