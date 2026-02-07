@@ -7,6 +7,7 @@ export default function E33Article() {
         <div>
             <ArticleTemplate
             headerName="Clair Obscur: Expedition 33 - Review"
+            date="31.12.2025"
             mainText="The game is set in a dark fantasy version of the Belle Époque (a period inspired by late 19th-century France).
             You play as a group of volunteers on a mission to kill The Paintress, a mysterious being who wakes up once a year to paint a number on a giant rock.
             Anyone who is that age or older instantly vanishes—a terrifying event the people call the 'Gommage.'

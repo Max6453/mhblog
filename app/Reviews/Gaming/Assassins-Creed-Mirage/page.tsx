@@ -8,6 +8,7 @@ export default function acmArticle() {
         <div>
             <ArticleTemplate
             headerName="Assassin's creed: Mirage - Review"
+            date="27.12.2025"
             upperTitle="Assassin's Creed Mirage promised a return to the series' stealthy origins, and in many ways, it delivers. After the sprawling RPGs of recent years, the idea of a more focused, narrative-driven experience set in the vibrant city of Baghdad was incredibly appealing. And while Mirage certainly recaptures some of that classic AC magic, it's not without its frustrations."
             lowerText="Nonetheless, I enjoyed this game and I hope i can play assassin's creed shadows as soon as possible.
             MHBlog gives Mirage 7/10."

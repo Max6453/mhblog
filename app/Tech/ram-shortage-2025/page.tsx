@@ -7,6 +7,7 @@ export default function ArticleRam() {
         <div>
             <ArticleTemplate
             headerName="Big Ram shortage in 2025"
+            date="15.12.2025"
             mainText="The memory market is currently facing an unprecedented crisis that is fundamentally shifting the economics of computer hardware.
             What started as a cyclical supply issue has become a structural shift driven almost entirely by the insatiable demand for AI infrastructure.
             This is leading to skyrocketing prices and severe shortages across all segments of the RAM market,

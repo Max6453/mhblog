@@ -6,6 +6,7 @@ import Footer from "../ui/footer"
 interface articleInputs {
     headerName: string,
     upperTitle: string,
+    date: string,
     mainText: string,
     middleText: string,
     lowerText: string,
@@ -13,7 +14,7 @@ interface articleInputs {
     coverImage: string,
 }
 
-function ArticleTemplate({ headerName, upperTitle, mainText, middleText, lowerText, lowerTextImage, coverImage }: articleInputs) {
+function ArticleTemplate({ headerName, upperTitle, mainText, middleText, lowerText, date, coverImage }: articleInputs) {
     return(
         <div>
         <Header/>
@@ -31,6 +32,7 @@ function ArticleTemplate({ headerName, upperTitle, mainText, middleText, lowerTe
             </div>
             </header>
             <div className="relative pb-10 md:left-0">
+              <span className="text-sm text-gray-300 lg:pl-80 max-sm:pl-2 md:pl-10 max-md:w-90">date: {date}</span>
                 <div className="text-2xl justify-center text-white to-neutral-900 relative text-start">
                 <p className="text-start text-2xl lg:pl-80 max-sm:pl-2 md:pl-10 max-md:w-90 lg:w-300 font-josefin-sans pt-15">
                     {upperTitle}

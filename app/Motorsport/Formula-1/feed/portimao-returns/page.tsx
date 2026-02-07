@@ -8,6 +8,7 @@ export default function PortimaoArticle() {
             <ArticleTemplate
             headerName=
             "Portimao returns for 2027, 2028 season"
+            date="16.12.2025"
             mainText="Portimao circuit signed a 2-year deal for 2027 and 2028 season where they will host a portugal grand prix.
             Last race was hosted during 2021 season and was a key venue in the sport’s return to racing during the Covid-19 pandemic.
             The track is about 4.6km long and it's well known for dramatic elevate changes(30 meters between lowest and highest point).

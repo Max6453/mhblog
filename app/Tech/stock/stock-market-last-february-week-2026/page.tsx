@@ -9,6 +9,7 @@ export default function TechGiantsDrop() {
         <ArticleTemplate
         headerName="UnitedHealth and Microsoft dropped signifanctly. Why?"
         coverImage="/assets/tech/microsoft-drop-february.webp"
+        date="02.02.2026"
         upperTitle="Investors have had a bumpy start to February 2026. Despite some indexes hitting record highs recently, two of the market’s biggest heavyweights—UnitedHealth and Microsoft"
         mainText="UnitedHealth Group recently experienced one of its sharpest single-day drops in decades, losing nearly 20% of its value in late January.
         The Cause - The U.S. government proposed a minimal 0.09% increase in Medicare Advantage payment rates for 2027—far below what the industry expected.
