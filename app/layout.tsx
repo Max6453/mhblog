@@ -59,7 +59,7 @@ export default function RootLayout({
       <head>
       </head>  
       <body
-        className={`${geistSans.variable} ${Edu.variable} ${Exo.variable} ${raleway.variable} antialiased`}
+        className={`${geistSans.variable} ${Edu.variable} ${Exo.variable} ${raleway.variable} ${roboto.variable} antialiased`}
       >
           {children}
         <Analytics />

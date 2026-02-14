@@ -5,9 +5,14 @@ import SupabaseForm from '../components/ui/supabaseForm';
 import Image from 'next/image'
 import Header from '@/components/templates/header-template';
 import Snowfall from 'react-snowfall'
-import RssIcon from '@heroicons/react/24/outline';
+import Link from 'next/link';
 
 const articles = [
+  {title: 'Winter testing completed - what we know',
+   href: '/Motorsport/Formula-1/feed/winter-testing-2026',
+   coverImage: '/assets/motorsport/testing-bahrain-2026.jpg',
+   ImageName: 'winter-testing'
+  },
   {title: 'Stock market in feburary - big drop for tech giant',
    href: '/Tech/stock/stock-market-last-february-week-2026',
    coverImage: '/assets/tech/microsoft-drop-february.webp',
@@ -33,11 +38,6 @@ const articles = [
    coverImage: '/assets/tech/ram-shortage.jpg',
    ImageName: 'PC'
   },
-  {title: 'Abu Dhabi Grand Prix - Weekend Report',
-   href: '/Motorsport/Formula-1/2025/Abu-Dhabi-Grand-Prix/Weekend-Report',
-   coverImage: '/assets/motorsport/lando-abu-dhabi-post-race-moment.webp',
-   ImageName: 'LN1'
-  },
 ]
 
 export default function Main() {
@@ -45,13 +45,13 @@ export default function Main() {
     [
       '/Reviews/Gaming/Clair-Obscur-Expedition-33',
       '/Motorsport/Formula-1/feed/portimao-returns',
-      '/Motorsport/Formula-1/2025/Abu-Dhabi-Grand-Prix/Weekend-Report'
+      '/Tech/ram-shortage-2025'
     ].includes(article.href)
   );
 
  const selectedArticlesPopular = articles.filter(article =>   [
     '/Reviews/Gaming/Clair-Obscur-Expedition-33',
-    '/Reviews/Gaming/Assassins-Creed-Mirage',
+    '/Tech/stock/stock-market-last-february-week-2026',
     '/Motorsport/Formula-1/feed/portimao-returns'
   ].includes(article.href)
 );
@@ -197,11 +197,13 @@ export default function Main() {
                         <path fill="#ffffff" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
                         </svg></a>
                     </li>
+                    <Link href="/rss/index.xml">
                     <li>
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-10 hover:text-gray-400 duration-300 text-white">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 19.5v-.75a7.5 7.5 0 0 0-7.5-7.5H4.5m0-6.75h.75c7.87 0 14.25 6.38 14.25 14.25v.75M6 18.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                       </svg>
                     </li>
+                    </Link>
                     </ul>
                     </div>
                </div>
