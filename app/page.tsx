@@ -8,7 +8,12 @@ import Snowfall from 'react-snowfall'
 import Link from 'next/link';
 
 const articles = [
-  {title: 'Winter testing completed - what we know',
+  {title: 'Barcelona signs new contract',
+   href: '/Motorsport/Formula-1/feed/barcelona-signs-new-contract',
+   coverImage: '/assets/motorsport/barcelona-catalunya-circuit.jpg',
+   ImageName: 'winter-testing'
+  },
+  {title: 'Winter testing week 1 completed - what we know',
    href: '/Motorsport/Formula-1/feed/winter-testing-2026',
    coverImage: '/assets/motorsport/testing-bahrain-2026.jpg',
    ImageName: 'winter-testing'
@@ -33,19 +38,14 @@ const articles = [
    coverImage: '/assets/motorsport/Portimao.avif',
    ImageName: 'portimao'
   },
-  {title: 'Big RAM shortage - Could AI drastically change RAM market',
-   href: '/Tech/ram-shortage-2025',
-   coverImage: '/assets/tech/ram-shortage.jpg',
-   ImageName: 'PC'
-  },
 ]
 
 export default function Main() {
   const selectedArticles = articles.filter(article =>
     [
-      '/Reviews/Gaming/Clair-Obscur-Expedition-33',
-      '/Motorsport/Formula-1/feed/portimao-returns',
-      '/Tech/ram-shortage-2025'
+      '/Motorsport/Formula-1/feed/barcelona-signs-new-contract',
+      '/Motorsport/Formula-1/feed/winter-testing-2026',
+      '/Reviews/Gaming/Clair-Obscur-Expedition-33'
     ].includes(article.href)
   );
 
