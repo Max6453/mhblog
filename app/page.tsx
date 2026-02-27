@@ -8,6 +8,16 @@ import Snowfall from 'react-snowfall'
 import Link from 'next/link';
 
 const articles = [
+  {title: 'Nvdia drops even when expected earnings were beaten',
+   href: '/Tech/stock/nvidia-drop-late-february-2026',
+   coverImage: '/assets/tech/nvidia-stock-f-2026.jpg',
+   ImageName: 'nvidia'
+  },
+  {title: 'Spider man 2 - Review',
+   href: '/Reviews/Gaming/Spider-Man-2',
+   coverImage: '/assets/gaming/spider-man-2.avif',
+   ImageName: 'spider man 2 cover image'
+  },
   {title: 'Barcelona signs new contract',
    href: '/Motorsport/Formula-1/feed/barcelona-signs-new-contract',
    coverImage: '/assets/motorsport/barcelona-catalunya-circuit.jpg',
@@ -28,31 +38,22 @@ const articles = [
    coverImage: '/assets/gaming/Expedition-33.avif',
    ImageName: 'E33'
   },
-  {title: 'Assassins Creed: Mirage - Review ',
-   href: '/Reviews/Gaming/Assassins-Creed-Mirage',
-   coverImage: '/assets/gaming/ACMirage.jpg',
-   ImageName: 'portimao'
-  },
-  {title: 'Portimao returns for 2027, 2028 season',
-   href: '/Motorsport/Formula-1/feed/portimao-returns',
-   coverImage: '/assets/motorsport/Portimao.avif',
-   ImageName: 'portimao'
-  },
 ]
 
 export default function Main() {
+  //EDITOR'S CHOICE
   const selectedArticles = articles.filter(article =>
     [
-      '/Motorsport/Formula-1/feed/barcelona-signs-new-contract',
-      '/Motorsport/Formula-1/feed/winter-testing-2026',
-      '/Reviews/Gaming/Clair-Obscur-Expedition-33'
+      '/Reviews/Gaming/Spider-Man-2',
+      '/Tech/stock/nvidia-drop-late-february-2026',
+      '/Motorsport/Formula-1/feed/winter-testing-2026'
     ].includes(article.href)
   );
-
+  //TRENDING
  const selectedArticlesPopular = articles.filter(article =>   [
-    '/Reviews/Gaming/Clair-Obscur-Expedition-33',
-    '/Tech/stock/stock-market-last-february-week-2026',
-    '/Motorsport/Formula-1/feed/portimao-returns'
+    '/Reviews/Gaming/Spider-Man-2',
+    '/Motorsport/Formula-1/feed/barcelona-signs-new-contract',
+    '/Reviews/Gaming/Clair-Obscur-Expedition-33'
   ].includes(article.href)
 );
 
@@ -86,13 +87,13 @@ export default function Main() {
     <div className="relative top-20 max-sm:pl-11.5 lg:pl-12 max-md:pl-11.5 md:pl-0 grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
       {articles.map((article, index) => (
         <a href={article.href} key={index}>
-      <div className="bg-white rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden duration-250 hover:shadow-xl shadow-white">
+      <div className="rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden duration-250 hover:shadow-xl shadow-white">
         <Image
         alt={article.ImageName}
         width={300} height={300}
         src={article.coverImage}
         className=' object-cover w-full h-full z-50 rounded-4xl hover:scale-110 duration-250 hover:shadow-lg shadow-white'/>
-        <h3 className='relative items-center bottom-66 text-xl pl-3 max-sm:pt-2 linear-90 text-white font-bold font-Exo-2'>{article.title}</h3>
+        <h3 className='relative items-center bottom-66 text-xl text-center max-sm:pt-2 linear-90 text-white font-bold font-Exo-2'>{article.title}</h3>
       </div>
       </a>
        ))}

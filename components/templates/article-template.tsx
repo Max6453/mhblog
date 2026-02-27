@@ -20,13 +20,13 @@ function ArticleTemplate({ headerName, upperTitle, mainText, middleText, lowerTe
         <Header/>
             <ScrollProgress />
             <header>
-            <div className="relative inset-0">
-            <h1 className="absolute text-6xl font-Exo-2 flex justify-center top-1/2 z-10 font-josefin-sans max-md:left-7 items-baseline max-md:top-20 md:text-3xl sm:text-xl lg:text-6xl max-md:text-3xl text-white text-center font-bold">
+            <div className="relative">
+            <h1 className="relative text-6xl text-center font-Exo-2 flex justify-center top-130 z-10 font-josefin-sans max-md:left-7 items-baseline max-md:top-20 md:text-3xl sm:text-xl lg:text-6xl max-md:text-3xl text-white text-center font-bold">
                 {headerName}
             </h1>
             <img
                 src={coverImage}
-                className="min-w-full transition-transform duration-300 object-cover max-md:size-96 overflow-hidden"
+                className="min-w-full transition-transform duration-300 object-cover max-md:size-96 bottom-15 relative overflow-hidden"
                 alt="Miami Grand Prix"
             />
             </div>
