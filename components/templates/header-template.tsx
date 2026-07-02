@@ -7,11 +7,11 @@ import { AnimatePresence, motion } from "framer-motion"
 
 const navigation = [
   { name: 'Latest', href: '/', current: false, id: 1 },
-  { name: 'Motorsport', href: '/Motorsport', current: false, id: 2 },
-  { name: 'Tech', href: '/Tech', current: false, id: 3 },
-  { name: 'gaming', href: '/Reviews/Gaming', current: true, id: 4 },
-  { name: 'Reviews', href: '/Reviews', current: true, id: 5 },
-  { name: 'Contact', href: '/Contact', current: true, id: 7 },
+  { name: 'Motorsport', href: '/motorsport', current: false, id: 2 },
+  { name: 'Tech', href: '/tech', current: false, id: 3 },
+  { name: 'gaming', href: '/reviews/Gaming', current: true, id: 4 },
+  { name: 'Reviews', href: '/reviews', current: true, id: 5 },
+  { name: 'Contact', href: '/contact', current: true, id: 7 },
   { name: 'About Author', href: 'https://maximharvancik.vercel.app', current: true, id: 8 },
 ];
 
@@ -26,10 +26,10 @@ export default function Header() {
                     <h1 className='font-bold font-raleway'>MHBlog</h1>
                     <h3 className='text-3xl max-sm:text-2xl max-sm:w-60'>Latest news and intrigues across many topics</h3>
                 </div>
-                <a href='/'>
+                <a href='/' className="absolute">
                 <img
                 src= "/mobileIcon-black.png"
-                className='h-32 max-sm:h-25 z-50 w-auto hover:scale-110 top-52 max-sm:top-56 right-170 max-sm:right-33.5 transition-all duration-300 absolute max-sm:hidden sm:hidden md:hidden lg:hidden xl:block'/>
+                className='h-32 max-sm:h-25 z-50 w-auto hover:scale-110 top-52 right-0 transition-all duration-300 relative flex items-center justify-content-center justify-center max-sm:hidden sm:hidden md:hidden lg:hidden xl:block'/>
                 </a>
                 <div className="absolute right-5 top-45 pr-5 max-md:pr-0 max-md:right-0">
                     <button
