@@ -8,54 +8,56 @@ import Snowfall from 'react-snowfall'
 import Link from 'next/link';
 
 const articles = [
-  {title: 'Chinese Grand Prix - Race report',
-   href: '/Motorsport/Formula-1/2026/chinese-grand-prix/race-report',
-   coverImage: '/assets/motorsport/top-3-china.webp',
+  // Maximum of 6 articles
+  {title: 'Austrian Grand Prix - Race report',
+   href: '/motorsport/Formula-1/2026/austrian-grand-prix/race-report',
+   coverImage: '/assets/motorsport/austria-26.webp',
    ImageName: 'china sprint'
   },
-  {title: 'Australian Grand Prix - Race report',
-   href: '/Motorsport/Formula-1/2026/australian-grand-prix/race-report',
-   coverImage: '/assets/motorsport/australia-26.jpg',
-   ImageName: 'Australian GP - 2026'
+  {title: 'Catalunya Grand Prix - Race report',
+   href: '/motorsport/Formula-1/2026/catalunya-grand-prix/race-report',
+   coverImage: '/assets/motorsport/catalunya-26.avif',
+   ImageName: 'china sprint'
   },
-  {title: 'Nvdia drops even when expected earnings were beaten',
-   href: '/Tech/stock/nvidia-drop-late-february-2026',
-   coverImage: '/assets/tech/nvidia-stock-f-2026.jpg',
-   ImageName: 'nvidia'
+  {title: '24 hours of Le Mans - Race report',
+   href: '/motorsport/WEC/Le-Mans/2026/race-report',
+   coverImage: '/assets/motorsport/le-mans-26.webp',
+   ImageName: 'china sprint'
   },
-  {title: 'Spider man 2 - Review',
-   href: '/Reviews/Gaming/Spider-Man-2',
-   coverImage: '/assets/gaming/spider-man-2.avif',
-   ImageName: 'spider man 2 cover image'
+  {title: 'Monaco Grand Prix - Race report',
+   href: '/motorsport/Formula-1/2026/monaco-grand-prix/race-report',
+   coverImage: '/assets/motorsport/monaco-26.jpg',
+   ImageName: 'china sprint'
   },
-  {title: 'Barcelona signs new contract',
-   href: '/Motorsport/Formula-1/feed/barcelona-signs-new-contract',
-   coverImage: '/assets/motorsport/barcelona-catalunya-circuit.jpg',
-   ImageName: 'winter-testing'
+  {title: 'Canadian Grand Prix - Race report',
+   href: '/motorsport/Formula-1/2026/canadian-grand-prix/race-report',
+   coverImage: '/assets/motorsport/canada-26.jpg',
+   ImageName: 'china sprint'
   },
-  {title: 'Winter testing week 1 completed - what we know',
-   href: '/Motorsport/Formula-1/feed/winter-testing-2026',
-   coverImage: '/assets/motorsport/testing-bahrain-2026.jpg',
-   ImageName: 'winter-testing'
+  {title: '24 hours of Nurburgring- Race report',
+   href: '/motorsport/GTWC/24-Hours-of-Nurburgring/2026',
+   coverImage: '/assets/motorsport/nurburgring-26.avif',
+   ImageName: 'china sprint'
   },
-
 ]
 
 export default function Main() {
   //EDITOR'S CHOICE
   const selectedArticles = articles.filter(article =>
     [
-      '/Reviews/Gaming/Spider-Man-2',
-      '/Motorsport/Formula-1/2026/australian-grand-prix/race-report',
-      '/Motorsport/Formula-1/2026/chinese-grand-prix/race-report',
+      '/motorsport/Formula-1/2026/catalunya-grand-prix/race-report',
+      '/motorsport/WEC/Le-Mans/2026/race-report',
+      // FF16 article below
+      '/motorsport/Formula-1/2026/chinese-grand-prix/race-report',
     ].includes(article.href)
   );
   //TRENDING
- const selectedArticlesPopular = articles.filter(article =>   [
-  '/Motorsport/Formula-1/2026/chinese-grand-prix/race-report',
-  '/Motorsport/Formula-1/2026/australian-grand-prix/race-report',
-  '/Tech/stock/nvidia-drop-late-february-2026',
-  ].includes(article.href)
+ const selectedArticlesPopular = articles.filter(article =>   
+ [
+  '/motorsport/Formula-1/2026/austrian-grand-prix/race-report',
+  '/motorsport/Formula-1/2026/monaco-grand-prix/race-report',
+  '/motorsport/GTWC/24-Hours-of-Nurburgring/2026',
+ ].includes(article.href)
 );
 
 

@@ -48,19 +48,19 @@ export default function Header() {
                         <a href='/' className='hover-underline-animation center'>latest</a>
                         </li>
                         <li>
-                        <a href='/Motorsport' className='hover-underline-animation center'>Motorsport</a>
+                        <a href='/motorsport' className='hover-underline-animation center'>Motorsport</a>
                         </li>
                         <li>
-                        <a href='/Reviews' className='hover-underline-animation center'>Reviews</a>
+                        <a href='/reviews' className='hover-underline-animation center'>Reviews</a>
                         </li>
                         <li>
-                        <a href='/Reviews/Gaming' className='hover-underline-animation center'>Gaming</a>
+                        <a href='/reviews/Gaming' className='hover-underline-animation center'>Gaming</a>
                         </li>
                         <li>
-                        <a href='/Tech' className='hover-underline-animation center'>Tech</a>
+                        <a href='/tech' className='hover-underline-animation center'>Tech</a>
                         </li>
                         <li>
-                        <a href='/Contact' className='hover-underline-animation center'>Contact</a>
+                        <a href='/contact' className='hover-underline-animation center'>Contact</a>
                         </li>
                     </ul>
                 </div>

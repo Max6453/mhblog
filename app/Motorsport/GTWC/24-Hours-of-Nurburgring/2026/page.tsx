@@ -15,7 +15,7 @@ export default function nurburgring26() {
         Then, with roughly three hours remaining, disaster struck. Juncadella had barely settled into the car after taking over from Verstappen when a driveshaft failure forced the leading Mercedes into the garage, ending its hopes of victory in heartbreaking fashion. Out of that misfortune came a fairytale for the #80 Winward Racing entry — the sister Mercedes-AMG GT3 of Maro Engel, Luca Stolz, Fabian Schiller and Maxime Martin — which cruised home more than a minute clear to claim the marque's first overall win at the Nürburgring since 2016. The #84 Red Bull Team ABT Lamborghini and the #34 Walkenhorst Motorsport Aston Martin completed the podium."
         lowerText="For Engel it was a second Nürburgring triumph, having also been part of the winning crew a decade earlier, while Stolz and Schiller both claimed their first overall 24-hour victories and Martin finally added an N24 win to a career that had produced four previous runner-up finishes. As for Verstappen, despite the cruel ending, his commitment to the gruelling week of licence tests and the composed, mistake-free stints he put in throughout the race only added to the growing respect for his versatility away from Formula 1."
         lowerTextImage="/assets/motorsport/Nordschleife_Circuit.avif"
-        coverImage="/assets/motorsport/nurburgring24h-26.jpg"
+        coverImage="/assets/motorsport/nurburgring-26.avif"
     />
     <Footer/>
     </div>

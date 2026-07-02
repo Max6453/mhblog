@@ -13,7 +13,7 @@ export default function LeMans26() {
                 Toyota's win was built on an early strategic gamble, with both cars short-fuelled and brought in just thirty minutes into the race to seize track position. The #8 car looked the stronger of the two for much of the night, but a brake drum mounting change on Sunday morning cost it crucial time and handed the initiative to its sister car. As the race entered its final hours, four cars from three manufacturers — the #20 BMW, the #12 Cadillac Hertz Team JOTA and both Toyotas — were still in contention, with a late Full Course Yellow proving decisive in the #7 car's favour before de Vries brought it home after being cleared of a track-limits investigation in the closing stages."
                 lowerText="The victory was a landmark one on a personal level too: de Vries claimed his first Le Mans win at the first attempt, while both Conway and Kobayashi picked up their second overall triumphs at the circuit. In the other classes, Inter Europol Competition took LMP2 honours after early leaders and Mercedes junior Doriane Pin's crew suffered a brake failure on Sunday morning, while TF Sport's Corvette climbed from 17th on the grid to win LMGT3 — the manufacturer's tenth class victory at Le Mans."
                 lowerTextImage="/assets/motorsport/Circuit_de_la_Sarthe.avif"
-                coverImage="/assets/motorsport/lemans24h-26.jpg"
+                coverImage="/assets/motorsport/le-mans-26.webp"
             />
 
             <Footer/>

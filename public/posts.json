@@ -1,5 +1,14 @@
 [
   {
+    "id": "WEC-Le-Mans-2026-race-report",
+    "slug": "/Motorsport/WEC/Le-Mans/2026/race-report",
+    "title": "24 Hours of Le Man's",
+    "excerpt": "Race report",
+    "coverImage": "/assets/motorsport/belgium-gp.jpg",
+    "date": "2026-06-14",
+    "category": "Motorsport"
+  },
+  {
     "id": "stock-nvidia-drop-late-february-2026",
     "slug": "/Tech/stock/nvidia-drop-late-february-2026",
     "title": "Nvidia drops after strong earnings",
