@@ -15,7 +15,7 @@ export default function F1ChinaArticle() {
             In the end it was Antonelli who prevailed, resisting late pressure from a much-improved Norris to take his third consecutive win and become the first driver in history to win each of his first three Grands Prix from pole position. Piastri completed a strong McLaren podium in third, while a frantic finish saw Charles Leclerc spin out of what looked like a podium finish on the final lap, before a further penalty dropped him to eighth."
             lowerText="Miami underlined just how competitive the front of the field had become, with McLaren's upgraded package closing the gap to Mercedes to a matter of tenths. For Antonelli, though, the result was simple: three races, three poles, three wins, and a championship lead that showed no signs of slowing down."
             lowerTextImage="/assets/motorsport/Miami_Circuit.avif"
-            coverImage="/assets/motorsport/miami-26.jpg"
+            coverImage="/assets/motorsport/miami-26.avif"
         />
         <Footer/>
         </div>

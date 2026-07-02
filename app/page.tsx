@@ -8,6 +8,16 @@ import Snowfall from 'react-snowfall'
 import Link from 'next/link';
 
 const articles = [
+  {title: 'Chinese Grand Prix - Race report',
+   href: '/Motorsport/Formula-1/2026/chinese-grand-prix/race-report',
+   coverImage: '/assets/motorsport/top-3-china.webp',
+   ImageName: 'china sprint'
+  },
+  {title: 'Australian Grand Prix - Race report',
+   href: '/Motorsport/Formula-1/2026/australian-grand-prix/race-report',
+   coverImage: '/assets/motorsport/australia-26.jpg',
+   ImageName: 'Australian GP - 2026'
+  },
   {title: 'Nvdia drops even when expected earnings were beaten',
    href: '/Tech/stock/nvidia-drop-late-february-2026',
    coverImage: '/assets/tech/nvidia-stock-f-2026.jpg',
@@ -28,16 +38,7 @@ const articles = [
    coverImage: '/assets/motorsport/testing-bahrain-2026.jpg',
    ImageName: 'winter-testing'
   },
-  {title: 'Stock market in feburary - big drop for tech giant',
-   href: '/Tech/stock/stock-market-last-february-week-2026',
-   coverImage: '/assets/tech/microsoft-drop-february.webp',
-   ImageName: 'microsoft drop'
-  },
-  {title: 'Clair Obscur: Expedition 33 - Review ',
-   href: '/Reviews/Gaming/Clair-Obscur-Expedition-33',
-   coverImage: '/assets/gaming/Expedition-33.avif',
-   ImageName: 'E33'
-  },
+
 ]
 
 export default function Main() {
@@ -45,15 +46,15 @@ export default function Main() {
   const selectedArticles = articles.filter(article =>
     [
       '/Reviews/Gaming/Spider-Man-2',
-      '/Tech/stock/nvidia-drop-late-february-2026',
-      '/Motorsport/Formula-1/feed/winter-testing-2026'
+      '/Motorsport/Formula-1/2026/australian-grand-prix/race-report',
+      '/Motorsport/Formula-1/2026/chinese-grand-prix/race-report',
     ].includes(article.href)
   );
   //TRENDING
  const selectedArticlesPopular = articles.filter(article =>   [
-    '/Reviews/Gaming/Spider-Man-2',
-    '/Motorsport/Formula-1/feed/barcelona-signs-new-contract',
-    '/Reviews/Gaming/Clair-Obscur-Expedition-33'
+  '/Motorsport/Formula-1/2026/chinese-grand-prix/race-report',
+  '/Motorsport/Formula-1/2026/australian-grand-prix/race-report',
+  '/Tech/stock/nvidia-drop-late-february-2026',
   ].includes(article.href)
 );
 
@@ -102,11 +103,11 @@ export default function Main() {
     {/* END LATEST */}
 
     {/* MOST POPULAR */}
-          <div className='relative grid lg:grid-cols-2  p-1 -m-6 pt-10 max-sm:grid-cols-1 sm:grid-cols-1 w-full h-250 xl:top-40 lg:top-100 md:top-110 sm:top-100 max-sm:top-330'>
-           <div className='relative w-full'>
+          <div className='relative grid lg:grid-cols-2 p-1 -m-6 pt-10 max-sm:grid-cols-1 sm:grid-cols-1 w-full h-250 xl:top-40 lg:top-100 md:top-110 sm:top-100 max-sm:top-330'>
+           <div className='relative max-w-full'>
             <h3 className='lg:text-4xl text-center max-sm:text-5xl text-white relative max-md:top-0 lg:pt-10 pr-10 max-sm:pl-15 pb-0.5 max-sm:pb-2 font-Exo-2'>Trending</h3>
              <hr className='w-100 max-sm:w-70 left-37 max-sm:left-14 relative'/>
-            <div className='flex flex-col relative lg:pl-26 md:pl-0 max-sm:pl-3'>
+            <div className='flex flex-col relative lg:pl-28 md:pl-0 max-sm:pl-3'>
             {selectedArticlesPopular.map(article => (
               <a href={article.href} key={article.href}>
                 <div className="w-100 h-65 max-sm:w-80 max-sm:m-5 overflow-hidden m-10 justify-items-center rounded-3xl border-2 border-white">
@@ -153,7 +154,7 @@ export default function Main() {
 
       {/* FOOTER */}
        <footer
-       className="relative xl:top-60 lg:top-80 md:top-125 max-md:top-165 sm:top-350 max-sm:top-600 h-full w-full text-center sm:footer-horizontal pt-10 text-black font-edu-vic-wa-nt-beginner p-10 text-2xl"
+       className="relative xl:top-60 lg:top-95 md:top-400 max-md:top-165 sm:top-350 max-sm:top-600 h-full w-full text-center sm:footer-horizontal pt-10 text-black font-edu-vic-wa-nt-beginner p-10 text-2xl"
        id='Newsletter'>
           <div className="relative isolate overflow-hidden py-16 sm:py-24 max-sm:py-0 lg:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8 max-sm:px-0">
@@ -223,7 +224,7 @@ export default function Main() {
               </div>
             </div>
         </div>
-        <div className='pt-10 max-sm:pt-0 absolute top-100 md:left-65 sm:left-20 max-sm:left-16'>
+        <div className='pt-10 max-sm:pt-0 absolute top-100 md:top-190 md:left-30 sm:left-20 max-sm:left-16'>
           <a href='/downloads/application-167c16ef-20d8-4555-98a0-3b864bd69ec4.apk' download>
           <button className='className="px-6 py-3 p-3 font-Exo-2 bg-background hover:bg-white text-white hover:text-black border-white border rounded-xl shadow-lg transition'>
             Download our app
@@ -231,7 +232,7 @@ export default function Main() {
           </a>
         </div>
       </footer>
-          <aside className="relative text-center items-baseline pr-20 xl:top-60 lg:top-80 md:top-125 max-md:top-165 sm:top-350 max-sm:top-600 max-md:text-lg max-md:text-center max-sm:pl-18">
+          <aside className="relative text-center items-baseline pr-20 xl:top-60 lg:top-80 md:top-400 max-md:top-165 sm:top-350 max-sm:top-600 max-md:text-lg max-md:text-center max-sm:pl-18">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
       </aside>
 </div>

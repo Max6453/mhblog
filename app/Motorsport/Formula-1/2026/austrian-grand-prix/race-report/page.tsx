@@ -15,7 +15,7 @@ export default function F1ChinaArticle() {
             Verstappen himself produced an impressive recovery from a fifth-place start, working his way past the Ferraris before mounting a late charge at Russell that never quite materialised into a serious threat. Lewis Hamilton, starting third, gambled again on an early stop but could only manage fifth in brutal Styrian heat, behind Oscar Piastri's McLaren."
             lowerText="Russell's second win of the season — his first since the Australian opener in March — cut his championship deficit to Antonelli to 40 points and moved him back above Hamilton into second in the standings. Eight rounds into a twenty-four-race season, Mercedes had won seven of eight Grands Prix between its two drivers, but with Ferrari and Red Bull both showing genuine pace, the fight for the 2026 title was only just beginning."
             lowerTextImage="/assets/motorsport/RedBullRing_Circuit.avif"
-            coverImage="/assets/motorsport/austria-26.jpg"
+            coverImage="/assets/motorsport/austria-26.webp"
         />
         <Footer/>
         </div>

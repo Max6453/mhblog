@@ -1,5 +1,14 @@
 [
   {
+    "id": "stock-nvidia-drop-late-february-2026",
+    "slug": "/Tech/stock/nvidia-drop-late-february-2026",
+    "title": "Nvidia drops after strong earnings",
+    "excerpt": "Essay",
+    "coverImage": "https://mhblog-xi.vercel.app/assets/tech/nvidia-stock-f-2026.jpg",
+    "date": "2026-02-27",
+    "category": "Tech"
+  },
+  {
     "id": "stock-stock-market-last-february-week-2026",
     "slug": "/Tech/stock/stock-market-last-february-week-2026",
     "title": "Stock market in feburary - big drop for tech giant",
@@ -333,8 +342,8 @@
     "category": "Motorsport"
   },
   {
-    "id": "WEC-Le-Mans",
-    "slug": "/Motorsport/WEC/Le-Mans",
+    "id": "WEC-Le-Mans-2025",
+    "slug": "/Motorsport/WEC/Le-Mans/2025",
     "title": "24 Hours of Le Man's",
     "excerpt": "Race report",
     "coverImage": "/assets/motorsport/belgium-gp.jpg",
