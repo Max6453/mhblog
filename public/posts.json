@@ -1,425 +1,506 @@
 [
   {
+    "id": "Formula-1-2026-austrian-grand-prix-race-report",
+    "slug": "/motorsport/Formula-1/2026/austrian-grand-prix/race-report",
+    "title": "Austrian Grand Prix 2026",
+    "excerpt": "Race report",
+    "coverImage": "/assets/motorsport/austria-26.webp",
+    "date": "2026-06-28",
+    "category": "motorsport"
+  },
+  {
+    "id": "Formula-1-2026-catalunya-grand-prix-race-report",
+    "slug": "/motorsport/Formula-1/2026/catalunya-grand-prix/race-report",
+    "title": "Spanish Grand Prix 2026",
+    "excerpt": "Race report",
+    "coverImage": "/assets/motorsport/catalunya-26.avif",
+    "date": "2026-06-14",
+    "category": "motorsport"
+  },
+  {
     "id": "WEC-Le-Mans-2026-race-report",
-    "slug": "/Motorsport/WEC/Le-Mans/2026/race-report",
+    "slug": "/motorsport/WEC/Le-Mans/2026/race-report",
     "title": "24 Hours of Le Man's",
     "excerpt": "Race report",
     "coverImage": "/assets/motorsport/belgium-gp.jpg",
     "date": "2026-06-14",
-    "category": "Motorsport"
+    "category": "motorsport"
+  },
+  {
+    "id": "Formula-1-2026-monaco-grand-prix-race-report",
+    "slug": "/motorsport/Formula-1/2026/monaco-grand-prix/race-report",
+    "title": "Monaco Grand Prix 2026",
+    "excerpt": "Race report",
+    "coverImage": "/assets/motorsport/monaco-26.jpg",
+    "date": "2026-06-07",
+    "category": "motorsport"
+  },
+  {
+    "id": "Formula-1-2026-canadian-grand-prix-race-report",
+    "slug": "/motorsport/Formula-1/2026/canadian-grand-prix/race-report",
+    "title": "Canadian Grand Prix 2026",
+    "excerpt": "Race report",
+    "coverImage": "/assets/motorsport/canada-26.jpg",
+    "date": "2026-05-24",
+    "category": "motorsport"
+  },
+  {
+    "id": "Formula-1-2026-miami-grand-prix-race-report",
+    "slug": "/motorsport/Formula-1/2026/miami-grand-prix/race-report",
+    "title": "Miami Grand Prix 2026",
+    "excerpt": "Race report",
+    "coverImage": "/assets/motorsport/miami-26.avif",
+    "date": "2026-05-03",
+    "category": "motorsport"
+  },
+  {
+    "id": "Formula-1-2026-japanese-grand-prix-race-report",
+    "slug": "/motorsport/Formula-1/2026/japanese-grand-prix/race-report",
+    "title": "Japanese Grand Prix 2026",
+    "excerpt": "Race report",
+    "coverImage": "/assets/motorsport/japan-26.jpg",
+    "date": "2026-03-29",
+    "category": "motorsport"
+  },
+  {
+    "id": "Formula-1-2026-chinese-grand-prix-race-report",
+    "slug": "/motorsport/Formula-1/2026/chinese-grand-prix/race-report",
+    "title": "Chinese Grand Prix 2026",
+    "excerpt": "Race report",
+    "coverImage": "/assets/motorsport/top-3-china.webp",
+    "date": "2026-03-15",
+    "category": "motorsport"
+  },
+  {
+    "id": "Formula-1-2026-australian-grand-prix-race-report",
+    "slug": "/motorsport/Formula-1/2026/australian-grand-prix/race-report",
+    "title": "Australian Grand Prix 2026",
+    "excerpt": "Race report",
+    "coverImage": "/assets/motorsport/australia-26.jpg",
+    "date": "2026-03-08",
+    "category": "motorsport"
+  },
+  {
+    "id": "Gaming-final-fantasy-16",
+    "slug": "/reviews/Gaming/final-fantasy-16",
+    "title": "Final Fantasy 16 - Review",
+    "excerpt": "Review",
+    "coverImage": "/assets/gaming/Expedition-33.avif",
+    "date": "2026-03-07",
+    "category": "reviews"
   },
   {
     "id": "stock-nvidia-drop-late-february-2026",
-    "slug": "/Tech/stock/nvidia-drop-late-february-2026",
+    "slug": "/tech/stock/nvidia-drop-late-february-2026",
     "title": "Nvidia drops after strong earnings",
     "excerpt": "Essay",
     "coverImage": "https://mhblog-xi.vercel.app/assets/tech/nvidia-stock-f-2026.jpg",
     "date": "2026-02-27",
-    "category": "Tech"
+    "category": "tech"
   },
   {
     "id": "stock-stock-market-last-february-week-2026",
-    "slug": "/Tech/stock/stock-market-last-february-week-2026",
+    "slug": "/tech/stock/stock-market-last-february-week-2026",
     "title": "Stock market in feburary - big drop for tech giant",
     "excerpt": "Analysis",
     "coverImage": "/assets/tech/microsoft-drop-february.webp",
     "date": "2026-02-02",
-    "category": "Tech"
+    "category": "tech"
   },
   {
     "id": "Gaming-Assassins-Creed-Mirage",
-    "slug": "/Reviews/Gaming/Assassins-Creed-Mirage",
+    "slug": "/reviews/Gaming/Assassins-Creed-Mirage",
     "title": "Assassin's Creed: Mirage - Review",
     "excerpt": "Review",
     "coverImage": "/assets/gaming/ACMirage.jpg",
     "date": "2025-12-27",
-    "category": "Reviews"
+    "category": "reviews"
   },
   {
     "id": "Gaming-Clair-Obscur-Expedition-33",
-    "slug": "/Reviews/Gaming/Clair-Obscur-Expedition-33",
+    "slug": "/reviews/Gaming/Clair-Obscur-Expedition-33",
     "title": "Clair Obscur: Expedition 33 - Review",
     "excerpt": "Review",
     "coverImage": "/assets/gaming/Expedition-33.avif",
     "date": "2025-12-27",
-    "category": "Reviews"
+    "category": "reviews"
   },
   {
     "id": "Formula-1-feed-portimao-returns",
-    "slug": "/Motorsport/Formula-1/feed/portimao-returns",
+    "slug": "/motorsport/Formula-1/feed/portimao-returns",
     "title": "Portimao Returns",
     "excerpt": "Portimao returns for 2027, 2028 season.",
     "coverImage": "https://mhblog-xi.vercel.app/assets/motorsport/Portimao.avif",
     "date": "2025-12-16",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "ram-shortage-2025",
-    "slug": "/Tech/ram-shortage-2025",
+    "slug": "/tech/ram-shortage-2025",
     "title": "Ram Shortage in 2025",
     "excerpt": "Could AI drastically change RAM market?",
     "coverImage": "https://mhblog-xi.vercel.app/assets/tech/ram-shortage.jpg",
     "date": "2025-12-15",
-    "category": "Tech"
+    "category": "tech"
   },
   {
     "id": "Formula-1-2025-Abu-Dhabi-Grand-Prix-Weekend-Report",
-    "slug": "/Motorsport/Formula-1/2025/Abu-Dhabi-Grand-Prix/Weekend-Report",
+    "slug": "/motorsport/Formula-1/2025/Abu-Dhabi-Grand-Prix/Weekend-Report",
     "title": "Abu Dhabi Grand Prix 2025",
     "excerpt": "Weekend Report",
     "coverImage": "https://mhblog-xi.vercel.app/assets/motorsport/lando-abu-dhabi-post-race-moment.webp",
     "date": "2025-12-14",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Formula-1-2025-Abu-Dhabi-Grand-Prix-Weekend-Preview",
-    "slug": "/Motorsport/Formula-1/2025/Abu-Dhabi-Grand-Prix/Weekend-Preview",
+    "slug": "/motorsport/Formula-1/2025/Abu-Dhabi-Grand-Prix/Weekend-Preview",
     "title": "Abu Dhabi Grand Prix 2025",
     "excerpt": "Weekend Review",
     "coverImage": "https://mhblog-xi.vercel.app/assets/motorsport/abu-dhabi-preview-MCL.jpg",
     "date": "2025-12-04",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Formula-1-2025-Qatar-Grand-Prix-Race-Report",
-    "slug": "/Motorsport/Formula-1/2025/Qatar-Grand-Prix/Race-Report",
+    "slug": "/motorsport/Formula-1/2025/Qatar-Grand-Prix/Race-Report",
     "title": "Qatar Grand Prix 2025",
     "excerpt": "Race report",
     "coverImage": "https://mhblog-xi.vercel.app/assets/motorsport/Qatar2025.jpg",
     "date": "2025-11-30",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Formula-1-2025-Las-Vegas-Grand-Prix-Weekend-Report",
-    "slug": "/Motorsport/Formula-1/2025/Las-Vegas-Grand-Prix/Weekend-Report",
+    "slug": "/motorsport/Formula-1/2025/Las-Vegas-Grand-Prix/Weekend-Report",
     "title": "Las Vegas Grand Prix 2025",
     "excerpt": "Weekend report",
     "coverImage": "https://mhblog-xi.vercel.app/assets/motorsport/LasVegas2025.avif",
     "date": "2025-11-23",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Gaming-Silent-Hill-2-Remake",
-    "slug": "/Reviews/Gaming/Silent-Hill-2-Remake",
+    "slug": "/reviews/Gaming/Silent-Hill-2-Remake",
     "title": "Silent Hill 2",
     "excerpt": "Review",
     "coverImage": "https://mhblog-xi.vercel.app/assets/gaming/Silent-hill-2.jpg",
     "date": "2025-11-22",
-    "category": "Reviews"
+    "category": "reviews"
   },
   {
     "id": "Gaming-Where-Winds-Meet",
-    "slug": "/Reviews/Gaming/Where-Winds-Meet",
+    "slug": "/reviews/Gaming/Where-Winds-Meet",
     "title": "Where winds meet",
     "excerpt": "Review",
     "coverImage": "https://mhblog-xi.vercel.app/assets/gaming/WWMGame.jpg",
     "date": "2025-11-16",
-    "category": "Reviews"
+    "category": "reviews"
   },
   {
     "id": "Formula-1-2025-Brazilian-Grand-Prix-Weekend-Report",
-    "slug": "/Motorsport/Formula-1/2025/Brazilian-Grand-Prix/Weekend-Report",
+    "slug": "/motorsport/Formula-1/2025/Brazilian-Grand-Prix/Weekend-Report",
     "title": "Brazilian Grand Prix 2025",
     "excerpt": "Weekend report",
     "coverImage": "https://mhblog-xi.vercel.app/assets/motorsport/Brazil2025.avif",
     "date": "2025-11-09",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Formula-1-2025-Mexican-Grand-Prix-race-report",
-    "slug": "/Motorsport/Formula-1/2025/Mexican-Grand-Prix/race-report",
+    "slug": "/motorsport/Formula-1/2025/Mexican-Grand-Prix/race-report",
     "title": "Mexican Grand Prix 2025",
     "excerpt": "Race report",
     "coverImage": "https://mhblog-xi.vercel.app/assets/motorsport/Mexico2025.webp",
     "date": "2025-10-26",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Formula-1-2025-American-Grand-Prix-weekend-report",
-    "slug": "/Motorsport/Formula-1/2025/American-Grand-Prix/weekend-report",
+    "slug": "/motorsport/Formula-1/2025/American-Grand-Prix/weekend-report",
     "title": "American Grand Prix 2025",
     "excerpt": "Weekend report",
     "coverImage": "https://mhblog-xi.vercel.app/assets/motorsport/cota2025.webp",
     "date": "2025-10-19",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Gaming-Ghost-of-Yotei",
-    "slug": "/Reviews/Gaming/Ghost-of-Yotei",
+    "slug": "/reviews/Gaming/Ghost-of-Yotei",
     "title": "Ghost of Yotei",
     "excerpt": "Review",
     "coverImage": "/assets/gaming/belgium-gp.jpg",
     "date": "2025-10-06",
-    "category": "Reviews"
+    "category": "reviews"
   },
   {
     "id": "Formula-1-2025-Singapore-Grand-Prix",
-    "slug": "/Motorsport/Formula-1/2025/Singapore-Grand-Prix",
+    "slug": "/motorsport/Formula-1/2025/Singapore-Grand-Prix",
     "title": "Singapore Grand Prix 2025",
     "excerpt": "Weekend report",
     "coverImage": "https://mhblog-xi.vercel.app/assets/motorsport/SingaporeGP2025.jpg",
     "date": "2025-10-05",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Formula-1-2025-Azerbaijan-Grand-Prix",
-    "slug": "/Motorsport/Formula-1/2025/Azerbaijan-Grand-Prix",
+    "slug": "/motorsport/Formula-1/2025/Azerbaijan-Grand-Prix",
     "title": "Azerbaijan Grand Prix 2025",
     "excerpt": "Weekend report",
     "coverImage": "https://mhblog-xi.vercel.app/assets/motorsport/bakuF1.jpg",
     "date": "2025-09-21",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Oracle-Meteoric-Rise-For-Oracle",
-    "slug": "/Tech/Oracle/Meteoric-Rise-For-Oracle",
+    "slug": "/tech/Oracle/Meteoric-Rise-For-Oracle",
     "title": "Oracle stocks",
     "excerpt": "Meteoric rise for oracle",
     "coverImage": "/assets/motorsport/belgium-gp.jpg",
     "date": "2025-09-10",
-    "category": "Tech"
+    "category": "tech"
   },
   {
     "id": "Formula-1-2025-Italian-Grand-Prix-Weekend-Report",
-    "slug": "/Motorsport/Formula-1/2025/Italian-Grand-Prix/Weekend-Report",
+    "slug": "/motorsport/Formula-1/2025/Italian-Grand-Prix/Weekend-Report",
     "title": "Italian Grand Prix 2025",
     "excerpt": "Weekend report",
     "coverImage": "/assets/motorsport/belgium-gp.jpg",
     "date": "2025-09-07",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Google-google-court-rulling-3-9",
-    "slug": "/Tech/Google/google-court-rulling-3-9",
+    "slug": "/tech/Google/google-court-rulling-3-9",
     "title": "Google stocks",
     "excerpt": "Massive increase for google",
     "coverImage": "/assets/motorsport/belgium-gp.jpg",
     "date": "2025-09-04",
-    "category": "Tech"
+    "category": "tech"
   },
   {
     "id": "Formula-1-2025-Dutch-Grand-Prix-Race-Report",
-    "slug": "/Motorsport/Formula-1/2025/Dutch-Grand-Prix/Race-Report",
+    "slug": "/motorsport/Formula-1/2025/Dutch-Grand-Prix/Race-Report",
     "title": "Dutch Grand Prix 2025",
     "excerpt": "Race report",
     "coverImage": "/images/belgium-gp.jpg",
     "date": "2025-08-31",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Formula-1-2025-Dutch-Grand-Prix-Qualifying-Report",
-    "slug": "/Motorsport/Formula-1/2025/Dutch-Grand-Prix/Qualifying-Report",
+    "slug": "/motorsport/Formula-1/2025/Dutch-Grand-Prix/Qualifying-Report",
     "title": "Dutch Grand Prix 2025",
     "excerpt": "Qualifying report",
     "coverImage": "/assets/motorsport/belgium-gp.jpg",
     "date": "2025-08-30",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Formula-1-2025-Dutch-Grand-Prix-Friday-Report",
-    "slug": "/Motorsport/Formula-1/2025/Dutch-Grand-Prix/Friday-Report",
+    "slug": "/motorsport/Formula-1/2025/Dutch-Grand-Prix/Friday-Report",
     "title": "Dutch Grand Prix 2025",
     "excerpt": "Friday report",
     "coverImage": "/assets/motorsport/belgium-gp.jpg",
     "date": "2025-08-29",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Gaming-No-Mans-Sky-Voyagers",
-    "slug": "/Reviews/Gaming/No-Mans-Sky-Voyagers",
+    "slug": "/reviews/Gaming/No-Mans-Sky-Voyagers",
     "title": "No Mans Sky - Voyagers update",
     "excerpt": "Review",
     "coverImage": "/assets/gaming/belgium-gp.jpg",
     "date": "2025-08-29",
-    "category": "Reviews"
+    "category": "reviews"
   },
   {
     "id": "Gaming-Death-Stranding-2-On-The-Beach",
-    "slug": "/Reviews/Gaming/Death-Stranding-2-On-The-Beach",
+    "slug": "/reviews/Gaming/Death-Stranding-2-On-The-Beach",
     "title": "Death Stranding 2: On the beach",
     "excerpt": "Review",
     "coverImage": "/assets/gaming/belgium-gp.jpg",
     "date": "2025-08-26",
-    "category": "Reviews"
+    "category": "reviews"
   },
   {
     "id": "Gaming-A-Plague-tale-Requiem",
-    "slug": "/Reviews/Gaming/A-Plague-tale-Requiem",
+    "slug": "/reviews/Gaming/A-Plague-tale-Requiem",
     "title": "Plague Tale: Requiem",
     "excerpt": "Review",
     "coverImage": "/assets/gaming/belgium-gp.jpg",
     "date": "2025-08-17",
-    "category": "Reviews"
+    "category": "reviews"
   },
   {
     "id": "Formula-1-2025-Hungarian-Grand-Prix-Weekend-Report",
-    "slug": "/Motorsport/Formula-1/2025/Hungarian-Grand-Prix/Weekend-Report",
+    "slug": "/motorsport/Formula-1/2025/Hungarian-Grand-Prix/Weekend-Report",
     "title": "Hungarian Grand Prix 2025",
     "excerpt": "Weekend report",
     "coverImage": "/assets/motorsport/belgium-gp.jpg",
     "date": "2025-08-03",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Formula-1-2025-Hungarian-Grand-Prix-Preview",
-    "slug": "/Motorsport/Formula-1/2025/Hungarian-Grand-Prix/Preview",
+    "slug": "/motorsport/Formula-1/2025/Hungarian-Grand-Prix/Preview",
     "title": "Hungarian Grand Prix 2025",
     "excerpt": "Preview",
     "coverImage": "/assets/motorsport/belgium-gp.jpg",
     "date": "2025-08-01",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Formula-1-2025-Belgium-Grand-Prix-Race-Report",
-    "slug": "/Motorsport/Formula-1/2025/Belgium-Grand-Prix/Race-Report",
+    "slug": "/motorsport/Formula-1/2025/Belgium-Grand-Prix/Race-Report",
     "title": "Belgium Grand Prix 2025",
     "excerpt": "Race report",
     "coverImage": "https://mhblog-xi.vercel.app/assets/motorsport/MCL-Spa.jpg",
     "date": "2025-07-27",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Formula-1-2025-Belgium-Grand-Prix-Weekend-Report",
-    "slug": "/Motorsport/Formula-1/2025/Belgium-Grand-Prix/Weekend-Report",
+    "slug": "/motorsport/Formula-1/2025/Belgium-Grand-Prix/Weekend-Report",
     "title": "Belgium Grand Prix 2025",
     "excerpt": "Weekend report",
     "coverImage": "https://mhblog-xi.vercel.app/assets/MCL-Spa.jpg",
     "date": "2025-07-26",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "GTWC-Misano-Report",
-    "slug": "/Motorsport/GTWC/Misano-Report",
+    "slug": "/motorsport/GTWC/Misano-Report",
     "title": "GTWC Misano",
     "excerpt": "race report",
     "coverImage": "/assets/motorsport/belgium-gp.jpg",
     "date": "2025-07-20",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Gaming-Cyberpunk-2077-patch-2.3",
-    "slug": "/Reviews/Gaming/Cyberpunk-2077-patch-2.3",
+    "slug": "/reviews/Gaming/Cyberpunk-2077-patch-2.3",
     "title": "Cyberpunk 2077",
     "excerpt": "Patch 2.3",
     "coverImage": "/assets/gaming/belgium-gp.jpg",
     "date": "2025-07-16",
-    "category": "Reviews"
+    "category": "reviews"
   },
   {
     "id": "Formula-1-2025-British-Grand-Prix-Race-Report",
-    "slug": "/Motorsport/Formula-1/2025/British-Grand-Prix/Race-Report",
+    "slug": "/motorsport/Formula-1/2025/British-Grand-Prix/Race-Report",
     "title": "British Grand Prix 2025",
     "excerpt": "Race report",
     "coverImage": "https://mhblog-xi.vercel.app/assets/motorsport/britishGP2025.jpg",
     "date": "2025-07-06",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Formula-1-2025-British-Grand-Prix-Friday-Report",
-    "slug": "/Motorsport/Formula-1/2025/British-Grand-Prix/Friday-Report",
+    "slug": "/motorsport/Formula-1/2025/British-Grand-Prix/Friday-Report",
     "title": "British Grand Prix 2025",
     "excerpt": "Friday report",
     "coverImage": "https://mhblog-xi.vercel.app/assets/motorsport/britishGP2025.jpg",
     "date": "2025-07-04",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Formula-1-2025-Austrian-Grand-Prix",
-    "slug": "/Motorsport/Formula-1/2025/Austrian-Grand-Prix",
+    "slug": "/motorsport/Formula-1/2025/Austrian-Grand-Prix",
     "title": "Austrian Grand Prix 2025",
     "excerpt": "Race report",
     "coverImage": "https://mhblog-xi.vercel.app/assets/motorsport/belgium-gp.jpg",
     "date": "2025-06-29",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "GTWC-24-Hours-of-Nurburgring",
-    "slug": "/Motorsport/GTWC/24-Hours-of-Nurburgring",
+    "slug": "/motorsport/GTWC/24-Hours-of-Nurburgring",
     "title": "24 Hours of Nurburgring",
     "excerpt": "Race report",
     "coverImage": "/assets/motorsport/belgium-gp.jpg",
     "date": "2025-06-22",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Formula-1-2025-Canadian-Grand-Prix",
-    "slug": "/Motorsport/Formula-1/2025/Canadian-Grand-Prix",
+    "slug": "/motorsport/Formula-1/2025/Canadian-Grand-Prix",
     "title": "Canadian Grand Prix 2025",
     "excerpt": "Race report",
     "coverImage": "/assets/motorsport/belgium-gp.jpg",
     "date": "2025-06-15",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "WEC-Le-Mans-2025",
-    "slug": "/Motorsport/WEC/Le-Mans/2025",
+    "slug": "/motorsport/WEC/Le-Mans/2025",
     "title": "24 Hours of Le Man's",
     "excerpt": "Race report",
     "coverImage": "/assets/motorsport/belgium-gp.jpg",
     "date": "2025-06-15",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Formula-1-2025-Spanish-Grand-Prix",
-    "slug": "/Motorsport/Formula-1/2025/Spanish-Grand-Prix",
+    "slug": "/motorsport/Formula-1/2025/Spanish-Grand-Prix",
     "title": "Spanish Grand Prix 2025",
     "excerpt": "Race report",
     "coverImage": "/assets/motorsport/belgium-gp.jpg",
     "date": "2025-06-01",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Formula-1-2025-Monaco-Grand-Prix",
-    "slug": "/Motorsport/Formula-1/2025/Monaco-Grand-Prix",
+    "slug": "/motorsport/Formula-1/2025/Monaco-Grand-Prix",
     "title": "Monaco Grand Prix 2025",
     "excerpt": "Race report",
     "coverImage": "https://mhblog-xi.vercel.app/assets/motorsport/belgium-gp.jpg",
     "date": "2025-05-25",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Formula-1-2025-Emilia-Romagna-Grand-Prix",
-    "slug": "/Motorsport/Formula-1/2025/Emilia-Romagna-Grand-Prix",
+    "slug": "/motorsport/Formula-1/2025/Emilia-Romagna-Grand-Prix",
     "title": "Emilia Romagna Grand Prix 2025",
     "excerpt": "Race report",
     "coverImage": "/assets/motorsport/belgium-gp.jpg",
     "date": "2025-05-18",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Formula-1-2025-Miami-Grand-Prix",
-    "slug": "/Motorsport/Formula-1/2025/Miami-Grand-Prix",
+    "slug": "/motorsport/Formula-1/2025/Miami-Grand-Prix",
     "title": "Miami Grand Prix 2025",
     "excerpt": "Race report",
     "coverImage": "/assets/motorsport/belgium-gp.jpg",
     "date": "2025-05-04",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Formula-1-feed-barcelona-signs-new-contract",
-    "slug": "/Motorsport/Formula-1/feed/barcelona-signs-new-contract",
+    "slug": "/motorsport/Formula-1/feed/barcelona-signs-new-contract",
     "title": "New contract for barcelona circuit",
     "excerpt": "New contract for barcelona circuit lastin to 2032",
     "coverImage": "https://mhblog-xi.vercel.app/assets/motorsport/barcelona-catalunya-circuit.jpg",
     "date": "2025-02-14",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Formula-1-feed-winter-testing-2026",
-    "slug": "/Motorsport/Formula-1/feed/winter-testing-2026",
+    "slug": "/motorsport/Formula-1/feed/winter-testing-2026",
     "title": "Winter testing completed",
     "excerpt": "What to expect in Melbourne",
     "coverImage": "https://mhblog-xi.vercel.app/assets/motorsport/testing-bahrain-2026.jpg",
     "date": "2025-02-14",
-    "category": "Motorsport"
+    "category": "motorsport"
   },
   {
     "id": "Gaming-Spider-Man-2",
-    "slug": "/Reviews/Gaming/Spider-Man-2",
+    "slug": "/reviews/Gaming/Spider-Man-2",
     "title": "New contract for barcelona circuit",
     "excerpt": "New contract for barcelona circuit lastin to 2032",
     "coverImage": "https://mhblog-xi.vercel.app/assets/motorsport/barcelona-catalunya-circuit.jpg",
     "date": "2025-02-14",
-    "category": "Reviews"
+    "category": "reviews"
   }
 ]

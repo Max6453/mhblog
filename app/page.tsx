@@ -9,6 +9,11 @@ import Link from 'next/link';
 
 const articles = [
   // Maximum of 6 articles
+  {title: 'Final Fantasy XVI - Review',
+   href: '/reviews/Gaming/final-fantasy-16',
+   coverImage: '/assets/gaming/FFXVI.jpg',
+   ImageName: 'china sprint'
+  },
   {title: 'Austrian Grand Prix - Race report',
    href: '/motorsport/Formula-1/2026/austrian-grand-prix/race-report',
    coverImage: '/assets/motorsport/austria-26.webp',
@@ -34,11 +39,6 @@ const articles = [
    coverImage: '/assets/motorsport/canada-26.jpg',
    ImageName: 'china sprint'
   },
-  {title: '24 hours of Nurburgring- Race report',
-   href: '/motorsport/GTWC/24-Hours-of-Nurburgring/2026',
-   coverImage: '/assets/motorsport/nurburgring-26.avif',
-   ImageName: 'china sprint'
-  },
 ]
 
 export default function Main() {
@@ -48,7 +48,7 @@ export default function Main() {
       '/motorsport/Formula-1/2026/catalunya-grand-prix/race-report',
       '/motorsport/WEC/Le-Mans/2026/race-report',
       // FF16 article below
-      '/motorsport/Formula-1/2026/chinese-grand-prix/race-report',
+      '/reviews/Gaming/final-fantasy-16',
     ].includes(article.href)
   );
   //TRENDING
@@ -56,7 +56,7 @@ export default function Main() {
  [
   '/motorsport/Formula-1/2026/austrian-grand-prix/race-report',
   '/motorsport/Formula-1/2026/monaco-grand-prix/race-report',
-  '/motorsport/GTWC/24-Hours-of-Nurburgring/2026',
+  '/motorsport/WEC/Le-Mans/2026/race-report',
  ].includes(article.href)
 );
 
@@ -167,6 +167,14 @@ export default function Main() {
                     Be notify at every event which happened recent days in motorsport, tech, gaming and more.
                   </p>
                   <SupabaseForm/>
+                  {/* download button */}
+                  <div className='flex flex-row justify-center relative pr-10 top-15'>
+                    <a href='/downloads/application-167c16ef-20d8-4555-98a0-3b864bd69ec4.apk' download>
+                    <button className='px-6 py-3 p-3 font-Exo-2 bg-background hover:bg-white text-white hover:text-black border-white border rounded-xl shadow-lg transition'>
+                      Download our app
+                    </button>
+                    </a>
+                  </div>
                 </div>
                 <dl className="grid relative grid-cols-1 gap-x-8 gap-y-10 max-sm:pt-25 sm:grid-cols-2 lg:pt-2">
                   <div className="flex flex-col items-start">
@@ -226,15 +234,8 @@ export default function Main() {
               </div>
             </div>
         </div>
-        <div className='pt-10 max-sm:pt-0 absolute top-100 md:top-190 md:left-30 sm:left-20 max-sm:left-16'>
-          <a href='/downloads/application-167c16ef-20d8-4555-98a0-3b864bd69ec4.apk' download>
-          <button className='className="px-6 py-3 p-3 font-Exo-2 bg-background hover:bg-white text-white hover:text-black border-white border rounded-xl shadow-lg transition'>
-            Download our app
-          </button>
-          </a>
-        </div>
       </footer>
-          <aside className="relative text-center items-baseline pr-20 xl:top-60 lg:top-80 md:top-400 max-md:top-165 sm:top-350 max-sm:top-600 max-md:text-lg max-md:text-center max-sm:pl-18">
+      <aside className="relative text-center items-baseline pr-20 xl:top-60 lg:top-80 md:top-400 max-md:top-165 sm:top-350 max-sm:top-600 max-md:text-lg max-md:text-center max-sm:pl-18">
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved by MHBlog</p>
       </aside>
 </div>

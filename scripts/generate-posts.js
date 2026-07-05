@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const CONTENT_DIRS = ['Motorsport', 'Reviews', 'Tech']; // adjust to your folders
+const CONTENT_DIRS = ['motorsport', 'reviews', 'tech']; // adjust to your folders
 const appDirectory = path.join(process.cwd(), 'app');
 const outputPath = path.join(process.cwd(), 'public', 'posts.json');
 

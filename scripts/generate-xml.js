@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const SITE_URL = "https://mhblog-xi.vercel.app"; // 🔴 CHANGE THIS
-const CONTENT_DIRS = ["Motorsport", "Reviews", "Tech"];
+const CONTENT_DIRS = ["motorsport", "reviews", "tech"];
 const appDirectory = path.join(process.cwd(), "app");
 const outputPath = path.join(process.cwd(), "public", "rss.xml");
 
