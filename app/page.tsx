@@ -1,11 +1,10 @@
-'use client'
 import { ArrowUpIcon, CalendarDaysIcon, HandRaisedIcon} from '@heroicons/react/24/outline'
-import * as React from "react"
 import SupabaseForm from '../components/ui/supabaseForm';
 import Image from 'next/image'
 import Header from '@/components/templates/header-template';
 import Snowfall from 'react-snowfall'
 import Link from 'next/link';
+import { getArticlesFromDB } from '@/lib/articles';
 
 const articles = [
   // Maximum of 6 articles
@@ -41,7 +40,19 @@ const articles = [
   },
 ]
 
-export default function Main() {
+export default async function Main() {
+  //LATEST - static articles above, plus anything published to MongoDB, capped at 6 total
+  const dbArticles = await getArticlesFromDB();
+  const latestArticles = [
+    ...articles,
+    ...dbArticles.map((post) => ({
+      title: post.title,
+      href: post.slug,
+      coverImage: post.coverImage,
+      ImageName: post.title,
+    })),
+  ].slice(0, 6);
+
   //EDITOR'S CHOICE
   const selectedArticles = articles.filter(article =>
     [
@@ -88,7 +99,7 @@ export default function Main() {
   <div className="absolute top-0 z-[-2] h-370 w-full"></div>
       <h1 className='lg:text-7xl md:text-5xl max-md:text-5xl text-white relative max-md:top-10 lg:pt-15 pl-10 font-Exo-2'>latest</h1>
     <div className="relative top-20 max-sm:pl-11.5 lg:pl-12 max-md:pl-11.5 md:pl-0 grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-rows-3 gap-10 pl-10 sm:grid-cols-2">
-      {articles.map((article, index) => (
+      {latestArticles.map((article, index) => (
         <a href={article.href} key={index}>
       <div className="rounded-4xl w-90 h-70 max-md:size-65 overflow-hidden duration-250 hover:shadow-xl shadow-white">
         <Image
